@@ -1,0 +1,1628 @@
+{
+ "schema": 1,
+ "createdAt": "2026-10-27T23:13:17.793Z",
+ "settings": {
+  "lang": "hi",
+  "rate": 0.9,
+  "speakOnTap": true,
+  "cols": 4,
+  "buttonSize": "m",
+  "textSize": "m",
+  "showText": true,
+  "colorByCategory": true,
+  "theme": "calm",
+  "lockLayout": true,
+  "showPhrases": true,
+  "showRecent": true,
+  "tapGuardMs": 300,
+  "pin": "2468",
+  "lastBackup": null
+ },
+ "categories": [
+  {
+   "id": "needs",
+   "en": "Needs",
+   "hi": "ज़रूरतें",
+   "emoji": "🙋",
+   "color": "#f4a259",
+   "kind": "core"
+  },
+  {
+   "id": "food",
+   "en": "Food",
+   "hi": "खाना",
+   "emoji": "🍽️",
+   "color": "#e9c46a",
+   "kind": "core"
+  },
+  {
+   "id": "feelings",
+   "en": "Feelings",
+   "hi": "भावनाएँ",
+   "emoji": "😀",
+   "color": "#f28fad",
+   "kind": "core"
+  },
+  {
+   "id": "people",
+   "en": "People",
+   "hi": "लोग",
+   "emoji": "👪",
+   "color": "#8ecae6",
+   "kind": "core"
+  },
+  {
+   "id": "places",
+   "en": "Places",
+   "hi": "जगहें",
+   "emoji": "🏠",
+   "color": "#90be6d",
+   "kind": "core"
+  },
+  {
+   "id": "home",
+   "en": "Home",
+   "hi": "घर",
+   "emoji": "🛋️",
+   "color": "#b8a1e3",
+   "kind": "core"
+  },
+  {
+   "id": "play",
+   "en": "Play",
+   "hi": "खेल",
+   "emoji": "🧸",
+   "color": "#f7b2bd",
+   "kind": "core"
+  },
+  {
+   "id": "school",
+   "en": "School",
+   "hi": "स्कूल",
+   "emoji": "🏫",
+   "color": "#a3c4f3",
+   "kind": "core"
+  },
+  {
+   "id": "morning",
+   "en": "Morning",
+   "hi": "सुबह",
+   "emoji": "🌅",
+   "color": "#ffd166",
+   "kind": "routine"
+  },
+  {
+   "id": "bedtime",
+   "en": "Bedtime",
+   "hi": "सोने का समय",
+   "emoji": "🌙",
+   "color": "#9aa5d1",
+   "kind": "routine"
+  },
+  {
+   "id": "family",
+   "en": "Family",
+   "hi": "परिवार",
+   "emoji": "👨‍👩‍👧",
+   "color": "#7fc8a9",
+   "kind": "personal"
+  },
+  {
+   "id": "pets",
+   "en": "Pets",
+   "hi": "पालतू",
+   "emoji": "🐶",
+   "color": "#d4a373",
+   "kind": "personal"
+  },
+  {
+   "id": "favs",
+   "en": "Favourites",
+   "hi": "पसंदीदा",
+   "emoji": "⭐",
+   "color": "#ffb703",
+   "kind": "personal"
+  }
+ ],
+ "buttons": [
+  {
+   "id": "needs-0",
+   "cat": "needs",
+   "slot": 0,
+   "en": "yes",
+   "hi": "हाँ",
+   "emoji": "✅",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "needs-1",
+   "cat": "needs",
+   "slot": 1,
+   "en": "no",
+   "hi": "नहीं",
+   "emoji": "❌",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "needs-2",
+   "cat": "needs",
+   "slot": 2,
+   "en": "help",
+   "hi": "मदद",
+   "emoji": "🙋",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "help me please",
+     "hi": "मेरी मदद करो",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "needs-3",
+   "cat": "needs",
+   "slot": 3,
+   "en": "stop",
+   "hi": "रुको",
+   "emoji": "✋",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "stop it",
+     "hi": "बंद करो",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "needs-4",
+   "cat": "needs",
+   "slot": 4,
+   "en": "more",
+   "hi": "और",
+   "emoji": "➕",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I want more",
+     "hi": "मुझे और चाहिए",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "needs-5",
+   "cat": "needs",
+   "slot": 5,
+   "en": "finished",
+   "hi": "खत्म",
+   "emoji": "🏁",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I am finished",
+     "hi": "मेरा हो गया",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "needs-6",
+   "cat": "needs",
+   "slot": 6,
+   "en": "toilet",
+   "hi": "शौचालय",
+   "emoji": "🚽",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I need the toilet",
+     "hi": "मुझे शौचालय जाना है",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "needs-7",
+   "cat": "needs",
+   "slot": 7,
+   "en": "water",
+   "hi": "जल",
+   "emoji": "💧",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I want water",
+     "hi": "मुझे पानी चाहिए",
+     "audio": null
+    },
+    {
+     "en": "I'm thirsty",
+     "hi": "मुझे प्यास लगी है",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "needs-8",
+   "cat": "needs",
+   "slot": 8,
+   "en": "break",
+   "hi": "आराम",
+   "emoji": "🧘",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I need a break",
+     "hi": "मुझे थोड़ा आराम चाहिए",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "needs-9",
+   "cat": "needs",
+   "slot": 9,
+   "en": "hurts",
+   "hi": "दर्द",
+   "emoji": "🤕",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "it hurts",
+     "hi": "दर्द हो रहा है",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "food-0",
+   "cat": "food",
+   "slot": 0,
+   "en": "eat",
+   "hi": "खाना",
+   "emoji": "🍽️",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I want to eat",
+     "hi": "मुझे खाना है",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "food-1",
+   "cat": "food",
+   "slot": 1,
+   "en": "roti",
+   "hi": "रोटी",
+   "emoji": "🫓",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "food-2",
+   "cat": "food",
+   "slot": 2,
+   "en": "rice",
+   "hi": "चावल",
+   "emoji": "🍚",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "food-3",
+   "cat": "food",
+   "slot": 3,
+   "en": "dal",
+   "hi": "दाल",
+   "emoji": "🥣",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "food-4",
+   "cat": "food",
+   "slot": 4,
+   "en": "milk",
+   "hi": "दूध",
+   "emoji": "🥛",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "food-5",
+   "cat": "food",
+   "slot": 5,
+   "en": "banana",
+   "hi": "केला",
+   "emoji": "🍌",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "food-6",
+   "cat": "food",
+   "slot": 6,
+   "en": "mango",
+   "hi": "आम",
+   "emoji": "🥭",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "food-7",
+   "cat": "food",
+   "slot": 7,
+   "en": "biscuit",
+   "hi": "बिस्कुट",
+   "emoji": "🍪",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "food-8",
+   "cat": "food",
+   "slot": 8,
+   "en": "juice",
+   "hi": "जूस",
+   "emoji": "🧃",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "food-9",
+   "cat": "food",
+   "slot": 9,
+   "en": "hungry",
+   "hi": "भूख",
+   "emoji": "😋",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I'm hungry",
+     "hi": "मुझे भूख लगी है",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "feelings-0",
+   "cat": "feelings",
+   "slot": 0,
+   "en": "happy",
+   "hi": "खुश",
+   "emoji": "😀",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I feel happy",
+     "hi": "मैं खुश हूँ",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "feelings-1",
+   "cat": "feelings",
+   "slot": 1,
+   "en": "sad",
+   "hi": "उदास",
+   "emoji": "😢",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I feel sad",
+     "hi": "मैं उदास हूँ",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "feelings-2",
+   "cat": "feelings",
+   "slot": 2,
+   "en": "angry",
+   "hi": "गुस्सा",
+   "emoji": "😠",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I am angry",
+     "hi": "मुझे गुस्सा आ रहा है",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "feelings-3",
+   "cat": "feelings",
+   "slot": 3,
+   "en": "scared",
+   "hi": "डर",
+   "emoji": "😨",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I am scared",
+     "hi": "मुझे डर लग रहा है",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "feelings-4",
+   "cat": "feelings",
+   "slot": 4,
+   "en": "tired",
+   "hi": "थका हुआ",
+   "emoji": "🥱",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I am tired",
+     "hi": "मैं थक गया हूँ",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "feelings-5",
+   "cat": "feelings",
+   "slot": 5,
+   "en": "sick",
+   "hi": "बीमार",
+   "emoji": "🤒",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I feel sick",
+     "hi": "मेरी तबीयत ठीक नहीं है",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "feelings-6",
+   "cat": "feelings",
+   "slot": 6,
+   "en": "excited",
+   "hi": "उत्साहित",
+   "emoji": "🤩",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "feelings-7",
+   "cat": "feelings",
+   "slot": 7,
+   "en": "calm",
+   "hi": "शांत",
+   "emoji": "😌",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "feelings-8",
+   "cat": "feelings",
+   "slot": 8,
+   "en": "too loud",
+   "hi": "बहुत शोर",
+   "emoji": "🙉",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "it is too loud",
+     "hi": "बहुत शोर है",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "feelings-9",
+   "cat": "feelings",
+   "slot": 9,
+   "en": "love",
+   "hi": "प्यार",
+   "emoji": "❤️",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I love you",
+     "hi": "मैं तुमसे प्यार करता हूँ",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "people-0",
+   "cat": "people",
+   "slot": 0,
+   "en": "I",
+   "hi": "मैं",
+   "emoji": "🙋",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "people-1",
+   "cat": "people",
+   "slot": 1,
+   "en": "you",
+   "hi": "आप",
+   "emoji": "👉",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "people-2",
+   "cat": "people",
+   "slot": 2,
+   "en": "mummy",
+   "hi": "मम्मी",
+   "emoji": "👩",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "people-3",
+   "cat": "people",
+   "slot": 3,
+   "en": "papa",
+   "hi": "पापा",
+   "emoji": "👨",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "people-4",
+   "cat": "people",
+   "slot": 4,
+   "en": "didi",
+   "hi": "दीदी",
+   "emoji": "👧",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "people-5",
+   "cat": "people",
+   "slot": 5,
+   "en": "bhaiya",
+   "hi": "भैया",
+   "emoji": "👦",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "people-6",
+   "cat": "people",
+   "slot": 6,
+   "en": "dadi",
+   "hi": "दादी",
+   "emoji": "👵",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "people-7",
+   "cat": "people",
+   "slot": 7,
+   "en": "dada",
+   "hi": "दादा",
+   "emoji": "👴",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "people-8",
+   "cat": "people",
+   "slot": 8,
+   "en": "teacher",
+   "hi": "टीचर",
+   "emoji": "🧑‍🏫",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "people-9",
+   "cat": "people",
+   "slot": 9,
+   "en": "friend",
+   "hi": "दोस्त",
+   "emoji": "🧒",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "places-0",
+   "cat": "places",
+   "slot": 0,
+   "en": "home",
+   "hi": "घर",
+   "emoji": "🏠",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I want to go home",
+     "hi": "मुझे घर जाना है",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "places-1",
+   "cat": "places",
+   "slot": 1,
+   "en": "school",
+   "hi": "स्कूल",
+   "emoji": "🏫",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "places-2",
+   "cat": "places",
+   "slot": 2,
+   "en": "park",
+   "hi": "पार्क",
+   "emoji": "🏞️",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "places-3",
+   "cat": "places",
+   "slot": 3,
+   "en": "shop",
+   "hi": "दुकान",
+   "emoji": "🛒",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "places-4",
+   "cat": "places",
+   "slot": 4,
+   "en": "hospital",
+   "hi": "अस्पताल",
+   "emoji": "🏥",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "places-5",
+   "cat": "places",
+   "slot": 5,
+   "en": "temple",
+   "hi": "मंदिर",
+   "emoji": "🛕",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "places-6",
+   "cat": "places",
+   "slot": 6,
+   "en": "outside",
+   "hi": "बाहर",
+   "emoji": "🌳",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I want to go outside",
+     "hi": "मुझे बाहर जाना है",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "places-7",
+   "cat": "places",
+   "slot": 7,
+   "en": "car",
+   "hi": "गाड़ी",
+   "emoji": "🚗",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "places-8",
+   "cat": "places",
+   "slot": 8,
+   "en": "bus",
+   "hi": "बस",
+   "emoji": "🚌",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "places-9",
+   "cat": "places",
+   "slot": 9,
+   "en": "nani's house",
+   "hi": "नानी का घर",
+   "emoji": "🏡",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "home-0",
+   "cat": "home",
+   "slot": 0,
+   "en": "bed",
+   "hi": "बिस्तर",
+   "emoji": "🛏️",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "home-1",
+   "cat": "home",
+   "slot": 1,
+   "en": "bath",
+   "hi": "नहाना",
+   "emoji": "🛁",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "home-2",
+   "cat": "home",
+   "slot": 2,
+   "en": "brush teeth",
+   "hi": "ब्रश करना",
+   "emoji": "🪥",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "home-3",
+   "cat": "home",
+   "slot": 3,
+   "en": "clothes",
+   "hi": "कपड़े",
+   "emoji": "👕",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "home-4",
+   "cat": "home",
+   "slot": 4,
+   "en": "TV",
+   "hi": "टीवी",
+   "emoji": "📺",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I want to watch TV",
+     "hi": "मुझे टीवी देखना है",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "home-5",
+   "cat": "home",
+   "slot": 5,
+   "en": "phone",
+   "hi": "फ़ोन",
+   "emoji": "📱",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "home-6",
+   "cat": "home",
+   "slot": 6,
+   "en": "fan",
+   "hi": "पंखा",
+   "emoji": "🌀",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "turn on the fan",
+     "hi": "पंखा चलाओ",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "home-7",
+   "cat": "home",
+   "slot": 7,
+   "en": "light",
+   "hi": "लाइट",
+   "emoji": "💡",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "home-8",
+   "cat": "home",
+   "slot": 8,
+   "en": "door",
+   "hi": "दरवाज़ा",
+   "emoji": "🚪",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "home-9",
+   "cat": "home",
+   "slot": 9,
+   "en": "sleep",
+   "hi": "सोना",
+   "emoji": "💤",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I want to sleep",
+     "hi": "मुझे सोना है",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "play-0",
+   "cat": "play",
+   "slot": 0,
+   "en": "play",
+   "hi": "खेलना",
+   "emoji": "🧸",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I want to play",
+     "hi": "मुझे खेलना है",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "play-1",
+   "cat": "play",
+   "slot": 1,
+   "en": "ball",
+   "hi": "गेंद",
+   "emoji": "⚽",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "play-2",
+   "cat": "play",
+   "slot": 2,
+   "en": "slide",
+   "hi": "फिसलपट्टी",
+   "emoji": "🛝",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "play-3",
+   "cat": "play",
+   "slot": 3,
+   "en": "blocks",
+   "hi": "ब्लॉक",
+   "emoji": "🧱",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "play-4",
+   "cat": "play",
+   "slot": 4,
+   "en": "music",
+   "hi": "गाना",
+   "emoji": "🎵",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "play music",
+     "hi": "गाना चलाओ",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "play-5",
+   "cat": "play",
+   "slot": 5,
+   "en": "colours",
+   "hi": "रंग",
+   "emoji": "🖍️",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "play-6",
+   "cat": "play",
+   "slot": 6,
+   "en": "book",
+   "hi": "किताब",
+   "emoji": "📖",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "play-7",
+   "cat": "play",
+   "slot": 7,
+   "en": "puzzle",
+   "hi": "पहेली",
+   "emoji": "🧩",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "play-8",
+   "cat": "play",
+   "slot": 8,
+   "en": "bubbles",
+   "hi": "बुलबुले",
+   "emoji": "🫧",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "play-9",
+   "cat": "play",
+   "slot": 9,
+   "en": "run",
+   "hi": "दौड़ना",
+   "emoji": "🏃",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "school-0",
+   "cat": "school",
+   "slot": 0,
+   "en": "bag",
+   "hi": "बस्ता",
+   "emoji": "🎒",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "school-1",
+   "cat": "school",
+   "slot": 1,
+   "en": "pencil",
+   "hi": "पेंसिल",
+   "emoji": "✏️",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "school-2",
+   "cat": "school",
+   "slot": 2,
+   "en": "write",
+   "hi": "लिखना",
+   "emoji": "✍️",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "school-3",
+   "cat": "school",
+   "slot": 3,
+   "en": "read",
+   "hi": "पढ़ना",
+   "emoji": "📚",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "school-4",
+   "cat": "school",
+   "slot": 4,
+   "en": "draw",
+   "hi": "चित्र बनाना",
+   "emoji": "🎨",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "school-5",
+   "cat": "school",
+   "slot": 5,
+   "en": "tiffin",
+   "hi": "टिफ़िन",
+   "emoji": "🍱",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "school-6",
+   "cat": "school",
+   "slot": 6,
+   "en": "I don't understand",
+   "hi": "मुझे समझ नहीं आया",
+   "emoji": "🤔",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "school-7",
+   "cat": "school",
+   "slot": 7,
+   "en": "work done",
+   "hi": "काम हो गया",
+   "emoji": "✔️",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "I finished my work",
+     "hi": "मेरा काम हो गया",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "school-8",
+   "cat": "school",
+   "slot": 8,
+   "en": "quiet",
+   "hi": "शांति",
+   "emoji": "🤫",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "school-9",
+   "cat": "school",
+   "slot": 9,
+   "en": "wait",
+   "hi": "इंतज़ार",
+   "emoji": "⏳",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "please wait",
+     "hi": "रुको, इंतज़ार करो",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "morning-0",
+   "cat": "morning",
+   "slot": 0,
+   "en": "wake up",
+   "hi": "उठना",
+   "emoji": "⏰",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "morning-1",
+   "cat": "morning",
+   "slot": 1,
+   "en": "toilet",
+   "hi": "शौचालय",
+   "emoji": "🚽",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "morning-2",
+   "cat": "morning",
+   "slot": 2,
+   "en": "brush teeth",
+   "hi": "ब्रश करना",
+   "emoji": "🪥",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "morning-3",
+   "cat": "morning",
+   "slot": 3,
+   "en": "bath",
+   "hi": "नहाना",
+   "emoji": "🛁",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "morning-4",
+   "cat": "morning",
+   "slot": 4,
+   "en": "get dressed",
+   "hi": "कपड़े पहनना",
+   "emoji": "👕",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "morning-5",
+   "cat": "morning",
+   "slot": 5,
+   "en": "breakfast",
+   "hi": "नाश्ता",
+   "emoji": "🍳",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "morning-6",
+   "cat": "morning",
+   "slot": 6,
+   "en": "milk",
+   "hi": "दूध",
+   "emoji": "🥛",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "morning-7",
+   "cat": "morning",
+   "slot": 7,
+   "en": "school bag",
+   "hi": "बस्ता",
+   "emoji": "🎒",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "bedtime-0",
+   "cat": "bedtime",
+   "slot": 0,
+   "en": "pyjamas",
+   "hi": "नाइट सूट",
+   "emoji": "🩳",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "bedtime-1",
+   "cat": "bedtime",
+   "slot": 1,
+   "en": "brush teeth",
+   "hi": "ब्रश करना",
+   "emoji": "🪥",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "bedtime-2",
+   "cat": "bedtime",
+   "slot": 2,
+   "en": "story",
+   "hi": "कहानी",
+   "emoji": "📖",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": [
+    {
+     "en": "tell me a story",
+     "hi": "कहानी सुनाओ",
+     "audio": null
+    }
+   ]
+  },
+  {
+   "id": "bedtime-3",
+   "cat": "bedtime",
+   "slot": 3,
+   "en": "hug",
+   "hi": "गले लगो",
+   "emoji": "🤗",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "bedtime-4",
+   "cat": "bedtime",
+   "slot": 4,
+   "en": "light off",
+   "hi": "लाइट बंद करो",
+   "emoji": "💡",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "bedtime-5",
+   "cat": "bedtime",
+   "slot": 5,
+   "en": "water",
+   "hi": "पानी",
+   "emoji": "💧",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "bedtime-6",
+   "cat": "bedtime",
+   "slot": 6,
+   "en": "sleep",
+   "hi": "सोना",
+   "emoji": "💤",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "family-0",
+   "cat": "family",
+   "slot": 0,
+   "en": "mummy",
+   "hi": "मम्मी",
+   "emoji": "👩",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "family-1",
+   "cat": "family",
+   "slot": 1,
+   "en": "papa",
+   "hi": "पापा",
+   "emoji": "👨",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "pets-0",
+   "cat": "pets",
+   "slot": 0,
+   "en": "dog",
+   "hi": "कुत्ता",
+   "emoji": "🐶",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "pets-1",
+   "cat": "pets",
+   "slot": 1,
+   "en": "cat",
+   "hi": "बिल्ली",
+   "emoji": "🐱",
+   "img": null,
+   "audio": null,
+   "hideText": false,
+   "alts": []
+  },
+  {
+   "id": "b-custom1",
+   "cat": "food",
+   "slot": 10,
+   "en": "chai",
+   "hi": "चाय",
+   "emoji": "☕",
+   "img": "i-fake-photo",
+   "audio": "a-fake-rec",
+   "hideText": false,
+   "alts": []
+  }
+ ],
+ "phrases": [
+  {
+   "id": "p-1",
+   "items": [
+    {
+     "bid": "needs-7",
+     "en": "water",
+     "hi": "जल",
+     "emoji": "💧",
+     "img": null,
+     "audio": null
+    }
+   ]
+  }
+ ],
+ "recent": [
+  {
+   "bid": "food-4",
+   "en": "milk",
+   "hi": "दूध",
+   "emoji": "🥛",
+   "img": null,
+   "audio": null
+  }
+ ],
+ "routines": {
+  "enabled": true,
+  "fallback": "needs",
+  "rules": [
+   {
+    "id": "r-breakfast",
+    "name": "Breakfast",
+    "from": "07:30",
+    "to": "08:30",
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "cat": "food"
+   },
+   {
+    "id": "r-morning",
+    "name": "Morning routine",
+    "from": "06:00",
+    "to": "09:00",
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "cat": "morning"
+   },
+   {
+    "id": "r-lunch",
+    "name": "Lunch",
+    "from": "13:00",
+    "to": "14:00",
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "cat": "food"
+   },
+   {
+    "id": "r-school",
+    "name": "School",
+    "from": "09:00",
+    "to": "14:30",
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "cat": "school"
+   },
+   {
+    "id": "r-dinner",
+    "name": "Dinner",
+    "from": "19:30",
+    "to": "20:30",
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "cat": "food"
+   },
+   {
+    "id": "r-bedtime",
+    "name": "Bedtime",
+    "from": "20:30",
+    "to": "23:59",
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "cat": "bedtime"
+   }
+  ]
+ }
+}

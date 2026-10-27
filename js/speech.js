@@ -3,21 +3,20 @@
 // Order of preference for each word:
 //   1. a caregiver recording attached to the button
 //   2. the browser's speech synthesis in the chosen language
-//   3. speech synthesis in the other language (Hindi <-> English)
+//   3. speech synthesis in the language's fallback (from languages.json),
+//      only when the words also have text in that language
 //   4. no sound possible -> the sentence is shown in large text on screen
 // Every fallback is reported back to the caller so the app can show a visible
 // message. Nothing here fails silently: every path either plays sound or
 // returns a problem description.
 
 import { getMediaBlob } from './store.js';
-
-const LANG_CODES = { en: ['en-IN', 'en'], hi: ['hi-IN', 'hi'] };
-const LANG_NAMES = { en: 'English', hi: 'Hindi' };
+import { langInfo, languages, pick, t } from './i18n.js';
 
 let voicesCache = null;
 // After synthesis fails to start, skip it for 30 s so each tap does not wait
 // another 3 s before falling back. Cleared when the voice list changes.
-const brokenUntil = { en: 0, hi: 0 };
+const brokenUntil = {};
 
 /** Voices load asynchronously in most browsers; wait up to 2 s for them. */
 export function getVoices() {
@@ -36,23 +35,26 @@ if ('speechSynthesis' in window) {
   // Refresh when the user installs a new voice while the app is open.
   speechSynthesis.addEventListener('voiceschanged', () => {
     voicesCache = speechSynthesis.getVoices();
-    brokenUntil.en = brokenUntil.hi = 0;
+    for (const k of Object.keys(brokenUntil)) brokenUntil[k] = 0;
   });
 }
 
-/** Pick the best voice for 'en' or 'hi'. Returns {voice, status} where status
+/** Pick the best voice for a language code. Returns {voice, status} where status
  *  is 'ok', 'no-voice' (voices exist but none for this language), or
  *  'unknown' (browser reports no voices at all — we will still try). */
 export async function pickVoice(lang) {
   const voices = await getVoices();
   if (!voices.length) return { voice: null, status: 'unknown' };
-  const [exact, base] = LANG_CODES[lang];
+  // Try each code in languages.json order (e.g. ta-IN, then ta), preferring
+  // voices that work offline (localService).
   const norm = v => v.lang.replace('_', '-').toLowerCase();
-  const voice =
-    voices.find(v => norm(v) === exact.toLowerCase() && v.localService) ||
-    voices.find(v => norm(v) === exact.toLowerCase()) ||
-    voices.find(v => norm(v).startsWith(base));
-  return voice ? { voice, status: 'ok' } : { voice: null, status: 'no-voice' };
+  for (const code of langInfo(lang).speech) {
+    const c = code.toLowerCase();
+    const match = v => (c.includes('-') ? norm(v) === c : norm(v).split('-')[0] === c);
+    const voice = voices.find(v => match(v) && v.localService) || voices.find(match);
+    if (voice) return { voice, status: 'ok' };
+  }
+  return { voice: null, status: 'no-voice' };
 }
 
 /** Speak one piece of text. Resolves {ok:true} or {ok:false, reason}.
@@ -61,7 +63,7 @@ export async function speakText(text, lang, rate = 0.9, force = false) {
   if (!('speechSynthesis' in window)) return { ok: false, reason: 'unsupported' };
   const { voice, status } = await pickVoice(lang);
   if (status === 'no-voice') return { ok: false, reason: 'no-voice' };
-  if (!force && Date.now() < brokenUntil[lang]) return { ok: false, reason: 'no-start' };
+  if (!force && Date.now() < (brokenUntil[lang] || 0)) return { ok: false, reason: 'no-start' };
 
   return new Promise(resolve => {
     let started = false, finished = false;
@@ -75,7 +77,7 @@ export async function speakText(text, lang, rate = 0.9, force = false) {
     try {
       speechSynthesis.cancel();              // clears a stuck queue (Chrome bug)
       const u = new SpeechSynthesisUtterance(text);
-      u.lang = voice ? voice.lang : LANG_CODES[lang][0];
+      u.lang = voice ? voice.lang : langInfo(lang).speech[0];
       if (voice) u.voice = voice;
       u.rate = rate;
       u.onstart = () => { started = true; };
@@ -137,11 +139,14 @@ export function stopAll() {
   if (currentAudio) { currentAudio.pause(); currentAudio = null; }
 }
 
-const other = lang => (lang === 'hi' ? 'en' : 'hi');
-const textOf = (item, lang) => (item[lang] || item.en || item.hi || '').trim();
+const textObj = item => item.text || { en: item.en, hi: item.hi };
+const textOf = (item, lang) => pick(textObj(item), lang).trim();
+// Only fall back to another language's voice when every word really has text
+// in that language (typed Tamil must never be read by an English voice).
+const hasText = (item, lang) => !!(textObj(item)[lang] || '').trim();
 
 /**
- * Speak a list of sentence items: [{en, hi, audio}].
+ * Speak a list of sentence items: [{text: {en, hi, …}, audio}].
  * Consecutive items without recordings are joined into one utterance so the
  * sentence sounds natural. Returns {problems: [...], shown: bool} where
  * 'shown' means some words could not be voiced and must be shown on screen.
@@ -175,10 +180,12 @@ export async function speakItems(items, lang, rate) {
     let r = await speakText(seg.items.map(i => textOf(i, lang)).join(' '), lang, rate);
     if (r.ok || cancelled()) continue;
     problems.push({ reason: r.reason, lang });
-    // 2) other language
-    const alt = other(lang);
-    r = await speakText(seg.items.map(i => textOf(i, alt)).join(' '), alt, rate);
-    if (r.ok) { problems.push({ reason: 'used-other-language', lang: alt }); continue; }
+    // 2) fallback language, if the words exist in it
+    const alt = langInfo(lang).fallback;
+    if (alt && alt !== lang && seg.items.every(i => hasText(i, alt))) {
+      r = await speakText(seg.items.map(i => textOf(i, alt)).join(' '), alt, rate);
+      if (r.ok) { problems.push({ reason: 'used-other-language', lang: alt }); continue; }
+    }
     // 3) nothing worked for these words
     unvoiced.push(...seg.items);
   }
@@ -186,43 +193,40 @@ export async function speakItems(items, lang, rate) {
 }
 
 /** Turn problems into one short, plain message for the user/caregiver. */
-export function describeProblems(problems, lang) {
+export function describeProblems(problems) {
   if (!problems.length) return '';
   const reasons = new Set(problems.map(p => p.reason));
+  const name = code => langInfo(code).name;
   const parts = [];
-  if (reasons.has('unsupported')) parts.push('This browser cannot speak.');
+  if (reasons.has('unsupported')) parts.push(t('voice.unsupported'));
   if (reasons.has('no-voice')) {
-    const langs = [...new Set(problems.filter(p => p.reason === 'no-voice').map(p => LANG_NAMES[p.lang]))];
-    parts.push(`No ${langs.join('/')} voice is installed on this device.`);
+    const langs = [...new Set(problems.filter(p => p.reason === 'no-voice').map(p => name(p.lang)))];
+    parts.push(t('voice.noVoice', { lang: langs.join(' / ') }));
   }
   if (reasons.has('no-start') || reasons.has('error') || reasons.has('synthesis-failed'))
-    parts.push('The voice did not start.');
-  if (reasons.has('missing-recording') || reasons.has('bad-recording'))
-    parts.push('A recording could not be played.');
-  if (reasons.has('play-blocked')) parts.push('Sound was blocked — tap Speak again.');
+    parts.push(t('voice.noStart'));
+  if (reasons.has('missing-recording') || reasons.has('bad-recording')) parts.push(t('voice.badRecording'));
+  if (reasons.has('play-blocked')) parts.push(t('voice.blocked'));
   if (reasons.has('used-other-language')) {
     const used = problems.find(p => p.reason === 'used-other-language').lang;
-    parts.push(`Spoke in ${LANG_NAMES[used]} instead.`);
+    parts.push(t('voice.usedOther', { lang: name(used) }));
   }
   if (!parts.length) return '';
-  return parts.join(' ') + ' Recordings are used where available.';
+  return parts.join(' ') + ' ' + t('voice.recordingsUsed');
 }
 
-/** For the Settings "Test voice" button: a full report on what works. */
+/** For Settings -> Test voice: per-language status, speaking a sample in
+ *  every language that has a voice. Returns
+ *  {available, count, langs: [{code, name, status: 'ok'|'missing'|'failed', voice, reason}]} */
 export async function testVoices(rate) {
-  const report = [];
   const voices = await getVoices();
-  report.push(`Speech synthesis: ${'speechSynthesis' in window ? 'available' : 'NOT available'}`);
-  report.push(`Voices on this device: ${voices.length}`);
-  for (const lang of ['en', 'hi']) {
-    const { voice, status } = await pickVoice(lang);
-    const sample = lang === 'hi' ? 'नमस्ते, यह आवाज़ की जाँच है' : 'Hello, this is a voice test';
-    const label = LANG_NAMES[lang];
-    if (status === 'no-voice') { report.push(`❌ ${label}: no voice installed`); continue; }
-    const r = await speakText(sample, lang, rate, true);
-    report.push(r.ok
-      ? `✅ ${label}: ${voice ? voice.name + ' (' + voice.lang + ')' : 'default voice'}`
-      : `❌ ${label}: failed (${r.reason})`);
+  const result = { available: 'speechSynthesis' in window, count: voices.length, langs: [] };
+  for (const l of languages()) {
+    const { voice, status } = await pickVoice(l.code);
+    if (status === 'no-voice') { result.langs.push({ code: l.code, name: l.name, status: 'missing' }); continue; }
+    const r = await speakText(l.sample, l.code, rate, true);
+    result.langs.push({ code: l.code, name: l.name, status: r.ok ? 'ok' : 'failed',
+      voice: voice ? `${voice.name} (${voice.lang})` : '', reason: r.reason });
   }
-  return report;
+  return result;
 }

@@ -172,6 +172,7 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px s
   border-radius: 10px; background: var(--btn-bg); color: var(--fg);
   font: inherit; font-size: 17px; cursor: pointer; touch-action: manipulation;
 }
+.tab.home { font-weight: 700; }
 .tab.active { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); border-bottom-color: var(--cat); font-weight: 700; }
 
 .bar {
@@ -187,7 +188,7 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px s
   flex: 1;
   overflow-y: auto;
   display: grid;
-  grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+  grid-template-columns: repeat(var(--grid-cols, var(--cols)), minmax(0, 1fr));
   grid-auto-rows: var(--sym-h);
   gap: 8px;
   padding: 8px;
@@ -216,6 +217,12 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px s
 .sym .icon { font-size: var(--icon); line-height: 1; display: flex; align-items: center; justify-content: center; height: var(--icon); width: 100%; }
 .sym .icon img { height: var(--icon); width: var(--icon); object-fit: cover; border-radius: 8px; }
 .sym .label { font-size: var(--text); line-height: 1.15; text-align: center; overflow-wrap: break-word; hyphens: auto; max-width: 100%; max-height: 2.4em; overflow: hidden; }
+/* Optional smaller second-language label */
+.sym .label2 { font-size: calc(var(--text) * 0.72); line-height: 1.1; color: var(--muted); text-align: center; max-height: 2.3em; overflow: hidden; }
+/* Phrases board: wide buttons with the picture beside the sentence */
+#grid.phrases-mode .sym { flex-direction: row; justify-content: flex-start; gap: 10px; padding: 6px 12px; }
+#grid.phrases-mode .sym .icon { width: auto; flex: 0 0 auto; }
+#grid.phrases-mode .sym .label { text-align: left; max-height: 3.5em; }
 .sym.has-alts { position: relative; }
 .sym.has-alts::after { content: "⋯"; position: absolute; top: 2px; right: 8px; font-size: 18px; color: var(--muted); }
 .sym.empty { background: transparent; border: 2px dashed transparent; cursor: default; }
@@ -235,6 +242,7 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px s
 #status[hidden] { display: none; }
 #status.warn { background: var(--warn-bg); border-color: #c9a400; }
 #status.error { background: var(--error-bg); border-color: var(--danger); }
+#status.update { background: var(--info-bg); border-color: var(--accent); border-width: 3px; }
 .status-text { flex: 1 1 200px; }
 
 /* ---------- dialogs ---------- */
@@ -313,3 +321,16 @@ label.day input { width: 24px; height: 24px; }
 #show-card[hidden] { display: none; }
 .show-words { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
 .show-note { font-size: 18px; color: var(--muted); text-align: center; }
+
+/* Word-type colour legend in settings */
+.legend { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 10px; }
+.legend-item { padding: 4px 10px; border-radius: 8px; font-size: 14px; color: #1b1f24;
+  background: var(--cat); border: 1px solid rgba(0,0,0,.15); }
+
+/* Language picker */
+.lang-intro { font-size: 20px; text-align: center; }
+.lang-btn { font-size: 28px; min-height: 72px; text-align: center; border-left-width: var(--bw); }
+.lang-btn.current { border-color: var(--accent); border-width: 4px; }
+.settings h4 { margin: 12px 0 4px; }
+
+.fatal { padding: 24px; font-size: 20px; }

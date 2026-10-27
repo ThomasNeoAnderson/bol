@@ -1,5 +1,7 @@
 // ui.js — tiny DOM helpers shared by the rest of the app (no framework).
 
+import { t } from './i18n.js';
+
 /** Create an element: h('button', {class: 'x', onclick: fn}, 'text', child) */
 export function h(tag, attrs = {}, ...children) {
   const el = document.createElement(tag);
@@ -7,7 +9,10 @@ export function h(tag, attrs = {}, ...children) {
     if (v === null || v === undefined || v === false) continue;
     if (k.startsWith('on') && typeof v === 'function') el.addEventListener(k.slice(2), v);
     else if (k === 'class') el.className = v;
-    else if (k === 'style' && typeof v === 'object') Object.assign(el.style, v);
+    else if (k === 'style' && typeof v === 'object') {
+      // setProperty is needed for CSS variables such as --cat
+      for (const [p, val] of Object.entries(v)) el.style.setProperty(p.startsWith('--') ? p : p.replace(/[A-Z]/g, m => '-' + m.toLowerCase()), val);
+    }
     else if (k in el && typeof v !== 'string') el[k] = v;   // e.g. checked, value, disabled
     else el.setAttribute(k, v === true ? '' : v);
   }
@@ -25,7 +30,7 @@ const overlay = () => document.getElementById('overlay');
  * {label, kind, onClick} — onClick may return false to keep the dialog open.
  * Returns a function that closes the dialog.
  */
-export function openModal({ title, body, actions = [], full = false, onClose }) {
+export function openModal({ title, body, actions = [], full = false, onClose, closable = true }) {
   const root = overlay();
   const close = () => {
     box.remove();
@@ -41,7 +46,7 @@ export function openModal({ title, body, actions = [], full = false, onClose }) 
   const box = h('div', { class: `modal ${full ? 'full' : ''}`, role: 'dialog', 'aria-modal': 'true', 'aria-label': title },
     h('div', { class: 'modal-head' },
       h('h2', {}, title),
-      h('button', { class: 'btn icon-btn', 'aria-label': 'Close', onclick: close }, '✕')),
+      closable ? h('button', { class: 'btn icon-btn', 'aria-label': t('btn.close'), onclick: close }, '✕') : null),
     h('div', { class: 'modal-body' }, body),
     actions.length ? footer : null);
   root.append(box);
@@ -58,11 +63,11 @@ export function closeAllModals() {
 }
 
 /** Yes/No question. Resolves true or false. */
-export function confirmDialog(message, yes = 'Yes', no = 'Cancel', danger = false) {
+export function confirmDialog(message, yes = t('btn.yes'), no = t('btn.cancel'), danger = false) {
   return new Promise(resolve => {
     let answered = false;
     openModal({
-      title: 'Please confirm',
+      title: t('confirm.title'),
       body: h('p', {}, message),
       actions: [
         { label: no, onClick: () => { answered = true; resolve(false); } },
@@ -96,7 +101,7 @@ export function pinPad(title) {
 
 /** Format an ISO date as e.g. "3 Oct 2026, 14:05". */
 export function fmtDate(iso) {
-  if (!iso) return 'never';
+  if (!iso) return t('date.never');
   const d = new Date(iso);
   return d.toLocaleString(undefined, { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
 }

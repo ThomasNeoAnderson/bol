@@ -1,0 +1,18 @@
+[
+ {
+  "code": "en",
+  "name": "English",
+  "englishName": "English",
+  "speech": ["en-IN", "en-GB", "en-US", "en"],
+  "fallback": "hi",
+  "sample": "Hello, this is a voice test"
+ },
+ {
+  "code": "hi",
+  "name": "हिंदी",
+  "englishName": "Hindi",
+  "speech": ["hi-IN", "hi"],
+  "fallback": "en",
+  "sample": "नमस्ते, यह आवाज़ की जाँच है"
+ }
+]

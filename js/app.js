@@ -1,13 +1,13 @@
 // app.js — starts the app and draws the main communication board.
 //
 // Screen layout (top to bottom):
-//   toolbar      : language toggle, caregiver controls
+//   toolbar      : language picker, caregiver controls
 //   sentence bar : tapped words + Delete / Clear / Save / Speak
-//   status line  : visible messages (voice problems, restores, errors)
 //   My phrases   : saved sentences, one tap to speak
 //   Recent       : recently spoken words
-//   tabs         : Now + categories
+//   tabs         : Core (home) · Phrases · Now · topic boards
 //   grid         : the symbol buttons, each in a fixed slot
+//   status line  : visible messages (voice problems, restores, updates)
 
 import { state, commit, setRenderer, labelOf, catById, showStatus } from './state.js';
 import { loadProfile, saveDraft, loadDraft, takeSnapshot, collectGarbage, requestPersistence,
@@ -15,6 +15,8 @@ import { loadProfile, saveDraft, loadDraft, takeSnapshot, collectGarbage, reques
 import { speakItems, describeProblems, stopAll } from './speech.js';
 import { currentRoutine } from './routines.js';
 import { h, onPress, openModal } from './ui.js';
+import { loadI18n, setLang, t, languages, langInfo, pick } from './i18n.js';
+import { loadVocab, createDefaultProfile, normaliseProfile, needsMigration, wordTypes } from './vocab.js';
 import { toggleCaregiver, openEditor, openSettings, openVoiceTest, moveButtonTo, exportBackup,
          restoreLastWorking } from './caregiver.js';
 
@@ -27,24 +29,40 @@ async function boot() {
   const crashedLastTime = localStorage.getItem('bol-booting') === '1';
   localStorage.setItem('bol-booting', '1');
 
-  let source = 'new';
   try {
-    ({ profile: state.profile, source } = await loadProfile());
+    await Promise.all([loadI18n(), loadVocab()]);
+  } catch (e) {
+    // Without the data files nothing can be shown; say so plainly.
+    document.body.replaceChildren(h('p', { class: 'fatal' },
+      'Bol could not load its word list. Connect to the internet once and reopen the app. / ' +
+      'शब्द सूची लोड नहीं हुई। एक बार इंटरनेट से जोड़कर ऐप फिर खोलें।'));
+    return;
+  }
+
+  let source = 'new', upgraded = false;
+  try {
+    const loaded = await loadProfile();
+    source = loaded.source;
+    if (needsMigration(loaded.raw)) {
+      // Keep the old version as a snapshot BEFORE changing anything.
+      await takeSnapshot(loaded.raw, 'before-upgrade');
+      upgraded = true;
+    }
+    state.profile = loaded.raw ? normaliseProfile(loaded.raw) : createDefaultProfile();
   } catch (e) {
     console.error(e);
-    const { createDefaultProfile } = await import('./vocab.js');
     state.profile = createDefaultProfile();
-    showStatus('Saved data could not be opened. Showing the starter board.', 'error',
-      [{ label: 'Restore last working version', onClick: restoreLastWorking }]);
+    source = 'error';
   }
   if (source === 'new') {
     // First launch: fewer columns on a phone in portrait so buttons stay big.
     state.profile.settings.cols = window.innerWidth < 600 ? 4 : 6;
-    saveProfile(state.profile);
   }
+  if (source === 'new' || upgraded) saveProfile(state.profile);
 
+  setLang(state.profile.settings.lang);
   state.sentence = loadDraft();
-  state.tab = state.profile.routines.enabled ? 'now' : state.profile.categories[0].id;
+  state.tab = 'core';
 
   setRenderer(renderAll);
   wireStaticButtons();
@@ -55,21 +73,25 @@ async function boot() {
   takeSnapshot(state.profile, 'startup').then(() => collectGarbage(state.profile)).catch(console.error);
 
   if (crashedLastTime) {
-    showStatus('Bol did not start properly last time.', 'warn',
-      [{ label: 'Restore last working version', onClick: restoreLastWorking }]);
+    showStatus(t('status.crashed'), 'warn', [{ label: t('btn.restore'), onClick: restoreLastWorking }]);
+  } else if (source === 'error') {
+    showStatus(t('status.loadError'), 'error', [{ label: t('btn.restore'), onClick: restoreLastWorking }]);
   } else if (source === 'snapshot') {
-    showStatus('Your board could not be read, so the last automatic snapshot was loaded.', 'warn');
+    showStatus(t('status.fromSnapshot'), 'warn');
+  } else if (upgraded) {
+    showStatus(t('status.upgraded'), 'info');
   } else if (state.sentence.length) {
-    showStatus('Your unfinished sentence was restored.', 'info');
+    showStatus(t('status.draftRestored'), 'info');
   }
+
+  if (!state.profile.settings.langChosen) showLanguagePicker(true);
 
   requestPersistence();
   registerServiceWorker();
 }
 
 onSaveStatus(r => {
-  if (!r.ok) showStatus('Changes could NOT be saved (storage may be full). Please export a backup.', 'error',
-    [{ label: 'Export backup', onClick: exportBackup }]);
+  if (!r.ok) showStatus(t('status.saveFailed'), 'error', [{ label: t('btn.exportBackup'), onClick: exportBackup }]);
 });
 
 // Any unexpected error: tell the user, keep the app usable, offer a restore.
@@ -77,20 +99,47 @@ window.addEventListener('error', e => reportError(e.message));
 window.addEventListener('unhandledrejection', e => reportError(e.reason && e.reason.message));
 function reportError(msg) {
   console.error('Bol error:', msg);
-  showStatus(`Something went wrong${msg ? ' (' + msg + ')' : ''}. Your board is saved.`, 'error',
-    [{ label: 'Restore last working version', onClick: restoreLastWorking }]);
+  if (!state.profile) return;
+  showStatus(t('status.error', { msg: msg || '' }), 'error', [{ label: t('btn.restore'), onClick: restoreLastWorking }]);
 }
 
+/** Register the service worker and show "Update available" when a new version
+ *  has been downloaded. The new version only takes over when the user taps,
+ *  so the app never changes under someone's fingers. */
 function registerServiceWorker() {
   if (!('serviceWorker' in navigator)) return;
-  navigator.serviceWorker.register('./sw.js').catch(err => console.warn('SW registration failed', err));
+  // Only reload when the user asked for the update. (On a first install the
+  // worker also takes control, and that must NOT reload the page.)
+  let updateRequested = false;
+  const offerUpdate = worker => showStatus(t('status.update'), 'update', [{
+    label: t('btn.reload'),
+    onClick: () => { updateRequested = true; worker.postMessage({ type: 'SKIP_WAITING' }); },
+  }]);
+  navigator.serviceWorker.register('./sw.js').then(reg => {
+    if (reg.waiting && navigator.serviceWorker.controller) offerUpdate(reg.waiting);
+    reg.addEventListener('updatefound', () => {
+      const w = reg.installing;
+      w && w.addEventListener('statechange', () => {
+        if (w.state === 'installed' && navigator.serviceWorker.controller) offerUpdate(w);
+      });
+    });
+    // Check for updates whenever the app comes back to the foreground.
+    document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') reg.update().catch(() => {}); });
+  }).catch(err => console.warn('SW registration failed', err));
+  let reloading = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (reloading || !updateRequested) return;
+    reloading = true;
+    saveDraft(state.sentence);
+    location.reload();
+  });
 }
 
 // Re-check the routine when the app comes back to the foreground. We do NOT
 // switch boards on a timer while someone is using the screen.
 document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'visible' && state.profile && state.tab === 'now') renderAll();
-  if (document.visibilityState === 'hidden') saveDraft(state.sentence);
+  if (document.visibilityState === 'hidden' && state.profile) saveDraft(state.sentence);
 });
 
 // Some browsers only grant persistent storage after a user gesture.
@@ -99,7 +148,9 @@ document.addEventListener('pointerdown', () => requestPersistence(), { once: tru
 // ------------------------------------------------------------- rendering ---
 
 function renderAll() {
+  setLang(state.profile.settings.lang);
   applySettings();
+  renderStaticText();
   renderToolbar();
   renderSentence();
   renderPhrases();
@@ -116,7 +167,7 @@ function applySettings() {
   root.dataset.theme = s.theme;
   root.dataset.bsize = s.buttonSize;
   root.dataset.tsize = s.textSize;
-  root.dataset.colors = s.colorByCategory ? 'on' : 'off';
+  root.dataset.colors = s.colorMode === 'none' ? 'off' : 'on';
   root.dataset.caregiver = state.caregiver ? 'on' : 'off';
   root.lang = s.lang;
   root.style.setProperty('--cols', s.cols);
@@ -124,37 +175,67 @@ function applySettings() {
     s.theme === 'dark' || s.theme === 'contrast' ? '#000000' : '#2a6f97');
 }
 
+/** Text that lives in index.html (button captions, aria labels). */
+function renderStaticText() {
+  const set = (id, key, attr) => { const el = $(id); if (el) attr ? el.setAttribute(attr, t(key)) : (el.textContent = t(key)); };
+  set('btn-speak', 'btn.speak');
+  set('cg-add', 'btn.addButton');
+  set('cg-settings', 'btn.settings');
+  $('btn-delete').querySelector('.btn-text').textContent = ' ' + t('btn.delete');
+  $('btn-clear').querySelector('.btn-text').textContent = ' ' + t('btn.clear');
+  $('btn-save').querySelector('.btn-text').textContent = ' ' + t('btn.save');
+  set('btn-delete', 'btn.delete', 'aria-label');
+  set('btn-clear', 'btn.clear', 'aria-label');
+  set('btn-save', 'aria.savePhrase', 'aria-label');
+  set('sentence', 'aria.sentence', 'aria-label');
+  set('lang-toggle', 'aria.language', 'aria-label');
+}
+
 function renderToolbar() {
   const s = state.profile.settings;
-  $('lang-toggle').textContent = s.lang === 'en' ? 'EN → हिंदी' : 'हिंदी → EN';
-  $('cg-toggle').textContent = state.caregiver ? '✔ Done' : '🔒 Caregiver';
+  $('lang-toggle').textContent = '🌐 ' + langInfo(s.lang).name;
+  $('cg-toggle').textContent = state.caregiver ? '✔ ' + t('btn.done') : '🔒 ' + t('btn.caregiver');
   $('cg-tools').hidden = !state.caregiver;
   $('btn-save').hidden = !s.showPhrases;
 }
 
-/** An icon: the photo if there is one (loaded async), otherwise the emoji.
- *  If the photo fails to load, the emoji stays — the UI never waits on it. */
+/** The picture for a button or item, in order of preference:
+ *  caregiver photo > ARASAAC symbol (bundled file) > emoji.
+ *  Pictures load asynchronously; if one fails, the emoji simply stays, so the
+ *  UI never waits on, or breaks because of, an image. */
 function iconEl(item) {
   const span = h('span', { class: 'icon', 'aria-hidden': 'true' }, item.emoji || '⬜');
+  const show = url => {
+    const img = h('img', { alt: '', src: url, draggable: 'false' });
+    img.onload = () => span.replaceChildren(img);
+    img.onerror = () => {};             // keep the emoji
+  };
   if (item.img) {
-    getMediaURL(item.img).then(url => {
-      if (!url) return;
-      const img = h('img', { alt: '', src: url, draggable: 'false' });
-      img.onload = () => span.replaceChildren(img);
-      img.onerror = () => {};           // keep the emoji
-    }).catch(() => {});
+    getMediaURL(item.img).then(url => { if (url) show(url); }).catch(() => {});
+  } else if (item.sym && state.profile.settings.useSymbols) {
+    show(item.sym);
   }
   return span;
+}
+
+/** Label (+ optional smaller second-language label), with lang attributes so
+ *  each script is rendered and read correctly. */
+function labelEls(item, cls = 'label') {
+  const s = state.profile.settings;
+  const main = h('span', { class: cls, lang: s.lang }, labelOf(item));
+  if (!s.secondLang || s.secondLang === s.lang) return [main];
+  const second = labelOf(item, s.secondLang);
+  if (!second || second === labelOf(item)) return [main];
+  return [main, h('span', { class: 'label2', lang: s.secondLang }, second)];
 }
 
 function renderSentence() {
   const bar = $('sentence');
   if (!state.sentence.length) {
-    bar.replaceChildren(h('span', { class: 'sentence-hint' },
-      state.profile.settings.lang === 'hi' ? 'चित्र दबाएँ…' : 'Tap pictures to talk…'));
+    bar.replaceChildren(h('span', { class: 'sentence-hint' }, t('hint.tapPictures')));
   } else {
     bar.replaceChildren(...state.sentence.map(it =>
-      h('span', { class: 'chip', role: 'listitem' }, iconEl(it), h('span', {}, labelOf(it)))));
+      h('span', { class: 'chip', role: 'listitem' }, iconEl(it), h('span', { lang: state.profile.settings.lang }, labelOf(it)))));
     bar.scrollLeft = bar.scrollWidth;
   }
   $('btn-speak').disabled = $('btn-delete').disabled = $('btn-clear').disabled = !state.sentence.length;
@@ -166,10 +247,9 @@ function renderPhrases() {
   const phrases = state.profile.phrases;
   strip.hidden = !state.profile.settings.showPhrases;
   if (strip.hidden) return;
-  const title = h('span', { class: 'strip-title' }, state.profile.settings.lang === 'hi' ? 'मेरे वाक्य' : 'My phrases');
+  const title = h('span', { class: 'strip-title' }, t('strip.myPhrases'));
   if (!phrases.length) {
-    strip.replaceChildren(title, h('span', { class: 'strip-empty' },
-      state.profile.settings.lang === 'hi' ? 'वाक्य बनाएँ, फिर ★ दबाएँ' : 'Make a sentence, then tap ★ Save'));
+    strip.replaceChildren(title, h('span', { class: 'strip-empty' }, t('hint.savePhrase')));
     return;
   }
   strip.replaceChildren(title, ...phrases.map((ph, i) => {
@@ -184,10 +264,10 @@ function renderPhrases() {
       commit();
     };
     return h('span', { class: 'phrase-edit' },
-      h('button', { class: 'btn small', 'aria-label': 'Move left', onclick: () => move(-1) }, '◀'),
+      h('button', { class: 'btn small', 'aria-label': t('aria.moveLeft'), onclick: () => move(-1) }, '◀'),
       chip,
-      h('button', { class: 'btn small', 'aria-label': 'Move right', onclick: () => move(1) }, '▶'),
-      h('button', { class: 'btn small danger', 'aria-label': 'Delete phrase', onclick: () => {
+      h('button', { class: 'btn small', 'aria-label': t('aria.moveRight'), onclick: () => move(1) }, '▶'),
+      h('button', { class: 'btn small danger', 'aria-label': t('aria.deletePhrase'), onclick: () => {
         state.profile.phrases.splice(i, 1); commit(); } }, '✕'));
   }));
 }
@@ -197,25 +277,41 @@ function renderRecent() {
   strip.hidden = !state.profile.settings.showRecent || !state.profile.recent.length;
   if (strip.hidden) return;
   strip.replaceChildren(
-    h('span', { class: 'strip-title' }, state.profile.settings.lang === 'hi' ? 'हाल के' : 'Recent'),
+    h('span', { class: 'strip-title' }, t('strip.recent')),
     ...state.profile.recent.map(it =>
       h('button', { class: 'chip', onclick: () => addToSentence({ ...it }) }, iconEl(it), h('span', {}, labelOf(it)))));
 }
 
+/** Tab order is fixed: Core first (home), then Phrases, Now, and the
+ *  topic boards in the caregiver's order. Core is always one tap away. */
+function tabList() {
+  const cats = state.profile.categories;
+  const list = [
+    ...cats.filter(c => c.kind === 'core'),
+    ...cats.filter(c => c.kind === 'phrases'),
+  ];
+  if (state.profile.routines.enabled) list.push({ id: 'now', text: { en: t('tab.now') }, emoji: '⏰', color: '#2a6f97' });
+  list.push(...cats.filter(c => c.kind !== 'core' && c.kind !== 'phrases'));
+  return list;
+}
+
 function renderTabs() {
   const tabs = $('tabs');
-  const lang = state.profile.settings.lang;
-  const list = [];
-  if (state.profile.routines.enabled) list.push({ id: 'now', en: 'Now', hi: 'अभी', emoji: '⏰', color: '#2a6f97' });
-  list.push(...state.profile.categories);
+  const list = tabList();
   if (!list.some(c => c.id === state.tab)) state.tab = list[0].id;
   tabs.replaceChildren(...list.map(c =>
     h('button', {
-      class: `tab ${state.tab === c.id ? 'active' : ''}`,
+      class: `tab ${state.tab === c.id ? 'active' : ''} ${c.kind === 'core' ? 'home' : ''}`,
       style: { '--cat': c.color },
       'aria-pressed': String(state.tab === c.id),
-      onclick: () => { state.tab = c.id; state.moving = null; renderTabs(); renderNowBar(); renderGrid(); },
-    }, h('span', { 'aria-hidden': 'true' }, c.emoji), ' ', c[lang] || c.en)));
+      onclick: () => selectTab(c.id),
+    }, h('span', { 'aria-hidden': 'true' }, c.emoji), ' ', h('span', { lang: state.profile.settings.lang }, labelOf(c)))));
+}
+
+function selectTab(id) {
+  state.tab = id;
+  state.moving = null;
+  renderTabs(); renderNowBar(); renderGrid();
 }
 
 /** Which board the Now tab shows right now. */
@@ -233,39 +329,52 @@ function renderNowBar() {
   if (bar.hidden) return;
   const { cat, rule, override } = nowBoard();
   const c = catById(cat);
-  const lang = state.profile.settings.lang;
-  const what = override ? 'Chosen board' : rule ? rule.name : 'No routine right now';
+  const what = override ? t('now.chosen') : rule ? pick(rule.name) : t('now.none');
   bar.replaceChildren(
-    h('span', {}, `🕗 ${what} → ${c.emoji} ${c[lang] || c.en}`),
-    h('button', { class: 'btn small', onclick: pickOverride }, 'Change board'),
+    h('span', {}, `🕗 ${what} → ${c.emoji} ${labelOf(c)}`),
+    h('button', { class: 'btn small', onclick: pickOverride }, t('now.change')),
     ...(override ? [h('button', { class: 'btn small', onclick: () => { state.nowOverride = null; renderNowBar(); renderGrid(); } },
-      'Back to suggestion')] : []));
+      t('now.back'))] : []));
 }
 
 /** Manual override for the Now screen; lasts 2 hours. */
 function pickOverride() {
-  const lang = state.profile.settings.lang;
   const close = openModal({
-    title: 'Show which board now?',
+    title: t('now.pickTitle'),
     body: h('div', { class: 'pick-list' }, state.profile.categories.map(c =>
       h('button', { class: 'btn big', style: { '--cat': c.color }, onclick: () => {
         state.nowOverride = { cat: c.id, until: Date.now() + 2 * 3600 * 1000 };
         close(); renderNowBar(); renderGrid();
-      } }, `${c.emoji} ${c[lang] || c.en}`))),
+      } }, `${c.emoji} ${labelOf(c)}`))),
   });
 }
 
 function currentCat() {
-  return state.tab === 'now' ? nowBoard().cat : state.tab;
+  if (state.tab === 'now') return nowBoard().cat;
+  return state.tab;
+}
+
+/** Background colour for a button: by word type (Modified Fitzgerald Key),
+ *  by category, or none — chosen in Caregiver settings. */
+function colourFor(b, cat) {
+  const mode = state.profile.settings.colorMode;
+  if (mode === 'wordtype' && b.pos && wordTypes()[b.pos]) return wordTypes()[b.pos].color;
+  if (mode === 'wordtype' || mode === 'category') return (cat && cat.color) || '#ccc';
+  return 'transparent';
 }
 
 /** Draw the grid. Every button sits in its own slot number, and empty slots
  *  are drawn as blanks, so adding or hiding nothing ever shifts a button. */
 function renderGrid() {
   const grid = $('grid');
+  const moveBar = $('move-bar');
   const catId = currentCat();
   const cat = catById(catId);
-  const cols = state.profile.settings.cols;
+  // Whole-sentence phrases get double-width buttons so the text fits.
+  const isPhrases = cat && cat.kind === 'phrases';
+  grid.className = isPhrases ? 'phrases-mode' : '';
+  const cols = isPhrases ? Math.max(1, Math.floor(state.profile.settings.cols / 2)) : state.profile.settings.cols;
+  grid.style.setProperty('--grid-cols', cols);
   const buttons = state.profile.buttons.filter(b => b.cat === catId);
   const bySlot = new Map(buttons.map(b => [b.slot, b]));
   const maxSlot = buttons.reduce((m, b) => Math.max(m, b.slot), -1);
@@ -279,12 +388,11 @@ function renderGrid() {
   }
   grid.replaceChildren(...cells);
 
-  const moveBar = $('move-bar');
   moveBar.hidden = !state.moving;
   if (state.moving) {
     const b = state.profile.buttons.find(x => x.id === state.moving);
-    moveBar.replaceChildren(h('span', {}, `Tap an empty space or another button to move "${b ? labelOf(b) : ''}".`),
-      h('button', { class: 'btn small', onclick: () => { state.moving = null; renderGrid(); } }, 'Cancel'));
+    moveBar.replaceChildren(h('span', {}, t('move.hint', { word: b ? labelOf(b) : '' })),
+      h('button', { class: 'btn small', onclick: () => { state.moving = null; renderGrid(); } }, t('btn.cancel')));
   }
 }
 
@@ -292,9 +400,9 @@ function buttonEl(b, cat) {
   const showText = state.profile.settings.showText && !b.hideText;
   const el = h('button', {
     class: `sym ${state.moving === b.id ? 'moving' : ''} ${b.alts && b.alts.length ? 'has-alts' : ''}`,
-    style: { '--cat': (cat && cat.color) || '#ccc' },
+    style: { '--cat': colourFor(b, cat) },
     'aria-label': labelOf(b),
-  }, iconEl(b), showText ? h('span', { class: 'label' }, labelOf(b)) : null);
+  }, iconEl(b), showText ? labelEls(b) : null);
   onPress(el, () => tapButton(b), () => longPressButton(b));
   return el;
 }
@@ -303,9 +411,43 @@ function emptyEl(catId, slot) {
   if (!state.caregiver) return h('div', { class: 'sym empty', 'aria-hidden': 'true' });
   return h('button', {
     class: 'sym empty add',
-    'aria-label': 'Add a button here',
+    'aria-label': t('aria.addHere'),
     onclick: () => state.moving ? moveButtonTo(catId, slot) : openEditor(null, { cat: catId, slot }),
   }, h('span', { class: 'icon' }, '＋'));
+}
+
+// ------------------------------------------------------- language picker ---
+
+/** Language chooser. On first run it is full-screen and cannot be skipped
+ *  (one tap). Each language is shown in its own script. */
+function showLanguagePicker(firstRun = false) {
+  const choose = code => {
+    state.profile.settings.lang = code;
+    state.profile.settings.langChosen = true;
+    setLang(code);
+    close();
+    commit();
+  };
+  const body = h('div', { class: 'pick-list lang-list' },
+    languages().map(l => h('button', {
+      class: `btn big lang-btn ${l.code === state.profile.settings.lang ? 'current' : ''}`,
+      lang: l.code, onclick: () => choose(l.code),
+    }, l.name, l.name !== l.englishName ? h('span', { class: 'hint', lang: 'en' }, ' · ' + l.englishName) : null)));
+  const close = openModal({
+    title: firstRun ? '🌐' : t('lang.choose'),
+    body: firstRun ? h('div', {}, h('p', { class: 'lang-intro' }, chooseInEveryLanguage()), body) : body,
+    full: firstRun,
+    closable: !firstRun,      // first run: a language must be chosen
+  });
+}
+
+/** "Choose language" written in every available language, because on first
+ *  run we don't yet know which one the reader understands. */
+function chooseInEveryLanguage() {
+  const prev = state.profile.settings.lang;
+  const lines = languages().map(l => { setLang(l.code); return t('lang.choose'); });
+  setLang(prev);
+  return [...new Set(lines)].join(' · ');
 }
 
 // ------------------------------------------------------------ interaction ---
@@ -333,7 +475,7 @@ function longPressButton(b) {
   const close = openModal({
     title: labelOf(b),
     body: h('div', { class: 'pick-list' }, variants.map(v =>
-      h('button', { class: 'btn big', onclick: () => { close(); addToSentence(itemFrom(b, v)); } },
+      h('button', { class: 'btn big', lang: state.profile.settings.lang, onclick: () => { close(); addToSentence(itemFrom(b, v)); } },
         `${b.emoji || ''} ${labelOf(v)}`))),
   });
 }
@@ -341,7 +483,7 @@ function longPressButton(b) {
 /** A sentence item is a self-contained copy, so deleting a button later
  *  never breaks a saved phrase or the draft. */
 function itemFrom(b, v) {
-  return { bid: b.id, en: v.en, hi: v.hi, emoji: b.emoji, img: b.img, audio: v.audio || null };
+  return { bid: b.id, text: { ...(v.text || {}) }, emoji: b.emoji, sym: b.sym || null, img: b.img, audio: v.audio || null };
 }
 
 function addToSentence(item) {
@@ -353,7 +495,7 @@ function addToSentence(item) {
   if (state.profile.settings.speakOnTap) say([item], { card: false });
 }
 
-/** Speak items and report any problem visibly. */
+/** Speak items and report any problem visibly. Never silent. */
 async function say(items, { card = true } = {}) {
   stopAll();
   const { lang, rate } = state.profile.settings;
@@ -361,12 +503,12 @@ async function say(items, { card = true } = {}) {
   bar.classList.add('speaking');
   try {
     const { problems, unvoiced } = await speakItems(items, lang, rate);
-    let msg = describeProblems(problems, lang);
-    if (unvoiced.length && !card) msg += ' No sound right now: the words are shown in the sentence bar.';
-    if (msg) showStatus(msg.trim(), 'warn', [{ label: 'Test voice', onClick: openVoiceTest }]);
+    let msg = describeProblems(problems);
+    if (unvoiced.length && !card) msg += ' ' + t('voice.shownInBar');
+    if (msg) showStatus(msg.trim(), 'warn', [{ label: t('btn.testVoice'), onClick: openVoiceTest }]);
     if (unvoiced.length && card) showCard(items);
   } catch (e) {
-    showStatus('Speech failed. Showing the words on screen instead.', 'error');
+    showStatus(t('voice.failed'), 'error');
     if (card) showCard(items);
   } finally {
     bar.classList.remove('speaking');
@@ -377,16 +519,18 @@ async function say(items, { card = true } = {}) {
 function showCard(items) {
   const card = $('show-card');
   card.replaceChildren(
-    h('div', { class: 'show-note' }, '🔇 No sound available — show this screen'),
-    h('div', { class: 'show-words' }, items.map(it => h('span', { class: 'chip big' }, iconEl(it), labelOf(it)))),
-    h('div', { class: 'show-note' }, 'Tap anywhere to close'));
+    h('div', { class: 'show-note' }, '🔇 ' + t('card.noSound')),
+    h('div', { class: 'show-words', lang: state.profile.settings.lang },
+      items.map(it => h('span', { class: 'chip big' }, iconEl(it), labelOf(it)))),
+    h('div', { class: 'show-note' }, t('card.close')));
   card.hidden = false;
 }
 
 function rememberRecent(items) {
   const recent = state.profile.recent;
   for (const it of items) {
-    const i = recent.findIndex(r => r.bid === it.bid && r.en === it.en);
+    if (!it.bid) continue;                // typed text is not a button
+    const i = recent.findIndex(r => r.bid === it.bid && labelOf(r, 'en') === labelOf(it, 'en'));
     if (i >= 0) recent.splice(i, 1);
     recent.unshift({ ...it });
   }
@@ -417,14 +561,11 @@ function wireStaticButtons() {
     if (!state.sentence.length) return;
     state.profile.phrases.push({ id: 'p-' + Date.now().toString(36), items: state.sentence.map(it => ({ ...it })) });
     commit();
-    showStatus('Saved to My phrases.', 'info');
+    showStatus(t('status.phraseSaved'), 'info');
   };
-  $('lang-toggle').onclick = () => {
-    state.profile.settings.lang = state.profile.settings.lang === 'en' ? 'hi' : 'en';
-    commit();
-  };
+  $('lang-toggle').onclick = () => showLanguagePicker(false);
   $('cg-toggle').onclick = toggleCaregiver;
-  $('cg-add').onclick = () => openEditor(null, { cat: currentCat() });
+  $('cg-add').onclick = () => openEditor(null, { cat: currentCat() || 'core' });
   $('cg-settings').onclick = () => openSettings();
   $('show-card').onclick = () => { $('show-card').hidden = true; };
 }

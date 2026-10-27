@@ -15,3 +15,8 @@ bol-backup-*
 node_modules/
 *.log
 .DS_Store
+
+# Test output and dependencies
+tests/node_modules/
+tests/output/
+tests/package-lock.json

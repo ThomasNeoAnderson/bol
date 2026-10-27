@@ -6,12 +6,13 @@
 
 import { saveProfile, takeSnapshot } from './store.js';
 import { h } from './ui.js';
+import { pick, t } from './i18n.js';
 
 export const state = {
   profile: null,        // the saved profile (see vocab.js)
   sentence: [],         // items in the sentence bar (saved as a draft)
   caregiver: false,     // true while caregiver mode is unlocked
-  tab: 'now',           // current board: a category id, or 'now'
+  tab: 'core',          // current board: a category id, 'now' or 'type'
   nowOverride: null,    // {cat, until} manual override on the Now screen
   moving: null,         // id of a button being moved (caregiver mode)
 };
@@ -33,9 +34,12 @@ export function commit({ redraw = true } = {}) {
   if (redraw) render();
 }
 
-/** Label of a button or sentence item in the current language. */
+/** Label of a button, category or sentence item in a language (default:
+ *  the board language). Falls back to English, then any language. Also reads
+ *  the old v1 shape {en, hi} so an old unfinished sentence still shows. */
 export function labelOf(item, lang = state.profile.settings.lang) {
-  return item[lang] || item.en || item.hi || '';
+  if (!item) return '';
+  return pick(item.text || { en: item.en, hi: item.hi }, lang);
 }
 
 export const catById = id => state.profile.categories.find(c => c.id === id);
@@ -65,9 +69,9 @@ export function showStatus(message, kind = 'info', actions = []) {
   clearTimeout(statusTimer);
   el.className = `status ${kind}`;
   el.replaceChildren(
-    h('span', { class: 'status-text' }, (kind === 'info' ? 'ℹ️ ' : '⚠️ ') + message),
-    ...actions.map(a => h('button', { class: 'btn small', onclick: () => { a.onClick(); } }, a.label)),
-    h('button', { class: 'btn small icon-btn', 'aria-label': 'Dismiss', onclick: hideStatus }, '✕'));
+    h('span', { class: 'status-text' }, ({ info: 'ℹ️ ', update: '🔄 ' }[kind] || '⚠️ ') + message),
+    ...actions.map(a => h('button', { class: 'btn small', onclick: () => { hideStatus(); a.onClick(); } }, a.label)),
+    h('button', { class: 'btn small icon-btn', 'aria-label': t('btn.close'), onclick: hideStatus }, '✕'));
   el.hidden = false;
   if (kind === 'info') statusTimer = setTimeout(hideStatus, 5000);
 }

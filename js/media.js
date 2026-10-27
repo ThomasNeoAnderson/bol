@@ -3,6 +3,8 @@
 // Both functions are wrapped in timeouts and try/catch so a broken or huge
 // file can never freeze the app: the worst case is a visible error message.
 
+import { t } from './i18n.js';
+
 const MAX_INPUT_BYTES = 25 * 1024 * 1024;   // refuse files larger than 25 MB
 const IMAGE_SIZE = 320;                     // stored photos are max 320x320 px
 
@@ -25,7 +27,7 @@ async function decodeImage(file) {
     return await new Promise((resolve, reject) => {
       const img = new Image();
       img.onload = () => resolve(img);
-      img.onerror = () => reject(new Error('This file is not a picture the browser can open.'));
+      img.onerror = () => reject(new Error(t('media.notPicture')));
       img.src = url;
     });
   } finally {
@@ -35,11 +37,11 @@ async function decodeImage(file) {
 
 /** Resize a photo to a square-ish thumbnail (JPEG). Returns a Blob. */
 export async function resizeImage(file) {
-  if (!file) throw new Error('No file chosen.');
-  if (file.size > MAX_INPUT_BYTES) throw new Error('That picture is too large (over 25 MB).');
-  const img = await withTimeout(decodeImage(file), 15000, 'The picture took too long to open.');
+  if (!file) throw new Error(t('media.noFile'));
+  if (file.size > MAX_INPUT_BYTES) throw new Error(t('media.tooLarge'));
+  const img = await withTimeout(decodeImage(file), 15000, t('media.slow'));
   const w = img.width, h = img.height;
-  if (!w || !h) throw new Error('The picture appears to be empty.');
+  if (!w || !h) throw new Error(t('media.empty'));
   // Centre-crop to a square so photos fill the button evenly.
   const side = Math.min(w, h);
   const canvas = document.createElement('canvas');
@@ -51,8 +53,8 @@ export async function resizeImage(file) {
   if (img.close) img.close();
   const blob = await withTimeout(
     new Promise(res => canvas.toBlob(res, 'image/jpeg', 0.82)),
-    10000, 'Could not save the picture.');
-  if (!blob) throw new Error('Could not save the picture.');
+    10000, t('media.cantSave'));
+  if (!blob) throw new Error(t('media.cantSave'));
   return blob;
 }
 
@@ -72,11 +74,11 @@ function pickMime() {
  */
 export async function startRecording(maxMs = 10000) {
   const mime = pickMime();
-  if (mime === null) throw new Error('This browser cannot record audio.');
+  if (mime === null) throw new Error(t('media.noRecorder'));
   if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia)
-    throw new Error('Microphone not available (the page must be opened over https).');
+    throw new Error(t('media.noMic'));
   const stream = await withTimeout(navigator.mediaDevices.getUserMedia({ audio: true }), 20000,
-    'Microphone permission was not given.');
+    t('rec.denied'));
   const rec = new MediaRecorder(stream, mime ? { mimeType: mime } : undefined);
   const chunks = [];
   rec.ondataavailable = e => { if (e.data && e.data.size) chunks.push(e.data); };
@@ -85,9 +87,9 @@ export async function startRecording(maxMs = 10000) {
     rec.onstop = () => {
       stream.getTracks().forEach(t => t.stop());           // release the mic
       const blob = new Blob(chunks, { type: rec.mimeType || mime || 'audio/webm' });
-      blob.size ? resolve(blob) : reject(new Error('Nothing was recorded.'));
+      blob.size ? resolve(blob) : reject(new Error(t('media.nothing')));
     };
-    rec.onerror = e => { stream.getTracks().forEach(t => t.stop()); reject(e.error || new Error('Recording failed.')); };
+    rec.onerror = e => { stream.getTracks().forEach(t => t.stop()); reject(e.error || new Error(t('media.recFailed'))); };
   });
   finished.catch(() => {});   // avoid "unhandled rejection" noise; stop() still reports errors
   rec.start();
@@ -96,7 +98,7 @@ export async function startRecording(maxMs = 10000) {
     stop() {
       clearTimeout(auto);
       if (rec.state === 'recording') rec.stop();
-      return withTimeout(finished, 5000, 'Recording did not finish.');
+      return withTimeout(finished, 5000, t('media.recFailed'));
     },
     finished,
   };

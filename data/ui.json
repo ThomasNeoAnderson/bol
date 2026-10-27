@@ -1,0 +1,914 @@
+{
+ "btn.speak": {
+  "en": "🔊 Speak",
+  "hi": "🔊 बोलो"
+ },
+ "btn.delete": {
+  "en": "Delete",
+  "hi": "मिटाओ"
+ },
+ "btn.clear": {
+  "en": "Clear",
+  "hi": "साफ़"
+ },
+ "btn.save": {
+  "en": "Save",
+  "hi": "सेव"
+ },
+ "btn.addButton": {
+  "en": "＋ Add button",
+  "hi": "＋ बटन जोड़ें"
+ },
+ "btn.settings": {
+  "en": "⚙️ Settings",
+  "hi": "⚙️ सेटिंग्स"
+ },
+ "btn.caregiver": {
+  "en": "Caregiver",
+  "hi": "देखभाल करने वाले"
+ },
+ "btn.done": {
+  "en": "Done",
+  "hi": "हो गया"
+ },
+ "btn.cancel": {
+  "en": "Cancel",
+  "hi": "रद्द करें"
+ },
+ "btn.close": {
+  "en": "Close",
+  "hi": "बंद करें"
+ },
+ "btn.yes": {
+  "en": "Yes",
+  "hi": "हाँ"
+ },
+ "btn.ok": {
+  "en": "OK",
+  "hi": "ठीक है"
+ },
+ "btn.keep": {
+  "en": "Keep",
+  "hi": "रखें"
+ },
+ "btn.move": {
+  "en": "Move",
+  "hi": "खिसकाएँ"
+ },
+ "btn.remove": {
+  "en": "Remove",
+  "hi": "हटाएँ"
+ },
+ "btn.undo": {
+  "en": "Undo",
+  "hi": "वापस करें"
+ },
+ "btn.reload": {
+  "en": "Tap to reload",
+  "hi": "दबाकर फिर से खोलें"
+ },
+ "btn.restore": {
+  "en": "Restore last working version",
+  "hi": "पिछला सही वर्ज़न वापस लाएँ"
+ },
+ "btn.restoreThis": {
+  "en": "Restore",
+  "hi": "वापस लाएँ"
+ },
+ "btn.reset": {
+  "en": "Reset to starter board",
+  "hi": "शुरुआती बोर्ड पर वापस जाएँ"
+ },
+ "btn.testVoice": {
+  "en": "Test voice",
+  "hi": "आवाज़ जाँचें"
+ },
+ "btn.exportBackup": {
+  "en": "Export backup",
+  "hi": "बैकअप बनाएँ"
+ },
+ "btn.backupNow": {
+  "en": "Back up now",
+  "hi": "अभी बैकअप लें"
+ },
+ "btn.shareBackup": {
+  "en": "Share backup",
+  "hi": "बैकअप भेजें"
+ },
+ "btn.downloadBackup": {
+  "en": "Download backup",
+  "hi": "बैकअप डाउनलोड करें"
+ },
+ "btn.importBackup": {
+  "en": "Import backup",
+  "hi": "बैकअप लाएँ"
+ },
+ "btn.import": {
+  "en": "Import",
+  "hi": "लाएँ"
+ },
+ "btn.changePin": {
+  "en": "Change PIN",
+  "hi": "पिन बदलें"
+ },
+ "aria.savePhrase": {
+  "en": "Save to My phrases",
+  "hi": "मेरे वाक्य में सेव करें"
+ },
+ "aria.sentence": {
+  "en": "Sentence — tap to speak",
+  "hi": "वाक्य — बोलने के लिए दबाएँ"
+ },
+ "aria.language": {
+  "en": "Change language",
+  "hi": "भाषा बदलें"
+ },
+ "aria.moveLeft": {
+  "en": "Move left",
+  "hi": "बाएँ खिसकाएँ"
+ },
+ "aria.moveRight": {
+  "en": "Move right",
+  "hi": "दाएँ खिसकाएँ"
+ },
+ "aria.deletePhrase": {
+  "en": "Delete phrase",
+  "hi": "वाक्य मिटाएँ"
+ },
+ "aria.addHere": {
+  "en": "Add a button here",
+  "hi": "यहाँ बटन जोड़ें"
+ },
+ "hint.tapPictures": {
+  "en": "Tap pictures to talk…",
+  "hi": "बोलने के लिए चित्र दबाएँ…"
+ },
+ "hint.savePhrase": {
+  "en": "Make a sentence, then tap ★ Save",
+  "hi": "वाक्य बनाएँ, फिर ★ दबाएँ"
+ },
+ "strip.myPhrases": {
+  "en": "My phrases",
+  "hi": "मेरे वाक्य"
+ },
+ "strip.recent": {
+  "en": "Recent",
+  "hi": "हाल के"
+ },
+ "tab.now": {
+  "en": "Now",
+  "hi": "अभी"
+ },
+ "tab.type": {
+  "en": "Type",
+  "hi": "लिखें"
+ },
+ "now.chosen": {
+  "en": "Chosen board",
+  "hi": "चुना हुआ बोर्ड"
+ },
+ "now.none": {
+  "en": "No routine right now",
+  "hi": "अभी कोई रूटीन नहीं"
+ },
+ "now.change": {
+  "en": "Change board",
+  "hi": "बोर्ड बदलें"
+ },
+ "now.back": {
+  "en": "Back to suggestion",
+  "hi": "सुझाव पर वापस"
+ },
+ "now.pickTitle": {
+  "en": "Show which board now?",
+  "hi": "अभी कौन सा बोर्ड दिखाएँ?"
+ },
+ "move.hint": {
+  "en": "Tap an empty space or another button to move \"{word}\".",
+  "hi": "\"{word}\" को खिसकाने के लिए खाली जगह या दूसरा बटन दबाएँ।"
+ },
+ "lang.choose": {
+  "en": "Choose language",
+  "hi": "भाषा चुनें"
+ },
+ "card.noSound": {
+  "en": "No sound available — show this screen",
+  "hi": "आवाज़ नहीं है — यह स्क्रीन दिखाएँ"
+ },
+ "card.close": {
+  "en": "Tap anywhere to close",
+  "hi": "बंद करने के लिए कहीं भी दबाएँ"
+ },
+ "confirm.title": {
+  "en": "Please confirm",
+  "hi": "पक्का करें"
+ },
+ "date.never": {
+  "en": "never",
+  "hi": "कभी नहीं"
+ },
+ "days.short": {
+  "en": "S,M,T,W,T,F,S",
+  "hi": "र,सो,मं,बु,गु,शु,श"
+ },
+ "status.crashed": {
+  "en": "Bol did not start properly last time.",
+  "hi": "पिछली बार बोल ठीक से शुरू नहीं हुआ।"
+ },
+ "status.loadError": {
+  "en": "Saved data could not be opened. Showing the starter board.",
+  "hi": "सेव किया डेटा नहीं खुला। शुरुआती बोर्ड दिखा रहे हैं।"
+ },
+ "status.fromSnapshot": {
+  "en": "Your board could not be read, so the last automatic snapshot was loaded.",
+  "hi": "आपका बोर्ड नहीं पढ़ा जा सका, इसलिए आखिरी ऑटो-स्नैपशॉट खोला गया।"
+ },
+ "status.upgraded": {
+  "en": "Bol was updated. Your buttons, photos and recordings are all kept; a copy of the old version was saved.",
+  "hi": "बोल अपडेट हुआ। आपके बटन, फ़ोटो और रिकॉर्डिंग सब सुरक्षित हैं; पुराने वर्ज़न की कॉपी भी रखी गई है।"
+ },
+ "status.draftRestored": {
+  "en": "Your unfinished sentence was restored.",
+  "hi": "आपका अधूरा वाक्य वापस आ गया।"
+ },
+ "status.saveFailed": {
+  "en": "Changes could NOT be saved (storage may be full). Please export a backup.",
+  "hi": "बदलाव सेव नहीं हुए (स्टोरेज भरा हो सकता है)। कृपया बैकअप बनाएँ।"
+ },
+ "status.error": {
+  "en": "Something went wrong ({msg}). Your board is saved.",
+  "hi": "कुछ गड़बड़ हुई ({msg})। आपका बोर्ड सुरक्षित है।"
+ },
+ "status.update": {
+  "en": "Update available",
+  "hi": "नया अपडेट उपलब्ध है"
+ },
+ "status.phraseSaved": {
+  "en": "Saved to My phrases.",
+  "hi": "मेरे वाक्य में सेव हुआ।"
+ },
+ "voice.unsupported": {
+  "en": "This browser cannot speak.",
+  "hi": "यह ब्राउज़र बोल नहीं सकता।"
+ },
+ "voice.noVoice": {
+  "en": "No {lang} voice is installed on this device.",
+  "hi": "इस फ़ोन में {lang} आवाज़ नहीं है।"
+ },
+ "voice.noStart": {
+  "en": "The voice did not start.",
+  "hi": "आवाज़ शुरू नहीं हुई।"
+ },
+ "voice.badRecording": {
+  "en": "A recording could not be played.",
+  "hi": "एक रिकॉर्डिंग नहीं चली।"
+ },
+ "voice.blocked": {
+  "en": "Sound was blocked — tap Speak again.",
+  "hi": "आवाज़ रुकी — फिर से बोलो दबाएँ।"
+ },
+ "voice.usedOther": {
+  "en": "Spoke in {lang} instead.",
+  "hi": "इसकी जगह {lang} में बोला।"
+ },
+ "voice.recordingsUsed": {
+  "en": "Recordings are used where available.",
+  "hi": "जहाँ रिकॉर्डिंग है, वहाँ वही चलेगी।"
+ },
+ "voice.shownInBar": {
+  "en": "No sound right now: the words are shown in the sentence bar.",
+  "hi": "अभी आवाज़ नहीं: शब्द वाक्य पट्टी में दिख रहे हैं।"
+ },
+ "voice.failed": {
+  "en": "Speech failed. Showing the words on screen instead.",
+  "hi": "बोलना नहीं हुआ। शब्द स्क्रीन पर दिखा रहे हैं।"
+ },
+ "voice.checkTitle": {
+  "en": "Voice check",
+  "hi": "आवाज़ जाँच"
+ },
+ "voice.testing": {
+  "en": "Testing… you should hear each language in turn.",
+  "hi": "जाँच हो रही है… हर भाषा बारी-बारी सुनाई देगी।"
+ },
+ "voice.found": {
+  "en": "voice found",
+  "hi": "आवाज़ मिली"
+ },
+ "voice.notFound": {
+  "en": "voice NOT found",
+  "hi": "आवाज़ नहीं मिली"
+ },
+ "voice.default": {
+  "en": "default voice",
+  "hi": "डिफ़ॉल्ट आवाज़"
+ },
+ "voice.failedReason": {
+  "en": "voice found but did not play ({reason})",
+  "hi": "आवाज़ है पर चली नहीं ({reason})"
+ },
+ "voice.synthOk": {
+  "en": "Speech is available. Voices on this device: {n}",
+  "hi": "बोलने की सुविधा है। इस फ़ोन में आवाज़ें: {n}"
+ },
+ "voice.synthMissing": {
+  "en": "This browser has no speech. Use recordings, or try Chrome.",
+  "hi": "इस ब्राउज़र में आवाज़ नहीं है। रिकॉर्डिंग इस्तेमाल करें या Chrome आज़माएँ।"
+ },
+ "voice.howTitle": {
+  "en": "How to add a missing voice (Android)",
+  "hi": "जो आवाज़ नहीं है उसे कैसे जोड़ें (Android)"
+ },
+ "voice.android1": {
+  "en": "Open the phone's Settings app.",
+  "hi": "फ़ोन की सेटिंग्स खोलें।"
+ },
+ "voice.android2": {
+  "en": "Search for \"Text-to-speech\" and open it.",
+  "hi": "\"Text-to-speech\" खोजें और खोलें।"
+ },
+ "voice.android3": {
+  "en": "Choose \"Speech Services by Google\" as the engine, then tap the gear ⚙️ next to it.",
+  "hi": "इंजन में \"Speech Services by Google\" चुनें, फिर उसके पास ⚙️ दबाएँ।"
+ },
+ "voice.android4": {
+  "en": "Tap \"Install voice data\".",
+  "hi": "\"Install voice data\" दबाएँ।"
+ },
+ "voice.android5": {
+  "en": "Pick the language (e.g. Tamil (India), Kannada (India), Hindi (India)) and download it. Use Wi-Fi; it needs internet once.",
+  "hi": "भाषा चुनें (जैसे Hindi (India)) और डाउनलोड करें। Wi-Fi इस्तेमाल करें; एक बार इंटरनेट चाहिए।"
+ },
+ "voice.android6": {
+  "en": "Close Bol completely, open it again, and tap Test voice.",
+  "hi": "बोल को पूरी तरह बंद करके फिर खोलें, और आवाज़ जाँचें दबाएँ।"
+ },
+ "voice.iosHint": {
+  "en": "iPhone/iPad: Settings → Accessibility → Spoken Content → Voices. Not every language is offered on iOS.",
+  "hi": "iPhone/iPad: Settings → Accessibility → Spoken Content → Voices. iOS पर हर भाषा नहीं मिलती।"
+ },
+ "voice.recordHint": {
+  "en": "Words you record on a button always play, even without any voice installed.",
+  "hi": "जो शब्द आप बटन पर रिकॉर्ड करते हैं, वे हमेशा चलते हैं, आवाज़ न हो तब भी।"
+ },
+ "pin.create": {
+  "en": "Create a 4-digit caregiver PIN",
+  "hi": "4 अंकों का पिन बनाएँ"
+ },
+ "pin.again": {
+  "en": "Type the same PIN again",
+  "hi": "वही पिन फिर से डालें"
+ },
+ "pin.enter": {
+  "en": "Caregiver PIN",
+  "hi": "पिन डालें"
+ },
+ "pin.new": {
+  "en": "New PIN",
+  "hi": "नया पिन"
+ },
+ "pin.mismatch": {
+  "en": "The two PINs did not match. Try again.",
+  "hi": "दोनों पिन अलग थे। फिर से कोशिश करें।"
+ },
+ "pin.mismatchKept": {
+  "en": "PINs did not match; PIN unchanged.",
+  "hi": "पिन मेल नहीं खाए; पिन नहीं बदला।"
+ },
+ "pin.wrong": {
+  "en": "Wrong PIN.",
+  "hi": "गलत पिन।"
+ },
+ "pin.changed": {
+  "en": "PIN changed.",
+  "hi": "पिन बदल गया।"
+ },
+ "backup.reminder": {
+  "en": "Last backup was {n} days ago. Make a new one so nothing is lost.",
+  "hi": "आखिरी बैकअप {n} दिन पहले था। नया बनाएँ ताकि कुछ न खोए।"
+ },
+ "backup.never": {
+  "en": "This board has never been backed up.",
+  "hi": "इस बोर्ड का कभी बैकअप नहीं बना।"
+ },
+ "backup.preparing": {
+  "en": "Preparing backup…",
+  "hi": "बैकअप तैयार हो रहा है…"
+ },
+ "backup.cancelled": {
+  "en": "Backup cancelled.",
+  "hi": "बैकअप रद्द हुआ।"
+ },
+ "backup.shared": {
+  "en": "Backup shared: {file} ({mb} MB).",
+  "hi": "बैकअप भेजा गया: {file} ({mb} MB)।"
+ },
+ "backup.downloaded": {
+  "en": "Backup downloaded: {file} ({mb} MB).",
+  "hi": "बैकअप डाउनलोड हुआ: {file} ({mb} MB)।"
+ },
+ "backup.missing": {
+  "en": "{n} photo/recording file(s) were missing and skipped.",
+  "hi": "{n} फ़ोटो/रिकॉर्डिंग नहीं मिलीं और छोड़ दी गईं।"
+ },
+ "backup.failed": {
+  "en": "Backup failed: {msg}",
+  "hi": "बैकअप नहीं बना: {msg}"
+ },
+ "backup.last": {
+  "en": "Last backup: {date}",
+  "hi": "आखिरी बैकअप: {date}"
+ },
+ "backup.daysAgo": {
+  "en": "({n} days ago)",
+  "hi": "({n} दिन पहले)"
+ },
+ "backup.hint": {
+  "en": "One file holds everything: buttons, photos, recordings, phrases, routines and settings. No account needed.",
+  "hi": "एक फ़ाइल में सब कुछ: बटन, फ़ोटो, रिकॉर्डिंग, वाक्य, रूटीन और सेटिंग्स। अकाउंट की ज़रूरत नहीं।"
+ },
+ "import.confirm": {
+  "en": "Backup from {date}: {buttons} buttons, {photos} photos, {recordings} recordings, {phrases} phrases, {routines} routines. Replace the board on this device? (The current board is kept as a snapshot you can restore.)",
+  "hi": "{date} का बैकअप: {buttons} बटन, {photos} फ़ोटो, {recordings} रिकॉर्डिंग, {phrases} वाक्य, {routines} रूटीन। इस फ़ोन का बोर्ड बदल दें? (अभी का बोर्ड स्नैपशॉट में रहेगा।)"
+ },
+ "import.done": {
+  "en": "Import complete ✓",
+  "hi": "बैकअप आ गया ✓"
+ },
+ "import.sumButtons": {
+  "en": "{n} buttons in {c} categories",
+  "hi": "{c} श्रेणियों में {n} बटन"
+ },
+ "import.sumMedia": {
+  "en": "{p} photos, {r} recordings",
+  "hi": "{p} फ़ोटो, {r} रिकॉर्डिंग"
+ },
+ "import.sumPhrases": {
+  "en": "{p} saved phrases, {r} routine rules",
+  "hi": "{p} सेव किए वाक्य, {r} रूटीन"
+ },
+ "import.sumSettings": {
+  "en": "Settings, colours and PIN restored",
+  "hi": "सेटिंग्स, रंग और पिन वापस आ गए"
+ },
+ "import.sumMissing": {
+  "en": "{n} photo/recording file(s) could not be restored",
+  "hi": "{n} फ़ोटो/रिकॉर्डिंग वापस नहीं आ सकीं"
+ },
+ "import.failed": {
+  "en": "Import failed: {msg}. Nothing was lost; use Restore last working version if needed.",
+  "hi": "बैकअप नहीं आया: {msg}। कुछ नहीं खोया; ज़रूरत हो तो पिछला सही वर्ज़न वापस लाएँ।"
+ },
+ "import.tooLarge": {
+  "en": "File is too large to be a Bol backup.",
+  "hi": "फ़ाइल बहुत बड़ी है, यह बोल बैकअप नहीं है।"
+ },
+ "import.notBackup": {
+  "en": "This is not a Bol backup file.",
+  "hi": "यह बोल बैकअप फ़ाइल नहीं है।"
+ },
+ "import.newer": {
+  "en": "This backup was made by a newer version of Bol. Please update the app.",
+  "hi": "यह बैकअप बोल के नए वर्ज़न से बना है। ऐप अपडेट करें।"
+ },
+ "restore.none": {
+  "en": "There is no earlier version to restore.",
+  "hi": "वापस लाने के लिए कोई पुराना वर्ज़न नहीं है।"
+ },
+ "restore.failed": {
+  "en": "Restore failed: {msg}",
+  "hi": "वापस नहीं ला सके: {msg}"
+ },
+ "restore.done": {
+  "en": "Restored the version from {date}.",
+  "hi": "{date} का वर्ज़न वापस आया।"
+ },
+ "rec.play": {
+  "en": "Play",
+  "hi": "चलाएँ"
+ },
+ "rec.delete": {
+  "en": "Delete recording",
+  "hi": "रिकॉर्डिंग मिटाएँ"
+ },
+ "rec.stop": {
+  "en": "Stop",
+  "hi": "रोकें"
+ },
+ "rec.again": {
+  "en": "Record again",
+  "hi": "फिर से रिकॉर्ड करें"
+ },
+ "rec.record": {
+  "en": "Record",
+  "hi": "रिकॉर्ड करें"
+ },
+ "rec.recording": {
+  "en": "Recording… say the word (stops after 10 s)",
+  "hi": "रिकॉर्डिंग… शब्द बोलें (10 सेकंड में रुकेगी)"
+ },
+ "rec.done": {
+  "en": "Recorded ✓",
+  "hi": "रिकॉर्ड हुआ ✓"
+ },
+ "rec.denied": {
+  "en": "Microphone permission was denied.",
+  "hi": "माइक की अनुमति नहीं मिली।"
+ },
+ "rec.cantPlay": {
+  "en": "Could not play the recording.",
+  "hi": "रिकॉर्डिंग नहीं चली।"
+ },
+ "rec.removed": {
+  "en": "Recording removed",
+  "hi": "रिकॉर्डिंग हटाई गई"
+ },
+ "photo.preparing": {
+  "en": "Preparing photo…",
+  "hi": "फ़ोटो तैयार हो रही है…"
+ },
+ "photo.ready": {
+  "en": "Photo ready ✓",
+  "hi": "फ़ोटो तैयार ✓"
+ },
+ "photo.saveAnyway": {
+  "en": "You can still save without a photo.",
+  "hi": "आप बिना फ़ोटो के भी सेव कर सकते हैं।"
+ },
+ "photo.camera": {
+  "en": "Camera",
+  "hi": "कैमरा"
+ },
+ "photo.gallery": {
+  "en": "Gallery",
+  "hi": "गैलरी"
+ },
+ "photo.none": {
+  "en": "No photo",
+  "hi": "फ़ोटो नहीं"
+ },
+ "editor.word": {
+  "en": "Word",
+  "hi": "शब्द"
+ },
+ "editor.otherLangs": {
+  "en": "Other languages",
+  "hi": "दूसरी भाषाएँ"
+ },
+ "editor.record": {
+  "en": "Record the word (optional; plays instead of the computer voice)",
+  "hi": "शब्द रिकॉर्ड करें (ज़रूरी नहीं; कंप्यूटर की आवाज़ की जगह यही चलेगी)"
+ },
+ "editor.category": {
+  "en": "Category",
+  "hi": "श्रेणी"
+ },
+ "editor.more": {
+  "en": "More options",
+  "hi": "और विकल्प"
+ },
+ "editor.wordType": {
+  "en": "Word type (sets the colour)",
+  "hi": "शब्द का प्रकार (रंग तय करता है)"
+ },
+ "editor.noType": {
+  "en": "— none —",
+  "hi": "— कोई नहीं —"
+ },
+ "editor.emoji": {
+  "en": "Emoji (used when there is no picture)",
+  "hi": "इमोजी (जब चित्र न हो)"
+ },
+ "editor.hideText": {
+  "en": "Hide the text on this button",
+  "hi": "इस बटन पर लिखा हुआ छिपाएँ"
+ },
+ "editor.alts": {
+  "en": "Other ways to say it (shown on long-press)",
+  "hi": "इसे कहने के दूसरे तरीके (देर तक दबाने पर)"
+ },
+ "editor.addAlt": {
+  "en": "Add another way to say it",
+  "hi": "कहने का एक और तरीका जोड़ें"
+ },
+ "editor.needWord": {
+  "en": "Please type the word in at least one language.",
+  "hi": "कम से कम एक भाषा में शब्द लिखें।"
+ },
+ "editor.added": {
+  "en": "Button \"{word}\" added in {n} seconds.",
+  "hi": "\"{word}\" बटन {n} सेकंड में जुड़ा।"
+ },
+ "editor.saveFailed": {
+  "en": "Could not save: {msg}",
+  "hi": "सेव नहीं हुआ: {msg}"
+ },
+ "editor.confirmDelete": {
+  "en": "Delete the button \"{word}\"?",
+  "hi": "\"{word}\" बटन मिटा दें?"
+ },
+ "editor.addTitle": {
+  "en": "Add a button",
+  "hi": "बटन जोड़ें"
+ },
+ "editor.editTitle": {
+  "en": "Edit \"{word}\"",
+  "hi": "\"{word}\" बदलें"
+ },
+ "editor.lockedHint": {
+  "en": "Layout is locked: buttons can be edited but not moved or deleted. Unlock in Settings.",
+  "hi": "लेआउट लॉक है: बटन बदल सकते हैं, पर खिसका या मिटा नहीं सकते। सेटिंग्स में अनलॉक करें।"
+ },
+ "media.notPicture": {
+  "en": "This file is not a picture the browser can open.",
+  "hi": "यह फ़ाइल ऐसी तस्वीर नहीं है जो खुल सके।"
+ },
+ "media.noFile": {
+  "en": "No file chosen.",
+  "hi": "कोई फ़ाइल नहीं चुनी।"
+ },
+ "media.tooLarge": {
+  "en": "That picture is too large (over 25 MB).",
+  "hi": "तस्वीर बहुत बड़ी है (25 MB से ज़्यादा)।"
+ },
+ "media.slow": {
+  "en": "The picture took too long to open.",
+  "hi": "तस्वीर खुलने में बहुत देर लगी।"
+ },
+ "media.empty": {
+  "en": "The picture appears to be empty.",
+  "hi": "तस्वीर खाली लग रही है।"
+ },
+ "media.cantSave": {
+  "en": "Could not save the picture.",
+  "hi": "तस्वीर सेव नहीं हुई।"
+ },
+ "media.noRecorder": {
+  "en": "This browser cannot record audio.",
+  "hi": "यह ब्राउज़र रिकॉर्ड नहीं कर सकता।"
+ },
+ "media.noMic": {
+  "en": "Microphone not available (the page must be opened over https).",
+  "hi": "माइक नहीं मिला (पेज https पर खुलना चाहिए)।"
+ },
+ "media.nothing": {
+  "en": "Nothing was recorded.",
+  "hi": "कुछ रिकॉर्ड नहीं हुआ।"
+ },
+ "media.recFailed": {
+  "en": "Recording failed.",
+  "hi": "रिकॉर्डिंग नहीं हुई।"
+ },
+ "settings.title": {
+  "en": "Caregiver settings",
+  "hi": "सेटिंग्स"
+ },
+ "settings.voice": {
+  "en": "Voice & language",
+  "hi": "आवाज़ और भाषा"
+ },
+ "settings.language": {
+  "en": "Language",
+  "hi": "भाषा"
+ },
+ "settings.speed": {
+  "en": "Speaking speed",
+  "hi": "बोलने की गति"
+ },
+ "settings.speakOnTap": {
+  "en": "Speak each word when its button is tapped",
+  "hi": "बटन दबाते ही शब्द बोलें"
+ },
+ "speed.slow": {
+  "en": "Slow",
+  "hi": "धीमी"
+ },
+ "speed.normal": {
+  "en": "Normal",
+  "hi": "सामान्य"
+ },
+ "speed.fast": {
+  "en": "Fast",
+  "hi": "तेज़"
+ },
+ "settings.layout": {
+  "en": "Layout & look",
+  "hi": "लेआउट और रूप"
+ },
+ "settings.lock": {
+  "en": "Lock layout (buttons cannot be moved or deleted)",
+  "hi": "लेआउट लॉक करें (बटन खिसकेंगे या मिटेंगे नहीं)"
+ },
+ "settings.cols": {
+  "en": "Buttons per row (changing this re-flows the grid)",
+  "hi": "एक लाइन में बटन (बदलने पर ग्रिड फिर से सजेगा)"
+ },
+ "settings.buttonSize": {
+  "en": "Button size",
+  "hi": "बटन का आकार"
+ },
+ "settings.textSize": {
+  "en": "Text size",
+  "hi": "अक्षरों का आकार"
+ },
+ "size.s": {
+  "en": "Small",
+  "hi": "छोटा"
+ },
+ "size.m": {
+  "en": "Medium",
+  "hi": "मध्यम"
+ },
+ "size.l": {
+  "en": "Large",
+  "hi": "बड़ा"
+ },
+ "size.xl": {
+  "en": "Extra large",
+  "hi": "बहुत बड़ा"
+ },
+ "settings.showText": {
+  "en": "Show text under pictures",
+  "hi": "चित्रों के नीचे लिखा दिखाएँ"
+ },
+ "settings.secondLang": {
+  "en": "Second language label (smaller, under each button)",
+  "hi": "दूसरी भाषा का छोटा लेबल (हर बटन के नीचे)"
+ },
+ "settings.secondNone": {
+  "en": "None",
+  "hi": "कोई नहीं"
+ },
+ "settings.colours": {
+  "en": "Button colours",
+  "hi": "बटन के रंग"
+ },
+ "colours.wordtype": {
+  "en": "By word type (AAC colour code)",
+  "hi": "शब्द के प्रकार से (AAC रंग कोड)"
+ },
+ "colours.category": {
+  "en": "By category",
+  "hi": "श्रेणी से"
+ },
+ "colours.none": {
+  "en": "No colours",
+  "hi": "कोई रंग नहीं"
+ },
+ "settings.theme": {
+  "en": "Colour theme",
+  "hi": "रंग थीम"
+ },
+ "theme.light": {
+  "en": "Light",
+  "hi": "हल्का"
+ },
+ "theme.dark": {
+  "en": "Dark",
+  "hi": "गहरा"
+ },
+ "theme.contrast": {
+  "en": "High contrast",
+  "hi": "हाई कॉन्ट्रास्ट"
+ },
+ "theme.calm": {
+  "en": "Calm (muted)",
+  "hi": "शांत (हल्के रंग)"
+ },
+ "settings.showPhrases": {
+  "en": "Show \"My phrases\" row",
+  "hi": "\"मेरे वाक्य\" पंक्ति दिखाएँ"
+ },
+ "settings.showRecent": {
+  "en": "Show \"Recent\" row",
+  "hi": "\"हाल के\" पंक्ति दिखाएँ"
+ },
+ "settings.tapGuard": {
+  "en": "Ignore repeated taps on the same button within",
+  "hi": "एक ही बटन पर इतनी जल्दी दोबारा दबाना अनदेखा करें"
+ },
+ "tap.off": {
+  "en": "Off",
+  "hi": "बंद"
+ },
+ "settings.routines": {
+  "en": "Routines (\"Now\" screen)",
+  "hi": "रूटीन (\"अभी\" स्क्रीन)"
+ },
+ "routines.enable": {
+  "en": "Use the \"Now\" screen (suggest a board by time of day)",
+  "hi": "\"अभी\" स्क्रीन इस्तेमाल करें (समय के हिसाब से बोर्ड सुझाएँ)"
+ },
+ "routines.hint": {
+  "en": "Rules are checked top to bottom; the first one that matches the day and time is used.",
+  "hi": "नियम ऊपर से नीचे देखे जाते हैं; जो पहला दिन और समय से मेल खाए, वही चलता है।"
+ },
+ "routines.name": {
+  "en": "Routine name",
+  "hi": "रूटीन का नाम"
+ },
+ "routines.from": {
+  "en": "From",
+  "hi": "से"
+ },
+ "routines.to": {
+  "en": "To",
+  "hi": "तक"
+ },
+ "routines.board": {
+  "en": "Board",
+  "hi": "बोर्ड"
+ },
+ "routines.new": {
+  "en": "New routine",
+  "hi": "नया रूटीन"
+ },
+ "routines.add": {
+  "en": "Add routine",
+  "hi": "रूटीन जोड़ें"
+ },
+ "routines.fallback": {
+  "en": "When no routine matches, show",
+  "hi": "जब कोई रूटीन न मिले, तो दिखाएँ"
+ },
+ "settings.categories": {
+  "en": "Categories",
+  "hi": "श्रेणियाँ"
+ },
+ "cats.lockedHint": {
+  "en": "Unlock the layout to reorder or delete categories.",
+  "hi": "श्रेणियों का क्रम बदलने या मिटाने के लिए लेआउट अनलॉक करें।"
+ },
+ "cats.colour": {
+  "en": "Colour",
+  "hi": "रंग"
+ },
+ "cats.count": {
+  "en": "{n} buttons",
+  "hi": "{n} बटन"
+ },
+ "cats.confirmDelete": {
+  "en": "Delete \"{name}\" and its {n} buttons?",
+  "hi": "\"{name}\" और उसके {n} बटन मिटा दें?"
+ },
+ "cats.newName": {
+  "en": "New category",
+  "hi": "नई श्रेणी"
+ },
+ "cats.add": {
+  "en": "Add personal category (family, pets, favourite things…)",
+  "hi": "अपनी श्रेणी जोड़ें (परिवार, पालतू, पसंदीदा चीज़ें…)"
+ },
+ "settings.backup": {
+  "en": "Backup & move to another device",
+  "hi": "बैकअप और दूसरे फ़ोन पर ले जाना"
+ },
+ "settings.safety": {
+  "en": "Safety",
+  "hi": "सुरक्षा"
+ },
+ "safety.offline": {
+  "en": "Works offline",
+  "hi": "बिना इंटरनेट चलता है"
+ },
+ "safety.notOffline": {
+  "en": "Not ready offline yet — open the app once more while online",
+  "hi": "अभी ऑफ़लाइन के लिए तैयार नहीं — इंटरनेट के साथ एक बार और खोलें"
+ },
+ "safety.persisted": {
+  "en": "Storage is protected from automatic clearing",
+  "hi": "स्टोरेज अपने-आप साफ़ होने से सुरक्षित है"
+ },
+ "safety.notPersisted": {
+  "en": "Browser has not protected storage yet (install the app to the home screen to help). Keep backups.",
+  "hi": "ब्राउज़र ने अभी स्टोरेज सुरक्षित नहीं किया (ऐप को होम स्क्रीन पर इंस्टॉल करें)। बैकअप रखें।"
+ },
+ "safety.storage": {
+  "en": "Storage used: {mb} MB",
+  "hi": "इस्तेमाल हुआ स्टोरेज: {mb} MB"
+ },
+ "safety.snapshots": {
+  "en": "Automatic snapshots (newest first, last 3 kept):",
+  "hi": "ऑटो स्नैपशॉट (नए पहले, आखिरी 3 रखे जाते हैं):"
+ },
+ "safety.confirmReset": {
+  "en": "Reset to the starter board? Your current board is kept as a snapshot.",
+  "hi": "शुरुआती बोर्ड पर वापस जाएँ? अभी का बोर्ड स्नैपशॉट में रहेगा।"
+ },
+ "settings.pin": {
+  "en": "Caregiver PIN",
+  "hi": "पिन"
+ },
+ "settings.about": {
+  "en": "About & credits",
+  "hi": "जानकारी और श्रेय"
+ },
+ "about.free": {
+  "en": "Bol is free: no account, no ads, no paid features. All data stays on this device.",
+  "hi": "बोल मुफ़्त है: कोई अकाउंट नहीं, कोई विज्ञापन नहीं, कुछ भी पैसे वाला नहीं। सारा डेटा इसी फ़ोन में रहता है।"
+ },
+ "about.translations": {
+  "en": "Tamil and Kannada words are first drafts and are being checked by native speakers.",
+  "hi": "तमिल और कन्नड़ शब्द अभी पहला ड्राफ़्ट हैं और उनकी जाँच हो रही है।"
+ }
+}

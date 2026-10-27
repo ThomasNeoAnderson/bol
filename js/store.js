@@ -11,8 +11,6 @@
 //     survives the app being force-closed a moment after a tap)
 //   * we ask the browser for "persistent" storage so it is not auto-evicted
 
-import { createDefaultProfile, normaliseProfile } from './vocab.js';
-
 const DB_NAME = 'bol';
 const DB_VERSION = 1;
 const MAX_SNAPSHOTS = 3;
@@ -57,22 +55,24 @@ const kvSet = (key, value) => tx('kv', 'readwrite', s => s.put(value, key));
 
 // ---------------------------------------------------------------- profile ---
 
-/** Load the profile. If it is missing or damaged, fall back to the newest
- *  snapshot, then to the starter board. Returns {profile, source}. */
+/** Load the stored profile exactly as saved (it may be an older schema; the
+ *  caller upgrades it after taking a snapshot). If it is missing or damaged,
+ *  fall back to the newest snapshot. Returns {raw, source}; raw is null for a
+ *  brand-new install. */
 export async function loadProfile() {
   try {
     const p = await kvGet('profile');
-    if (p && Array.isArray(p.buttons)) return { profile: normaliseProfile(p), source: 'saved' };
+    if (p && Array.isArray(p.buttons)) return { raw: p, source: 'saved' };
   } catch (e) {
     console.error('Profile read failed', e);
   }
   try {
     const snaps = await getSnapshots();
-    if (snaps.length) return { profile: normaliseProfile(snaps[0].profile), source: 'snapshot' };
+    if (snaps.length) return { raw: snaps[0].profile, source: 'snapshot' };
   } catch (e) {
     console.error('Snapshot read failed', e);
   }
-  return { profile: createDefaultProfile(), source: 'new' };
+  return { raw: null, source: 'new' };
 }
 
 // Writes are chained so two quick changes can never finish out of order.
@@ -158,12 +158,13 @@ export async function allMediaIds() {
 export function referencedMedia(profile) {
   const ids = new Set();
   const add = id => id && ids.add(id);
-  for (const b of profile.buttons) {
+  // Works on any schema version: only the img/audio fields are read.
+  for (const b of profile.buttons || []) {
     add(b.img); add(b.audio);
     (b.alts || []).forEach(a => add(a.audio));
   }
-  for (const ph of profile.phrases) (ph.items || []).forEach(it => { add(it.img); add(it.audio); });
-  for (const it of profile.recent) { add(it.img); add(it.audio); }
+  for (const ph of profile.phrases || []) (ph.items || []).forEach(it => { add(it.img); add(it.audio); });
+  for (const it of profile.recent || []) { add(it.img); add(it.audio); }
   return ids;
 }
 
@@ -171,7 +172,7 @@ export function referencedMedia(profile) {
  *  a snapshot never finds its photos missing). */
 export async function collectGarbage(profile) {
   const keep = referencedMedia(profile);
-  for (const s of await getSnapshots()) referencedMedia(normaliseProfile(s.profile)).forEach(id => keep.add(id));
+  for (const s of await getSnapshots()) referencedMedia(s.profile).forEach(id => keep.add(id));
   // Keep the unfinished sentence's media too.
   for (const it of loadDraft()) { if (it.img) keep.add(it.img); if (it.audio) keep.add(it.audio); }
   const all = await allMediaIds();

@@ -1,0 +1,12 @@
+{
+  "name": "bol-tests",
+  "private": true,
+  "type": "module",
+  "description": "Headless browser tests for Bol",
+  "scripts": {
+    "test": "node e2e.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.58.0"
+  }
+}

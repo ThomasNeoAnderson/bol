@@ -2,7 +2,7 @@
 //
 // File format (JSON, extension .bol.json):
 // {
-//   "format": "bol-backup", "version": 1, "exportedAt": "...",
+//   "format": "bol-backup", "version": 2,   (1 = Bol v1, still accepted) "exportedAt": "...",
 //   "profile": { ...buttons, categories, phrases, routines, settings... },
 //   "media":   { "<id>": { "type": "image/jpeg", "data": "<base64>" }, ... }
 // }
@@ -11,6 +11,7 @@
 
 import { referencedMedia, getMediaBlob, putMediaWithId } from './store.js';
 import { normaliseProfile } from './vocab.js';
+import { t } from './i18n.js';
 
 const FORMAT = 'bol-backup';
 
@@ -41,7 +42,7 @@ export async function buildBackup(profile) {
       else missing++;
     } catch (e) { missing++; }
   }
-  const data = { format: FORMAT, version: 1, exportedAt: new Date().toISOString(), profile, media };
+  const data = { format: FORMAT, version: 2, exportedAt: new Date().toISOString(), profile, media };
   const d = new Date();
   const date = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
   const file = new File([JSON.stringify(data)], `bol-backup-${date}.bol.json`, { type: 'application/json' });
@@ -53,7 +54,7 @@ export async function buildBackup(profile) {
 export async function shareOrDownload(file, preferShare = true) {
   if (preferShare && navigator.canShare && navigator.canShare({ files: [file] })) {
     try {
-      await navigator.share({ files: [file], title: 'Bol backup', text: 'Bol AAC backup file' });
+      await navigator.share({ files: [file], title: 'Bol backup', text: 'Bol AAC backup' });
       return 'shared';
     } catch (e) {
       if (e.name === 'AbortError') return 'cancelled';
@@ -71,12 +72,13 @@ export async function shareOrDownload(file, preferShare = true) {
 /** Read and check a backup file WITHOUT changing anything yet.
  *  Returns {profile, media, summary}. Throws a readable error if invalid. */
 export async function readBackup(file) {
-  if (file.size > 300 * 1024 * 1024) throw new Error('File is too large to be a Bol backup.');
+  if (file.size > 300 * 1024 * 1024) throw new Error(t('import.tooLarge'));
   let data;
   try { data = JSON.parse(await file.text()); }
-  catch (e) { throw new Error('This is not a Bol backup file (could not read it).'); }
-  if (!data || data.format !== FORMAT || !data.profile) throw new Error('This is not a Bol backup file.');
-  if (data.version > 1) throw new Error('This backup was made by a newer version of Bol. Please update the app.');
+  catch (e) { throw new Error(t('import.notBackup')); }
+  if (!data || data.format !== FORMAT || !data.profile) throw new Error(t('import.notBackup'));
+  if (data.version > 2) throw new Error(t('import.newer'));
+  // Older backups (v1) are upgraded on import, exactly like a stored profile.
   const profile = normaliseProfile(data.profile);
   const media = data.media || {};
   const ids = referencedMedia(profile);
