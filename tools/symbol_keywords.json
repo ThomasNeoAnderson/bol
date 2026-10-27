@@ -1,0 +1,76 @@
+{
+ "_note": "English search words sent to ARASAAC for buttons whose label is not a good search term. Button id -> keyword, {\"id\": <ARASAAC pictogram id>} to pin one chosen after review, or null to keep the emoji. Buttons not listed use their English label.",
+ "core-3": {
+  "id": 6156
+ },
+ "core-6": {
+  "id": 12264
+ },
+ "core-33": "turn",
+ "core-12": "this",
+ "core-13": "that",
+ "core-24": "in",
+ "core-25": "on",
+ "needs-8": "rest",
+ "needs-9": "pain",
+ "food-1": null,
+ "food-3": "lentils",
+ "food-9": "hungry",
+ "food-10": null,
+ "food-11": "crepe",
+ "feelings-8": "noise",
+ "people-0": "I",
+ "people-2": "mother",
+ "people-3": "father",
+ "people-4": "sister",
+ "people-5": "brother",
+ "people-6": "grandmother",
+ "people-7": "grandfather",
+ "places-9": {
+  "id": 30482
+ },
+ "home-2": "brush one's teeth",
+ "school-0": {
+  "id": 2475
+ },
+ "school-5": "lunch box",
+ "school-6": "not understand",
+ "school-7": "finished",
+ "school-8": "silence",
+ "morning-0": "get up",
+ "morning-2": "brush one's teeth",
+ "morning-4": "get dressed",
+ "morning-7": {
+  "id": 2475
+ },
+ "bedtime-0": "pyjamas",
+ "bedtime-1": "brush one's teeth",
+ "bedtime-4": "turn off the light",
+ "family-0": "mother",
+ "family-1": "father",
+ "core-10": {
+  "id": 7195
+ },
+ "needs-3": {
+  "id": 7195
+ },
+ "home-7": {
+  "id": 4936
+ },
+ "home-5": {
+  "id": 25269
+ },
+ "school-4": {
+  "id": 8088
+ },
+ "home-3": {
+  "id": 7233
+ },
+ "bedtime-2": {
+  "id": 8346
+ },
+ "places-6": {
+  "id": 2806
+ },
+ "places-5": null
+}

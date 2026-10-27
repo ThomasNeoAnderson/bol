@@ -261,7 +261,9 @@
     "ta": "நான்",
     "kn": "ನಾನು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-0.webp",
+   "symId": 2617
   },
   {
    "id": "core-1",
@@ -275,7 +277,9 @@
     "ta": "நீங்க",
     "kn": "ನೀವು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-1.webp",
+   "symId": 2608
   },
   {
    "id": "core-2",
@@ -289,7 +293,9 @@
     "ta": "வேணும்",
     "kn": "ಬೇಕು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-2.webp",
+   "symId": 5441
   },
   {
    "id": "core-3",
@@ -303,7 +309,9 @@
     "ta": "வேண்டாம்",
     "kn": "ಬೇಡ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-3.webp",
+   "symId": 6156
   },
   {
    "id": "core-4",
@@ -317,7 +325,9 @@
     "ta": "ஆமா",
     "kn": "ಹೌದು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-4.webp",
+   "symId": 5583
   },
   {
    "id": "core-5",
@@ -331,7 +341,9 @@
     "ta": "இல்ல",
     "kn": "ಇಲ್ಲ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-5.webp",
+   "symId": 5525
   },
   {
    "id": "core-6",
@@ -345,7 +357,9 @@
     "ta": "என்னோடது",
     "kn": "ನಂದು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-6.webp",
+   "symId": 12264
   },
   {
    "id": "core-7",
@@ -359,7 +373,9 @@
     "ta": "உதவி",
     "kn": "ಸಹಾಯ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-7.webp",
+   "symId": 4570
   },
   {
    "id": "core-8",
@@ -373,7 +389,9 @@
     "ta": "போ",
     "kn": "ಹೋಗು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-8.webp",
+   "symId": 2432
   },
   {
    "id": "core-9",
@@ -387,7 +405,9 @@
     "ta": "வா",
     "kn": "ಬಾ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-9.webp",
+   "symId": 11708
   },
   {
    "id": "core-10",
@@ -401,7 +421,9 @@
     "ta": "நிறுத்து",
     "kn": "ನಿಲ್ಲಿಸು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-10.webp",
+   "symId": 7195
   },
   {
    "id": "core-11",
@@ -415,7 +437,9 @@
     "ta": "இன்னும்",
     "kn": "ಇನ್ನೂ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-11.webp",
+   "symId": 5508
   },
   {
    "id": "core-12",
@@ -429,7 +453,9 @@
     "ta": "இது",
     "kn": "ಇದು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-12.webp",
+   "symId": 7095
   },
   {
    "id": "core-13",
@@ -443,7 +469,9 @@
     "ta": "அது",
     "kn": "ಅದು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-13.webp",
+   "symId": 6906
   },
   {
    "id": "core-14",
@@ -457,7 +485,9 @@
     "ta": "பிடிக்கும்",
     "kn": "ಇಷ್ಟ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-14.webp",
+   "symId": 2418
   },
   {
    "id": "core-15",
@@ -471,7 +501,9 @@
     "ta": "பாரு",
     "kn": "ನೋಡು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-15.webp",
+   "symId": 2474
   },
   {
    "id": "core-16",
@@ -485,7 +517,9 @@
     "ta": "மறுபடியும்",
     "kn": "ಮತ್ತೆ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-16.webp",
+   "symId": 37163
   },
   {
    "id": "core-17",
@@ -499,7 +533,9 @@
     "ta": "முடிஞ்சது",
     "kn": "ಮುಗೀತು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-17.webp",
+   "symId": 28429
   },
   {
    "id": "core-18",
@@ -513,7 +549,9 @@
     "ta": "இங்க",
     "kn": "ಇಲ್ಲಿ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-18.webp",
+   "symId": 5382
   },
   {
    "id": "core-19",
@@ -527,7 +565,9 @@
     "ta": "அங்க",
     "kn": "ಅಲ್ಲಿ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-19.webp",
+   "symId": 5375
   },
   {
    "id": "core-20",
@@ -541,7 +581,9 @@
     "ta": "சாப்பிடு",
     "kn": "ತಿನ್ನು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-20.webp",
+   "symId": 2349
   },
   {
    "id": "core-21",
@@ -555,7 +597,9 @@
     "ta": "குடி",
     "kn": "ಕುಡಿ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-21.webp",
+   "symId": 2276
   },
   {
    "id": "core-22",
@@ -569,7 +613,9 @@
     "ta": "நல்லது",
     "kn": "ಚೆನ್ನಾಗಿದೆ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-22.webp",
+   "symId": 4581
   },
   {
    "id": "core-23",
@@ -583,7 +629,9 @@
     "ta": "மோசம்",
     "kn": "ಚೆನ್ನಾಗಿಲ್ಲ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-23.webp",
+   "symId": 4690
   },
   {
    "id": "core-24",
@@ -597,7 +645,9 @@
     "ta": "உள்ள",
     "kn": "ಒಳಗೆ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-24.webp",
+   "symId": 7034
   },
   {
    "id": "core-25",
@@ -611,7 +661,9 @@
     "ta": "மேல",
     "kn": "ಮೇಲೆ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-25.webp",
+   "symId": 7814
   },
   {
    "id": "core-26",
@@ -625,7 +677,9 @@
     "ta": "விளையாடு",
     "kn": "ಆಡು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-26.webp",
+   "symId": 2439
   },
   {
    "id": "core-27",
@@ -639,7 +693,9 @@
     "ta": "குடு",
     "kn": "ಕೊಡು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-27.webp",
+   "symId": 17038
   },
   {
    "id": "core-28",
@@ -653,7 +709,9 @@
     "ta": "மேலே",
     "kn": "ಮೇಲಕ್ಕೆ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-28.webp",
+   "symId": 5388
   },
   {
    "id": "core-29",
@@ -667,7 +725,9 @@
     "ta": "கீழே",
     "kn": "ಕೆಳಗೆ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-29.webp",
+   "symId": 37428
   },
   {
    "id": "core-30",
@@ -681,7 +741,9 @@
     "ta": "என்ன",
     "kn": "ಏನು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-30.webp",
+   "symId": 22620
   },
   {
    "id": "core-31",
@@ -695,7 +757,9 @@
     "ta": "எங்க",
     "kn": "ಎಲ್ಲಿ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-31.webp",
+   "symId": 7764
   },
   {
    "id": "core-32",
@@ -709,7 +773,9 @@
     "ta": "திற",
     "kn": "ತೆಗಿ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-32.webp",
+   "symId": 4549
   },
   {
    "id": "core-33",
@@ -723,7 +789,9 @@
     "ta": "என் முறை",
     "kn": "ನನ್ನ ಸರದಿ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-33.webp",
+   "symId": 6006
   },
   {
    "id": "core-34",
@@ -737,7 +805,9 @@
     "ta": "ப்ளீஸ்",
     "kn": "ಪ್ಲೀಸ್"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-34.webp",
+   "symId": 8194
   },
   {
    "id": "core-35",
@@ -751,7 +821,9 @@
     "ta": "நன்றி",
     "kn": "ಧನ್ಯವಾದ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/core-35.webp",
+   "symId": 8129
   },
   {
    "id": "phrases-0",
@@ -1213,7 +1285,9 @@
     "ta": "ஆமா",
     "kn": "ಹೌದು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/needs-0.webp",
+   "symId": 5583
   },
   {
    "id": "needs-1",
@@ -1227,7 +1301,9 @@
     "ta": "இல்ல",
     "kn": "ಇಲ್ಲ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/needs-1.webp",
+   "symId": 5525
   },
   {
    "id": "needs-2",
@@ -1250,7 +1326,9 @@
       "kn": "ನನಗೆ ಸಹಾಯ ಮಾಡಿ"
      }
     }
-   ]
+   ],
+   "sym": "symbols/needs-2.webp",
+   "symId": 4570
   },
   {
    "id": "needs-3",
@@ -1273,7 +1351,9 @@
       "kn": "ನಿಲ್ಲಿಸಿ"
      }
     }
-   ]
+   ],
+   "sym": "symbols/needs-3.webp",
+   "symId": 7195
   },
   {
    "id": "needs-4",
@@ -1296,7 +1376,9 @@
       "kn": "ನನಗೆ ಇನ್ನೂ ಬೇಕು"
      }
     }
-   ]
+   ],
+   "sym": "symbols/needs-4.webp",
+   "symId": 5508
   },
   {
    "id": "needs-5",
@@ -1319,7 +1401,9 @@
       "kn": "ನನ್ನದು ಮುಗೀತು"
      }
     }
-   ]
+   ],
+   "sym": "symbols/needs-5.webp",
+   "symId": 28429
   },
   {
    "id": "needs-6",
@@ -1342,7 +1426,9 @@
       "kn": "ನನಗೆ ಟಾಯ್ಲೆಟ್‌ಗೆ ಹೋಗಬೇಕು"
      }
     }
-   ]
+   ],
+   "sym": "symbols/needs-6.webp",
+   "symId": 2430
   },
   {
    "id": "needs-7",
@@ -1373,7 +1459,9 @@
       "kn": "ನನಗೆ ಬಾಯಾರಿಕೆ ಆಗಿದೆ"
      }
     }
-   ]
+   ],
+   "sym": "symbols/needs-7.webp",
+   "symId": 2248
   },
   {
    "id": "needs-8",
@@ -1396,7 +1484,9 @@
       "kn": "ನನಗೆ ಸ್ವಲ್ಪ ರೆಸ್ಟ್ ಬೇಕು"
      }
     }
-   ]
+   ],
+   "sym": "symbols/needs-8.webp",
+   "symId": 3299
   },
   {
    "id": "needs-9",
@@ -1419,7 +1509,9 @@
       "kn": "ನೋವಾಗ್ತಿದೆ"
      }
     }
-   ]
+   ],
+   "sym": "symbols/needs-9.webp",
+   "symId": 2367
   },
   {
    "id": "food-0",
@@ -1442,7 +1534,9 @@
       "kn": "ನನಗೆ ಊಟ ಬೇಕು"
      }
     }
-   ]
+   ],
+   "sym": "symbols/food-0.webp",
+   "symId": 2349
   },
   {
    "id": "food-1",
@@ -1456,7 +1550,8 @@
     "ta": "சப்பாத்தி",
     "kn": "ಚಪಾತಿ"
    },
-   "alts": []
+   "alts": [],
+   "sym": null
   },
   {
    "id": "food-2",
@@ -1470,7 +1565,9 @@
     "ta": "சாதம்",
     "kn": "ಅನ್ನ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/food-2.webp",
+   "symId": 6911
   },
   {
    "id": "food-3",
@@ -1484,7 +1581,9 @@
     "ta": "பருப்பு",
     "kn": "ಬೇಳೆ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/food-3.webp",
+   "symId": 2448
   },
   {
    "id": "food-4",
@@ -1498,7 +1597,9 @@
     "ta": "பால்",
     "kn": "ಹಾಲು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/food-4.webp",
+   "symId": 2445
   },
   {
    "id": "food-5",
@@ -1512,7 +1613,9 @@
     "ta": "வாழைப்பழம்",
     "kn": "ಬಾಳೆಹಣ್ಣು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/food-5.webp",
+   "symId": 2530
   },
   {
    "id": "food-6",
@@ -1526,7 +1629,9 @@
     "ta": "மாம்பழம்",
     "kn": "ಮಾವಿನಹಣ್ಣು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/food-6.webp",
+   "symId": 16813
   },
   {
    "id": "food-7",
@@ -1540,7 +1645,9 @@
     "ta": "பிஸ்கட்",
     "kn": "ಬಿಸ್ಕತ್ತು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/food-7.webp",
+   "symId": 8312
   },
   {
    "id": "food-8",
@@ -1554,7 +1661,9 @@
     "ta": "ஜூஸ்",
     "kn": "ಜ್ಯೂಸ್"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/food-8.webp",
+   "symId": 11461
   },
   {
    "id": "food-9",
@@ -1577,7 +1686,9 @@
       "kn": "ನನಗೆ ಹಸಿವಾಗಿದೆ"
      }
     }
-   ]
+   ],
+   "sym": "symbols/food-9.webp",
+   "symId": 4962
   },
   {
    "id": "food-10",
@@ -1591,7 +1702,8 @@
     "ta": "இட்லி",
     "kn": "ಇಡ್ಲಿ"
    },
-   "alts": []
+   "alts": [],
+   "sym": null
   },
   {
    "id": "food-11",
@@ -1605,7 +1717,9 @@
     "ta": "தோசை",
     "kn": "ದೋಸೆ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/food-11.webp",
+   "symId": 34233
   },
   {
    "id": "feelings-0",
@@ -1628,7 +1742,9 @@
       "kn": "ನನಗೆ ಖುಷಿ ಆಗಿದೆ"
      }
     }
-   ]
+   ],
+   "sym": "symbols/feelings-0.webp",
+   "symId": 3245
   },
   {
    "id": "feelings-1",
@@ -1651,7 +1767,9 @@
       "kn": "ನನಗೆ ಬೇಜಾರಾಗಿದೆ"
      }
     }
-   ]
+   ],
+   "sym": "symbols/feelings-1.webp",
+   "symId": 2606
   },
   {
    "id": "feelings-2",
@@ -1674,7 +1792,9 @@
       "kn": "ನನಗೆ ಕೋಪ ಬಂದಿದೆ"
      }
     }
-   ]
+   ],
+   "sym": "symbols/feelings-2.webp",
+   "symId": 2374
   },
   {
    "id": "feelings-3",
@@ -1697,7 +1817,9 @@
       "kn": "ನನಗೆ ಭಯ ಆಗ್ತಿದೆ"
      }
     }
-   ]
+   ],
+   "sym": "symbols/feelings-3.webp",
+   "symId": 2261
   },
   {
    "id": "feelings-4",
@@ -1720,7 +1842,9 @@
       "kn": "ನನಗೆ ಸುಸ್ತಾಗಿದೆ"
      }
     }
-   ]
+   ],
+   "sym": "symbols/feelings-4.webp",
+   "symId": 2314
   },
   {
    "id": "feelings-5",
@@ -1743,7 +1867,9 @@
       "kn": "ನನಗೆ ಹುಷಾರಿಲ್ಲ"
      }
     }
-   ]
+   ],
+   "sym": "symbols/feelings-5.webp",
+   "symId": 3308
   },
   {
    "id": "feelings-6",
@@ -1757,7 +1883,9 @@
     "ta": "ஜாலி",
     "kn": "ತುಂಬಾ ಖುಷಿ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/feelings-6.webp",
+   "symId": 39090
   },
   {
    "id": "feelings-7",
@@ -1771,7 +1899,9 @@
     "ta": "அமைதி",
     "kn": "ಶಾಂತ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/feelings-7.webp",
+   "symId": 31310
   },
   {
    "id": "feelings-8",
@@ -1794,7 +1924,9 @@
       "kn": "ತುಂಬಾ ಗಲಾಟೆ ಆಗ್ತಿದೆ"
      }
     }
-   ]
+   ],
+   "sym": "symbols/feelings-8.webp",
+   "symId": 7157
   },
   {
    "id": "feelings-9",
@@ -1817,7 +1949,9 @@
       "kn": "ನಂಗೆ ನೀನು ತುಂಬಾ ಇಷ್ಟ"
      }
     }
-   ]
+   ],
+   "sym": "symbols/feelings-9.webp",
+   "symId": 6600
   },
   {
    "id": "people-0",
@@ -1831,7 +1965,9 @@
     "ta": "நான்",
     "kn": "ನಾನು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/people-0.webp",
+   "symId": 2617
   },
   {
    "id": "people-1",
@@ -1845,7 +1981,9 @@
     "ta": "நீங்க",
     "kn": "ನೀವು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/people-1.webp",
+   "symId": 2608
   },
   {
    "id": "people-2",
@@ -1859,7 +1997,9 @@
     "ta": "அம்மா",
     "kn": "ಅಮ್ಮ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/people-2.webp",
+   "symId": 2458
   },
   {
    "id": "people-3",
@@ -1873,7 +2013,9 @@
     "ta": "அப்பா",
     "kn": "ಅಪ್ಪ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/people-3.webp",
+   "symId": 2497
   },
   {
    "id": "people-4",
@@ -1887,7 +2029,9 @@
     "ta": "அக்கா",
     "kn": "ಅಕ್ಕ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/people-4.webp",
+   "symId": 2422
   },
   {
    "id": "people-5",
@@ -1901,7 +2045,9 @@
     "ta": "அண்ணா",
     "kn": "ಅಣ್ಣ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/people-5.webp",
+   "symId": 2423
   },
   {
    "id": "people-6",
@@ -1915,7 +2061,9 @@
     "ta": "பாட்டி",
     "kn": "ಅಜ್ಜಿ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/people-6.webp",
+   "symId": 2243
   },
   {
    "id": "people-7",
@@ -1929,7 +2077,9 @@
     "ta": "தாத்தா",
     "kn": "ಅಜ್ಜ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/people-7.webp",
+   "symId": 2244
   },
   {
    "id": "people-8",
@@ -1943,7 +2093,9 @@
     "ta": "டீச்சர்",
     "kn": "ಟೀಚರ್"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/people-8.webp",
+   "symId": 2457
   },
   {
    "id": "people-9",
@@ -1957,7 +2109,9 @@
     "ta": "ஃப்ரெண்ட்",
     "kn": "ಫ್ರೆಂಡ್"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/people-9.webp",
+   "symId": 8486
   },
   {
    "id": "places-0",
@@ -1980,7 +2134,9 @@
       "kn": "ನಾನು ಮನೆಗೆ ಹೋಗಬೇಕು"
      }
     }
-   ]
+   ],
+   "sym": "symbols/places-0.webp",
+   "symId": 6964
   },
   {
    "id": "places-1",
@@ -1994,7 +2150,9 @@
     "ta": "ஸ்கூல்",
     "kn": "ಸ್ಕೂಲ್"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/places-1.webp",
+   "symId": 3082
   },
   {
    "id": "places-2",
@@ -2008,7 +2166,9 @@
     "ta": "பார்க்",
     "kn": "ಪಾರ್ಕ್"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/places-2.webp",
+   "symId": 5379
   },
   {
    "id": "places-3",
@@ -2022,7 +2182,9 @@
     "ta": "கடை",
     "kn": "ಅಂಗಡಿ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/places-3.webp",
+   "symId": 8986
   },
   {
    "id": "places-4",
@@ -2036,7 +2198,9 @@
     "ta": "ஆஸ்பத்திரி",
     "kn": "ಆಸ್ಪತ್ರೆ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/places-4.webp",
+   "symId": 3116
   },
   {
    "id": "places-5",
@@ -2050,7 +2214,8 @@
     "ta": "கோயில்",
     "kn": "ದೇವಸ್ಥಾನ"
    },
-   "alts": []
+   "alts": [],
+   "sym": null
   },
   {
    "id": "places-6",
@@ -2073,7 +2238,9 @@
       "kn": "ನಾನು ಹೊರಗೆ ಹೋಗಬೇಕು"
      }
     }
-   ]
+   ],
+   "sym": "symbols/places-6.webp",
+   "symId": 2806
   },
   {
    "id": "places-7",
@@ -2087,7 +2254,9 @@
     "ta": "கார்",
     "kn": "ಕಾರು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/places-7.webp",
+   "symId": 2339
   },
   {
    "id": "places-8",
@@ -2101,7 +2270,9 @@
     "ta": "பஸ்",
     "kn": "ಬಸ್ಸು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/places-8.webp",
+   "symId": 2262
   },
   {
    "id": "places-9",
@@ -2115,7 +2286,9 @@
     "ta": "பாட்டி வீடு",
     "kn": "ಅಜ್ಜಿ ಮನೆ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/places-9.webp",
+   "symId": 30482
   },
   {
    "id": "home-0",
@@ -2129,7 +2302,9 @@
     "ta": "கட்டில்",
     "kn": "ಹಾಸಿಗೆ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/home-0.webp",
+   "symId": 2304
   },
   {
    "id": "home-1",
@@ -2143,7 +2318,9 @@
     "ta": "குளிக்கணும்",
     "kn": "ಸ್ನಾನ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/home-1.webp",
+   "symId": 2272
   },
   {
    "id": "home-2",
@@ -2157,7 +2334,9 @@
     "ta": "பல் தேய்க்கணும்",
     "kn": "ಹಲ್ಲು ಉಜ್ಜು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/home-2.webp",
+   "symId": 39965
   },
   {
    "id": "home-3",
@@ -2171,7 +2350,9 @@
     "ta": "டிரஸ்",
     "kn": "ಬಟ್ಟೆ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/home-3.webp",
+   "symId": 7233
   },
   {
    "id": "home-4",
@@ -2194,7 +2375,9 @@
       "kn": "ನನಗೆ ಟಿವಿ ನೋಡಬೇಕು"
      }
     }
-   ]
+   ],
+   "sym": "symbols/home-4.webp",
+   "symId": 25498
   },
   {
    "id": "home-5",
@@ -2208,7 +2391,9 @@
     "ta": "ஃபோன்",
     "kn": "ಫೋನ್"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/home-5.webp",
+   "symId": 25269
   },
   {
    "id": "home-6",
@@ -2231,7 +2416,9 @@
       "kn": "ಫ್ಯಾನ್ ಹಾಕಿ"
      }
     }
-   ]
+   ],
+   "sym": "symbols/home-6.webp",
+   "symId": 2612
   },
   {
    "id": "home-7",
@@ -2245,7 +2432,9 @@
     "ta": "லைட்",
     "kn": "ಲೈಟ್"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/home-7.webp",
+   "symId": 4936
   },
   {
    "id": "home-8",
@@ -2259,7 +2448,9 @@
     "ta": "கதவு",
     "kn": "ಬಾಗಿಲು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/home-8.webp",
+   "symId": 3244
   },
   {
    "id": "home-9",
@@ -2282,7 +2473,9 @@
       "kn": "ನಾನು ಮಲಗಬೇಕು"
      }
     }
-   ]
+   ],
+   "sym": "symbols/home-9.webp",
+   "symId": 2369
   },
   {
    "id": "play-0",
@@ -2305,7 +2498,9 @@
       "kn": "ನಾನು ಆಡಬೇಕು"
      }
     }
-   ]
+   ],
+   "sym": "symbols/play-0.webp",
+   "symId": 2439
   },
   {
    "id": "play-1",
@@ -2319,7 +2514,9 @@
     "ta": "பந்து",
     "kn": "ಚೆಂಡು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/play-1.webp",
+   "symId": 2269
   },
   {
    "id": "play-2",
@@ -2333,7 +2530,9 @@
     "ta": "சறுக்கு",
     "kn": "ಜಾರುಬಂಡೆ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/play-2.webp",
+   "symId": 4759
   },
   {
    "id": "play-3",
@@ -2347,7 +2546,9 @@
     "ta": "பிளாக்ஸ்",
     "kn": "ಬ್ಲಾಕ್ಸ್"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/play-3.webp",
+   "symId": 4921
   },
   {
    "id": "play-4",
@@ -2370,7 +2571,9 @@
       "kn": "ಹಾಡು ಹಾಕಿ"
      }
     }
-   ]
+   ],
+   "sym": "symbols/play-4.webp",
+   "symId": 24795
   },
   {
    "id": "play-5",
@@ -2384,7 +2587,9 @@
     "ta": "கலர்",
     "kn": "ಬಣ್ಣ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/play-5.webp",
+   "symId": 5968
   },
   {
    "id": "play-6",
@@ -2398,7 +2603,9 @@
     "ta": "புக்",
     "kn": "ಪುಸ್ತಕ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/play-6.webp",
+   "symId": 2450
   },
   {
    "id": "play-7",
@@ -2412,7 +2619,9 @@
     "ta": "பசில்",
     "kn": "ಪಜಲ್"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/play-7.webp",
+   "symId": 2540
   },
   {
    "id": "play-8",
@@ -2426,7 +2635,9 @@
     "ta": "பபுள்ஸ்",
     "kn": "ಬಬಲ್ಸ್"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/play-8.webp",
+   "symId": 6945
   },
   {
    "id": "play-9",
@@ -2440,7 +2651,9 @@
     "ta": "ஓடு",
     "kn": "ಓಡು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/play-9.webp",
+   "symId": 2719
   },
   {
    "id": "school-0",
@@ -2454,7 +2667,9 @@
     "ta": "பேக்",
     "kn": "ಬ್ಯಾಗ್"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/school-0.webp",
+   "symId": 2475
   },
   {
    "id": "school-1",
@@ -2468,7 +2683,9 @@
     "ta": "பென்சில்",
     "kn": "ಪೆನ್ಸಿಲ್"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/school-1.webp",
+   "symId": 2440
   },
   {
    "id": "school-2",
@@ -2482,7 +2699,9 @@
     "ta": "எழுது",
     "kn": "ಬರಿ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/school-2.webp",
+   "symId": 2380
   },
   {
    "id": "school-3",
@@ -2496,7 +2715,9 @@
     "ta": "படி",
     "kn": "ಓದು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/school-3.webp",
+   "symId": 5973
   },
   {
    "id": "school-4",
@@ -2510,7 +2731,9 @@
     "ta": "வரை",
     "kn": "ಚಿತ್ರ ಬಿಡಿಸು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/school-4.webp",
+   "symId": 8088
   },
   {
    "id": "school-5",
@@ -2524,7 +2747,9 @@
     "ta": "டிஃபன் பாக்ஸ்",
     "kn": "ಟಿಫಿನ್"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/school-5.webp",
+   "symId": 31091
   },
   {
    "id": "school-6",
@@ -2538,7 +2763,9 @@
     "ta": "எனக்கு புரியல",
     "kn": "ನನಗೆ ಅರ್ಥ ಆಗ್ಲಿಲ್ಲ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/school-6.webp",
+   "symId": 11315
   },
   {
    "id": "school-7",
@@ -2561,7 +2788,9 @@
       "kn": "ನನ್ನ ಕೆಲಸ ಮುಗೀತು"
      }
     }
-   ]
+   ],
+   "sym": "symbols/school-7.webp",
+   "symId": 28429
   },
   {
    "id": "school-8",
@@ -2575,7 +2804,9 @@
     "ta": "அமைதி",
     "kn": "ಸುಮ್ಮನಿರು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/school-8.webp",
+   "symId": 5936
   },
   {
    "id": "school-9",
@@ -2598,7 +2829,9 @@
       "kn": "ಸ್ವಲ್ಪ ಇರಿ"
      }
     }
-   ]
+   ],
+   "sym": "symbols/school-9.webp",
+   "symId": 8109
   },
   {
    "id": "morning-0",
@@ -2612,7 +2845,9 @@
     "ta": "எழுந்திரு",
     "kn": "ಏಳು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/morning-0.webp",
+   "symId": 6548
   },
   {
    "id": "morning-1",
@@ -2626,7 +2861,9 @@
     "ta": "பாத்ரூம்",
     "kn": "ಟಾಯ್ಲೆಟ್"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/morning-1.webp",
+   "symId": 2430
   },
   {
    "id": "morning-2",
@@ -2640,7 +2877,9 @@
     "ta": "பல் தேய்க்கணும்",
     "kn": "ಹಲ್ಲು ಉಜ್ಜು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/morning-2.webp",
+   "symId": 39965
   },
   {
    "id": "morning-3",
@@ -2654,7 +2893,9 @@
     "ta": "குளிக்கணும்",
     "kn": "ಸ್ನಾನ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/morning-3.webp",
+   "symId": 2272
   },
   {
    "id": "morning-4",
@@ -2668,7 +2909,9 @@
     "ta": "டிரஸ் போடணும்",
     "kn": "ಬಟ್ಟೆ ಹಾಕು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/morning-4.webp",
+   "symId": 2781
   },
   {
    "id": "morning-5",
@@ -2682,7 +2925,9 @@
     "ta": "டிஃபன்",
     "kn": "ತಿಂಡಿ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/morning-5.webp",
+   "symId": 4625
   },
   {
    "id": "morning-6",
@@ -2696,7 +2941,9 @@
     "ta": "பால்",
     "kn": "ಹಾಲು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/morning-6.webp",
+   "symId": 2445
   },
   {
    "id": "morning-7",
@@ -2710,7 +2957,9 @@
     "ta": "ஸ்கூல் பேக்",
     "kn": "ಸ್ಕೂಲ್ ಬ್ಯಾಗ್"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/morning-7.webp",
+   "symId": 2475
   },
   {
    "id": "bedtime-0",
@@ -2724,7 +2973,9 @@
     "ta": "நைட் டிரஸ்",
     "kn": "ನೈಟ್ ಡ್ರೆಸ್"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/bedtime-0.webp",
+   "symId": 2522
   },
   {
    "id": "bedtime-1",
@@ -2738,7 +2989,9 @@
     "ta": "பல் தேய்க்கணும்",
     "kn": "ಹಲ್ಲು ಉಜ್ಜು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/bedtime-1.webp",
+   "symId": 39965
   },
   {
    "id": "bedtime-2",
@@ -2761,7 +3014,9 @@
       "kn": "ಕಥೆ ಹೇಳು"
      }
     }
-   ]
+   ],
+   "sym": "symbols/bedtime-2.webp",
+   "symId": 8346
   },
   {
    "id": "bedtime-3",
@@ -2775,7 +3030,9 @@
     "ta": "கட்டிப்பிடி",
     "kn": "ತಬ್ಬಿಕೋ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/bedtime-3.webp",
+   "symId": 4550
   },
   {
    "id": "bedtime-4",
@@ -2789,7 +3046,9 @@
     "ta": "லைட் ஆஃப் பண்ணு",
     "kn": "ಲೈಟ್ ಆಫ್ ಮಾಡು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/bedtime-4.webp",
+   "symId": 8027
   },
   {
    "id": "bedtime-5",
@@ -2803,7 +3062,9 @@
     "ta": "தண்ணி",
     "kn": "ನೀರು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/bedtime-5.webp",
+   "symId": 2248
   },
   {
    "id": "bedtime-6",
@@ -2817,7 +3078,9 @@
     "ta": "தூக்கம்",
     "kn": "ನಿದ್ದೆ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/bedtime-6.webp",
+   "symId": 2369
   },
   {
    "id": "family-0",
@@ -2831,7 +3094,9 @@
     "ta": "அம்மா",
     "kn": "ಅಮ್ಮ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/family-0.webp",
+   "symId": 2458
   },
   {
    "id": "family-1",
@@ -2845,7 +3110,9 @@
     "ta": "அப்பா",
     "kn": "ಅಪ್ಪ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/family-1.webp",
+   "symId": 2497
   },
   {
    "id": "pets-0",
@@ -2859,7 +3126,9 @@
     "ta": "நாய்",
     "kn": "ನಾಯಿ"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/pets-0.webp",
+   "symId": 2517
   },
   {
    "id": "pets-1",
@@ -2873,7 +3142,9 @@
     "ta": "பூனை",
     "kn": "ಬೆಕ್ಕು"
    },
-   "alts": []
+   "alts": [],
+   "sym": "symbols/pets-1.webp",
+   "symId": 2406
   }
  ],
  "reviewed": []

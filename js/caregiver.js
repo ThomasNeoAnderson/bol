@@ -426,6 +426,7 @@ function layoutSection(s) {
     selectRow(t('settings.buttonSize'), s.buttonSize, sizes(), v => setSetting('buttonSize', v)),
     selectRow(t('settings.textSize'), s.textSize, sizes(), v => setSetting('textSize', v)),
     checkRow(t('settings.showText'), s.showText, v => setSetting('showText', v)),
+    checkRow(t('settings.symbols'), s.useSymbols, v => setSetting('useSymbols', v)),
     selectRow(t('settings.secondLang'), s.secondLang || '',
       [['', t('settings.secondNone')], ...languages().map(l => [l.code, l.name])], v => setSetting('secondLang', v || null)),
     selectRow(t('settings.colours'), s.colorMode,
@@ -574,6 +575,10 @@ function aboutSection() {
   return h('section', { id: 'set-about' }, h('h3', {}, 'ℹ️ ' + t('settings.about')),
     h('p', {}, t('about.free')),
     h('p', { class: 'hint' }, t('about.translations')),
+    h('p', { class: 'hint' }, t('about.symbols')),
+    h('p', { class: 'hint' }, 'Pictographic symbols: Sergio Palao. Property of the Government of Aragón (Spain). ' +
+      'Source: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/). ' +
+      'Resized; used non-commercially.'),
     h('p', { class: 'hint' }, 'Fonts: Noto Sans Devanagari, Noto Sans Tamil, Noto Sans Kannada © The Noto Project Authors, SIL Open Font License 1.1.'),
     h('p', { class: 'hint' }, 'Bol · https://github.com/ThomasNeoAnderson/bol'));
 }

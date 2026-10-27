@@ -333,6 +333,36 @@ await test('optional smaller second-language label under each button', async ({ 
   eq(second, ['want', 'en'], 'second label');
 });
 
+// ------------------------------------------------------------- PHASE 3 ---
+const symbolLoaded = (page, label) => page.$eval(`.sym[aria-label="${label}"] img`, i => i.complete && i.naturalWidth > 0 && i.src).catch(() => false);
+
+await test('ARASAAC symbols replace emoji, also offline; emoji stays as fallback', async ({ page, ctx }) => {
+  await open(page);
+  await page.waitForFunction(() => document.querySelector('.sym[aria-label="want"] img'));
+  assert(String(await symbolLoaded(page, 'want')).includes('symbols/core-2.webp'), 'core symbol shown');
+  await page.evaluate(() => navigator.serviceWorker.ready);
+  await page.reload(); await page.waitForSelector('#grid .sym');
+  await ctx.setOffline(true);
+  await page.reload(); await page.waitForSelector('#grid .sym');
+  await page.waitForFunction(() => { const i = document.querySelector('.sym[aria-label="drink"] img'); return i && i.complete && i.naturalWidth > 0; }, null, { timeout: 8000 });
+  await page.click('.tab:has-text("Food")');
+  eq(await page.$eval('.sym[aria-label="roti"] .icon', e => e.textContent), '🫓', 'emoji kept where no good symbol');
+  await ctx.setOffline(false);
+});
+
+await test('caregiver can switch symbols off (emoji) and sees ARASAAC credits', async ({ page }) => {
+  await open(page);
+  await enterCaregiver(page);
+  await page.click('#cg-settings');
+  assert((await page.textContent('#set-about')).includes('Sergio Palao') &&
+         (await page.textContent('#set-about')).includes('CC BY-NC-SA 4.0'), 'ARASAAC attribution shown');
+  await page.click('label.check:has-text("ARASAAC") input');
+  await page.click('.modal.full .modal-head .icon-btn');
+  await page.click('#cg-toggle');
+  eq(await page.$$eval('.sym[aria-label="want"] img', a => a.length), 0, 'no symbol when switched off');
+  eq(await page.$eval('.sym[aria-label="want"] .icon', e => e.textContent), '🤲', 'emoji shown');
+});
+
 // ---------------------------------------------------------------- summary ---
 await browser.close();
 server.close();
