@@ -1,0 +1,449 @@
+﻿id,English,Hindi,Tamil,Kannada,reviewed
+cat:core,Core,मुख्य,முக்கியம்,ಮುಖ್ಯ,no
+cat:phrases,Phrases,वाक्य,வாக்கியம்,ವಾಕ್ಯಗಳು,no
+cat:needs,Needs,ज़रूरतें,தேவைகள்,ಅಗತ್ಯಗಳು,no
+cat:food,Food,खाना,சாப்பாடு,ಊಟ,no
+cat:feelings,Feelings,भावनाएँ,உணர்வுகள்,ಭಾವನೆಗಳು,no
+cat:people,People,लोग,ஆட்கள்,ಜನರು,no
+cat:places,Places,जगहें,இடங்கள்,ಜಾಗಗಳು,no
+cat:home,Home,घर,வீடு,ಮನೆ,no
+cat:play,Play,खेल,விளையாட்டு,ಆಟ,no
+cat:school,School,स्कूल,ஸ்கூல்,ಸ್ಕೂಲ್,no
+cat:morning,Morning,सुबह,காலை,ಬೆಳಿಗ್ಗೆ,no
+cat:bedtime,Bedtime,सोने का समय,தூங்கும் நேரம்,ಮಲಗುವ ಸಮಯ,no
+cat:family,Family,परिवार,குடும்பம்,ಕುಟುಂಬ,no
+cat:pets,Pets,पालतू,செல்லப் பிராணிகள்,ಸಾಕು ಪ್ರಾಣಿಗಳು,no
+cat:favs,Favourites,पसंदीदा,பிடிச்சவை,ಇಷ್ಟದವು,no
+type:verb,Action words,काम के शब्द,செயல் சொற்கள்,ಕ್ರಿಯಾ ಪದಗಳು,no
+type:person,People & pronouns,लोग,ஆட்கள்,ಜನರು,no
+type:describe,Describing words,बताने वाले शब्द,விவரிக்கும் சொற்கள்,ವಿವರಿಸುವ ಪದಗಳು,no
+type:noun,Things & places,चीज़ें और जगहें,"பொருட்கள், இடங்கள்","ವಸ್ತುಗಳು, ಜಾಗಗಳು",no
+type:social,Social words,बातचीत के शब्द,பழகும் சொற்கள்,ಮಾತುಕತೆ ಪದಗಳು,no
+type:question,Questions,सवाल,கேள்விகள்,ಪ್ರಶ್ನೆಗಳು,no
+type:little,Little words,छोटे शब्द,சின்ன சொற்கள்,ಸಣ್ಣ ಪದಗಳು,no
+core-0,I,मैं,நான்,ನಾನು,no
+core-1,you,आप,நீங்க,ನೀವು,no
+core-2,want,चाहिए,வேணும்,ಬೇಕು,no
+core-3,don't want,नहीं चाहिए,வேண்டாம்,ಬೇಡ,no
+core-4,yes,हाँ,ஆமா,ಹೌದು,no
+core-5,no,नहीं,இல்ல,ಇಲ್ಲ,no
+core-6,mine,मेरा,என்னோடது,ನಂದು,no
+core-7,help,मदद,உதவி,ಸಹಾಯ,no
+core-8,go,जाना,போ,ಹೋಗು,no
+core-9,come,आओ,வா,ಬಾ,no
+core-10,stop,रुको,நிறுத்து,ನಿಲ್ಲಿಸು,no
+core-11,more,और,இன்னும்,ಇನ್ನೂ,no
+core-12,this,यह,இது,ಇದು,no
+core-13,that,वह,அது,ಅದು,no
+core-14,like,पसंद है,பிடிக்கும்,ಇಷ್ಟ,no
+core-15,look,देखो,பாரு,ನೋಡು,no
+core-16,again,फिर से,மறுபடியும்,ಮತ್ತೆ,no
+core-17,finished,खत्म,முடிஞ்சது,ಮುಗೀತು,no
+core-18,here,यहाँ,இங்க,ಇಲ್ಲಿ,no
+core-19,there,वहाँ,அங்க,ಅಲ್ಲಿ,no
+core-20,eat,खाना,சாப்பிடு,ತಿನ್ನು,no
+core-21,drink,पीना,குடி,ಕುಡಿ,no
+core-22,good,अच्छा,நல்லது,ಚೆನ್ನಾಗಿದೆ,no
+core-23,bad,बुरा,மோசம்,ಚೆನ್ನಾಗಿಲ್ಲ,no
+core-24,in,में,உள்ள,ಒಳಗೆ,no
+core-25,on,पर,மேல,ಮೇಲೆ,no
+core-26,play,खेलना,விளையாடு,ಆಡು,no
+core-27,give,दो,குடு,ಕೊಡು,no
+core-28,up,ऊपर,மேலே,ಮೇಲಕ್ಕೆ,no
+core-29,down,नीचे,கீழே,ಕೆಳಗೆ,no
+core-30,what,क्या,என்ன,ಏನು,no
+core-31,where,कहाँ,எங்க,ಎಲ್ಲಿ,no
+core-32,open,खोलो,திற,ತೆಗಿ,no
+core-33,my turn,मेरी बारी,என் முறை,ನನ್ನ ಸರದಿ,no
+core-34,please,प्लीज़,ப்ளீஸ்,ಪ್ಲೀಸ್,no
+core-35,thank you,धन्यवाद,நன்றி,ಧನ್ಯವಾದ,no
+phrases-0,I want water,मुझे पानी चाहिए,எனக்கு தண்ணி வேணும்,ನನಗೆ ನೀರು ಬೇಕು,no
+phrases-1,I want to go home,मुझे घर जाना है,நான் வீட்டுக்கு போகணும்,ನಾನು ಮನೆಗೆ ಹೋಗಬೇಕು,no
+phrases-2,I need the toilet,मुझे टॉयलेट जाना है,எனக்கு பாத்ரூம் போகணும்,ನನಗೆ ಟಾಯ್ಲೆಟ್‌ಗೆ ಹೋಗಬೇಕು,no
+phrases-3,I am hungry,मुझे भूख लगी है,எனக்கு பசிக்குது,ನನಗೆ ಹಸಿವಾಗಿದೆ,no
+phrases-4,I feel sick,मेरी तबीयत ठीक नहीं है,எனக்கு உடம்பு சரியில்ல,ನನಗೆ ಹುಷಾರಿಲ್ಲ,no
+phrases-5,Please wait,ज़रा रुको,கொஞ்சம் இருங்க,ಸ್ವಲ್ಪ ಇರಿ,no
+phrases-6,I am thirsty,मुझे प्यास लगी है,எனக்கு தாகமா இருக்கு,ನನಗೆ ಬಾಯಾರಿಕೆ ಆಗಿದೆ,no
+phrases-7,It hurts here,यहाँ दर्द हो रहा है,இங்க வலிக்குது,ಇಲ್ಲಿ ನೋವಾಗ್ತಿದೆ,no
+phrases-8,I am tired,मुझे थकान हो रही है,எனக்கு டயர்டா இருக்கு,ನನಗೆ ಸುಸ್ತಾಗಿದೆ,no
+phrases-9,I want to sleep,मुझे सोना है,எனக்கு தூங்கணும்,ನಾನು ಮಲಗಬೇಕು,no
+phrases-10,"Help me, please",प्लीज़ मेरी मदद करो,எனக்கு உதவி பண்ணுங்க,ನನಗೆ ಸಹಾಯ ಮಾಡಿ,no
+phrases-11,I don't like this,मुझे यह पसंद नहीं है,எனக்கு இது பிடிக்கல,ನನಗೆ ಇದು ಇಷ್ಟ ಇಲ್ಲ,no
+phrases-12,I like this,मुझे यह पसंद है,எனக்கு இது பிடிக்கும்,ನನಗೆ ಇದು ಇಷ್ಟ,no
+phrases-13,I want more,मुझे और चाहिए,எனக்கு இன்னும் வேணும்,ನನಗೆ ಇನ್ನೂ ಬೇಕು,no
+phrases-14,I am finished,मेरा हो गया,எனக்கு முடிஞ்சது,ನನ್ನದು ಮುಗೀತು,no
+phrases-15,I need a break,मुझे थोड़ा आराम चाहिए,எனக்கு கொஞ்சம் ரெஸ்ட் வேணும்,ನನಗೆ ಸ್ವಲ್ಪ ರೆಸ್ಟ್ ಬೇಕು,no
+phrases-16,It is too loud,बहुत शोर है,ரொம்ப சத்தமா இருக்கு,ತುಂಬಾ ಗಲಾಟೆ ಆಗ್ತಿದೆ,no
+phrases-17,I want to go outside,मुझे बाहर जाना है,நான் வெளிய போகணும்,ನಾನು ಹೊರಗೆ ಹೋಗಬೇಕು,no
+phrases-18,I want to play,मुझे खेलना है,நான் விளையாடணும்,ನಾನು ಆಡಬೇಕು,no
+phrases-19,I want to eat,मुझे खाना है,எனக்கு சாப்பிடணும்,ನನಗೆ ಊಟ ಬೇಕು,no
+phrases-20,Where is mummy?,मम्मी कहाँ हैं?,அம்மா எங்க?,ಅಮ್ಮ ಎಲ್ಲಿ?,no
+phrases-21,I am scared,मुझे डर लग रहा है,எனக்கு பயமா இருக்கு,ನನಗೆ ಭಯ ಆಗ್ತಿದೆ,no
+phrases-22,I am happy,मैं खुश हूँ,நான் சந்தோஷமா இருக்கேன்,ನನಗೆ ಖುಷಿ ಆಗಿದೆ,no
+phrases-23,I am sad,मैं उदास हूँ,நான் சோகமா இருக்கேன்,ನನಗೆ ಬೇಜಾರಾಗಿದೆ,no
+phrases-24,I don't understand,मुझे समझ नहीं आया,எனக்கு புரியல,ನನಗೆ ಅರ್ಥ ಆಗ್ಲಿಲ್ಲ,no
+phrases-25,Please say it again,प्लीज़ फिर से बोलो,இன்னொரு தடவை சொல்லுங்க,ಇನ್ನೊಂದ್ಸಲ ಹೇಳಿ,no
+phrases-26,"Stop, please",प्लीज़ रुको,நிறுத்துங்க,ನಿಲ್ಲಿಸಿ,no
+phrases-27,I want a hug,मुझे गले लगाओ,என்னைக் கட்டிப்பிடி,ನನ್ನನ್ನು ತಬ್ಬಿಕೋ,no
+phrases-28,Hello,नमस्ते,வணக்கம்,ನಮಸ್ಕಾರ,no
+phrases-29,I love you,मुझे तुमसे प्यार है,உன்னை ரொம்ப பிடிக்கும்,ನಂಗೆ ನೀನು ತುಂಬಾ ಇಷ್ಟ,no
+phrases-30,"Yes, please","हाँ, प्लीज़","ஆமா, வேணும்","ಹೌದು, ಬೇಕು",no
+phrases-31,"No, thank you","नहीं, धन्यवाद","வேண்டாம், நன்றி","ಬೇಡ, ಧನ್ಯವಾದ",no
+needs-0,yes,हाँ,ஆமா,ಹೌದು,no
+needs-1,no,नहीं,இல்ல,ಇಲ್ಲ,no
+needs-2,help,मदद,உதவி,ಸಹಾಯ,no
+needs-2#alt1,help me please,प्लीज़ मेरी मदद करो,எனக்கு உதவி பண்ணுங்க,ನನಗೆ ಸಹಾಯ ಮಾಡಿ,no
+needs-3,stop,रुको,நிறுத்து,ನಿಲ್ಲಿಸು,no
+needs-3#alt1,stop it,बंद करो,நிறுத்துங்க,ನಿಲ್ಲಿಸಿ,no
+needs-4,more,और,இன்னும்,ಇನ್ನೂ,no
+needs-4#alt1,I want more,मुझे और चाहिए,எனக்கு இன்னும் வேணும்,ನನಗೆ ಇನ್ನೂ ಬೇಕು,no
+needs-5,finished,खत्म,முடிஞ்சது,ಮುಗೀತು,no
+needs-5#alt1,I am finished,मेरा हो गया,எனக்கு முடிஞ்சது,ನನ್ನದು ಮುಗೀತು,no
+needs-6,toilet,टॉयलेट,பாத்ரூம்,ಟಾಯ್ಲೆಟ್,no
+needs-6#alt1,I need the toilet,मुझे टॉयलेट जाना है,எனக்கு பாத்ரூம் போகணும்,ನನಗೆ ಟಾಯ್ಲೆಟ್‌ಗೆ ಹೋಗಬೇಕು,no
+needs-7,water,पानी,தண்ணி,ನೀರು,no
+needs-7#alt1,I want water,मुझे पानी चाहिए,எனக்கு தண்ணி வேணும்,ನನಗೆ ನೀರು ಬೇಕು,no
+needs-7#alt2,I'm thirsty,मुझे प्यास लगी है,எனக்கு தாகமா இருக்கு,ನನಗೆ ಬಾಯಾರಿಕೆ ಆಗಿದೆ,no
+needs-8,break,आराम,ரெஸ்ட்,ರೆಸ್ಟ್,no
+needs-8#alt1,I need a break,मुझे थोड़ा आराम चाहिए,எனக்கு கொஞ்சம் ரெஸ்ட் வேணும்,ನನಗೆ ಸ್ವಲ್ಪ ರೆಸ್ಟ್ ಬೇಕು,no
+needs-9,hurts,दर्द,வலிக்குது,ನೋವು,no
+needs-9#alt1,it hurts,दर्द हो रहा है,ரொம்ப வலிக்குது,ನೋವಾಗ್ತಿದೆ,no
+food-0,eat,खाना,சாப்பாடு,ಊಟ,no
+food-0#alt1,I want to eat,मुझे खाना है,எனக்கு சாப்பிடணும்,ನನಗೆ ಊಟ ಬೇಕು,no
+food-1,roti,रोटी,சப்பாத்தி,ಚಪಾತಿ,no
+food-2,rice,चावल,சாதம்,ಅನ್ನ,no
+food-3,dal,दाल,பருப்பு,ಬೇಳೆ,no
+food-4,milk,दूध,பால்,ಹಾಲು,no
+food-5,banana,केला,வாழைப்பழம்,ಬಾಳೆಹಣ್ಣು,no
+food-6,mango,आम,மாம்பழம்,ಮಾವಿನಹಣ್ಣು,no
+food-7,biscuit,बिस्कुट,பிஸ்கட்,ಬಿಸ್ಕತ್ತು,no
+food-8,juice,जूस,ஜூஸ்,ಜ್ಯೂಸ್,no
+food-9,hungry,भूख,பசி,ಹಸಿವು,no
+food-9#alt1,I'm hungry,मुझे भूख लगी है,எனக்கு பசிக்குது,ನನಗೆ ಹಸಿವಾಗಿದೆ,no
+food-10,idli,इडली,இட்லி,ಇಡ್ಲಿ,no
+food-11,dosa,डोसा,தோசை,ದೋಸೆ,no
+feelings-0,happy,खुश,சந்தோஷம்,ಖುಷಿ,no
+feelings-0#alt1,I feel happy,मैं खुश हूँ,நான் சந்தோஷமா இருக்கேன்,ನನಗೆ ಖುಷಿ ಆಗಿದೆ,no
+feelings-1,sad,उदास,சோகம்,ಬೇಜಾರು,no
+feelings-1#alt1,I feel sad,मैं उदास हूँ,நான் சோகமா இருக்கேன்,ನನಗೆ ಬೇಜಾರಾಗಿದೆ,no
+feelings-2,angry,गुस्सा,கோபம்,ಕೋಪ,no
+feelings-2#alt1,I am angry,मुझे गुस्सा आ रहा है,எனக்கு கோபமா இருக்கு,ನನಗೆ ಕೋಪ ಬಂದಿದೆ,no
+feelings-3,scared,डर,பயம்,ಭಯ,no
+feelings-3#alt1,I am scared,मुझे डर लग रहा है,எனக்கு பயமா இருக்கு,ನನಗೆ ಭಯ ಆಗ್ತಿದೆ,no
+feelings-4,tired,थकान,டயர்டு,ಸುಸ್ತು,no
+feelings-4#alt1,I am tired,मुझे थकान हो रही है,எனக்கு டயர்டா இருக்கு,ನನಗೆ ಸುಸ್ತಾಗಿದೆ,no
+feelings-5,sick,बीमार,உடம்பு சரியில்ல,ಹುಷಾರಿಲ್ಲ,no
+feelings-5#alt1,I feel sick,मेरी तबीयत ठीक नहीं है,எனக்கு உடம்பு சரியில்ல,ನನಗೆ ಹುಷಾರಿಲ್ಲ,no
+feelings-6,excited,मज़ा,ஜாலி,ತುಂಬಾ ಖುಷಿ,no
+feelings-7,calm,शांत,அமைதி,ಶಾಂತ,no
+feelings-8,too loud,बहुत शोर,ரொம்ப சத்தம்,ತುಂಬಾ ಗಲಾಟೆ,no
+feelings-8#alt1,it is too loud,बहुत शोर है,ரொம்ப சத்தமா இருக்கு,ತುಂಬಾ ಗಲಾಟೆ ಆಗ್ತಿದೆ,no
+feelings-9,love,प्यार,அன்பு,ಪ್ರೀತಿ,no
+feelings-9#alt1,I love you,मुझे तुमसे प्यार है,உன்னை ரொம்ப பிடிக்கும்,ನಂಗೆ ನೀನು ತುಂಬಾ ಇಷ್ಟ,no
+people-0,I,मैं,நான்,ನಾನು,no
+people-1,you,आप,நீங்க,ನೀವು,no
+people-2,mummy,मम्मी,அம்மா,ಅಮ್ಮ,no
+people-3,papa,पापा,அப்பா,ಅಪ್ಪ,no
+people-4,didi,दीदी,அக்கா,ಅಕ್ಕ,no
+people-5,bhaiya,भैया,அண்ணா,ಅಣ್ಣ,no
+people-6,dadi,दादी,பாட்டி,ಅಜ್ಜಿ,no
+people-7,dada,दादा,தாத்தா,ಅಜ್ಜ,no
+people-8,teacher,टीचर,டீச்சர்,ಟೀಚರ್,no
+people-9,friend,दोस्त,ஃப்ரெண்ட்,ಫ್ರೆಂಡ್,no
+places-0,home,घर,வீடு,ಮನೆ,no
+places-0#alt1,I want to go home,मुझे घर जाना है,நான் வீட்டுக்கு போகணும்,ನಾನು ಮನೆಗೆ ಹೋಗಬೇಕು,no
+places-1,school,स्कूल,ஸ்கூல்,ಸ್ಕೂಲ್,no
+places-2,park,पार्क,பார்க்,ಪಾರ್ಕ್,no
+places-3,shop,दुकान,கடை,ಅಂಗಡಿ,no
+places-4,hospital,अस्पताल,ஆஸ்பத்திரி,ಆಸ್ಪತ್ರೆ,no
+places-5,temple,मंदिर,கோயில்,ದೇವಸ್ಥಾನ,no
+places-6,outside,बाहर,வெளிய,ಹೊರಗೆ,no
+places-6#alt1,I want to go outside,मुझे बाहर जाना है,நான் வெளிய போகணும்,ನಾನು ಹೊರಗೆ ಹೋಗಬೇಕು,no
+places-7,car,गाड़ी,கார்,ಕಾರು,no
+places-8,bus,बस,பஸ்,ಬಸ್ಸು,no
+places-9,grandma's house,नानी का घर,பாட்டி வீடு,ಅಜ್ಜಿ ಮನೆ,no
+home-0,bed,बिस्तर,கட்டில்,ಹಾಸಿಗೆ,no
+home-1,bath,नहाना,குளிக்கணும்,ಸ್ನಾನ,no
+home-2,brush teeth,ब्रश करना,பல் தேய்க்கணும்,ಹಲ್ಲು ಉಜ್ಜು,no
+home-3,clothes,कपड़े,டிரஸ்,ಬಟ್ಟೆ,no
+home-4,TV,टीवी,டிவி,ಟಿವಿ,no
+home-4#alt1,I want to watch TV,मुझे टीवी देखना है,எனக்கு டிவி பார்க்கணும்,ನನಗೆ ಟಿವಿ ನೋಡಬೇಕು,no
+home-5,phone,फ़ोन,ஃபோன்,ಫೋನ್,no
+home-6,fan,पंखा,ஃபேன்,ಫ್ಯಾನ್,no
+home-6#alt1,turn on the fan,पंखा चलाओ,ஃபேன் போடுங்க,ಫ್ಯಾನ್ ಹಾಕಿ,no
+home-7,light,लाइट,லைட்,ಲೈಟ್,no
+home-8,door,दरवाज़ा,கதவு,ಬಾಗಿಲು,no
+home-9,sleep,सोना,தூக்கம்,ನಿದ್ದೆ,no
+home-9#alt1,I want to sleep,मुझे सोना है,எனக்கு தூங்கணும்,ನಾನು ಮಲಗಬೇಕು,no
+play-0,play,खेलना,விளையாட்டு,ಆಟ,no
+play-0#alt1,I want to play,मुझे खेलना है,நான் விளையாடணும்,ನಾನು ಆಡಬೇಕು,no
+play-1,ball,गेंद,பந்து,ಚೆಂಡು,no
+play-2,slide,फिसलपट्टी,சறுக்கு,ಜಾರುಬಂಡೆ,no
+play-3,blocks,ब्लॉक,பிளாக்ஸ்,ಬ್ಲಾಕ್ಸ್,no
+play-4,music,गाना,பாட்டு,ಹಾಡು,no
+play-4#alt1,play music,गाना चलाओ,பாட்டு போடுங்க,ಹಾಡು ಹಾಕಿ,no
+play-5,colours,रंग,கலர்,ಬಣ್ಣ,no
+play-6,book,किताब,புக்,ಪುಸ್ತಕ,no
+play-7,puzzle,पहेली,பசில்,ಪಜಲ್,no
+play-8,bubbles,बुलबुले,பபுள்ஸ்,ಬಬಲ್ಸ್,no
+play-9,run,दौड़ना,ஓடு,ಓಡು,no
+school-0,bag,बस्ता,பேக்,ಬ್ಯಾಗ್,no
+school-1,pencil,पेंसिल,பென்சில்,ಪೆನ್ಸಿಲ್,no
+school-2,write,लिखना,எழுது,ಬರಿ,no
+school-3,read,पढ़ना,படி,ಓದು,no
+school-4,draw,चित्र बनाना,வரை,ಚಿತ್ರ ಬಿಡಿಸು,no
+school-5,tiffin,टिफ़िन,டிஃபன் பாக்ஸ்,ಟಿಫಿನ್,no
+school-6,I don't understand,मुझे समझ नहीं आया,எனக்கு புரியல,ನನಗೆ ಅರ್ಥ ಆಗ್ಲಿಲ್ಲ,no
+school-7,work done,काम हो गया,வேலை முடிஞ்சது,ಕೆಲಸ ಮುಗೀತು,no
+school-7#alt1,I finished my work,मेरा काम हो गया,என் வேலை முடிஞ்சது,ನನ್ನ ಕೆಲಸ ಮುಗೀತು,no
+school-8,quiet,शांति,அமைதி,ಸುಮ್ಮನಿರು,no
+school-9,wait,ज़रा रुको,இரு,ಇರಿ,no
+school-9#alt1,please wait,"रुको, इंतज़ार करो",கொஞ்சம் இருங்க,ಸ್ವಲ್ಪ ಇರಿ,no
+morning-0,wake up,उठना,எழுந்திரு,ಏಳು,no
+morning-1,toilet,टॉयलेट,பாத்ரூம்,ಟಾಯ್ಲೆಟ್,no
+morning-2,brush teeth,ब्रश करना,பல் தேய்க்கணும்,ಹಲ್ಲು ಉಜ್ಜು,no
+morning-3,bath,नहाना,குளிக்கணும்,ಸ್ನಾನ,no
+morning-4,get dressed,कपड़े पहनना,டிரஸ் போடணும்,ಬಟ್ಟೆ ಹಾಕು,no
+morning-5,breakfast,नाश्ता,டிஃபன்,ತಿಂಡಿ,no
+morning-6,milk,दूध,பால்,ಹಾಲು,no
+morning-7,school bag,बस्ता,ஸ்கூல் பேக்,ಸ್ಕೂಲ್ ಬ್ಯಾಗ್,no
+bedtime-0,pyjamas,नाइट सूट,நைட் டிரஸ்,ನೈಟ್ ಡ್ರೆಸ್,no
+bedtime-1,brush teeth,ब्रश करना,பல் தேய்க்கணும்,ಹಲ್ಲು ಉಜ್ಜು,no
+bedtime-2,story,कहानी,கதை,ಕಥೆ,no
+bedtime-2#alt1,tell me a story,कहानी सुनाओ,கதை சொல்லு,ಕಥೆ ಹೇಳು,no
+bedtime-3,hug,गले लगाओ,கட்டிப்பிடி,ತಬ್ಬಿಕೋ,no
+bedtime-4,light off,लाइट बंद करो,லைட் ஆஃப் பண்ணு,ಲೈಟ್ ಆಫ್ ಮಾಡು,no
+bedtime-5,water,पानी,தண்ணி,ನೀರು,no
+bedtime-6,sleep,सोना,தூக்கம்,ನಿದ್ದೆ,no
+family-0,mummy,मम्मी,அம்மா,ಅಮ್ಮ,no
+family-1,papa,पापा,அப்பா,ಅಪ್ಪ,no
+pets-0,dog,कुत्ता,நாய்,ನಾಯಿ,no
+pets-1,cat,बिल्ली,பூனை,ಬೆಕ್ಕು,no
+ui:btn.speak,🔊 Speak,🔊 बोलो,🔊 பேசு,🔊 ಮಾತಾಡು,no
+ui:btn.delete,Delete,मिटाओ,அழி,ಅಳಿಸು,no
+ui:btn.clear,Clear,साफ़,எல்லாம் அழி,ಎಲ್ಲಾ ಅಳಿಸು,no
+ui:btn.save,Save,सेव,சேமி,ಸೇವ್,no
+ui:btn.addButton,＋ Add button,＋ बटन जोड़ें,＋ பட்டன் சேர்,＋ ಬಟನ್ ಸೇರಿಸಿ,no
+ui:btn.settings,⚙️ Settings,⚙️ सेटिंग्स,⚙️ செட்டிங்ஸ்,⚙️ ಸೆಟ್ಟಿಂಗ್ಸ್,no
+ui:btn.caregiver,Caregiver,देखभाल करने वाले,பெற்றோர்,ಪೋಷಕರು,no
+ui:btn.done,Done,हो गया,முடிஞ்சது,ಮುಗೀತು,no
+ui:btn.cancel,Cancel,रद्द करें,வேண்டாம்,ರದ್ದು,no
+ui:btn.close,Close,बंद करें,மூடு,ಮುಚ್ಚು,no
+ui:btn.yes,Yes,हाँ,ஆமா,ಹೌದು,no
+ui:btn.ok,OK,ठीक है,சரி,ಸರಿ,no
+ui:btn.keep,Keep,रखें,வச்சுக்கோ,ಇರಲಿ,no
+ui:btn.move,Move,खिसकाएँ,நகர்த்து,ಸರಿಸು,no
+ui:btn.remove,Remove,हटाएँ,எடு,ತೆಗೆ,no
+ui:btn.undo,Undo,वापस करें,பழையபடி,ಹಿಂದಿನಂತೆ,no
+ui:btn.reload,Tap to reload,दबाकर फिर से खोलें,தொட்டு மறுபடி திற,ಒತ್ತಿ ಮತ್ತೆ ತೆರೆಯಿರಿ,no
+ui:btn.restore,Restore last working version,पिछला सही वर्ज़न वापस लाएँ,கடைசியா சரியா இருந்ததை திரும்ப கொண்டு வா,ಕೊನೆಯ ಸರಿಯಾದ ಆವೃತ್ತಿ ಮರಳಿ ತನ್ನಿ,no
+ui:btn.restoreThis,Restore,वापस लाएँ,திரும்ப கொண்டு வா,ಮರಳಿ ತನ್ನಿ,no
+ui:btn.reset,Reset to starter board,शुरुआती बोर्ड पर वापस जाएँ,ஆரம்ப போர்டுக்கு மாத்து,ಮೊದಲ ಬೋರ್ಡ್‌ಗೆ ಮರಳಿ,no
+ui:btn.testVoice,Test voice,आवाज़ जाँचें,குரலை செக் பண்ணு,ಧ್ವನಿ ಪರೀಕ್ಷಿಸಿ,no
+ui:btn.exportBackup,Export backup,बैकअप बनाएँ,பேக்கப் எடு,ಬ್ಯಾಕಪ್ ಮಾಡಿ,no
+ui:btn.backupNow,Back up now,अभी बैकअप लें,இப்போ பேக்கப் எடு,ಈಗ ಬ್ಯಾಕಪ್ ಮಾಡಿ,no
+ui:btn.shareBackup,Share backup,बैकअप भेजें,பேக்கப் அனுப்பு,ಬ್ಯಾಕಪ್ ಕಳುಹಿಸಿ,no
+ui:btn.downloadBackup,Download backup,बैकअप डाउनलोड करें,பேக்கப் டவுன்லோட் பண்ணு,ಬ್ಯಾಕಪ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ,no
+ui:btn.importBackup,Import backup,बैकअप लाएँ,பேக்கப் உள்ள எடு,ಬ್ಯಾಕಪ್ ತನ್ನಿ,no
+ui:btn.import,Import,लाएँ,உள்ள எடு,ತನ್ನಿ,no
+ui:btn.changePin,Change PIN,पिन बदलें,பின் மாத்து,ಪಿನ್ ಬದಲಿಸಿ,no
+ui:aria.savePhrase,Save to My phrases,मेरे वाक्य में सेव करें,என் வாக்கியங்களில் சேமி,ನನ್ನ ವಾಕ್ಯಗಳಲ್ಲಿ ಸೇವ್ ಮಾಡಿ,no
+ui:aria.sentence,Sentence — tap to speak,वाक्य — बोलने के लिए दबाएँ,வாக்கியம் — பேச தொடு,ವಾಕ್ಯ — ಮಾತಾಡಲು ಒತ್ತಿ,no
+ui:aria.language,Change language,भाषा बदलें,மொழி மாத்து,ಭಾಷೆ ಬದಲಿಸಿ,no
+ui:aria.moveLeft,Move left,बाएँ खिसकाएँ,இடது பக்கம்,ಎಡಕ್ಕೆ,no
+ui:aria.moveRight,Move right,दाएँ खिसकाएँ,வலது பக்கம்,ಬಲಕ್ಕೆ,no
+ui:aria.deletePhrase,Delete phrase,वाक्य मिटाएँ,வாக்கியத்தை அழி,ವಾಕ್ಯ ಅಳಿಸಿ,no
+ui:aria.addHere,Add a button here,यहाँ बटन जोड़ें,இங்க பட்டன் சேர்,ಇಲ್ಲಿ ಬಟನ್ ಸೇರಿಸಿ,no
+ui:hint.tapPictures,Tap pictures to talk…,बोलने के लिए चित्र दबाएँ…,பேச படங்களை தொடு…,ಮಾತಾಡಲು ಚಿತ್ರ ಒತ್ತಿ…,no
+ui:hint.savePhrase,"Make a sentence, then tap ★ Save","वाक्य बनाएँ, फिर ★ दबाएँ",வாக்கியம் செய்து ★ தொடு,"ವಾಕ್ಯ ಮಾಡಿ, ನಂತರ ★ ಒತ್ತಿ",no
+ui:strip.myPhrases,My phrases,मेरे वाक्य,என் வாக்கியங்கள்,ನನ್ನ ವಾಕ್ಯಗಳು,no
+ui:strip.recent,Recent,हाल के,சமீபத்தில்,ಇತ್ತೀಚಿನವು,no
+ui:tab.now,Now,अभी,இப்போ,ಈಗ,no
+ui:tab.type,Type,लिखें,டைப்,ಟೈಪ್,no
+ui:now.chosen,Chosen board,चुना हुआ बोर्ड,தேர்ந்தெடுத்த போர்டு,ಆಯ್ಕೆ ಮಾಡಿದ ಬೋರ್ಡ್,no
+ui:now.none,No routine right now,अभी कोई रूटीन नहीं,இப்போ எந்த ரொட்டீனும் இல்ல,ಈಗ ಯಾವ ದಿನಚರಿಯೂ ಇಲ್ಲ,no
+ui:now.change,Change board,बोर्ड बदलें,போர்டு மாத்து,ಬೋರ್ಡ್ ಬದಲಿಸಿ,no
+ui:now.back,Back to suggestion,सुझाव पर वापस,பரிந்துரைக்கு திரும்பு,ಸಲಹೆಗೆ ಮರಳಿ,no
+ui:now.pickTitle,Show which board now?,अभी कौन सा बोर्ड दिखाएँ?,இப்போ எந்த போர்டு?,ಈಗ ಯಾವ ಬೋರ್ಡ್?,no
+ui:move.hint,"Tap an empty space or another button to move ""{word}"".","""{word}"" को खिसकाने के लिए खाली जगह या दूसरा बटन दबाएँ।","""{word}"" நகர்த்த காலி இடத்தையோ வேற பட்டனையோ தொடு.","""{word}"" ಸರಿಸಲು ಖಾಲಿ ಜಾಗ ಅಥವಾ ಬೇರೆ ಬಟನ್ ಒತ್ತಿ.",no
+ui:lang.choose,Choose language,भाषा चुनें,மொழியை தேர்ந்தெடு,ಭಾಷೆ ಆರಿಸಿ,no
+ui:card.noSound,No sound available — show this screen,आवाज़ नहीं है — यह स्क्रीन दिखाएँ,சத்தம் வரல — இந்த ஸ்கிரீனை காட்டு,ಧ್ವನಿ ಇಲ್ಲ — ಈ ಸ್ಕ್ರೀನ್ ತೋರಿಸಿ,no
+ui:card.close,Tap anywhere to close,बंद करने के लिए कहीं भी दबाएँ,மூட எங்க வேணாலும் தொடு,ಮುಚ್ಚಲು ಎಲ್ಲಿಯಾದರೂ ಒತ್ತಿ,no
+ui:confirm.title,Please confirm,पक्का करें,உறுதி பண்ணுங்க,ಖಚಿತಪಡಿಸಿ,no
+ui:date.never,never,कभी नहीं,இதுவரை இல்ல,ಇನ್ನೂ ಇಲ್ಲ,no
+ui:days.short,"S,M,T,W,T,F,S","र,सो,मं,बु,गु,शु,श","ஞா,தி,செ,பு,வி,வெ,ச","ಭಾ,ಸೋ,ಮಂ,ಬು,ಗು,ಶು,ಶ",no
+ui:status.crashed,Bol did not start properly last time.,पिछली बार बोल ठीक से शुरू नहीं हुआ।,போன தடவை Bol சரியா ஆரம்பிக்கல.,ಹಿಂದಿನ ಸಲ Bol ಸರಿಯಾಗಿ ಶುರುವಾಗಲಿಲ್ಲ.,no
+ui:status.loadError,Saved data could not be opened. Showing the starter board.,सेव किया डेटा नहीं खुला। शुरुआती बोर्ड दिखा रहे हैं।,சேமிச்ச டேட்டா திறக்கல. ஆரம்ப போர்டு காட்டுறோம்.,ಸೇವ್ ಮಾಡಿದ ಡೇಟಾ ತೆರೆಯಲಿಲ್ಲ. ಮೊದಲ ಬೋರ್ಡ್ ತೋರಿಸುತ್ತಿದ್ದೇವೆ.,no
+ui:status.fromSnapshot,"Your board could not be read, so the last automatic snapshot was loaded.","आपका बोर्ड नहीं पढ़ा जा सका, इसलिए आखिरी ऑटो-स्नैपशॉट खोला गया।","உங்க போர்டை படிக்க முடியல, அதனால கடைசி ஆட்டோ ஸ்னாப்ஷாட் திறந்தோம்.","ನಿಮ್ಮ ಬೋರ್ಡ್ ಓದಲಾಗಲಿಲ್ಲ, ಆದ್ದರಿಂದ ಕೊನೆಯ ಸ್ವಯಂ ಸ್ನ್ಯಾಪ್‌ಶಾಟ್ ತೆರೆಯಲಾಗಿದೆ.",no
+ui:status.upgraded,"Bol was updated. Your buttons, photos and recordings are all kept; a copy of the old version was saved.","बोल अपडेट हुआ। आपके बटन, फ़ोटो और रिकॉर्डिंग सब सुरक्षित हैं; पुराने वर्ज़न की कॉपी भी रखी गई है।","Bol அப்டேட் ஆச்சு. உங்க பட்டன், போட்டோ, ரெக்கார்டிங் எல்லாம் இருக்கு; பழைய வெர்ஷன் காப்பியும் இருக்கு.","Bol ಅಪ್‌ಡೇಟ್ ಆಯಿತು. ನಿಮ್ಮ ಬಟನ್, ಫೋಟೋ, ರೆಕಾರ್ಡಿಂಗ್ ಎಲ್ಲಾ ಇವೆ; ಹಳೆಯ ಆವೃತ್ತಿಯ ಪ್ರತಿಯೂ ಇದೆ.",no
+ui:status.draftRestored,Your unfinished sentence was restored.,आपका अधूरा वाक्य वापस आ गया।,முடிக்காத வாக்கியம் திரும்ப வந்துடுச்சு.,ಅರ್ಧ ಮಾಡಿದ ವಾಕ್ಯ ಮರಳಿ ಬಂದಿದೆ.,no
+ui:status.saveFailed,Changes could NOT be saved (storage may be full). Please export a backup.,बदलाव सेव नहीं हुए (स्टोरेज भरा हो सकता है)। कृपया बैकअप बनाएँ।,மாற்றங்கள் சேமிக்கல (ஸ்டோரேஜ் நிறைஞ்சிருக்கலாம்). பேக்கப் எடுங்க.,ಬದಲಾವಣೆ ಸೇವ್ ಆಗಲಿಲ್ಲ (ಸ್ಟೋರೇಜ್ ತುಂಬಿರಬಹುದು). ಬ್ಯಾಕಪ್ ಮಾಡಿ.,no
+ui:status.error,Something went wrong ({msg}). Your board is saved.,कुछ गड़बड़ हुई ({msg})। आपका बोर्ड सुरक्षित है।,ஏதோ தப்பு ஆச்சு ({msg}). உங்க போர்டு பத்திரமா இருக்கு.,ಏನೋ ತಪ್ಪಾಯಿತು ({msg}). ನಿಮ್ಮ ಬೋರ್ಡ್ ಸುರಕ್ಷಿತವಾಗಿದೆ.,no
+ui:status.update,Update available,नया अपडेट उपलब्ध है,புது அப்டேட் வந்திருக்கு,ಹೊಸ ಅಪ್‌ಡೇಟ್ ಇದೆ,no
+ui:status.phraseSaved,Saved to My phrases.,मेरे वाक्य में सेव हुआ।,என் வாக்கியங்களில் சேமிச்சாச்சு.,ನನ್ನ ವಾಕ್ಯಗಳಲ್ಲಿ ಸೇವ್ ಆಯಿತು.,no
+ui:voice.unsupported,This browser cannot speak.,यह ब्राउज़र बोल नहीं सकता।,இந்த பிரவுசரால பேச முடியாது.,ಈ ಬ್ರೌಸರ್ ಮಾತಾಡಲಾರದು.,no
+ui:voice.noVoice,No {lang} voice is installed on this device.,इस फ़ोन में {lang} आवाज़ नहीं है।,இந்த போன்ல {lang} குரல் இல்ல.,ಈ ಫೋನ್‌ನಲ್ಲಿ {lang} ಧ್ವನಿ ಇಲ್ಲ.,no
+ui:voice.noStart,The voice did not start.,आवाज़ शुरू नहीं हुई।,குரல் ஆரம்பிக்கல.,ಧ್ವನಿ ಶುರುವಾಗಲಿಲ್ಲ.,no
+ui:voice.badRecording,A recording could not be played.,एक रिकॉर्डिंग नहीं चली।,ஒரு ரெக்கார்டிங் ஓடல.,ಒಂದು ರೆಕಾರ್ಡಿಂಗ್ ಪ್ಲೇ ಆಗಲಿಲ್ಲ.,no
+ui:voice.blocked,Sound was blocked — tap Speak again.,आवाज़ रुकी — फिर से बोलो दबाएँ।,சத்தம் தடுக்கப்பட்டது — மறுபடி பேசு தொடு.,ಧ್ವನಿ ತಡೆಯಲಾಯಿತು — ಮತ್ತೆ ಮಾತಾಡು ಒತ್ತಿ.,no
+ui:voice.usedOther,Spoke in {lang} instead.,इसकी जगह {lang} में बोला।,அதுக்கு பதிலா {lang}-ல பேசினோம்.,ಬದಲಿಗೆ {lang}ನಲ್ಲಿ ಮಾತಾಡಿದೆ.,no
+ui:voice.recordingsUsed,Recordings are used where available.,"जहाँ रिकॉर्डिंग है, वहाँ वही चलेगी।",ரெக்கார்டிங் இருந்தா அதுதான் ஓடும்.,ರೆಕಾರ್ಡಿಂಗ್ ಇದ್ದರೆ ಅದೇ ಪ್ಲೇ ಆಗುತ್ತದೆ.,no
+ui:voice.shownInBar,No sound right now: the words are shown in the sentence bar.,अभी आवाज़ नहीं: शब्द वाक्य पट्टी में दिख रहे हैं।,இப்போ சத்தம் இல்ல: வார்த்தைகள் மேல வாக்கிய பட்டையில தெரியுது.,ಈಗ ಧ್ವನಿ ಇಲ್ಲ: ಪದಗಳು ವಾಕ್ಯ ಪಟ್ಟಿಯಲ್ಲಿ ಕಾಣುತ್ತಿವೆ.,no
+ui:voice.failed,Speech failed. Showing the words on screen instead.,बोलना नहीं हुआ। शब्द स्क्रीन पर दिखा रहे हैं।,பேச முடியல. வார்த்தைகளை ஸ்கிரீன்ல காட்டுறோம்.,ಮಾತಾಡಲಾಗಲಿಲ್ಲ. ಪದಗಳನ್ನು ಸ್ಕ್ರೀನ್‌ನಲ್ಲಿ ತೋರಿಸುತ್ತಿದ್ದೇವೆ.,no
+ui:voice.checkTitle,Voice check,आवाज़ जाँच,குரல் செக்,ಧ್ವನಿ ಪರೀಕ್ಷೆ,no
+ui:voice.testing,Testing… you should hear each language in turn.,जाँच हो रही है… हर भाषा बारी-बारी सुनाई देगी।,செக் பண்றோம்… ஒவ்வொரு மொழியும் வரிசையா கேட்கும்.,ಪರೀಕ್ಷಿಸುತ್ತಿದ್ದೇವೆ… ಪ್ರತಿ ಭಾಷೆ ಒಂದೊಂದಾಗಿ ಕೇಳಿಸುತ್ತದೆ.,no
+ui:voice.found,voice found,आवाज़ मिली,குரல் இருக்கு,ಧ್ವನಿ ಇದೆ,no
+ui:voice.notFound,voice NOT found,आवाज़ नहीं मिली,குரல் இல்ல,ಧ್ವನಿ ಇಲ್ಲ,no
+ui:voice.default,default voice,डिफ़ॉल्ट आवाज़,சாதாரண குரல்,ಸಾಮಾನ್ಯ ಧ್ವನಿ,no
+ui:voice.failedReason,voice found but did not play ({reason}),आवाज़ है पर चली नहीं ({reason}),"குரல் இருக்கு, ஆனா ஓடல ({reason})","ಧ್ವನಿ ಇದೆ, ಆದರೆ ಪ್ಲೇ ಆಗಲಿಲ್ಲ ({reason})",no
+ui:voice.synthOk,Speech is available. Voices on this device: {n},बोलने की सुविधा है। इस फ़ोन में आवाज़ें: {n},பேசும் வசதி இருக்கு. இந்த போன்ல குரல்கள்: {n},ಮಾತಾಡುವ ಸೌಲಭ್ಯ ಇದೆ. ಈ ಫೋನ್‌ನಲ್ಲಿ ಧ್ವನಿಗಳು: {n},no
+ui:voice.synthMissing,"This browser has no speech. Use recordings, or try Chrome.",इस ब्राउज़र में आवाज़ नहीं है। रिकॉर्डिंग इस्तेमाल करें या Chrome आज़माएँ।,"இந்த பிரவுசர்ல பேச்சு இல்ல. ரெக்கார்டிங் யூஸ் பண்ணுங்க, இல்லனா Chrome ட்ரை பண்ணுங்க.",ಈ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಧ್ವನಿ ಇಲ್ಲ. ರೆಕಾರ್ಡಿಂಗ್ ಬಳಸಿ ಅಥವಾ Chrome ಪ್ರಯತ್ನಿಸಿ.,no
+ui:voice.howTitle,How to add a missing voice (Android),जो आवाज़ नहीं है उसे कैसे जोड़ें (Android),இல்லாத குரலை எப்படி சேர்க்கணும் (Android),ಇಲ್ಲದ ಧ್ವನಿ ಹೇಗೆ ಸೇರಿಸುವುದು (Android),no
+ui:voice.android1,Open the phone's Settings app.,फ़ोन की सेटिंग्स खोलें।,போன்ல Settings திறங்க.,ಫೋನ್‌ನ Settings ತೆರೆಯಿರಿ.,no
+ui:voice.android2,"Search for ""Text-to-speech"" and open it.","""Text-to-speech"" खोजें और खोलें।","""Text-to-speech"" தேடி திறங்க.","""Text-to-speech"" ಹುಡುಕಿ ತೆರೆಯಿರಿ.",no
+ui:voice.android3,"Choose ""Speech Services by Google"" as the engine, then tap the gear ⚙️ next to it.","इंजन में ""Speech Services by Google"" चुनें, फिर उसके पास ⚙️ दबाएँ।","Engine-ல ""Speech Services by Google"" தேர்ந்தெடுங்க, பக்கத்துல இருக்கிற ⚙️ தொடுங்க.","Engine ಆಗಿ ""Speech Services by Google"" ಆರಿಸಿ, ಪಕ್ಕದ ⚙️ ಒತ್ತಿ.",no
+ui:voice.android4,"Tap ""Install voice data"".","""Install voice data"" दबाएँ।","""Install voice data"" தொடுங்க.","""Install voice data"" ಒತ್ತಿ.",no
+ui:voice.android5,"Pick the language (e.g. Tamil (India), Kannada (India), Hindi (India)) and download it. Use Wi-Fi; it needs internet once.",भाषा चुनें (जैसे Hindi (India)) और डाउनलोड करें। Wi-Fi इस्तेमाल करें; एक बार इंटरनेट चाहिए।,மொழியை தேர்ந்தெடுங்க (எ.கா. Tamil (India)) டவுன்லோட் பண்ணுங்க. Wi-Fi யூஸ் பண்ணுங்க; ஒரு தடவை இன்டர்நெட் வேணும்.,ಭಾಷೆ ಆರಿಸಿ (ಉದಾ. Kannada (India)) ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. Wi-Fi ಬಳಸಿ; ಒಮ್ಮೆ ಇಂಟರ್ನೆಟ್ ಬೇಕು.,no
+ui:voice.android6,"Close Bol completely, open it again, and tap Test voice.","बोल को पूरी तरह बंद करके फिर खोलें, और आवाज़ जाँचें दबाएँ।","Bol-ஐ முழுசா மூடி, மறுபடி திறந்து, குரலை செக் பண்ணு தொடுங்க.","Bol ಪೂರ್ತಿ ಮುಚ್ಚಿ, ಮತ್ತೆ ತೆರೆದು, ಧ್ವನಿ ಪರೀಕ್ಷಿಸಿ ಒತ್ತಿ.",no
+ui:voice.iosHint,iPhone/iPad: Settings → Accessibility → Spoken Content → Voices. Not every language is offered on iOS.,iPhone/iPad: Settings → Accessibility → Spoken Content → Voices. iOS पर हर भाषा नहीं मिलती।,iPhone/iPad: Settings → Accessibility → Spoken Content → Voices. iOS-ல எல்லா மொழியும் இருக்காது.,iPhone/iPad: Settings → Accessibility → Spoken Content → Voices. iOS ನಲ್ಲಿ ಎಲ್ಲಾ ಭಾಷೆ ಸಿಗುವುದಿಲ್ಲ.,no
+ui:voice.recordHint,"Words you record on a button always play, even without any voice installed.","जो शब्द आप बटन पर रिकॉर्ड करते हैं, वे हमेशा चलते हैं, आवाज़ न हो तब भी।","பட்டன்ல நீங்க ரெக்கார்ட் பண்ண வார்த்தைகள் எப்பவும் ஓடும், குரல் இல்லாட்டியும்.","ಬಟನ್‌ನಲ್ಲಿ ನೀವು ರೆಕಾರ್ಡ್ ಮಾಡಿದ ಪದಗಳು ಯಾವಾಗಲೂ ಪ್ಲೇ ಆಗುತ್ತವೆ, ಧ್ವನಿ ಇಲ್ಲದಿದ್ದರೂ.",no
+ui:pin.create,Create a 4-digit caregiver PIN,4 अंकों का पिन बनाएँ,4 இலக்க பின் உருவாக்குங்க,4 ಅಂಕಿಯ ಪಿನ್ ಮಾಡಿ,no
+ui:pin.again,Type the same PIN again,वही पिन फिर से डालें,அதே பின் மறுபடி போடுங்க,ಅದೇ ಪಿನ್ ಮತ್ತೆ ಹಾಕಿ,no
+ui:pin.enter,Caregiver PIN,पिन डालें,பின் போடுங்க,ಪಿನ್ ಹಾಕಿ,no
+ui:pin.new,New PIN,नया पिन,புது பின்,ಹೊಸ ಪಿನ್,no
+ui:pin.mismatch,The two PINs did not match. Try again.,दोनों पिन अलग थे। फिर से कोशिश करें।,ரெண்டு பின்னும் ஒத்துப்போகல. மறுபடி ட்ரை பண்ணுங்க.,ಎರಡು ಪಿನ್ ಹೊಂದಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.,no
+ui:pin.mismatchKept,PINs did not match; PIN unchanged.,पिन मेल नहीं खाए; पिन नहीं बदला।,பின் ஒத்துப்போகல; பழைய பின்னே இருக்கு.,ಪಿನ್ ಹೊಂದಲಿಲ್ಲ; ಪಿನ್ ಬದಲಾಗಿಲ್ಲ.,no
+ui:pin.wrong,Wrong PIN.,गलत पिन।,தப்பான பின்.,ತಪ್ಪು ಪಿನ್.,no
+ui:pin.changed,PIN changed.,पिन बदल गया।,பின் மாறிடுச்சு.,ಪಿನ್ ಬದಲಾಯಿತು.,no
+ui:backup.reminder,Last backup was {n} days ago. Make a new one so nothing is lost.,आखिरी बैकअप {n} दिन पहले था। नया बनाएँ ताकि कुछ न खोए।,கடைசி பேக்கப் {n} நாள் முன்னாடி. எதுவும் போகாம இருக்க புதுசா எடுங்க.,ಕೊನೆಯ ಬ್ಯಾಕಪ್ {n} ದಿನ ಹಿಂದೆ. ಏನೂ ಕಳೆಯದಂತೆ ಹೊಸದು ಮಾಡಿ.,no
+ui:backup.never,This board has never been backed up.,इस बोर्ड का कभी बैकअप नहीं बना।,இந்த போர்டுக்கு இதுவரை பேக்கப் எடுக்கல.,ಈ ಬೋರ್ಡ್‌ನ ಬ್ಯಾಕಪ್ ಇನ್ನೂ ಮಾಡಿಲ್ಲ.,no
+ui:backup.preparing,Preparing backup…,बैकअप तैयार हो रहा है…,பேக்கப் ரெடி ஆகுது…,ಬ್ಯಾಕಪ್ ಸಿದ್ಧವಾಗುತ್ತಿದೆ…,no
+ui:backup.cancelled,Backup cancelled.,बैकअप रद्द हुआ।,பேக்கப் நிறுத்தப்பட்டது.,ಬ್ಯಾಕಪ್ ರದ್ದಾಯಿತು.,no
+ui:backup.shared,Backup shared: {file} ({mb} MB).,बैकअप भेजा गया: {file} ({mb} MB)।,பேக்கப் அனுப்பியாச்சு: {file} ({mb} MB).,ಬ್ಯಾಕಪ್ ಕಳುಹಿಸಲಾಯಿತು: {file} ({mb} MB).,no
+ui:backup.downloaded,Backup downloaded: {file} ({mb} MB).,बैकअप डाउनलोड हुआ: {file} ({mb} MB)।,பேக்கப் டவுன்லோட் ஆச்சு: {file} ({mb} MB).,ಬ್ಯಾಕಪ್ ಡೌನ್‌ಲೋಡ್ ಆಯಿತು: {file} ({mb} MB).,no
+ui:backup.missing,{n} photo/recording file(s) were missing and skipped.,{n} फ़ोटो/रिकॉर्डिंग नहीं मिलीं और छोड़ दी गईं।,"{n} போட்டோ/ரெக்கார்டிங் கிடைக்கல, விட்டுட்டோம்.","{n} ಫೋಟೋ/ರೆಕಾರ್ಡಿಂಗ್ ಸಿಗಲಿಲ್ಲ, ಬಿಡಲಾಗಿದೆ.",no
+ui:backup.failed,Backup failed: {msg},बैकअप नहीं बना: {msg},பேக்கப் தோல்வி: {msg},ಬ್ಯಾಕಪ್ ವಿಫಲ: {msg},no
+ui:backup.last,Last backup: {date},आखिरी बैकअप: {date},கடைசி பேக்கப்: {date},ಕೊನೆಯ ಬ್ಯಾಕಪ್: {date},no
+ui:backup.daysAgo,({n} days ago),({n} दिन पहले),({n} நாள் முன்னாடி),({n} ದಿನ ಹಿಂದೆ),no
+ui:backup.hint,"One file holds everything: buttons, photos, recordings, phrases, routines and settings. No account needed.","एक फ़ाइल में सब कुछ: बटन, फ़ोटो, रिकॉर्डिंग, वाक्य, रूटीन और सेटिंग्स। अकाउंट की ज़रूरत नहीं।","ஒரே ஃபைல்ல எல்லாம்: பட்டன், போட்டோ, ரெக்கார்டிங், வாக்கியம், ரொட்டீன், செட்டிங்ஸ். அக்கவுண்ட் வேண்டாம்.","ಒಂದೇ ಫೈಲ್‌ನಲ್ಲಿ ಎಲ್ಲಾ: ಬಟನ್, ಫೋಟೋ, ರೆಕಾರ್ಡಿಂಗ್, ವಾಕ್ಯ, ದಿನಚರಿ, ಸೆಟ್ಟಿಂಗ್ಸ್. ಖಾತೆ ಬೇಡ.",no
+ui:import.confirm,"Backup from {date}: {buttons} buttons, {photos} photos, {recordings} recordings, {phrases} phrases, {routines} routines. Replace the board on this device? (The current board is kept as a snapshot you can restore.)","{date} का बैकअप: {buttons} बटन, {photos} फ़ोटो, {recordings} रिकॉर्डिंग, {phrases} वाक्य, {routines} रूटीन। इस फ़ोन का बोर्ड बदल दें? (अभी का बोर्ड स्नैपशॉट में रहेगा।)","{date} பேக்கப்: {buttons} பட்டன், {photos} போட்டோ, {recordings} ரெக்கார்டிங், {phrases} வாக்கியம், {routines} ரொட்டீன். இந்த போன் போர்டை மாத்தலாமா? (இப்போ இருக்கிற போர்டு ஸ்னாப்ஷாட்டா இருக்கும்.)","{date} ಬ್ಯಾಕಪ್: {buttons} ಬಟನ್, {photos} ಫೋಟೋ, {recordings} ರೆಕಾರ್ಡಿಂಗ್, {phrases} ವಾಕ್ಯ, {routines} ದಿನಚರಿ. ಈ ಫೋನ್‌ನ ಬೋರ್ಡ್ ಬದಲಿಸಲೇ? (ಈಗಿನ ಬೋರ್ಡ್ ಸ್ನ್ಯಾಪ್‌ಶಾಟ್ ಆಗಿ ಇರುತ್ತದೆ.)",no
+ui:import.done,Import complete ✓,बैकअप आ गया ✓,இம்போர்ட் முடிஞ்சது ✓,ಇಂಪೋರ್ಟ್ ಮುಗಿಯಿತು ✓,no
+ui:import.sumButtons,{n} buttons in {c} categories,{c} श्रेणियों में {n} बटन,{c} வகைகளில் {n} பட்டன்,{c} ವರ್ಗಗಳಲ್ಲಿ {n} ಬಟನ್,no
+ui:import.sumMedia,"{p} photos, {r} recordings","{p} फ़ोटो, {r} रिकॉर्डिंग","{p} போட்டோ, {r} ரெக்கார்டிங்","{p} ಫೋಟೋ, {r} ರೆಕಾರ್ಡಿಂಗ್",no
+ui:import.sumPhrases,"{p} saved phrases, {r} routine rules","{p} सेव किए वाक्य, {r} रूटीन","{p} சேமிச்ச வாக்கியம், {r} ரொட்டீன்","{p} ಸೇವ್ ಮಾಡಿದ ವಾಕ್ಯ, {r} ದಿನಚರಿ",no
+ui:import.sumSettings,"Settings, colours and PIN restored","सेटिंग्स, रंग और पिन वापस आ गए","செட்டிங்ஸ், கலர், பின் திரும்ப வந்துடுச்சு","ಸೆಟ್ಟಿಂಗ್ಸ್, ಬಣ್ಣ, ಪಿನ್ ಮರಳಿ ಬಂದಿವೆ",no
+ui:import.sumMissing,{n} photo/recording file(s) could not be restored,{n} फ़ोटो/रिकॉर्डिंग वापस नहीं आ सकीं,{n} போட்டோ/ரெக்கார்டிங் திரும்ப வரல,{n} ಫೋಟೋ/ರೆಕಾರ್ಡಿಂಗ್ ಮರಳಿ ಬರಲಿಲ್ಲ,no
+ui:import.failed,Import failed: {msg}. Nothing was lost; use Restore last working version if needed.,बैकअप नहीं आया: {msg}। कुछ नहीं खोया; ज़रूरत हो तो पिछला सही वर्ज़न वापस लाएँ।,இம்போர்ட் தோல்வி: {msg}. எதுவும் போகல; வேணும்னா பழைய சரியான வெர்ஷனை திரும்ப கொண்டு வாங்க.,ಇಂಪೋರ್ಟ್ ವಿಫಲ: {msg}. ಏನೂ ಕಳೆದಿಲ್ಲ; ಬೇಕಿದ್ದರೆ ಕೊನೆಯ ಸರಿಯಾದ ಆವೃತ್ತಿ ಮರಳಿ ತನ್ನಿ.,no
+ui:import.tooLarge,File is too large to be a Bol backup.,"फ़ाइल बहुत बड़ी है, यह बोल बैकअप नहीं है।","ஃபைல் ரொம்ப பெருசு, இது Bol பேக்கப் இல்ல.","ಫೈಲ್ ತುಂಬಾ ದೊಡ್ಡದು, ಇದು Bol ಬ್ಯಾಕಪ್ ಅಲ್ಲ.",no
+ui:import.notBackup,This is not a Bol backup file.,यह बोल बैकअप फ़ाइल नहीं है।,இது Bol பேக்கப் ஃபைல் இல்ல.,ಇದು Bol ಬ್ಯಾಕಪ್ ಫೈಲ್ ಅಲ್ಲ.,no
+ui:import.newer,This backup was made by a newer version of Bol. Please update the app.,यह बैकअप बोल के नए वर्ज़न से बना है। ऐप अपडेट करें।,இந்த பேக்கப் Bol-ன் புது வெர்ஷன்ல எடுத்தது. ஆப்பை அப்டேட் பண்ணுங்க.,ಈ ಬ್ಯಾಕಪ್ Bol ನ ಹೊಸ ಆವೃತ್ತಿಯಿಂದ ಮಾಡಿದ್ದು. ಆ್ಯಪ್ ಅಪ್‌ಡೇಟ್ ಮಾಡಿ.,no
+ui:restore.none,There is no earlier version to restore.,वापस लाने के लिए कोई पुराना वर्ज़न नहीं है।,திரும்ப கொண்டு வர பழைய வெர்ஷன் இல்ல.,ಮರಳಿ ತರಲು ಹಳೆಯ ಆವೃತ್ತಿ ಇಲ್ಲ.,no
+ui:restore.failed,Restore failed: {msg},वापस नहीं ला सके: {msg},திரும்ப கொண்டு வர முடியல: {msg},ಮರಳಿ ತರಲಾಗಲಿಲ್ಲ: {msg},no
+ui:restore.done,Restored the version from {date}.,{date} का वर्ज़न वापस आया।,{date} வெர்ஷன் திரும்ப வந்துடுச்சு.,{date} ಆವೃತ್ತಿ ಮರಳಿ ಬಂದಿದೆ.,no
+ui:rec.play,Play,चलाएँ,ப்ளே,ಪ್ಲೇ,no
+ui:rec.delete,Delete recording,रिकॉर्डिंग मिटाएँ,ரெக்கார்டிங் அழி,ರೆಕಾರ್ಡಿಂಗ್ ಅಳಿಸಿ,no
+ui:rec.stop,Stop,रोकें,நிறுத்து,ನಿಲ್ಲಿಸು,no
+ui:rec.again,Record again,फिर से रिकॉर्ड करें,மறுபடி ரெக்கார்ட்,ಮತ್ತೆ ರೆಕಾರ್ಡ್,no
+ui:rec.record,Record,रिकॉर्ड करें,ரெக்கார்ட்,ರೆಕಾರ್ಡ್,no
+ui:rec.recording,Recording… say the word (stops after 10 s),रिकॉर्डिंग… शब्द बोलें (10 सेकंड में रुकेगी),ரெக்கார்டிங்… வார்த்தையை சொல்லுங்க (10 வினாடில நிக்கும்),ರೆಕಾರ್ಡಿಂಗ್… ಪದ ಹೇಳಿ (10 ಸೆಕೆಂಡ್‌ನಲ್ಲಿ ನಿಲ್ಲುತ್ತದೆ),no
+ui:rec.done,Recorded ✓,रिकॉर्ड हुआ ✓,ரெக்கார்ட் ஆச்சு ✓,ರೆಕಾರ್ಡ್ ಆಯಿತು ✓,no
+ui:rec.denied,Microphone permission was denied.,माइक की अनुमति नहीं मिली।,மைக் அனுமதி கிடைக்கல.,ಮೈಕ್ ಅನುಮತಿ ಸಿಗಲಿಲ್ಲ.,no
+ui:rec.cantPlay,Could not play the recording.,रिकॉर्डिंग नहीं चली।,ரெக்கார்டிங் ஓடல.,ರೆಕಾರ್ಡಿಂಗ್ ಪ್ಲೇ ಆಗಲಿಲ್ಲ.,no
+ui:rec.removed,Recording removed,रिकॉर्डिंग हटाई गई,ரெக்கார்டிங் எடுத்தாச்சு,ರೆಕಾರ್ಡಿಂಗ್ ತೆಗೆಯಲಾಗಿದೆ,no
+ui:photo.preparing,Preparing photo…,फ़ोटो तैयार हो रही है…,போட்டோ ரெடி ஆகுது…,ಫೋಟೋ ಸಿದ್ಧವಾಗುತ್ತಿದೆ…,no
+ui:photo.ready,Photo ready ✓,फ़ोटो तैयार ✓,போட்டோ ரெடி ✓,ಫೋಟೋ ಸಿದ್ಧ ✓,no
+ui:photo.saveAnyway,You can still save without a photo.,आप बिना फ़ोटो के भी सेव कर सकते हैं।,போட்டோ இல்லாமலும் சேமிக்கலாம்.,ಫೋಟೋ ಇಲ್ಲದೆಯೂ ಸೇವ್ ಮಾಡಬಹುದು.,no
+ui:photo.camera,Camera,कैमरा,கேமரா,ಕ್ಯಾಮೆರಾ,no
+ui:photo.gallery,Gallery,गैलरी,கேலரி,ಗ್ಯಾಲರಿ,no
+ui:photo.none,No photo,फ़ोटो नहीं,போட்டோ வேண்டாம்,ಫೋಟೋ ಬೇಡ,no
+ui:editor.word,Word,शब्द,வார்த்தை,ಪದ,no
+ui:editor.otherLangs,Other languages,दूसरी भाषाएँ,மற்ற மொழிகள்,ಬೇರೆ ಭಾಷೆಗಳು,no
+ui:editor.record,Record the word (optional; plays instead of the computer voice),शब्द रिकॉर्ड करें (ज़रूरी नहीं; कंप्यूटर की आवाज़ की जगह यही चलेगी),வார்த்தையை ரெக்கார்ட் பண்ணுங்க (விருப்பம்; கம்ப்யூட்டர் குரலுக்கு பதிலா இது ஓடும்),ಪದ ರೆಕಾರ್ಡ್ ಮಾಡಿ (ಐಚ್ಛಿಕ; ಕಂಪ್ಯೂಟರ್ ಧ್ವನಿಯ ಬದಲು ಇದು ಪ್ಲೇ ಆಗುತ್ತದೆ),no
+ui:editor.category,Category,श्रेणी,வகை,ವರ್ಗ,no
+ui:editor.more,More options,और विकल्प,இன்னும் ஆப்ஷன்கள்,ಇನ್ನಷ್ಟು ಆಯ್ಕೆಗಳು,no
+ui:editor.wordType,Word type (sets the colour),शब्द का प्रकार (रंग तय करता है),வார்த்தை வகை (கலர் இதை வச்சு),ಪದದ ಬಗೆ (ಬಣ್ಣ ಇದರಿಂದ),no
+ui:editor.noType,— none —,— कोई नहीं —,— எதுவும் இல்ல —,— ಯಾವುದೂ ಇಲ್ಲ —,no
+ui:editor.emoji,Emoji (used when there is no picture),इमोजी (जब चित्र न हो),எமோஜி (படம் இல்லாதப்போ),ಎಮೋಜಿ (ಚಿತ್ರ ಇಲ್ಲದಾಗ),no
+ui:editor.hideText,Hide the text on this button,इस बटन पर लिखा हुआ छिपाएँ,இந்த பட்டன்ல எழுத்தை மறை,ಈ ಬಟನ್‌ನ ಅಕ್ಷರ ಮರೆಮಾಡಿ,no
+ui:editor.alts,Other ways to say it (shown on long-press),इसे कहने के दूसरे तरीके (देर तक दबाने पर),இதை சொல்ல வேற வழிகள் (நீண்ட நேரம் அழுத்தினா),ಇದನ್ನು ಹೇಳುವ ಬೇರೆ ರೀತಿಗಳು (ಹೆಚ್ಚು ಹೊತ್ತು ಒತ್ತಿದಾಗ),no
+ui:editor.addAlt,Add another way to say it,कहने का एक और तरीका जोड़ें,சொல்ல இன்னொரு வழி சேர்,ಹೇಳುವ ಇನ್ನೊಂದು ರೀತಿ ಸೇರಿಸಿ,no
+ui:editor.needWord,Please type the word in at least one language.,कम से कम एक भाषा में शब्द लिखें।,குறைஞ்சது ஒரு மொழியிலாவது வார்த்தை டைப் பண்ணுங்க.,ಕನಿಷ್ಠ ಒಂದು ಭಾಷೆಯಲ್ಲಿ ಪದ ಟೈಪ್ ಮಾಡಿ.,no
+ui:editor.added,"Button ""{word}"" added in {n} seconds.","""{word}"" बटन {n} सेकंड में जुड़ा।","""{word}"" பட்டன் {n} வினாடியில சேர்ந்தது.","""{word}"" ಬಟನ್ {n} ಸೆಕೆಂಡ್‌ನಲ್ಲಿ ಸೇರಿತು.",no
+ui:editor.saveFailed,Could not save: {msg},सेव नहीं हुआ: {msg},சேமிக்க முடியல: {msg},ಸೇವ್ ಆಗಲಿಲ್ಲ: {msg},no
+ui:editor.confirmDelete,"Delete the button ""{word}""?","""{word}"" बटन मिटा दें?","""{word}"" பட்டனை அழிக்கணுமா?","""{word}"" ಬಟನ್ ಅಳಿಸಬೇಕೇ?",no
+ui:editor.addTitle,Add a button,बटन जोड़ें,பட்டன் சேர்,ಬಟನ್ ಸೇರಿಸಿ,no
+ui:editor.editTitle,"Edit ""{word}""","""{word}"" बदलें","""{word}"" மாத்து","""{word}"" ಬದಲಿಸಿ",no
+ui:editor.lockedHint,Layout is locked: buttons can be edited but not moved or deleted. Unlock in Settings.,"लेआउट लॉक है: बटन बदल सकते हैं, पर खिसका या मिटा नहीं सकते। सेटिंग्स में अनलॉक करें।","லேஅவுட் லாக்: பட்டனை மாத்தலாம், ஆனா நகர்த்தவோ அழிக்கவோ முடியாது. செட்டிங்ஸ்ல அன்லாக் பண்ணுங்க.","ಲೇಔಟ್ ಲಾಕ್ ಆಗಿದೆ: ಬಟನ್ ಬದಲಿಸಬಹುದು, ಸರಿಸಲು/ಅಳಿಸಲು ಆಗದು. ಸೆಟ್ಟಿಂಗ್ಸ್‌ನಲ್ಲಿ ಅನ್‌ಲಾಕ್ ಮಾಡಿ.",no
+ui:media.notPicture,This file is not a picture the browser can open.,यह फ़ाइल ऐसी तस्वीर नहीं है जो खुल सके।,இந்த ஃபைல் திறக்கக்கூடிய படம் இல்ல.,ಈ ಫೈಲ್ ತೆರೆಯಬಹುದಾದ ಚಿತ್ರ ಅಲ್ಲ.,no
+ui:media.noFile,No file chosen.,कोई फ़ाइल नहीं चुनी।,ஃபைல் எதுவும் தேர்ந்தெடுக்கல.,ಯಾವ ಫೈಲ್ ಆರಿಸಿಲ್ಲ.,no
+ui:media.tooLarge,That picture is too large (over 25 MB).,तस्वीर बहुत बड़ी है (25 MB से ज़्यादा)।,அந்த படம் ரொம்ப பெருசு (25 MB-க்கு மேல).,ಆ ಚಿತ್ರ ತುಂಬಾ ದೊಡ್ಡದು (25 MB ಗಿಂತ ಹೆಚ್ಚು).,no
+ui:media.slow,The picture took too long to open.,तस्वीर खुलने में बहुत देर लगी।,படம் திறக்க ரொம்ப நேரம் ஆச்சு.,ಚಿತ್ರ ತೆರೆಯಲು ತುಂಬಾ ಸಮಯ ಆಯಿತು.,no
+ui:media.empty,The picture appears to be empty.,तस्वीर खाली लग रही है।,படம் காலியா இருக்கு.,ಚಿತ್ರ ಖಾಲಿಯಾಗಿದೆ.,no
+ui:media.cantSave,Could not save the picture.,तस्वीर सेव नहीं हुई।,படத்தை சேமிக்க முடியல.,ಚಿತ್ರ ಸೇವ್ ಆಗಲಿಲ್ಲ.,no
+ui:media.noRecorder,This browser cannot record audio.,यह ब्राउज़र रिकॉर्ड नहीं कर सकता।,இந்த பிரவுசரால ரெக்கார்ட் பண்ண முடியாது.,ಈ ಬ್ರೌಸರ್ ರೆಕಾರ್ಡ್ ಮಾಡಲಾರದು.,no
+ui:media.noMic,Microphone not available (the page must be opened over https).,माइक नहीं मिला (पेज https पर खुलना चाहिए)।,மைக் கிடைக்கல (பேஜ் https-ல திறக்கணும்).,ಮೈಕ್ ಸಿಗಲಿಲ್ಲ (ಪುಟ https ನಲ್ಲಿ ತೆರೆಯಬೇಕು).,no
+ui:media.nothing,Nothing was recorded.,कुछ रिकॉर्ड नहीं हुआ।,எதுவும் ரெக்கார்ட் ஆகல.,ಏನೂ ರೆಕಾರ್ಡ್ ಆಗಲಿಲ್ಲ.,no
+ui:media.recFailed,Recording failed.,रिकॉर्डिंग नहीं हुई।,ரெக்கார்டிங் தோல்வி.,ರೆಕಾರ್ಡಿಂಗ್ ವಿಫಲ.,no
+ui:settings.title,Caregiver settings,सेटिंग्स,செட்டிங்ஸ்,ಸೆಟ್ಟಿಂಗ್ಸ್,no
+ui:settings.voice,Voice & language,आवाज़ और भाषा,குரல் & மொழி,ಧ್ವನಿ & ಭಾಷೆ,no
+ui:settings.language,Language,भाषा,மொழி,ಭಾಷೆ,no
+ui:settings.speed,Speaking speed,बोलने की गति,பேசும் வேகம்,ಮಾತಿನ ವೇಗ,no
+ui:settings.speakOnTap,Speak each word when its button is tapped,बटन दबाते ही शब्द बोलें,பட்டனை தொட்டதும் வார்த்தையை பேசு,ಬಟನ್ ಒತ್ತಿದ ತಕ್ಷಣ ಪದ ಹೇಳು,no
+ui:speed.slow,Slow,धीमी,மெதுவா,ನಿಧಾನ,no
+ui:speed.normal,Normal,सामान्य,சாதாரணம்,ಸಾಮಾನ್ಯ,no
+ui:speed.fast,Fast,तेज़,வேகமா,ವೇಗ,no
+ui:settings.layout,Layout & look,लेआउट और रूप,லேஅவுட் & தோற்றம்,ಲೇಔಟ್ & ನೋಟ,no
+ui:settings.lock,Lock layout (buttons cannot be moved or deleted),लेआउट लॉक करें (बटन खिसकेंगे या मिटेंगे नहीं),லேஅவுட் லாக் (பட்டன்களை நகர்த்தவோ அழிக்கவோ முடியாது),ಲೇಔಟ್ ಲಾಕ್ (ಬಟನ್ ಸರಿಸಲು/ಅಳಿಸಲು ಆಗದು),no
+ui:settings.cols,Buttons per row (changing this re-flows the grid),एक लाइन में बटन (बदलने पर ग्रिड फिर से सजेगा),ஒரு வரிசையில பட்டன்கள் (மாத்தினா கிரிட் மாறும்),ಒಂದು ಸಾಲಿನಲ್ಲಿ ಬಟನ್ (ಬದಲಿಸಿದರೆ ಗ್ರಿಡ್ ಬದಲಾಗುತ್ತದೆ),no
+ui:settings.buttonSize,Button size,बटन का आकार,பட்டன் அளவு,ಬಟನ್ ಗಾತ್ರ,no
+ui:settings.textSize,Text size,अक्षरों का आकार,எழுத்து அளவு,ಅಕ್ಷರ ಗಾತ್ರ,no
+ui:size.s,Small,छोटा,சின்னது,ಚಿಕ್ಕದು,no
+ui:size.m,Medium,मध्यम,நடுத்தரம்,ಮಧ್ಯಮ,no
+ui:size.l,Large,बड़ा,பெருசு,ದೊಡ್ಡದು,no
+ui:size.xl,Extra large,बहुत बड़ा,ரொம்ப பெருசு,ತುಂಬಾ ದೊಡ್ಡದು,no
+ui:settings.showText,Show text under pictures,चित्रों के नीचे लिखा दिखाएँ,படத்துக்கு கீழ எழுத்தை காட்டு,ಚಿತ್ರದ ಕೆಳಗೆ ಅಕ್ಷರ ತೋರಿಸಿ,no
+ui:settings.secondLang,"Second language label (smaller, under each button)",दूसरी भाषा का छोटा लेबल (हर बटन के नीचे),"இரண்டாவது மொழி லேபிள் (சின்னதா, பட்டனுக்கு கீழ)","ಎರಡನೇ ಭಾಷೆಯ ಲೇಬಲ್ (ಚಿಕ್ಕದಾಗಿ, ಬಟನ್ ಕೆಳಗೆ)",no
+ui:settings.secondNone,None,कोई नहीं,வேண்டாம்,ಬೇಡ,no
+ui:settings.colours,Button colours,बटन के रंग,பட்டன் கலர்,ಬಟನ್ ಬಣ್ಣ,no
+ui:colours.wordtype,By word type (AAC colour code),शब्द के प्रकार से (AAC रंग कोड),வார்த்தை வகைப்படி (AAC கலர் கோடு),ಪದದ ಬಗೆಯ ಪ್ರಕಾರ (AAC ಬಣ್ಣ ಕೋಡ್),no
+ui:colours.category,By category,श्रेणी से,வகைப்படி,ವರ್ಗದ ಪ್ರಕಾರ,no
+ui:colours.none,No colours,कोई रंग नहीं,கலர் வேண்டாம்,ಬಣ್ಣ ಬೇಡ,no
+ui:settings.theme,Colour theme,रंग थीम,கலர் தீம்,ಬಣ್ಣದ ಥೀಮ್,no
+ui:theme.light,Light,हल्का,வெளிச்சம்,ತಿಳಿ,no
+ui:theme.dark,Dark,गहरा,இருட்டு,ಗಾಢ,no
+ui:theme.contrast,High contrast,हाई कॉन्ट्रास्ट,ஹை கான்ட்ராஸ்ட்,ಹೈ ಕಾಂಟ್ರಾಸ್ಟ್,no
+ui:theme.calm,Calm (muted),शांत (हल्के रंग),அமைதி (மங்கலான கலர்),ಶಾಂತ (ಮಂದ ಬಣ್ಣ),no
+ui:settings.showPhrases,"Show ""My phrases"" row","""मेरे वाक्य"" पंक्ति दिखाएँ","""என் வாக்கியங்கள்"" வரிசையை காட்டு","""ನನ್ನ ವಾಕ್ಯಗಳು"" ಸಾಲು ತೋರಿಸಿ",no
+ui:settings.showRecent,"Show ""Recent"" row","""हाल के"" पंक्ति दिखाएँ","""சமீபத்தில்"" வரிசையை காட்டு","""ಇತ್ತೀಚಿನವು"" ಸಾಲು ತೋರಿಸಿ",no
+ui:settings.tapGuard,Ignore repeated taps on the same button within,एक ही बटन पर इतनी जल्दी दोबारा दबाना अनदेखा करें,ஒரே பட்டனை இவ்வளவு நேரத்துக்குள்ள மறுபடி தொட்டா கண்டுக்காதே,ಒಂದೇ ಬಟನ್ ಇಷ್ಟು ಬೇಗ ಮತ್ತೆ ಒತ್ತಿದರೆ ಗಮನಿಸಬೇಡ,no
+ui:tap.off,Off,बंद,ஆஃப்,ಆಫ್,no
+ui:settings.routines,"Routines (""Now"" screen)","रूटीन (""अभी"" स्क्रीन)","ரொட்டீன் (""இப்போ"" ஸ்கிரீன்)","ದಿನಚರಿ (""ಈಗ"" ಸ್ಕ್ರೀನ್)",no
+ui:routines.enable,"Use the ""Now"" screen (suggest a board by time of day)","""अभी"" स्क्रीन इस्तेमाल करें (समय के हिसाब से बोर्ड सुझाएँ)","""இப்போ"" ஸ்கிரீனை யூஸ் பண்ணு (நேரத்துக்கு ஏத்த போர்டு)","""ಈಗ"" ಸ್ಕ್ರೀನ್ ಬಳಸಿ (ಸಮಯಕ್ಕೆ ತಕ್ಕ ಬೋರ್ಡ್)",no
+ui:routines.hint,Rules are checked top to bottom; the first one that matches the day and time is used.,"नियम ऊपर से नीचे देखे जाते हैं; जो पहला दिन और समय से मेल खाए, वही चलता है।",விதிகள் மேல இருந்து கீழ பார்க்கப்படும்; நாளும் நேரமும் முதல்ல பொருந்துறதுதான் எடுக்கப்படும்.,ನಿಯಮಗಳನ್ನು ಮೇಲಿನಿಂದ ಕೆಳಗೆ ನೋಡಲಾಗುತ್ತದೆ; ದಿನ ಮತ್ತು ಸಮಯಕ್ಕೆ ಮೊದಲು ಹೊಂದುವುದೇ ಬಳಕೆಯಾಗುತ್ತದೆ.,no
+ui:routines.name,Routine name,रूटीन का नाम,ரொட்டீன் பெயர்,ದಿನಚರಿಯ ಹೆಸರು,no
+ui:routines.from,From,से,இருந்து,ಇಂದ,no
+ui:routines.to,To,तक,வரை,ವರೆಗೆ,no
+ui:routines.board,Board,बोर्ड,போர்டு,ಬೋರ್ಡ್,no
+ui:routines.new,New routine,नया रूटीन,புது ரொட்டீன்,ಹೊಸ ದಿನಚರಿ,no
+ui:routines.add,Add routine,रूटीन जोड़ें,ரொட்டீன் சேர்,ದಿನಚರಿ ಸೇರಿಸಿ,no
+ui:routines.fallback,"When no routine matches, show","जब कोई रूटीन न मिले, तो दिखाएँ",எந்த ரொட்டீனும் பொருந்தலைன்னா காட்டு,ಯಾವ ದಿನಚರಿಯೂ ಹೊಂದದಿದ್ದರೆ ತೋರಿಸಿ,no
+ui:settings.categories,Categories,श्रेणियाँ,வகைகள்,ವರ್ಗಗಳು,no
+ui:cats.lockedHint,Unlock the layout to reorder or delete categories.,श्रेणियों का क्रम बदलने या मिटाने के लिए लेआउट अनलॉक करें।,வகைகளை வரிசை மாத்த அல்லது அழிக்க லேஅவுட்டை அன்லாக் பண்ணுங்க.,ವರ್ಗಗಳ ಕ್ರಮ ಬದಲಿಸಲು ಅಥವಾ ಅಳಿಸಲು ಲೇಔಟ್ ಅನ್‌ಲಾಕ್ ಮಾಡಿ.,no
+ui:cats.colour,Colour,रंग,கலர்,ಬಣ್ಣ,no
+ui:cats.count,{n} buttons,{n} बटन,{n} பட்டன்,{n} ಬಟನ್,no
+ui:cats.confirmDelete,"Delete ""{name}"" and its {n} buttons?","""{name}"" और उसके {n} बटन मिटा दें?","""{name}"" மற்றும் அதோட {n} பட்டன்களை அழிக்கணுமா?","""{name}"" ಮತ್ತು ಅದರ {n} ಬಟನ್ ಅಳಿಸಬೇಕೇ?",no
+ui:cats.newName,New category,नई श्रेणी,புது வகை,ಹೊಸ ವರ್ಗ,no
+ui:cats.add,"Add personal category (family, pets, favourite things…)","अपनी श्रेणी जोड़ें (परिवार, पालतू, पसंदीदा चीज़ें…)","சொந்த வகை சேர் (குடும்பம், செல்லப் பிராணி, பிடிச்சவை…)","ಸ್ವಂತ ವರ್ಗ ಸೇರಿಸಿ (ಕುಟುಂಬ, ಸಾಕು ಪ್ರಾಣಿ, ಇಷ್ಟದವು…)",no
+ui:settings.backup,Backup & move to another device,बैकअप और दूसरे फ़ोन पर ले जाना,பேக்கப் & வேற போனுக்கு மாத்துதல்,ಬ್ಯಾಕಪ್ & ಬೇರೆ ಫೋನ್‌ಗೆ ವರ್ಗಾವಣೆ,no
+ui:settings.safety,Safety,सुरक्षा,பாதுகாப்பு,ಸುರಕ್ಷತೆ,no
+ui:safety.offline,Works offline,बिना इंटरनेट चलता है,இன்டர்நெட் இல்லாமலும் ஓடும்,ಇಂಟರ್ನೆಟ್ ಇಲ್ಲದೆಯೂ ಕೆಲಸ ಮಾಡುತ್ತದೆ,no
+ui:safety.notOffline,Not ready offline yet — open the app once more while online,अभी ऑफ़लाइन के लिए तैयार नहीं — इंटरनेट के साथ एक बार और खोलें,இன்னும் ஆஃப்லைனுக்கு ரெடி இல்ல — இன்டர்நெட்டோட இன்னொரு தடவை திறங்க,ಇನ್ನೂ ಆಫ್‌ಲೈನ್‌ಗೆ ಸಿದ್ಧವಿಲ್ಲ — ಇಂಟರ್ನೆಟ್ ಇರುವಾಗ ಇನ್ನೊಮ್ಮೆ ತೆರೆಯಿರಿ,no
+ui:safety.persisted,Storage is protected from automatic clearing,स्टोरेज अपने-आप साफ़ होने से सुरक्षित है,ஸ்டோரேஜ் தானா அழியாம பாதுகாக்கப்பட்டிருக்கு,ಸ್ಟೋರೇಜ್ ತಾನಾಗಿ ಅಳಿಸದಂತೆ ರಕ್ಷಿಸಲಾಗಿದೆ,no
+ui:safety.notPersisted,Browser has not protected storage yet (install the app to the home screen to help). Keep backups.,ब्राउज़र ने अभी स्टोरेज सुरक्षित नहीं किया (ऐप को होम स्क्रीन पर इंस्टॉल करें)। बैकअप रखें।,பிரவுசர் இன்னும் ஸ்டோரேஜை பாதுகாக்கல (ஆப்பை ஹோம் ஸ்கிரீன்ல இன்ஸ்டால் பண்ணுங்க). பேக்கப் வச்சுக்கோங்க.,ಬ್ರೌಸರ್ ಇನ್ನೂ ಸ್ಟೋರೇಜ್ ರಕ್ಷಿಸಿಲ್ಲ (ಆ್ಯಪ್ ಹೋಮ್ ಸ್ಕ್ರೀನ್‌ಗೆ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿ). ಬ್ಯಾಕಪ್ ಇಟ್ಟುಕೊಳ್ಳಿ.,no
+ui:safety.storage,Storage used: {mb} MB,इस्तेमाल हुआ स्टोरेज: {mb} MB,பயன்படுத்தின ஸ்டோரேஜ்: {mb} MB,ಬಳಸಿದ ಸ್ಟೋರೇಜ್: {mb} MB,no
+ui:safety.snapshots,"Automatic snapshots (newest first, last 3 kept):","ऑटो स्नैपशॉट (नए पहले, आखिरी 3 रखे जाते हैं):","ஆட்டோ ஸ்னாப்ஷாட் (புதுசு முதல்ல, கடைசி 3 வச்சிருக்கோம்):","ಸ್ವಯಂ ಸ್ನ್ಯಾಪ್‌ಶಾಟ್ (ಹೊಸದು ಮೊದಲು, ಕೊನೆಯ 3 ಇಡಲಾಗಿದೆ):",no
+ui:safety.confirmReset,Reset to the starter board? Your current board is kept as a snapshot.,शुरुआती बोर्ड पर वापस जाएँ? अभी का बोर्ड स्नैपशॉट में रहेगा।,ஆரம்ப போர்டுக்கு மாத்தலாமா? இப்போ இருக்கிற போர்டு ஸ்னாப்ஷாட்டா இருக்கும்.,ಮೊದಲ ಬೋರ್ಡ್‌ಗೆ ಮರಳಬೇಕೇ? ಈಗಿನ ಬೋರ್ಡ್ ಸ್ನ್ಯಾಪ್‌ಶಾಟ್ ಆಗಿ ಇರುತ್ತದೆ.,no
+ui:settings.pin,Caregiver PIN,पिन,பின்,ಪಿನ್,no
+ui:settings.about,About & credits,जानकारी और श्रेय,விவரம் & நன்றி,ಮಾಹಿತಿ & ಕೃತಜ್ಞತೆ,no
+ui:about.free,"Bol is free: no account, no ads, no paid features. All data stays on this device.","बोल मुफ़्त है: कोई अकाउंट नहीं, कोई विज्ञापन नहीं, कुछ भी पैसे वाला नहीं। सारा डेटा इसी फ़ोन में रहता है।","Bol இலவசம்: அக்கவுண்ட் இல்ல, விளம்பரம் இல்ல, காசு கட்டுற வசதி இல்ல. எல்லா டேட்டாவும் இந்த போன்லயே இருக்கும்.","Bol ಉಚಿತ: ಖಾತೆ ಇಲ್ಲ, ಜಾಹೀರಾತು ಇಲ್ಲ, ಹಣದ ಸೌಲಭ್ಯ ಇಲ್ಲ. ಎಲ್ಲಾ ಡೇಟಾ ಈ ಫೋನ್‌ನಲ್ಲೇ ಇರುತ್ತದೆ.",no
+ui:about.translations,Tamil and Kannada words are first drafts and are being checked by native speakers.,तमिल और कन्नड़ शब्द अभी पहला ड्राफ़्ट हैं और उनकी जाँच हो रही है।,தமிழ் வார்த்தைகள் முதல் வரைவு; தாய்மொழி பேசுபவர்கள் சரிபார்க்கிறாங்க.,ಕನ್ನಡ ಪದಗಳು ಮೊದಲ ಕರಡು; ಕನ್ನಡಿಗರು ಪರಿಶೀಲಿಸುತ್ತಿದ್ದಾರೆ.,no

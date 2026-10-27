@@ -13,7 +13,7 @@
 // version changes automatically whenever any file changes.
 
 // BEGIN GENERATED
-const CACHE_VERSION = 'bol-4b8fbf4f50';
+const CACHE_VERSION = 'bol-b5fa0d51c9';
 const APP_FILES = [
   './',
   './index.html',
@@ -37,6 +37,12 @@ const APP_FILES = [
   './icons/icon-192.png',
   './icons/icon-512.png',
   './icons/icon.svg',
+  './fonts/devanagari-bold.woff2',
+  './fonts/devanagari-regular.woff2',
+  './fonts/kannada-bold.woff2',
+  './fonts/kannada-regular.woff2',
+  './fonts/tamil-bold.woff2',
+  './fonts/tamil-regular.woff2',
 ];
 // END GENERATED
 

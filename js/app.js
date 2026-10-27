@@ -222,7 +222,11 @@ function iconEl(item) {
  *  each script is rendered and read correctly. */
 function labelEls(item, cls = 'label') {
   const s = state.profile.settings;
-  const main = h('span', { class: cls, lang: s.lang }, labelOf(item));
+  const text = labelOf(item);
+  // Long single words get a slightly smaller font rather than being broken.
+  const n = cls === 'label' && !text.includes(' ') ? [...text].length : 0;
+  const size = n > 7 ? ' longer' : n > 5 ? ' long' : '';
+  const main = h('span', { class: cls + size, lang: s.lang }, text);
   if (!s.secondLang || s.secondLang === s.lang) return [main];
   const second = labelOf(item, s.secondLang);
   if (!second || second === labelOf(item)) return [main];

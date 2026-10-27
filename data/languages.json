@@ -3,7 +3,12 @@
   "code": "en",
   "name": "English",
   "englishName": "English",
-  "speech": ["en-IN", "en-GB", "en-US", "en"],
+  "speech": [
+   "en-IN",
+   "en-GB",
+   "en-US",
+   "en"
+  ],
   "fallback": "hi",
   "sample": "Hello, this is a voice test"
  },
@@ -11,8 +16,33 @@
   "code": "hi",
   "name": "हिंदी",
   "englishName": "Hindi",
-  "speech": ["hi-IN", "hi"],
+  "speech": [
+   "hi-IN",
+   "hi"
+  ],
   "fallback": "en",
   "sample": "नमस्ते, यह आवाज़ की जाँच है"
+ },
+ {
+  "code": "ta",
+  "name": "தமிழ்",
+  "englishName": "Tamil",
+  "speech": [
+   "ta-IN",
+   "ta"
+  ],
+  "fallback": "en",
+  "sample": "வணக்கம், இது குரல் டெஸ்ட்"
+ },
+ {
+  "code": "kn",
+  "name": "ಕನ್ನಡ",
+  "englishName": "Kannada",
+  "speech": [
+   "kn-IN",
+   "kn"
+  ],
+  "fallback": "en",
+  "sample": "ನಮಸ್ಕಾರ, ಇದು ಧ್ವನಿ ಪರೀಕ್ಷೆ"
  }
 ]

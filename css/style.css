@@ -10,6 +10,22 @@
   scroll-behavior: auto !important;
 }
 
+/* Bundled Noto Sans fonts for Hindi, Tamil and Kannada (SIL OFL 1.1).
+   unicode-range limits each file to its own script, so English text keeps the
+   phone's normal font and these files are only used for Indian scripts. */
+@font-face { font-family: 'BolNoto'; src: url('../fonts/devanagari-regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0900-097F, U+A8E0-A8FF, U+1CD0-1CF9, U+0964-0965, U+200C-200D, U+25CC, U+20B9; }
+@font-face { font-family: 'BolNoto'; src: url('../fonts/devanagari-bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap; unicode-range: U+0900-097F, U+A8E0-A8FF, U+1CD0-1CF9, U+0964-0965, U+200C-200D, U+25CC, U+20B9; }
+@font-face { font-family: 'BolNoto'; src: url('../fonts/tamil-regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0B80-0BFF, U+11FC0-11FFF, U+200C-200D, U+25CC; }
+@font-face { font-family: 'BolNoto'; src: url('../fonts/tamil-bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap; unicode-range: U+0B80-0BFF, U+11FC0-11FFF, U+200C-200D, U+25CC; }
+@font-face { font-family: 'BolNoto'; src: url('../fonts/kannada-regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0C80-0CFF, U+1CD0-1CF9, U+0964-0965, U+200C-200D, U+25CC; }
+@font-face { font-family: 'BolNoto'; src: url('../fonts/kannada-bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap; unicode-range: U+0C80-0CFF, U+1CD0-1CF9, U+0964-0965, U+200C-200D, U+25CC; }
+
 :root {
   --bg: #f4f6f8;
   --fg: #1b1f24;
@@ -62,7 +78,7 @@ html, body {
   height: 100%;
   background: var(--bg);
   color: var(--fg);
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Devanagari", sans-serif;
+  font-family: "BolNoto", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
   font-size: 16px;
 }
 body { overscroll-behavior: none; }
@@ -216,7 +232,10 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px s
 .sym:active { outline: 4px solid var(--accent); }
 .sym .icon { font-size: var(--icon); line-height: 1; display: flex; align-items: center; justify-content: center; height: var(--icon); width: 100%; }
 .sym .icon img { height: var(--icon); width: var(--icon); object-fit: cover; border-radius: 8px; }
-.sym .label { font-size: var(--text); line-height: 1.15; text-align: center; overflow-wrap: break-word; hyphens: auto; max-width: 100%; max-height: 2.4em; overflow: hidden; }
+.sym .label { font-size: var(--text); line-height: 1.15; text-align: center; overflow-wrap: break-word; hyphens: manual; max-width: 100%; max-height: 2.4em; overflow: hidden; }
+/* Long words shrink a little instead of being split (hyphens are wrong in Indian scripts) */
+.sym .label.long { font-size: calc(var(--text) * 0.8); }
+.sym .label.longer { font-size: calc(var(--text) * 0.68); }
 /* Optional smaller second-language label */
 .sym .label2 { font-size: calc(var(--text) * 0.72); line-height: 1.1; color: var(--muted); text-align: center; max-height: 2.3em; overflow: hidden; }
 /* Phrases board: wide buttons with the picture beside the sentence */

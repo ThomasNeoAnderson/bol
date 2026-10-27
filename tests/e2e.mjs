@@ -270,6 +270,69 @@ await test('Hindi: language picker switches labels, interface and lang attribute
   assert((await page.textContent('#btn-speak')).includes('बोलो'), 'Hindi interface');
 });
 
+// ------------------------------------------------------------- PHASE 2 ---
+await test('first-run picker lists every language in its own script', async ({ page }) => {
+  await page.goto(BASE + '/');
+  await page.waitForSelector('.lang-btn');
+  const names = await page.$$eval('.lang-btn', els => els.map(e => e.childNodes[0].textContent.trim()));
+  eq(names, ['English', 'हिंदी', 'தமிழ்', 'ಕನ್ನಡ'], 'language names');
+  const intro = await page.textContent('.lang-intro');
+  assert(intro.includes('மொழி') && intro.includes('ಭಾಷೆ') && intro.includes('भाषा'), 'prompt in every language');
+});
+
+for (const [lang, want, speak, phrase, script] of [
+  ['ta', 'வேணும்', 'பேசு', 'எனக்கு தண்ணி வேணும்', 'நான்'],
+  ['kn', 'ಬೇಕು', 'ಮಾತಾಡು', 'ನನಗೆ ನೀರು ಬೇಕು', 'ನಾನು'],
+]) {
+  await test(`${lang}: board, interface, phrases, lang attribute and bundled font`, async ({ page }) => {
+    await open(page, lang);
+    eq(await page.getAttribute('html', 'lang'), lang, 'html lang');
+    const labels = await gridLabels(page);
+    assert(labels.includes(want) && labels.includes(script), 'core words in ' + lang);
+    assert((await page.textContent('#btn-speak')).includes(speak), 'interface in ' + lang);
+    await page.click('.tab:nth-child(2)');
+    assert((await gridLabels(page)).includes(phrase), 'whole-sentence phrase in ' + lang);
+    // The bundled Noto font for this script must actually load (works offline).
+    const loaded = await page.evaluate(async txt => { await document.fonts.load('16px BolNoto', txt); await document.fonts.ready;
+      return [...document.fonts].filter(f => f.family.replace(/"/g, '') === 'BolNoto' && f.status === 'loaded').length; }, script);
+    assert(loaded >= 1, 'BolNoto font loaded');
+  });
+}
+
+await test('Tamil with no Tamil voice: visible message names Tamil, never silent', async ({ page }) => {
+  await open(page, 'ta');
+  await page.click('.sym[aria-label="வேணும்"]');
+  await page.waitForSelector('#status.warn', { timeout: 15000 });
+  const s = await status(page);
+  assert(s.includes('தமிழ்') || s.includes('குரல்'), 'Tamil voice message: ' + s);
+  await page.click('#btn-speak');
+  await page.waitForSelector('#show-card:not([hidden])', { timeout: 15000 });
+});
+
+await test('Test voice shows per-language status and Android install steps', async ({ page }) => {
+  await open(page);
+  await page.click('.sym[aria-label="want"]');
+  await page.waitForSelector('#status.warn', { timeout: 15000 });
+  await page.click('#status .btn.small:has-text("Test voice")');
+  await page.click('.modal .btn.primary:has-text("Test voice")');
+  await page.waitForSelector('.modal .report ol', { timeout: 60000 });
+  const rows = await page.$$eval('.modal .report ul li', els => els.map(e => e.textContent));
+  eq(rows.length, 4, 'one row per language');
+  for (const n of ['English', 'हिंदी', 'தமிழ்', 'ಕನ್ನಡ']) assert(rows.some(r => r.includes(n)), 'status for ' + n);
+  assert((await page.textContent('.modal .report ol')).includes('Install voice data'), 'Android steps shown');
+});
+
+await test('optional smaller second-language label under each button', async ({ page }) => {
+  await open(page, 'ta');
+  await enterCaregiver(page);
+  await page.click('#cg-settings');
+  await page.selectOption('select:has(option[value=""]):has(option[value=en])', 'en');
+  await page.click('.modal.full .modal-head .icon-btn');
+  await page.click('#cg-toggle');
+  const second = await page.$eval('.sym[aria-label="வேணும்"] .label2', e => [e.textContent, e.lang]);
+  eq(second, ['want', 'en'], 'second label');
+});
+
 // ---------------------------------------------------------------- summary ---
 await browser.close();
 server.close();

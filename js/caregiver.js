@@ -574,5 +574,6 @@ function aboutSection() {
   return h('section', { id: 'set-about' }, h('h3', {}, 'ℹ️ ' + t('settings.about')),
     h('p', {}, t('about.free')),
     h('p', { class: 'hint' }, t('about.translations')),
+    h('p', { class: 'hint' }, 'Fonts: Noto Sans Devanagari, Noto Sans Tamil, Noto Sans Kannada © The Noto Project Authors, SIL Open Font License 1.1.'),
     h('p', { class: 'hint' }, 'Bol · https://github.com/ThomasNeoAnderson/bol'));
 }
