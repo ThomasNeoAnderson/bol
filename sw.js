@@ -13,7 +13,7 @@
 // version changes automatically whenever any file changes.
 
 // BEGIN GENERATED
-const CACHE_VERSION = 'bol-46915576b0';
+const CACHE_VERSION = 'bol-2e751e366c';
 const APP_FILES = [
   './',
   './index.html',
@@ -28,6 +28,7 @@ const APP_FILES = [
   './js/speech.js',
   './js/state.js',
   './js/store.js',
+  './js/typing.js',
   './js/ui.js',
   './js/vocab.js',
   './data/languages.json',

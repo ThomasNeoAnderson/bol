@@ -10,6 +10,7 @@ import { buildBackup, shareOrDownload, readBackup, storeImportedMedia } from './
 import { createDefaultProfile, normaliseProfile, wordTypes } from './vocab.js';
 import { h, openModal, closeAllModals, confirmDialog, pinPad, fmtDate, daysSince } from './ui.js';
 import { t, languages, langInfo, pick } from './i18n.js';
+import { clearHistory } from './typing.js';
 
 const newId = p => `${p}-${Date.now().toString(36)}${Math.random().toString(36).slice(2, 5)}`;
 const curLang = () => state.profile.settings.lang;
@@ -548,6 +549,13 @@ function safetySection() {
     h('button', { class: 'btn primary', onclick: restoreLastWorking }, '↩️ ' + t('btn.restore')),
     h('p', { class: 'hint' }, t('safety.snapshots')),
     snapsBox,
+    h('p', { class: 'hint' }, t('typing.count', { n: state.profile.history.length })),
+    h('button', { class: 'btn', onclick: async e => {
+      if (!(await confirmDialog(t('typing.confirmClear'), t('btn.delete'), t('btn.cancel'), true))) return;
+      clearHistory();
+      e.target.previousSibling.textContent = t('typing.count', { n: 0 });
+      showStatus(t('typing.cleared'), 'info');
+    } }, '🧹 ' + t('typing.clear')),
     h('button', { class: 'btn danger', onclick: async () => {
       if (!(await confirmDialog(t('safety.confirmReset'), t('btn.reset'), t('btn.cancel'), true))) return;
       await takeSnapshot(state.profile, 'before-reset');

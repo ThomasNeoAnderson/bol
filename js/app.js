@@ -5,7 +5,7 @@
 //   sentence bar : tapped words + Delete / Clear / Save / Speak
 //   My phrases   : saved sentences, one tap to speak
 //   Recent       : recently spoken words
-//   tabs         : Core (home) · Phrases · Now · topic boards
+//   tabs         : Core (home) · Phrases · Now · Type · topic boards
 //   grid         : the symbol buttons, each in a fixed slot
 //   status line  : visible messages (voice problems, restores, updates)
 
@@ -19,6 +19,7 @@ import { loadI18n, setLang, t, languages, langInfo, pick } from './i18n.js';
 import { loadVocab, createDefaultProfile, normaliseProfile, needsMigration, wordTypes } from './vocab.js';
 import { toggleCaregiver, openEditor, openSettings, openVoiceTest, moveButtonTo, exportBackup,
          restoreLastWorking } from './caregiver.js';
+import { renderTypePanel, rememberSentence } from './typing.js';
 
 const $ = id => document.getElementById(id);
 
@@ -286,7 +287,7 @@ function renderRecent() {
       h('button', { class: 'chip', onclick: () => addToSentence({ ...it }) }, iconEl(it), h('span', {}, labelOf(it)))));
 }
 
-/** Tab order is fixed: Core first (home), then Phrases, Now, and the
+/** Tab order is fixed: Core first (home), then Phrases, Now, Type, and the
  *  topic boards in the caregiver's order. Core is always one tap away. */
 function tabList() {
   const cats = state.profile.categories;
@@ -295,6 +296,7 @@ function tabList() {
     ...cats.filter(c => c.kind === 'phrases'),
   ];
   if (state.profile.routines.enabled) list.push({ id: 'now', text: { en: t('tab.now') }, emoji: '⏰', color: '#2a6f97' });
+  list.push({ id: 'type', text: { en: t('tab.type') }, emoji: '⌨️', color: '#495057' });
   list.push(...cats.filter(c => c.kind !== 'core' && c.kind !== 'phrases'));
   return list;
 }
@@ -355,6 +357,7 @@ function pickOverride() {
 
 function currentCat() {
   if (state.tab === 'now') return nowBoard().cat;
+  if (state.tab === 'type') return null;
   return state.tab;
 }
 
@@ -372,6 +375,12 @@ function colourFor(b, cat) {
 function renderGrid() {
   const grid = $('grid');
   const moveBar = $('move-bar');
+  if (state.tab === 'type') {
+    grid.className = 'type-mode';
+    moveBar.hidden = true;
+    grid.replaceChildren(renderTypePanel({ say }));
+    return;
+  }
   const catId = currentCat();
   const cat = catById(catId);
   // Whole-sentence phrases get double-width buttons so the text fits.
@@ -548,6 +557,7 @@ function speakSentence() {
   const items = [...state.sentence];
   say(items);
   rememberRecent(items);
+  rememberSentence(items.map(it => labelOf(it)).join(' '));   // for typing suggestions
 }
 
 function speakPhrase(ph) {

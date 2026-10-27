@@ -39,6 +39,16 @@ def main():
     block = f"// BEGIN GENERATED\nconst CACHE_VERSION = '{version}';\nconst APP_FILES = [\n  {listing},\n];\n// END GENERATED"
     new = re.sub(r'// BEGIN GENERATED.*?// END GENERATED', block, src, flags=re.S)
     if '--check' in sys.argv:
+        # Every cached file must be committed, or the live site's offline
+        # install fails (this once happened when *.webp was git-ignored).
+        try:
+            import subprocess
+            tracked = set(subprocess.check_output(['git', 'ls-files'], cwd=ROOT, text=True).split())
+            untracked = [f.relative_to(ROOT).as_posix() for f in files if f.relative_to(ROOT).as_posix() not in tracked]
+            if untracked:
+                print('Not committed to git (offline install would fail):', untracked[:10]); sys.exit(1)
+        except (OSError, subprocess.CalledProcessError):
+            pass
         if new != src:
             print('sw.js is out of date: run python3 tools/build_sw.py'); sys.exit(1)
         print('sw.js up to date:', version); return

@@ -363,6 +363,71 @@ await test('caregiver can switch symbols off (emoji) and sees ARASAAC credits', 
   eq(await page.$eval('.sym[aria-label="want"] .icon', e => e.textContent), '🤲', 'emoji shown');
 });
 
+// ------------------------------------------------------------- PHASE 4 ---
+async function typeAndSpeak(page, text) {
+  await page.fill('#type-box', text);
+  await page.click('.type-panel .btn.speak');
+  await page.waitForTimeout(200);
+  if (await page.isVisible('#show-card')) await page.click('#show-card');
+}
+const suggestions = page => page.$$eval('.suggestion', els => els.map(e => e.textContent));
+
+await test('Type tab: speak typed text; suggestions from own sentences ranked by match, frequency, recency', async ({ page }) => {
+  await open(page);
+  await page.click('.tab:has-text("Type")');
+  await page.fill('#type-box', 'hello there');
+  await page.click('.type-panel .btn.speak');
+  await page.waitForSelector('#show-card:not([hidden])', { timeout: 15000 });   // no voice: shown, not silent
+  assert((await page.textContent('#show-card')).includes('hello there'), 'typed text shown');
+  await page.click('#show-card');
+  await typeAndSpeak(page, 'I want milk');
+  await typeAndSpeak(page, 'I want milk');
+  await typeAndSpeak(page, 'I want water');
+  await page.fill('#type-box', 'i w');
+  const s1 = await suggestions(page);
+  eq(s1.slice(0, 2), ['I want milk', 'I want water'], 'prefix matches, most used first');
+  await page.fill('#type-box', 'wat');
+  eq((await suggestions(page))[0], 'I want water', 'word-start match');
+  await page.fill('#type-box', 'ilk');
+  eq((await suggestions(page))[0], 'I want milk', 'substring match');
+  await page.click('.suggestion');
+  eq(await page.inputValue('#type-box'), 'I want milk', 'tap suggestion fills box');
+});
+
+await test('Type tab: saved phrases are suggested; typed text survives reload; caregiver can clear history', async ({ page }) => {
+  await open(page);
+  await page.click('.sym[aria-label="want"]'); await page.click('.sym[aria-label="drink"]');
+  await page.click('#btn-save');
+  await page.click('.tab:has-text("Type")');
+  await page.fill('#type-box', 'dri');
+  eq((await suggestions(page))[0], '★ want drink', 'saved phrase suggested');
+  await typeAndSpeak(page, 'see you later');
+  await page.fill('#type-box', 'half typed');
+  await page.reload(); await page.waitForSelector('#grid .sym');
+  await page.click('.tab:has-text("Type")');
+  eq(await page.inputValue('#type-box'), 'half typed', 'typed draft restored');
+  await enterCaregiver(page);
+  await page.click('#cg-settings');
+  await page.click('.btn:has-text("Clear typing history")');
+  await page.click('.modal-actions .btn.danger');
+  await page.click('.modal.full .modal-head .icon-btn');
+  await page.click('#cg-toggle');
+  await page.click('.tab:has-text("Type")');
+  await page.fill('#type-box', 'see');
+  eq(await suggestions(page), [], 'history cleared');
+});
+
+await test('Typed Tamil is never read by another language voice (shown instead)', async ({ page }) => {
+  await open(page, 'ta');
+  await page.click('.tab:nth-child(4)');
+  await page.fill('#type-box', 'எனக்கு தண்ணி வேணும்');
+  await page.click('.type-panel .btn.speak');
+  await page.waitForSelector('#show-card:not([hidden])', { timeout: 15000 });
+  assert((await page.textContent('#show-card')).includes('எனக்கு தண்ணி வேணும்'), 'Tamil text shown on screen');
+  const st = await status(page);
+  assert(!st.includes('English'), 'did not fall back to English voice: ' + st);
+});
+
 // ---------------------------------------------------------------- summary ---
 await browser.close();
 server.close();
