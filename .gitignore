@@ -1,0 +1,17 @@
+# Never commit personal data: Bol backups contain photos and voice recordings.
+*.bol.json
+bol-backup-*
+*.jpg
+*.jpeg
+*.heic
+*.webp
+*.webm
+*.mp4
+*.m4a
+*.ogg
+*.wav
+*.aac
+# Local/test clutter
+node_modules/
+*.log
+.DS_Store

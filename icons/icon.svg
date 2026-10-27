@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Bol icon: a speech bubble on a blue square (safe zone for maskable icons) -->
+  <rect width="512" height="512" fill="#2a6f97"/>
+  <path d="M136 150h240a40 40 0 0 1 40 40v120a40 40 0 0 1-40 40H250l-70 60v-60h-44a40 40 0 0 1-40-40V190a40 40 0 0 1 40-40z" fill="#ffffff"/>
+  <circle cx="196" cy="250" r="22" fill="#f4a259"/>
+  <circle cx="256" cy="250" r="22" fill="#90be6d"/>
+  <circle cx="316" cy="250" r="22" fill="#f28fad"/>
+</svg>
