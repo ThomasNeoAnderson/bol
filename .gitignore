@@ -5,6 +5,8 @@ bol-backup-*
 *.jpeg
 *.heic
 *.webp
+# ...except the bundled ARASAAC symbols, which are part of the app
+!symbols/*.webp
 *.webm
 *.mp4
 *.m4a
