@@ -52,8 +52,8 @@ C. Force-close mid-sentence
 D. Upgrade from version 1 (if a phone already has the old Bol installed)
   [ ] Before updating, note a custom button, a recording and a saved phrase.
   [ ] Open the app online. Tap "Update available - tap to reload" if it appears.
-      (Version 1 has no update banner: if the old version still shows, swipe the app
-      away completely and open it again, once or twice, while online.)
+      (Version 1 has no update banner. From 2.0.1 the new version takes over by itself:
+      open the app online and it reloads once into version 2, keeping the unfinished sentence.)
   [ ] Message says Bol was updated; the custom button, recording, phrase, PIN and
       language are all still there, in the same positions. Core and Phrases tabs added.
   [ ] Settings > Safety lists a "before-upgrade" snapshot.

@@ -13,7 +13,7 @@
 // version changes automatically whenever any file changes.
 
 // BEGIN GENERATED
-const CACHE_VERSION = 'bol-2e751e366c';
+const CACHE_VERSION = 'bol-19ae86f8a6';
 const APP_FILES = [
   './',
   './index.html',
@@ -181,8 +181,19 @@ const APP_FILES = [
 ];
 // END GENERATED
 
+// Bol v1 used the cache name 'bol-v1' and its pages cannot show the update
+// banner, so a v2 worker would wait forever while any v1 window stays open.
+// When upgrading from v1 we therefore take over at once and reload the open
+// windows a single time (the unfinished sentence is kept in localStorage).
+const LEGACY_CACHE = 'bol-v1';
+
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE_VERSION).then(cache => cache.addAll(APP_FILES)));
+  event.waitUntil(
+    caches.open(CACHE_VERSION)
+      .then(cache => cache.addAll(APP_FILES))
+      .then(() => caches.has(LEGACY_CACHE))
+      .then(fromV1 => { if (fromV1) return self.skipWaiting(); })
+  );
 });
 
 self.addEventListener('message', event => {
@@ -190,11 +201,22 @@ self.addEventListener('message', event => {
 });
 
 self.addEventListener('activate', event => {
-  event.waitUntil(
-    caches.keys()
-      .then(keys => Promise.all(keys.filter(k => k !== CACHE_VERSION).map(k => caches.delete(k))))
-      .then(() => self.clients.claim())
-  );
+  let fromV1 = false;
+  const done = (async () => {
+    fromV1 = await caches.has(LEGACY_CACHE);
+    const keys = await caches.keys();
+    await Promise.all(keys.filter(k => k !== CACHE_VERSION).map(k => caches.delete(k)));
+    await self.clients.claim();
+  })();
+  event.waitUntil(done);
+  // Reload v1 windows only AFTER activation has finished: a reload started
+  // inside activation would wait for this worker, which would wait for the
+  // reload — a deadlock.
+  done.then(async () => {
+    if (!fromV1) return;
+    const wins = await self.clients.matchAll({ type: 'window' });
+    for (const w of wins) w.navigate(w.url).catch(() => {});
+  });
 });
 
 self.addEventListener('fetch', event => {

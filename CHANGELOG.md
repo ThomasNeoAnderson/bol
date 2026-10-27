@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.1 — 28 October 2026
+- Fixed: phones with version 1 installed stayed on version 1. Version 1 cannot show the
+  update banner, and the new version waited until every Bol window was closed. When it
+  finds a version 1 install, the new version now takes over immediately and reloads open
+  windows once. The unfinished sentence is kept. Normal updates still wait for "tap to reload".
+
 ## 2.0 — 28 October 2026
 
 Upgrade aimed at the biggest gaps found when comparing Bol with Avaz: missing core
