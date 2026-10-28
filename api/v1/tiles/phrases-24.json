@@ -1,0 +1,23 @@
+{
+ "id": "phrases-24",
+ "category": "phrases",
+ "slot": 24,
+ "label": {
+  "en": "I don't understand",
+  "hi": "मुझे समझ नहीं आया",
+  "ta": "எனக்கு புரியல",
+  "kn": "ನನಗೆ ಅರ್ಥ ಆಗ್ಲಿಲ್ಲ"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "🤔",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-24.json"
+}

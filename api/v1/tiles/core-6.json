@@ -1,0 +1,27 @@
+{
+ "id": "core-6",
+ "category": "core",
+ "slot": 6,
+ "label": {
+  "en": "mine",
+  "hi": "मेरा",
+  "ta": "என்னோடது",
+  "kn": "ನಂದು"
+ },
+ "alternatives": [],
+ "wordType": "person",
+ "color": "#ffe066",
+ "emoji": "🫵",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/core-6.webp",
+  "arasaacId": 12264,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-6.json"
+}

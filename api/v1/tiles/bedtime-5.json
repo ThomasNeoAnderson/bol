@@ -1,0 +1,27 @@
+{
+ "id": "bedtime-5",
+ "category": "bedtime",
+ "slot": 5,
+ "label": {
+  "en": "water",
+  "hi": "पानी",
+  "ta": "தண்ணி",
+  "kn": "ನೀರು"
+ },
+ "alternatives": [],
+ "wordType": "noun",
+ "color": "#ffb366",
+ "emoji": "💧",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/bedtime-5.webp",
+  "arasaacId": 2248,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/bedtime-5.json"
+}

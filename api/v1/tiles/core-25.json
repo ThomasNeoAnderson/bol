@@ -1,0 +1,27 @@
+{
+ "id": "core-25",
+ "category": "core",
+ "slot": 25,
+ "label": {
+  "en": "on",
+  "hi": "पर",
+  "ta": "மேல",
+  "kn": "ಮೇಲೆ"
+ },
+ "alternatives": [],
+ "wordType": "little",
+ "color": "#dee2e6",
+ "emoji": "🔛",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/core-25.webp",
+  "arasaacId": 7814,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-25.json"
+}

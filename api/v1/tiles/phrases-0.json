@@ -1,0 +1,23 @@
+{
+ "id": "phrases-0",
+ "category": "phrases",
+ "slot": 0,
+ "label": {
+  "en": "I want water",
+  "hi": "मुझे पानी चाहिए",
+  "ta": "எனக்கு தண்ணி வேணும்",
+  "kn": "ನನಗೆ ನೀರು ಬೇಕು"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "💧",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-0.json"
+}

@@ -1,0 +1,27 @@
+{
+ "id": "places-8",
+ "category": "places",
+ "slot": 8,
+ "label": {
+  "en": "bus",
+  "hi": "बस",
+  "ta": "பஸ்",
+  "kn": "ಬಸ್ಸು"
+ },
+ "alternatives": [],
+ "wordType": "noun",
+ "color": "#ffb366",
+ "emoji": "🚌",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/places-8.webp",
+  "arasaacId": 2262,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-8.json"
+}

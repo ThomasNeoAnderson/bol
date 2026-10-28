@@ -1,0 +1,27 @@
+{
+ "id": "school-8",
+ "category": "school",
+ "slot": 8,
+ "label": {
+  "en": "quiet",
+  "hi": "शांति",
+  "ta": "அமைதி",
+  "kn": "ಸುಮ್ಮನಿರು"
+ },
+ "alternatives": [],
+ "wordType": "describe",
+ "color": "#8cc4ff",
+ "emoji": "🤫",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/school-8.webp",
+  "arasaacId": 5936,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/school-8.json"
+}

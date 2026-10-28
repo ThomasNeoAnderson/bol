@@ -1,0 +1,23 @@
+{
+ "id": "phrases-7",
+ "category": "phrases",
+ "slot": 7,
+ "label": {
+  "en": "It hurts here",
+  "hi": "यहाँ दर्द हो रहा है",
+  "ta": "இங்க வலிக்குது",
+  "kn": "ಇಲ್ಲಿ ನೋವಾಗ್ತಿದೆ"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "🤕",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-7.json"
+}

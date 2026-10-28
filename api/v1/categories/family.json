@@ -1,0 +1,70 @@
+{
+ "id": "family",
+ "kind": "personal",
+ "label": {
+  "en": "Family",
+  "hi": "परिवार",
+  "ta": "குடும்பம்",
+  "kn": "ಕುಟುಂಬ"
+ },
+ "emoji": "👨‍👩‍👧",
+ "color": "#7fc8a9",
+ "tileCount": 2,
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/family.json",
+ "tiles": [
+  {
+   "id": "family-0",
+   "category": "family",
+   "slot": 0,
+   "label": {
+    "en": "mummy",
+    "hi": "मम्मी",
+    "ta": "அம்மா",
+    "kn": "ಅಮ್ಮ"
+   },
+   "alternatives": [],
+   "wordType": "person",
+   "color": "#ffe066",
+   "emoji": "👩",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/family-0.webp",
+    "arasaacId": 2458,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/family-0.json"
+  },
+  {
+   "id": "family-1",
+   "category": "family",
+   "slot": 1,
+   "label": {
+    "en": "papa",
+    "hi": "पापा",
+    "ta": "அப்பா",
+    "kn": "ಅಪ್ಪ"
+   },
+   "alternatives": [],
+   "wordType": "person",
+   "color": "#ffe066",
+   "emoji": "👨",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/family-1.webp",
+    "arasaacId": 2497,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/family-1.json"
+  }
+ ]
+}

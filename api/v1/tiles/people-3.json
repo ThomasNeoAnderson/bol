@@ -1,0 +1,27 @@
+{
+ "id": "people-3",
+ "category": "people",
+ "slot": 3,
+ "label": {
+  "en": "papa",
+  "hi": "पापा",
+  "ta": "அப்பா",
+  "kn": "ಅಪ್ಪ"
+ },
+ "alternatives": [],
+ "wordType": "person",
+ "color": "#ffe066",
+ "emoji": "👨",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/people-3.webp",
+  "arasaacId": 2497,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/people-3.json"
+}

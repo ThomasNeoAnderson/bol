@@ -1,0 +1,27 @@
+{
+ "id": "people-5",
+ "category": "people",
+ "slot": 5,
+ "label": {
+  "en": "bhaiya",
+  "hi": "भैया",
+  "ta": "அண்ணா",
+  "kn": "ಅಣ್ಣ"
+ },
+ "alternatives": [],
+ "wordType": "person",
+ "color": "#ffe066",
+ "emoji": "👦",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/people-5.webp",
+  "arasaacId": 2423,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/people-5.json"
+}

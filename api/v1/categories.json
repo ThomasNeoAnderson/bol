@@ -1,0 +1,212 @@
+[
+ {
+  "id": "core",
+  "kind": "core",
+  "label": {
+   "en": "Core",
+   "hi": "मुख्य",
+   "ta": "முக்கியம்",
+   "kn": "ಮುಖ್ಯ"
+  },
+  "emoji": "⭐",
+  "color": "#2a6f97",
+  "tileCount": 36,
+  "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/core.json"
+ },
+ {
+  "id": "phrases",
+  "kind": "phrases",
+  "label": {
+   "en": "Phrases",
+   "hi": "वाक्य",
+   "ta": "வாக்கியம்",
+   "kn": "ವಾಕ್ಯಗಳು"
+  },
+  "emoji": "💬",
+  "color": "#7cc6c9",
+  "tileCount": 32,
+  "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/phrases.json"
+ },
+ {
+  "id": "needs",
+  "kind": "topic",
+  "label": {
+   "en": "Needs",
+   "hi": "ज़रूरतें",
+   "ta": "தேவைகள்",
+   "kn": "ಅಗತ್ಯಗಳು"
+  },
+  "emoji": "🙋",
+  "color": "#f4a259",
+  "tileCount": 10,
+  "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/needs.json"
+ },
+ {
+  "id": "food",
+  "kind": "topic",
+  "label": {
+   "en": "Food",
+   "hi": "खाना",
+   "ta": "சாப்பாடு",
+   "kn": "ಊಟ"
+  },
+  "emoji": "🍽️",
+  "color": "#e9c46a",
+  "tileCount": 12,
+  "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/food.json"
+ },
+ {
+  "id": "feelings",
+  "kind": "topic",
+  "label": {
+   "en": "Feelings",
+   "hi": "भावनाएँ",
+   "ta": "உணர்வுகள்",
+   "kn": "ಭಾವನೆಗಳು"
+  },
+  "emoji": "😀",
+  "color": "#f28fad",
+  "tileCount": 10,
+  "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/feelings.json"
+ },
+ {
+  "id": "people",
+  "kind": "topic",
+  "label": {
+   "en": "People",
+   "hi": "लोग",
+   "ta": "ஆட்கள்",
+   "kn": "ಜನರು"
+  },
+  "emoji": "👪",
+  "color": "#8ecae6",
+  "tileCount": 10,
+  "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/people.json"
+ },
+ {
+  "id": "places",
+  "kind": "topic",
+  "label": {
+   "en": "Places",
+   "hi": "जगहें",
+   "ta": "இடங்கள்",
+   "kn": "ಜಾಗಗಳು"
+  },
+  "emoji": "🏠",
+  "color": "#90be6d",
+  "tileCount": 10,
+  "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/places.json"
+ },
+ {
+  "id": "home",
+  "kind": "topic",
+  "label": {
+   "en": "Home",
+   "hi": "घर",
+   "ta": "வீடு",
+   "kn": "ಮನೆ"
+  },
+  "emoji": "🛋️",
+  "color": "#b8a1e3",
+  "tileCount": 10,
+  "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/home.json"
+ },
+ {
+  "id": "play",
+  "kind": "topic",
+  "label": {
+   "en": "Play",
+   "hi": "खेल",
+   "ta": "விளையாட்டு",
+   "kn": "ಆಟ"
+  },
+  "emoji": "🧸",
+  "color": "#f7b2bd",
+  "tileCount": 10,
+  "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/play.json"
+ },
+ {
+  "id": "school",
+  "kind": "topic",
+  "label": {
+   "en": "School",
+   "hi": "स्कूल",
+   "ta": "ஸ்கூல்",
+   "kn": "ಸ್ಕೂಲ್"
+  },
+  "emoji": "🏫",
+  "color": "#a3c4f3",
+  "tileCount": 10,
+  "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/school.json"
+ },
+ {
+  "id": "morning",
+  "kind": "routine",
+  "label": {
+   "en": "Morning",
+   "hi": "सुबह",
+   "ta": "காலை",
+   "kn": "ಬೆಳಿಗ್ಗೆ"
+  },
+  "emoji": "🌅",
+  "color": "#ffd166",
+  "tileCount": 8,
+  "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/morning.json"
+ },
+ {
+  "id": "bedtime",
+  "kind": "routine",
+  "label": {
+   "en": "Bedtime",
+   "hi": "सोने का समय",
+   "ta": "தூங்கும் நேரம்",
+   "kn": "ಮಲಗುವ ಸಮಯ"
+  },
+  "emoji": "🌙",
+  "color": "#9aa5d1",
+  "tileCount": 7,
+  "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/bedtime.json"
+ },
+ {
+  "id": "family",
+  "kind": "personal",
+  "label": {
+   "en": "Family",
+   "hi": "परिवार",
+   "ta": "குடும்பம்",
+   "kn": "ಕುಟುಂಬ"
+  },
+  "emoji": "👨‍👩‍👧",
+  "color": "#7fc8a9",
+  "tileCount": 2,
+  "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/family.json"
+ },
+ {
+  "id": "pets",
+  "kind": "personal",
+  "label": {
+   "en": "Pets",
+   "hi": "पालतू",
+   "ta": "செல்லப் பிராணிகள்",
+   "kn": "ಸಾಕು ಪ್ರಾಣಿಗಳು"
+  },
+  "emoji": "🐶",
+  "color": "#d4a373",
+  "tileCount": 2,
+  "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/pets.json"
+ },
+ {
+  "id": "favs",
+  "kind": "personal",
+  "label": {
+   "en": "Favourites",
+   "hi": "पसंदीदा",
+   "ta": "பிடிச்சவை",
+   "kn": "ಇಷ್ಟದವು"
+  },
+  "emoji": "⭐",
+  "color": "#ffb703",
+  "tileCount": 0,
+  "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/favs.json"
+ }
+]

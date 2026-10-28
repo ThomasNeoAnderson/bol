@@ -1,0 +1,27 @@
+{
+ "id": "core-2",
+ "category": "core",
+ "slot": 2,
+ "label": {
+  "en": "want",
+  "hi": "चाहिए",
+  "ta": "வேணும்",
+  "kn": "ಬೇಕು"
+ },
+ "alternatives": [],
+ "wordType": "verb",
+ "color": "#8fd18f",
+ "emoji": "🤲",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/core-2.webp",
+  "arasaacId": 5441,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-2.json"
+}

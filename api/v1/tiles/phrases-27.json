@@ -1,0 +1,23 @@
+{
+ "id": "phrases-27",
+ "category": "phrases",
+ "slot": 27,
+ "label": {
+  "en": "I want a hug",
+  "hi": "मुझे गले लगाओ",
+  "ta": "என்னைக் கட்டிப்பிடி",
+  "kn": "ನನ್ನನ್ನು ತಬ್ಬಿಕೋ"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "🤗",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-27.json"
+}

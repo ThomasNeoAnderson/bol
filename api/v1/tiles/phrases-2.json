@@ -1,0 +1,23 @@
+{
+ "id": "phrases-2",
+ "category": "phrases",
+ "slot": 2,
+ "label": {
+  "en": "I need the toilet",
+  "hi": "मुझे टॉयलेट जाना है",
+  "ta": "எனக்கு பாத்ரூம் போகணும்",
+  "kn": "ನನಗೆ ಟಾಯ್ಲೆಟ್‌ಗೆ ಹೋಗಬೇಕು"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "🚽",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-2.json"
+}

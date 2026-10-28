@@ -1,0 +1,34 @@
+{
+ "id": "school-7",
+ "category": "school",
+ "slot": 7,
+ "label": {
+  "en": "work done",
+  "hi": "काम हो गया",
+  "ta": "வேலை முடிஞ்சது",
+  "kn": "ಕೆಲಸ ಮುಗೀತು"
+ },
+ "alternatives": [
+  {
+   "en": "I finished my work",
+   "hi": "मेरा काम हो गया",
+   "ta": "என் வேலை முடிஞ்சது",
+   "kn": "ನನ್ನ ಕೆಲಸ ಮುಗೀತು"
+  }
+ ],
+ "wordType": "describe",
+ "color": "#8cc4ff",
+ "emoji": "✔️",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/school-7.webp",
+  "arasaacId": 28429,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/school-7.json"
+}

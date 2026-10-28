@@ -1,0 +1,27 @@
+{
+ "id": "core-10",
+ "category": "core",
+ "slot": 10,
+ "label": {
+  "en": "stop",
+  "hi": "रुको",
+  "ta": "நிறுத்து",
+  "kn": "ನಿಲ್ಲಿಸು"
+ },
+ "alternatives": [],
+ "wordType": "verb",
+ "color": "#8fd18f",
+ "emoji": "✋",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/core-10.webp",
+  "arasaacId": 7195,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-10.json"
+}

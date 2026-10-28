@@ -1,0 +1,23 @@
+{
+ "id": "phrases-25",
+ "category": "phrases",
+ "slot": 25,
+ "label": {
+  "en": "Please say it again",
+  "hi": "प्लीज़ फिर से बोलो",
+  "ta": "இன்னொரு தடவை சொல்லுங்க",
+  "kn": "ಇನ್ನೊಂದ್ಸಲ ಹೇಳಿ"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "🔁",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-25.json"
+}

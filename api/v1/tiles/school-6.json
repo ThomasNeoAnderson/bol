@@ -1,0 +1,27 @@
+{
+ "id": "school-6",
+ "category": "school",
+ "slot": 6,
+ "label": {
+  "en": "I don't understand",
+  "hi": "मुझे समझ नहीं आया",
+  "ta": "எனக்கு புரியல",
+  "kn": "ನನಗೆ ಅರ್ಥ ಆಗ್ಲಿಲ್ಲ"
+ },
+ "alternatives": [],
+ "wordType": "social",
+ "color": "#ff9ec7",
+ "emoji": "🤔",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/school-6.webp",
+  "arasaacId": 11315,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/school-6.json"
+}

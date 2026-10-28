@@ -1,0 +1,15 @@
+{
+ "id": "favs",
+ "kind": "personal",
+ "label": {
+  "en": "Favourites",
+  "hi": "पसंदीदा",
+  "ta": "பிடிச்சவை",
+  "kn": "ಇಷ್ಟದವು"
+ },
+ "emoji": "⭐",
+ "color": "#ffb703",
+ "tileCount": 0,
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/favs.json",
+ "tiles": []
+}

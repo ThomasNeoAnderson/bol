@@ -1,0 +1,27 @@
+{
+ "id": "core-8",
+ "category": "core",
+ "slot": 8,
+ "label": {
+  "en": "go",
+  "hi": "जाना",
+  "ta": "போ",
+  "kn": "ಹೋಗು"
+ },
+ "alternatives": [],
+ "wordType": "verb",
+ "color": "#8fd18f",
+ "emoji": "🚶",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/core-8.webp",
+  "arasaacId": 2432,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-8.json"
+}

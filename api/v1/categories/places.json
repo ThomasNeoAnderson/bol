@@ -1,0 +1,296 @@
+{
+ "id": "places",
+ "kind": "topic",
+ "label": {
+  "en": "Places",
+  "hi": "जगहें",
+  "ta": "இடங்கள்",
+  "kn": "ಜಾಗಗಳು"
+ },
+ "emoji": "🏠",
+ "color": "#90be6d",
+ "tileCount": 10,
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/places.json",
+ "tiles": [
+  {
+   "id": "places-0",
+   "category": "places",
+   "slot": 0,
+   "label": {
+    "en": "home",
+    "hi": "घर",
+    "ta": "வீடு",
+    "kn": "ಮನೆ"
+   },
+   "alternatives": [
+    {
+     "en": "I want to go home",
+     "hi": "मुझे घर जाना है",
+     "ta": "நான் வீட்டுக்கு போகணும்",
+     "kn": "ನಾನು ಮನೆಗೆ ಹೋಗಬೇಕು"
+    }
+   ],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🏠",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/places-0.webp",
+    "arasaacId": 6964,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-0.json"
+  },
+  {
+   "id": "places-1",
+   "category": "places",
+   "slot": 1,
+   "label": {
+    "en": "school",
+    "hi": "स्कूल",
+    "ta": "ஸ்கூல்",
+    "kn": "ಸ್ಕೂಲ್"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🏫",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/places-1.webp",
+    "arasaacId": 3082,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-1.json"
+  },
+  {
+   "id": "places-2",
+   "category": "places",
+   "slot": 2,
+   "label": {
+    "en": "park",
+    "hi": "पार्क",
+    "ta": "பார்க்",
+    "kn": "ಪಾರ್ಕ್"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🏞️",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/places-2.webp",
+    "arasaacId": 5379,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-2.json"
+  },
+  {
+   "id": "places-3",
+   "category": "places",
+   "slot": 3,
+   "label": {
+    "en": "shop",
+    "hi": "दुकान",
+    "ta": "கடை",
+    "kn": "ಅಂಗಡಿ"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🛒",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/places-3.webp",
+    "arasaacId": 8986,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-3.json"
+  },
+  {
+   "id": "places-4",
+   "category": "places",
+   "slot": 4,
+   "label": {
+    "en": "hospital",
+    "hi": "अस्पताल",
+    "ta": "ஆஸ்பத்திரி",
+    "kn": "ಆಸ್ಪತ್ರೆ"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🏥",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/places-4.webp",
+    "arasaacId": 3116,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-4.json"
+  },
+  {
+   "id": "places-5",
+   "category": "places",
+   "slot": 5,
+   "label": {
+    "en": "temple",
+    "hi": "मंदिर",
+    "ta": "கோயில்",
+    "kn": "ದೇವಸ್ಥಾನ"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🛕",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-5.json"
+  },
+  {
+   "id": "places-6",
+   "category": "places",
+   "slot": 6,
+   "label": {
+    "en": "outside",
+    "hi": "बाहर",
+    "ta": "வெளிய",
+    "kn": "ಹೊರಗೆ"
+   },
+   "alternatives": [
+    {
+     "en": "I want to go outside",
+     "hi": "मुझे बाहर जाना है",
+     "ta": "நான் வெளிய போகணும்",
+     "kn": "ನಾನು ಹೊರಗೆ ಹೋಗಬೇಕು"
+    }
+   ],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🌳",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/places-6.webp",
+    "arasaacId": 2806,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-6.json"
+  },
+  {
+   "id": "places-7",
+   "category": "places",
+   "slot": 7,
+   "label": {
+    "en": "car",
+    "hi": "गाड़ी",
+    "ta": "கார்",
+    "kn": "ಕಾರು"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🚗",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/places-7.webp",
+    "arasaacId": 2339,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-7.json"
+  },
+  {
+   "id": "places-8",
+   "category": "places",
+   "slot": 8,
+   "label": {
+    "en": "bus",
+    "hi": "बस",
+    "ta": "பஸ்",
+    "kn": "ಬಸ್ಸು"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🚌",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/places-8.webp",
+    "arasaacId": 2262,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-8.json"
+  },
+  {
+   "id": "places-9",
+   "category": "places",
+   "slot": 9,
+   "label": {
+    "en": "grandma's house",
+    "hi": "नानी का घर",
+    "ta": "பாட்டி வீடு",
+    "kn": "ಅಜ್ಜಿ ಮನೆ"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🏡",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/places-9.webp",
+    "arasaacId": 30482,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-9.json"
+  }
+ ]
+}

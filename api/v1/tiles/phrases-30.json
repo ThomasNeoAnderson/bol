@@ -1,0 +1,23 @@
+{
+ "id": "phrases-30",
+ "category": "phrases",
+ "slot": 30,
+ "label": {
+  "en": "Yes, please",
+  "hi": "हाँ, प्लीज़",
+  "ta": "ஆமா, வேணும்",
+  "kn": "ಹೌದು, ಬೇಕು"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "✅",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-30.json"
+}

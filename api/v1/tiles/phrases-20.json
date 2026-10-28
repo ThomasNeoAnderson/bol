@@ -1,0 +1,23 @@
+{
+ "id": "phrases-20",
+ "category": "phrases",
+ "slot": 20,
+ "label": {
+  "en": "Where is mummy?",
+  "hi": "मम्मी कहाँ हैं?",
+  "ta": "அம்மா எங்க?",
+  "kn": "ಅಮ್ಮ ಎಲ್ಲಿ?"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "👩",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-20.json"
+}

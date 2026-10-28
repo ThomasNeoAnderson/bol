@@ -1,0 +1,346 @@
+{
+ "id": "food",
+ "kind": "topic",
+ "label": {
+  "en": "Food",
+  "hi": "खाना",
+  "ta": "சாப்பாடு",
+  "kn": "ಊಟ"
+ },
+ "emoji": "🍽️",
+ "color": "#e9c46a",
+ "tileCount": 12,
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/food.json",
+ "tiles": [
+  {
+   "id": "food-0",
+   "category": "food",
+   "slot": 0,
+   "label": {
+    "en": "eat",
+    "hi": "खाना",
+    "ta": "சாப்பாடு",
+    "kn": "ಊಟ"
+   },
+   "alternatives": [
+    {
+     "en": "I want to eat",
+     "hi": "मुझे खाना है",
+     "ta": "எனக்கு சாப்பிடணும்",
+     "kn": "ನನಗೆ ಊಟ ಬೇಕು"
+    }
+   ],
+   "wordType": "verb",
+   "color": "#8fd18f",
+   "emoji": "🍽️",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/food-0.webp",
+    "arasaacId": 2349,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-0.json"
+  },
+  {
+   "id": "food-1",
+   "category": "food",
+   "slot": 1,
+   "label": {
+    "en": "roti",
+    "hi": "रोटी",
+    "ta": "சப்பாத்தி",
+    "kn": "ಚಪಾತಿ"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🫓",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-1.json"
+  },
+  {
+   "id": "food-2",
+   "category": "food",
+   "slot": 2,
+   "label": {
+    "en": "rice",
+    "hi": "चावल",
+    "ta": "சாதம்",
+    "kn": "ಅನ್ನ"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🍚",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/food-2.webp",
+    "arasaacId": 6911,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-2.json"
+  },
+  {
+   "id": "food-3",
+   "category": "food",
+   "slot": 3,
+   "label": {
+    "en": "dal",
+    "hi": "दाल",
+    "ta": "பருப்பு",
+    "kn": "ಬೇಳೆ"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🥣",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/food-3.webp",
+    "arasaacId": 2448,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-3.json"
+  },
+  {
+   "id": "food-4",
+   "category": "food",
+   "slot": 4,
+   "label": {
+    "en": "milk",
+    "hi": "दूध",
+    "ta": "பால்",
+    "kn": "ಹಾಲು"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🥛",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/food-4.webp",
+    "arasaacId": 2445,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-4.json"
+  },
+  {
+   "id": "food-5",
+   "category": "food",
+   "slot": 5,
+   "label": {
+    "en": "banana",
+    "hi": "केला",
+    "ta": "வாழைப்பழம்",
+    "kn": "ಬಾಳೆಹಣ್ಣು"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🍌",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/food-5.webp",
+    "arasaacId": 2530,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-5.json"
+  },
+  {
+   "id": "food-6",
+   "category": "food",
+   "slot": 6,
+   "label": {
+    "en": "mango",
+    "hi": "आम",
+    "ta": "மாம்பழம்",
+    "kn": "ಮಾವಿನಹಣ್ಣು"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🥭",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/food-6.webp",
+    "arasaacId": 16813,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-6.json"
+  },
+  {
+   "id": "food-7",
+   "category": "food",
+   "slot": 7,
+   "label": {
+    "en": "biscuit",
+    "hi": "बिस्कुट",
+    "ta": "பிஸ்கட்",
+    "kn": "ಬಿಸ್ಕತ್ತು"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🍪",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/food-7.webp",
+    "arasaacId": 8312,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-7.json"
+  },
+  {
+   "id": "food-8",
+   "category": "food",
+   "slot": 8,
+   "label": {
+    "en": "juice",
+    "hi": "जूस",
+    "ta": "ஜூஸ்",
+    "kn": "ಜ್ಯೂಸ್"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🧃",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/food-8.webp",
+    "arasaacId": 11461,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-8.json"
+  },
+  {
+   "id": "food-9",
+   "category": "food",
+   "slot": 9,
+   "label": {
+    "en": "hungry",
+    "hi": "भूख",
+    "ta": "பசி",
+    "kn": "ಹಸಿವು"
+   },
+   "alternatives": [
+    {
+     "en": "I'm hungry",
+     "hi": "मुझे भूख लगी है",
+     "ta": "எனக்கு பசிக்குது",
+     "kn": "ನನಗೆ ಹಸಿವಾಗಿದೆ"
+    }
+   ],
+   "wordType": "describe",
+   "color": "#8cc4ff",
+   "emoji": "😋",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/food-9.webp",
+    "arasaacId": 4962,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-9.json"
+  },
+  {
+   "id": "food-10",
+   "category": "food",
+   "slot": 10,
+   "label": {
+    "en": "idli",
+    "hi": "इडली",
+    "ta": "இட்லி",
+    "kn": "ಇಡ್ಲಿ"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🍙",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-10.json"
+  },
+  {
+   "id": "food-11",
+   "category": "food",
+   "slot": 11,
+   "label": {
+    "en": "dosa",
+    "hi": "डोसा",
+    "ta": "தோசை",
+    "kn": "ದೋಸೆ"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🥞",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/food-11.webp",
+    "arasaacId": 34233,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-11.json"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "id": "phrases-11",
+ "category": "phrases",
+ "slot": 11,
+ "label": {
+  "en": "I don't like this",
+  "hi": "मुझे यह पसंद नहीं है",
+  "ta": "எனக்கு இது பிடிக்கல",
+  "kn": "ನನಗೆ ಇದು ಇಷ್ಟ ಇಲ್ಲ"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "👎",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-11.json"
+}

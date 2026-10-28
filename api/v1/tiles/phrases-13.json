@@ -1,0 +1,23 @@
+{
+ "id": "phrases-13",
+ "category": "phrases",
+ "slot": 13,
+ "label": {
+  "en": "I want more",
+  "hi": "मुझे और चाहिए",
+  "ta": "எனக்கு இன்னும் வேணும்",
+  "kn": "ನನಗೆ ಇನ್ನೂ ಬೇಕು"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "➕",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-13.json"
+}

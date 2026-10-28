@@ -1,0 +1,27 @@
+{
+ "id": "core-30",
+ "category": "core",
+ "slot": 30,
+ "label": {
+  "en": "what",
+  "hi": "क्या",
+  "ta": "என்ன",
+  "kn": "ಏನು"
+ },
+ "alternatives": [],
+ "wordType": "question",
+ "color": "#c6a6ff",
+ "emoji": "❓",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/core-30.webp",
+  "arasaacId": 22620,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-30.json"
+}

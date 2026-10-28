@@ -1,0 +1,752 @@
+{
+ "id": "phrases",
+ "kind": "phrases",
+ "label": {
+  "en": "Phrases",
+  "hi": "वाक्य",
+  "ta": "வாக்கியம்",
+  "kn": "ವಾಕ್ಯಗಳು"
+ },
+ "emoji": "💬",
+ "color": "#7cc6c9",
+ "tileCount": 32,
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/phrases.json",
+ "tiles": [
+  {
+   "id": "phrases-0",
+   "category": "phrases",
+   "slot": 0,
+   "label": {
+    "en": "I want water",
+    "hi": "मुझे पानी चाहिए",
+    "ta": "எனக்கு தண்ணி வேணும்",
+    "kn": "ನನಗೆ ನೀರು ಬೇಕು"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "💧",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-0.json"
+  },
+  {
+   "id": "phrases-1",
+   "category": "phrases",
+   "slot": 1,
+   "label": {
+    "en": "I want to go home",
+    "hi": "मुझे घर जाना है",
+    "ta": "நான் வீட்டுக்கு போகணும்",
+    "kn": "ನಾನು ಮನೆಗೆ ಹೋಗಬೇಕು"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "🏠",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-1.json"
+  },
+  {
+   "id": "phrases-2",
+   "category": "phrases",
+   "slot": 2,
+   "label": {
+    "en": "I need the toilet",
+    "hi": "मुझे टॉयलेट जाना है",
+    "ta": "எனக்கு பாத்ரூம் போகணும்",
+    "kn": "ನನಗೆ ಟಾಯ್ಲೆಟ್‌ಗೆ ಹೋಗಬೇಕು"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "🚽",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-2.json"
+  },
+  {
+   "id": "phrases-3",
+   "category": "phrases",
+   "slot": 3,
+   "label": {
+    "en": "I am hungry",
+    "hi": "मुझे भूख लगी है",
+    "ta": "எனக்கு பசிக்குது",
+    "kn": "ನನಗೆ ಹಸಿವಾಗಿದೆ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "😋",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-3.json"
+  },
+  {
+   "id": "phrases-4",
+   "category": "phrases",
+   "slot": 4,
+   "label": {
+    "en": "I feel sick",
+    "hi": "मेरी तबीयत ठीक नहीं है",
+    "ta": "எனக்கு உடம்பு சரியில்ல",
+    "kn": "ನನಗೆ ಹುಷಾರಿಲ್ಲ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "🤒",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-4.json"
+  },
+  {
+   "id": "phrases-5",
+   "category": "phrases",
+   "slot": 5,
+   "label": {
+    "en": "Please wait",
+    "hi": "ज़रा रुको",
+    "ta": "கொஞ்சம் இருங்க",
+    "kn": "ಸ್ವಲ್ಪ ಇರಿ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "⏳",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-5.json"
+  },
+  {
+   "id": "phrases-6",
+   "category": "phrases",
+   "slot": 6,
+   "label": {
+    "en": "I am thirsty",
+    "hi": "मुझे प्यास लगी है",
+    "ta": "எனக்கு தாகமா இருக்கு",
+    "kn": "ನನಗೆ ಬಾಯಾರಿಕೆ ಆಗಿದೆ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "🥤",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-6.json"
+  },
+  {
+   "id": "phrases-7",
+   "category": "phrases",
+   "slot": 7,
+   "label": {
+    "en": "It hurts here",
+    "hi": "यहाँ दर्द हो रहा है",
+    "ta": "இங்க வலிக்குது",
+    "kn": "ಇಲ್ಲಿ ನೋವಾಗ್ತಿದೆ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "🤕",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-7.json"
+  },
+  {
+   "id": "phrases-8",
+   "category": "phrases",
+   "slot": 8,
+   "label": {
+    "en": "I am tired",
+    "hi": "मुझे थकान हो रही है",
+    "ta": "எனக்கு டயர்டா இருக்கு",
+    "kn": "ನನಗೆ ಸುಸ್ತಾಗಿದೆ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "🥱",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-8.json"
+  },
+  {
+   "id": "phrases-9",
+   "category": "phrases",
+   "slot": 9,
+   "label": {
+    "en": "I want to sleep",
+    "hi": "मुझे सोना है",
+    "ta": "எனக்கு தூங்கணும்",
+    "kn": "ನಾನು ಮಲಗಬೇಕು"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "💤",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-9.json"
+  },
+  {
+   "id": "phrases-10",
+   "category": "phrases",
+   "slot": 10,
+   "label": {
+    "en": "Help me, please",
+    "hi": "प्लीज़ मेरी मदद करो",
+    "ta": "எனக்கு உதவி பண்ணுங்க",
+    "kn": "ನನಗೆ ಸಹಾಯ ಮಾಡಿ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "🆘",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-10.json"
+  },
+  {
+   "id": "phrases-11",
+   "category": "phrases",
+   "slot": 11,
+   "label": {
+    "en": "I don't like this",
+    "hi": "मुझे यह पसंद नहीं है",
+    "ta": "எனக்கு இது பிடிக்கல",
+    "kn": "ನನಗೆ ಇದು ಇಷ್ಟ ಇಲ್ಲ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "👎",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-11.json"
+  },
+  {
+   "id": "phrases-12",
+   "category": "phrases",
+   "slot": 12,
+   "label": {
+    "en": "I like this",
+    "hi": "मुझे यह पसंद है",
+    "ta": "எனக்கு இது பிடிக்கும்",
+    "kn": "ನನಗೆ ಇದು ಇಷ್ಟ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "👍",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-12.json"
+  },
+  {
+   "id": "phrases-13",
+   "category": "phrases",
+   "slot": 13,
+   "label": {
+    "en": "I want more",
+    "hi": "मुझे और चाहिए",
+    "ta": "எனக்கு இன்னும் வேணும்",
+    "kn": "ನನಗೆ ಇನ್ನೂ ಬೇಕು"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "➕",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-13.json"
+  },
+  {
+   "id": "phrases-14",
+   "category": "phrases",
+   "slot": 14,
+   "label": {
+    "en": "I am finished",
+    "hi": "मेरा हो गया",
+    "ta": "எனக்கு முடிஞ்சது",
+    "kn": "ನನ್ನದು ಮುಗೀತು"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "🏁",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-14.json"
+  },
+  {
+   "id": "phrases-15",
+   "category": "phrases",
+   "slot": 15,
+   "label": {
+    "en": "I need a break",
+    "hi": "मुझे थोड़ा आराम चाहिए",
+    "ta": "எனக்கு கொஞ்சம் ரெஸ்ட் வேணும்",
+    "kn": "ನನಗೆ ಸ್ವಲ್ಪ ರೆಸ್ಟ್ ಬೇಕು"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "🧘",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-15.json"
+  },
+  {
+   "id": "phrases-16",
+   "category": "phrases",
+   "slot": 16,
+   "label": {
+    "en": "It is too loud",
+    "hi": "बहुत शोर है",
+    "ta": "ரொம்ப சத்தமா இருக்கு",
+    "kn": "ತುಂಬಾ ಗಲಾಟೆ ಆಗ್ತಿದೆ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "🙉",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-16.json"
+  },
+  {
+   "id": "phrases-17",
+   "category": "phrases",
+   "slot": 17,
+   "label": {
+    "en": "I want to go outside",
+    "hi": "मुझे बाहर जाना है",
+    "ta": "நான் வெளிய போகணும்",
+    "kn": "ನಾನು ಹೊರಗೆ ಹೋಗಬೇಕು"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "🌳",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-17.json"
+  },
+  {
+   "id": "phrases-18",
+   "category": "phrases",
+   "slot": 18,
+   "label": {
+    "en": "I want to play",
+    "hi": "मुझे खेलना है",
+    "ta": "நான் விளையாடணும்",
+    "kn": "ನಾನು ಆಡಬೇಕು"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "🧸",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-18.json"
+  },
+  {
+   "id": "phrases-19",
+   "category": "phrases",
+   "slot": 19,
+   "label": {
+    "en": "I want to eat",
+    "hi": "मुझे खाना है",
+    "ta": "எனக்கு சாப்பிடணும்",
+    "kn": "ನನಗೆ ಊಟ ಬೇಕು"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "🍽️",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-19.json"
+  },
+  {
+   "id": "phrases-20",
+   "category": "phrases",
+   "slot": 20,
+   "label": {
+    "en": "Where is mummy?",
+    "hi": "मम्मी कहाँ हैं?",
+    "ta": "அம்மா எங்க?",
+    "kn": "ಅಮ್ಮ ಎಲ್ಲಿ?"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "👩",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-20.json"
+  },
+  {
+   "id": "phrases-21",
+   "category": "phrases",
+   "slot": 21,
+   "label": {
+    "en": "I am scared",
+    "hi": "मुझे डर लग रहा है",
+    "ta": "எனக்கு பயமா இருக்கு",
+    "kn": "ನನಗೆ ಭಯ ಆಗ್ತಿದೆ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "😨",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-21.json"
+  },
+  {
+   "id": "phrases-22",
+   "category": "phrases",
+   "slot": 22,
+   "label": {
+    "en": "I am happy",
+    "hi": "मैं खुश हूँ",
+    "ta": "நான் சந்தோஷமா இருக்கேன்",
+    "kn": "ನನಗೆ ಖುಷಿ ಆಗಿದೆ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "😀",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-22.json"
+  },
+  {
+   "id": "phrases-23",
+   "category": "phrases",
+   "slot": 23,
+   "label": {
+    "en": "I am sad",
+    "hi": "मैं उदास हूँ",
+    "ta": "நான் சோகமா இருக்கேன்",
+    "kn": "ನನಗೆ ಬೇಜಾರಾಗಿದೆ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "😢",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-23.json"
+  },
+  {
+   "id": "phrases-24",
+   "category": "phrases",
+   "slot": 24,
+   "label": {
+    "en": "I don't understand",
+    "hi": "मुझे समझ नहीं आया",
+    "ta": "எனக்கு புரியல",
+    "kn": "ನನಗೆ ಅರ್ಥ ಆಗ್ಲಿಲ್ಲ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "🤔",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-24.json"
+  },
+  {
+   "id": "phrases-25",
+   "category": "phrases",
+   "slot": 25,
+   "label": {
+    "en": "Please say it again",
+    "hi": "प्लीज़ फिर से बोलो",
+    "ta": "இன்னொரு தடவை சொல்லுங்க",
+    "kn": "ಇನ್ನೊಂದ್ಸಲ ಹೇಳಿ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "🔁",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-25.json"
+  },
+  {
+   "id": "phrases-26",
+   "category": "phrases",
+   "slot": 26,
+   "label": {
+    "en": "Stop, please",
+    "hi": "प्लीज़ रुको",
+    "ta": "நிறுத்துங்க",
+    "kn": "ನಿಲ್ಲಿಸಿ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "✋",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-26.json"
+  },
+  {
+   "id": "phrases-27",
+   "category": "phrases",
+   "slot": 27,
+   "label": {
+    "en": "I want a hug",
+    "hi": "मुझे गले लगाओ",
+    "ta": "என்னைக் கட்டிப்பிடி",
+    "kn": "ನನ್ನನ್ನು ತಬ್ಬಿಕೋ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "🤗",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-27.json"
+  },
+  {
+   "id": "phrases-28",
+   "category": "phrases",
+   "slot": 28,
+   "label": {
+    "en": "Hello",
+    "hi": "नमस्ते",
+    "ta": "வணக்கம்",
+    "kn": "ನಮಸ್ಕಾರ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "👋",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-28.json"
+  },
+  {
+   "id": "phrases-29",
+   "category": "phrases",
+   "slot": 29,
+   "label": {
+    "en": "I love you",
+    "hi": "मुझे तुमसे प्यार है",
+    "ta": "உன்னை ரொம்ப பிடிக்கும்",
+    "kn": "ನಂಗೆ ನೀನು ತುಂಬಾ ಇಷ್ಟ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "❤️",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-29.json"
+  },
+  {
+   "id": "phrases-30",
+   "category": "phrases",
+   "slot": 30,
+   "label": {
+    "en": "Yes, please",
+    "hi": "हाँ, प्लीज़",
+    "ta": "ஆமா, வேணும்",
+    "kn": "ಹೌದು, ಬೇಕು"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "✅",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-30.json"
+  },
+  {
+   "id": "phrases-31",
+   "category": "phrases",
+   "slot": 31,
+   "label": {
+    "en": "No, thank you",
+    "hi": "नहीं, धन्यवाद",
+    "ta": "வேண்டாம், நன்றி",
+    "kn": "ಬೇಡ, ಧನ್ಯವಾದ"
+   },
+   "alternatives": [],
+   "wordType": null,
+   "color": null,
+   "emoji": "🙅",
+   "symbol": null,
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-31.json"
+  }
+ ]
+}

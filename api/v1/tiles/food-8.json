@@ -1,0 +1,27 @@
+{
+ "id": "food-8",
+ "category": "food",
+ "slot": 8,
+ "label": {
+  "en": "juice",
+  "hi": "जूस",
+  "ta": "ஜூஸ்",
+  "kn": "ಜ್ಯೂಸ್"
+ },
+ "alternatives": [],
+ "wordType": "noun",
+ "color": "#ffb366",
+ "emoji": "🧃",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/food-8.webp",
+  "arasaacId": 11461,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-8.json"
+}

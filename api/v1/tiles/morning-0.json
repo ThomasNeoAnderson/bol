@@ -1,0 +1,27 @@
+{
+ "id": "morning-0",
+ "category": "morning",
+ "slot": 0,
+ "label": {
+  "en": "wake up",
+  "hi": "उठना",
+  "ta": "எழுந்திரு",
+  "kn": "ಏಳು"
+ },
+ "alternatives": [],
+ "wordType": "verb",
+ "color": "#8fd18f",
+ "emoji": "⏰",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/morning-0.webp",
+  "arasaacId": 6548,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/morning-0.json"
+}

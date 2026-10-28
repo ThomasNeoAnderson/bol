@@ -1,0 +1,23 @@
+{
+ "id": "phrases-29",
+ "category": "phrases",
+ "slot": 29,
+ "label": {
+  "en": "I love you",
+  "hi": "मुझे तुमसे प्यार है",
+  "ta": "உன்னை ரொம்ப பிடிக்கும்",
+  "kn": "ನಂಗೆ ನೀನು ತುಂಬಾ ಇಷ್ಟ"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "❤️",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-29.json"
+}

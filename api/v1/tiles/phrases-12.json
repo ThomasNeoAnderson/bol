@@ -1,0 +1,23 @@
+{
+ "id": "phrases-12",
+ "category": "phrases",
+ "slot": 12,
+ "label": {
+  "en": "I like this",
+  "hi": "मुझे यह पसंद है",
+  "ta": "எனக்கு இது பிடிக்கும்",
+  "kn": "ನನಗೆ ಇದು ಇಷ್ಟ"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "👍",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-12.json"
+}

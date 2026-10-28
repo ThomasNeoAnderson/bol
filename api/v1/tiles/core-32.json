@@ -1,0 +1,27 @@
+{
+ "id": "core-32",
+ "category": "core",
+ "slot": 32,
+ "label": {
+  "en": "open",
+  "hi": "खोलो",
+  "ta": "திற",
+  "kn": "ತೆಗಿ"
+ },
+ "alternatives": [],
+ "wordType": "verb",
+ "color": "#8fd18f",
+ "emoji": "📂",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/core-32.webp",
+  "arasaacId": 4549,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-32.json"
+}

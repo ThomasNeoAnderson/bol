@@ -1,0 +1,27 @@
+{
+ "id": "core-33",
+ "category": "core",
+ "slot": 33,
+ "label": {
+  "en": "my turn",
+  "hi": "मेरी बारी",
+  "ta": "என் முறை",
+  "kn": "ನನ್ನ ಸರದಿ"
+ },
+ "alternatives": [],
+ "wordType": "social",
+ "color": "#ff9ec7",
+ "emoji": "🔄",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/core-33.webp",
+  "arasaacId": 6006,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-33.json"
+}

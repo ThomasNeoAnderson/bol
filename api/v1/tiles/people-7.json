@@ -1,0 +1,27 @@
+{
+ "id": "people-7",
+ "category": "people",
+ "slot": 7,
+ "label": {
+  "en": "dada",
+  "hi": "दादा",
+  "ta": "தாத்தா",
+  "kn": "ಅಜ್ಜ"
+ },
+ "alternatives": [],
+ "wordType": "person",
+ "color": "#ffe066",
+ "emoji": "👴",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/people-7.webp",
+  "arasaacId": 2244,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/people-7.json"
+}

@@ -1,0 +1,27 @@
+{
+ "id": "places-2",
+ "category": "places",
+ "slot": 2,
+ "label": {
+  "en": "park",
+  "hi": "पार्क",
+  "ta": "பார்க்",
+  "kn": "ಪಾರ್ಕ್"
+ },
+ "alternatives": [],
+ "wordType": "noun",
+ "color": "#ffb366",
+ "emoji": "🏞️",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/places-2.webp",
+  "arasaacId": 5379,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-2.json"
+}

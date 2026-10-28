@@ -12,6 +12,7 @@ import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const FIX = path.join(ROOT, 'tests', 'fixtures');
@@ -426,6 +427,26 @@ await test('Typed Tamil is never read by another language voice (shown instead)'
   assert((await page.textContent('#show-card')).includes('எனக்கு தண்ணி வேணும்'), 'Tamil text shown on screen');
   const st = await status(page);
   assert(!st.includes('English'), 'did not fall back to English voice: ' + st);
+});
+
+await test('Tile API matches the vocabulary and every symbol URL exists', async ({ page }) => {
+  // api/ must be regenerated whenever data/vocab.json changes.
+  execFileSync('python3', [path.join(ROOT, 'tools', 'build_api.py'), '--check'], { stdio: 'pipe' });
+  const vocab = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'vocab.json'), 'utf8'));
+  const SITE = 'https://thomasneoanderson.github.io/bol/';
+  const get = async u => { const r = await page.request.get(BASE + '/' + u.replace(SITE, '')); assert(r.ok(), 'missing ' + u); return r.json(); };
+  const index = await get(SITE + 'api/v1/index.json');
+  const tiles = await get(index.endpoints.tiles);
+  eq(tiles.length, vocab.buttons.length, 'one tile per starter button');
+  const core = await get(index.endpoints.category.replace('{id}', 'core'));
+  const coreWords = vocab.buttons.filter(b => b.cat === 'core').sort((a, b) => a.slot - b.slot).map(b => b.text.en);
+  eq(core.tiles.map(t => t.label.en), coreWords, 'core tiles in slot order');
+  const one = await get(index.endpoints.tile.replace('{id}', 'needs-2'));
+  eq(one.label.en, 'help', 'single tile endpoint');
+  for (const t of tiles.filter(t => t.symbol)) {
+    const r = await page.request.get(BASE + '/' + t.symbol.url.replace(SITE, ''));
+    assert(r.ok(), 'symbol missing for ' + t.id);
+  }
 });
 
 // ---------------------------------------------------------------- summary ---

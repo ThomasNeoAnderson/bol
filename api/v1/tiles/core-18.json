@@ -1,0 +1,27 @@
+{
+ "id": "core-18",
+ "category": "core",
+ "slot": 18,
+ "label": {
+  "en": "here",
+  "hi": "यहाँ",
+  "ta": "இங்க",
+  "kn": "ಇಲ್ಲಿ"
+ },
+ "alternatives": [],
+ "wordType": "little",
+ "color": "#dee2e6",
+ "emoji": "📍",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/core-18.webp",
+  "arasaacId": 5382,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-18.json"
+}

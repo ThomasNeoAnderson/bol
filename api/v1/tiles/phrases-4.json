@@ -1,0 +1,23 @@
+{
+ "id": "phrases-4",
+ "category": "phrases",
+ "slot": 4,
+ "label": {
+  "en": "I feel sick",
+  "hi": "मेरी तबीयत ठीक नहीं है",
+  "ta": "எனக்கு உடம்பு சரியில்ல",
+  "kn": "ನನಗೆ ಹುಷಾರಿಲ್ಲ"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "🤒",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-4.json"
+}

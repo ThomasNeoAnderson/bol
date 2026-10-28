@@ -1,0 +1,27 @@
+{
+ "id": "core-17",
+ "category": "core",
+ "slot": 17,
+ "label": {
+  "en": "finished",
+  "hi": "खत्म",
+  "ta": "முடிஞ்சது",
+  "kn": "ಮುಗೀತು"
+ },
+ "alternatives": [],
+ "wordType": "describe",
+ "color": "#8cc4ff",
+ "emoji": "🏁",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/core-17.webp",
+  "arasaacId": 28429,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-17.json"
+}

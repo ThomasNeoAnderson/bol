@@ -1,0 +1,26 @@
+{
+ "name": "Bol tile API",
+ "version": 1,
+ "vocabularyVersion": 2,
+ "description": "Read-only starter vocabulary of the Bol AAC app. Static JSON on GitHub Pages; no key needed.",
+ "docs": "https://github.com/ThomasNeoAnderson/bol/blob/main/API.md",
+ "languages": [
+  "en",
+  "hi",
+  "ta",
+  "kn"
+ ],
+ "counts": {
+  "tiles": 169,
+  "categories": 15
+ },
+ "endpoints": {
+  "languages": "https://thomasneoanderson.github.io/bol/api/v1/languages.json",
+  "wordTypes": "https://thomasneoanderson.github.io/bol/api/v1/word-types.json",
+  "categories": "https://thomasneoanderson.github.io/bol/api/v1/categories.json",
+  "category": "https://thomasneoanderson.github.io/bol/api/v1/categories/{id}.json",
+  "tiles": "https://thomasneoanderson.github.io/bol/api/v1/tiles.json",
+  "tile": "https://thomasneoanderson.github.io/bol/api/v1/tiles/{id}.json"
+ },
+ "symbolAttribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+}

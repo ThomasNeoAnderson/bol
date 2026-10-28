@@ -34,6 +34,14 @@ GitHub Pages provides https. Pages is set to deploy from `main` / root.
 **After changing any file, run `python3 tools/build_sw.py`** before committing. It
 updates the offline file list and the cache version, and installed apps then show
 "Update available – tap to reload".
+After changing `data/vocab.json` or `data/languages.json`, also run
+`python3 tools/build_api.py`.
+
+## Tile API
+
+The starter tiles are also published as a read-only JSON API on GitHub Pages:
+`https://thomasneoanderson.github.io/bol/api/v1/` (for example `tiles.json` or
+`categories/core.json`). See [API.md](API.md).
 
 ## Project layout
 
@@ -55,6 +63,7 @@ updates the offline file list and the cache version, and installed apps then sho
 | `symbols/` | ARASAAC pictograms (bundled, offline) |
 | `fonts/` | Subsetted Noto Sans Devanagari/Tamil/Kannada |
 | `sw.js` | Service worker (offline cache, update flow) |
+| `api/v1/` | Generated tile API ([API.md](API.md)); not used by the app itself |
 | `tools/` | Build, translation review and symbol scripts |
 | `tests/` | Headless browser tests (`cd tests && npm install && node e2e.mjs`) |
 
@@ -62,7 +71,7 @@ updates the offline file list and the cache version, and installed apps then sho
 
 - **Correct translations:** run `python3 tools/export_review.py` and give
   `vocab_review.csv` to a native speaker. They fix cells and set `reviewed` to `yes`.
-  Then run `python3 tools/import_review.py vocab_review.csv` and `python3 tools/build_sw.py`.
+  Then run `python3 tools/import_review.py vocab_review.csv`, `python3 tools/build_api.py` and `python3 tools/build_sw.py`.
   Existing users receive the corrections on their next start; buttons a caregiver
   edited are never overwritten.
 - **Add a language:** add an entry to `data/languages.json` (code, name in its own

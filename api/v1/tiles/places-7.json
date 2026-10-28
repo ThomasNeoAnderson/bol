@@ -1,0 +1,27 @@
+{
+ "id": "places-7",
+ "category": "places",
+ "slot": 7,
+ "label": {
+  "en": "car",
+  "hi": "गाड़ी",
+  "ta": "கார்",
+  "kn": "ಕಾರು"
+ },
+ "alternatives": [],
+ "wordType": "noun",
+ "color": "#ffb366",
+ "emoji": "🚗",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/places-7.webp",
+  "arasaacId": 2339,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-7.json"
+}

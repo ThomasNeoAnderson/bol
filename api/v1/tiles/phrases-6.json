@@ -1,0 +1,23 @@
+{
+ "id": "phrases-6",
+ "category": "phrases",
+ "slot": 6,
+ "label": {
+  "en": "I am thirsty",
+  "hi": "मुझे प्यास लगी है",
+  "ta": "எனக்கு தாகமா இருக்கு",
+  "kn": "ನನಗೆ ಬಾಯಾರಿಕೆ ಆಗಿದೆ"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "🥤",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-6.json"
+}

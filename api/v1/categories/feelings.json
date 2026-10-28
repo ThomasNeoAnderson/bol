@@ -1,0 +1,342 @@
+{
+ "id": "feelings",
+ "kind": "topic",
+ "label": {
+  "en": "Feelings",
+  "hi": "भावनाएँ",
+  "ta": "உணர்வுகள்",
+  "kn": "ಭಾವನೆಗಳು"
+ },
+ "emoji": "😀",
+ "color": "#f28fad",
+ "tileCount": 10,
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/feelings.json",
+ "tiles": [
+  {
+   "id": "feelings-0",
+   "category": "feelings",
+   "slot": 0,
+   "label": {
+    "en": "happy",
+    "hi": "खुश",
+    "ta": "சந்தோஷம்",
+    "kn": "ಖುಷಿ"
+   },
+   "alternatives": [
+    {
+     "en": "I feel happy",
+     "hi": "मैं खुश हूँ",
+     "ta": "நான் சந்தோஷமா இருக்கேன்",
+     "kn": "ನನಗೆ ಖುಷಿ ಆಗಿದೆ"
+    }
+   ],
+   "wordType": "describe",
+   "color": "#8cc4ff",
+   "emoji": "😀",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/feelings-0.webp",
+    "arasaacId": 3245,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-0.json"
+  },
+  {
+   "id": "feelings-1",
+   "category": "feelings",
+   "slot": 1,
+   "label": {
+    "en": "sad",
+    "hi": "उदास",
+    "ta": "சோகம்",
+    "kn": "ಬೇಜಾರು"
+   },
+   "alternatives": [
+    {
+     "en": "I feel sad",
+     "hi": "मैं उदास हूँ",
+     "ta": "நான் சோகமா இருக்கேன்",
+     "kn": "ನನಗೆ ಬೇಜಾರಾಗಿದೆ"
+    }
+   ],
+   "wordType": "describe",
+   "color": "#8cc4ff",
+   "emoji": "😢",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/feelings-1.webp",
+    "arasaacId": 2606,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-1.json"
+  },
+  {
+   "id": "feelings-2",
+   "category": "feelings",
+   "slot": 2,
+   "label": {
+    "en": "angry",
+    "hi": "गुस्सा",
+    "ta": "கோபம்",
+    "kn": "ಕೋಪ"
+   },
+   "alternatives": [
+    {
+     "en": "I am angry",
+     "hi": "मुझे गुस्सा आ रहा है",
+     "ta": "எனக்கு கோபமா இருக்கு",
+     "kn": "ನನಗೆ ಕೋಪ ಬಂದಿದೆ"
+    }
+   ],
+   "wordType": "describe",
+   "color": "#8cc4ff",
+   "emoji": "😠",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/feelings-2.webp",
+    "arasaacId": 2374,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-2.json"
+  },
+  {
+   "id": "feelings-3",
+   "category": "feelings",
+   "slot": 3,
+   "label": {
+    "en": "scared",
+    "hi": "डर",
+    "ta": "பயம்",
+    "kn": "ಭಯ"
+   },
+   "alternatives": [
+    {
+     "en": "I am scared",
+     "hi": "मुझे डर लग रहा है",
+     "ta": "எனக்கு பயமா இருக்கு",
+     "kn": "ನನಗೆ ಭಯ ಆಗ್ತಿದೆ"
+    }
+   ],
+   "wordType": "describe",
+   "color": "#8cc4ff",
+   "emoji": "😨",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/feelings-3.webp",
+    "arasaacId": 2261,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-3.json"
+  },
+  {
+   "id": "feelings-4",
+   "category": "feelings",
+   "slot": 4,
+   "label": {
+    "en": "tired",
+    "hi": "थकान",
+    "ta": "டயர்டு",
+    "kn": "ಸುಸ್ತು"
+   },
+   "alternatives": [
+    {
+     "en": "I am tired",
+     "hi": "मुझे थकान हो रही है",
+     "ta": "எனக்கு டயர்டா இருக்கு",
+     "kn": "ನನಗೆ ಸುಸ್ತಾಗಿದೆ"
+    }
+   ],
+   "wordType": "describe",
+   "color": "#8cc4ff",
+   "emoji": "🥱",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/feelings-4.webp",
+    "arasaacId": 2314,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-4.json"
+  },
+  {
+   "id": "feelings-5",
+   "category": "feelings",
+   "slot": 5,
+   "label": {
+    "en": "sick",
+    "hi": "बीमार",
+    "ta": "உடம்பு சரியில்ல",
+    "kn": "ಹುಷಾರಿಲ್ಲ"
+   },
+   "alternatives": [
+    {
+     "en": "I feel sick",
+     "hi": "मेरी तबीयत ठीक नहीं है",
+     "ta": "எனக்கு உடம்பு சரியில்ல",
+     "kn": "ನನಗೆ ಹುಷಾರಿಲ್ಲ"
+    }
+   ],
+   "wordType": "describe",
+   "color": "#8cc4ff",
+   "emoji": "🤒",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/feelings-5.webp",
+    "arasaacId": 3308,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-5.json"
+  },
+  {
+   "id": "feelings-6",
+   "category": "feelings",
+   "slot": 6,
+   "label": {
+    "en": "excited",
+    "hi": "मज़ा",
+    "ta": "ஜாலி",
+    "kn": "ತುಂಬಾ ಖುಷಿ"
+   },
+   "alternatives": [],
+   "wordType": "describe",
+   "color": "#8cc4ff",
+   "emoji": "🤩",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/feelings-6.webp",
+    "arasaacId": 39090,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-6.json"
+  },
+  {
+   "id": "feelings-7",
+   "category": "feelings",
+   "slot": 7,
+   "label": {
+    "en": "calm",
+    "hi": "शांत",
+    "ta": "அமைதி",
+    "kn": "ಶಾಂತ"
+   },
+   "alternatives": [],
+   "wordType": "describe",
+   "color": "#8cc4ff",
+   "emoji": "😌",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/feelings-7.webp",
+    "arasaacId": 31310,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-7.json"
+  },
+  {
+   "id": "feelings-8",
+   "category": "feelings",
+   "slot": 8,
+   "label": {
+    "en": "too loud",
+    "hi": "बहुत शोर",
+    "ta": "ரொம்ப சத்தம்",
+    "kn": "ತುಂಬಾ ಗಲಾಟೆ"
+   },
+   "alternatives": [
+    {
+     "en": "it is too loud",
+     "hi": "बहुत शोर है",
+     "ta": "ரொம்ப சத்தமா இருக்கு",
+     "kn": "ತುಂಬಾ ಗಲಾಟೆ ಆಗ್ತಿದೆ"
+    }
+   ],
+   "wordType": "describe",
+   "color": "#8cc4ff",
+   "emoji": "🙉",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/feelings-8.webp",
+    "arasaacId": 7157,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-8.json"
+  },
+  {
+   "id": "feelings-9",
+   "category": "feelings",
+   "slot": 9,
+   "label": {
+    "en": "love",
+    "hi": "प्यार",
+    "ta": "அன்பு",
+    "kn": "ಪ್ರೀತಿ"
+   },
+   "alternatives": [
+    {
+     "en": "I love you",
+     "hi": "मुझे तुमसे प्यार है",
+     "ta": "உன்னை ரொம்ப பிடிக்கும்",
+     "kn": "ನಂಗೆ ನೀನು ತುಂಬಾ ಇಷ್ಟ"
+    }
+   ],
+   "wordType": "describe",
+   "color": "#8cc4ff",
+   "emoji": "❤️",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/feelings-9.webp",
+    "arasaacId": 6600,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-9.json"
+  }
+ ]
+}

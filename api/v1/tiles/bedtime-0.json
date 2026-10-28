@@ -1,0 +1,27 @@
+{
+ "id": "bedtime-0",
+ "category": "bedtime",
+ "slot": 0,
+ "label": {
+  "en": "pyjamas",
+  "hi": "नाइट सूट",
+  "ta": "நைட் டிரஸ்",
+  "kn": "ನೈಟ್ ಡ್ರೆಸ್"
+ },
+ "alternatives": [],
+ "wordType": "noun",
+ "color": "#ffb366",
+ "emoji": "🩳",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/bedtime-0.webp",
+  "arasaacId": 2522,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/bedtime-0.json"
+}

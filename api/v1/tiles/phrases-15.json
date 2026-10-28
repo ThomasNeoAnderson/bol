@@ -1,0 +1,23 @@
+{
+ "id": "phrases-15",
+ "category": "phrases",
+ "slot": 15,
+ "label": {
+  "en": "I need a break",
+  "hi": "मुझे थोड़ा आराम चाहिए",
+  "ta": "எனக்கு கொஞ்சம் ரெஸ்ட் வேணும்",
+  "kn": "ನನಗೆ ಸ್ವಲ್ಪ ರೆಸ್ಟ್ ಬೇಕು"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "🧘",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-15.json"
+}

@@ -1,0 +1,27 @@
+{
+ "id": "core-20",
+ "category": "core",
+ "slot": 20,
+ "label": {
+  "en": "eat",
+  "hi": "खाना",
+  "ta": "சாப்பிடு",
+  "kn": "ತಿನ್ನು"
+ },
+ "alternatives": [],
+ "wordType": "verb",
+ "color": "#8fd18f",
+ "emoji": "🍽️",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/core-20.webp",
+  "arasaacId": 2349,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-20.json"
+}

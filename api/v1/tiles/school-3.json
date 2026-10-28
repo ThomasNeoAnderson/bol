@@ -1,0 +1,27 @@
+{
+ "id": "school-3",
+ "category": "school",
+ "slot": 3,
+ "label": {
+  "en": "read",
+  "hi": "पढ़ना",
+  "ta": "படி",
+  "kn": "ಓದು"
+ },
+ "alternatives": [],
+ "wordType": "verb",
+ "color": "#8fd18f",
+ "emoji": "📚",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/school-3.webp",
+  "arasaacId": 5973,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/school-3.json"
+}

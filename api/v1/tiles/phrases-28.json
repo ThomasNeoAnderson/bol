@@ -1,0 +1,23 @@
+{
+ "id": "phrases-28",
+ "category": "phrases",
+ "slot": 28,
+ "label": {
+  "en": "Hello",
+  "hi": "नमस्ते",
+  "ta": "வணக்கம்",
+  "kn": "ನಮಸ್ಕಾರ"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "👋",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-28.json"
+}

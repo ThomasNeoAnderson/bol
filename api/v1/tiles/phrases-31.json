@@ -1,0 +1,23 @@
+{
+ "id": "phrases-31",
+ "category": "phrases",
+ "slot": 31,
+ "label": {
+  "en": "No, thank you",
+  "hi": "नहीं, धन्यवाद",
+  "ta": "வேண்டாம், நன்றி",
+  "kn": "ಬೇಡ, ಧನ್ಯವಾದ"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "🙅",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-31.json"
+}

@@ -1,0 +1,23 @@
+{
+ "id": "food-10",
+ "category": "food",
+ "slot": 10,
+ "label": {
+  "en": "idli",
+  "hi": "इडली",
+  "ta": "இட்லி",
+  "kn": "ಇಡ್ಲಿ"
+ },
+ "alternatives": [],
+ "wordType": "noun",
+ "color": "#ffb366",
+ "emoji": "🍙",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-10.json"
+}

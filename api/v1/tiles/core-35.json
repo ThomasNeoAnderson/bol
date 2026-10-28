@@ -1,0 +1,27 @@
+{
+ "id": "core-35",
+ "category": "core",
+ "slot": 35,
+ "label": {
+  "en": "thank you",
+  "hi": "धन्यवाद",
+  "ta": "நன்றி",
+  "kn": "ಧನ್ಯವಾದ"
+ },
+ "alternatives": [],
+ "wordType": "social",
+ "color": "#ff9ec7",
+ "emoji": "💐",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/core-35.webp",
+  "arasaacId": 8129,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-35.json"
+}

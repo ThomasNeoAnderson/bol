@@ -1,0 +1,23 @@
+{
+ "id": "phrases-18",
+ "category": "phrases",
+ "slot": 18,
+ "label": {
+  "en": "I want to play",
+  "hi": "मुझे खेलना है",
+  "ta": "நான் விளையாடணும்",
+  "kn": "ನಾನು ಆಡಬೇಕು"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "🧸",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-18.json"
+}

@@ -1,0 +1,27 @@
+{
+ "id": "core-11",
+ "category": "core",
+ "slot": 11,
+ "label": {
+  "en": "more",
+  "hi": "और",
+  "ta": "இன்னும்",
+  "kn": "ಇನ್ನೂ"
+ },
+ "alternatives": [],
+ "wordType": "describe",
+ "color": "#8cc4ff",
+ "emoji": "➕",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/core-11.webp",
+  "arasaacId": 5508,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-11.json"
+}

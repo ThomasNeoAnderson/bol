@@ -1,0 +1,44 @@
+[
+ {
+  "code": "en",
+  "name": "English",
+  "englishName": "English",
+  "speech": [
+   "en-IN",
+   "en-GB",
+   "en-US",
+   "en"
+  ],
+  "fallback": "hi"
+ },
+ {
+  "code": "hi",
+  "name": "हिंदी",
+  "englishName": "Hindi",
+  "speech": [
+   "hi-IN",
+   "hi"
+  ],
+  "fallback": "en"
+ },
+ {
+  "code": "ta",
+  "name": "தமிழ்",
+  "englishName": "Tamil",
+  "speech": [
+   "ta-IN",
+   "ta"
+  ],
+  "fallback": "en"
+ },
+ {
+  "code": "kn",
+  "name": "ಕನ್ನಡ",
+  "englishName": "Kannada",
+  "speech": [
+   "kn-IN",
+   "kn"
+  ],
+  "fallback": "en"
+ }
+]

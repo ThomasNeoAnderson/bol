@@ -1,0 +1,27 @@
+{
+ "id": "bedtime-3",
+ "category": "bedtime",
+ "slot": 3,
+ "label": {
+  "en": "hug",
+  "hi": "गले लगाओ",
+  "ta": "கட்டிப்பிடி",
+  "kn": "ತಬ್ಬಿಕೋ"
+ },
+ "alternatives": [],
+ "wordType": "verb",
+ "color": "#8fd18f",
+ "emoji": "🤗",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/bedtime-3.webp",
+  "arasaacId": 4550,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/bedtime-3.json"
+}

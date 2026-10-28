@@ -1,0 +1,27 @@
+{
+ "id": "play-9",
+ "category": "play",
+ "slot": 9,
+ "label": {
+  "en": "run",
+  "hi": "दौड़ना",
+  "ta": "ஓடு",
+  "kn": "ಓಡು"
+ },
+ "alternatives": [],
+ "wordType": "verb",
+ "color": "#8fd18f",
+ "emoji": "🏃",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/play-9.webp",
+  "arasaacId": 2719,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/play-9.json"
+}

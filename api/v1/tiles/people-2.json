@@ -1,0 +1,27 @@
+{
+ "id": "people-2",
+ "category": "people",
+ "slot": 2,
+ "label": {
+  "en": "mummy",
+  "hi": "मम्मी",
+  "ta": "அம்மா",
+  "kn": "ಅಮ್ಮ"
+ },
+ "alternatives": [],
+ "wordType": "person",
+ "color": "#ffe066",
+ "emoji": "👩",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/people-2.webp",
+  "arasaacId": 2458,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/people-2.json"
+}

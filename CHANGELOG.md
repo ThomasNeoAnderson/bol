@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1 — 28 October 2026
+- New: a read-only tile API on GitHub Pages at
+  https://thomasneoanderson.github.io/bol/api/v1/ (see API.md). It covers all 169
+  starter tiles and 15 categories, in four languages, with word types, colours, symbol
+  URLs and review status. It is generated from data/vocab.json by tools/build_api.py,
+  and a new test (25 in total) fails if it goes out of date. The app itself is
+  unchanged.
+
 ## 2.0.1 — 28 October 2026
 - Fixed: phones with version 1 installed stayed on version 1. Version 1 cannot show the
   update banner, and the new version waited until every Bol window was closed. When it

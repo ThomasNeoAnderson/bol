@@ -1,0 +1,27 @@
+{
+ "id": "bedtime-4",
+ "category": "bedtime",
+ "slot": 4,
+ "label": {
+  "en": "light off",
+  "hi": "लाइट बंद करो",
+  "ta": "லைட் ஆஃப் பண்ணு",
+  "kn": "ಲೈಟ್ ಆಫ್ ಮಾಡು"
+ },
+ "alternatives": [],
+ "wordType": "verb",
+ "color": "#8fd18f",
+ "emoji": "💡",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/bedtime-4.webp",
+  "arasaacId": 8027,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/bedtime-4.json"
+}

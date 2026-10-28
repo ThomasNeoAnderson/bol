@@ -1,0 +1,23 @@
+{
+ "id": "phrases-1",
+ "category": "phrases",
+ "slot": 1,
+ "label": {
+  "en": "I want to go home",
+  "hi": "मुझे घर जाना है",
+  "ta": "நான் வீட்டுக்கு போகணும்",
+  "kn": "ನಾನು ಮನೆಗೆ ಹೋಗಬೇಕು"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "🏠",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-1.json"
+}

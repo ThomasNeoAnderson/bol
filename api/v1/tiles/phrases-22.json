@@ -1,0 +1,23 @@
+{
+ "id": "phrases-22",
+ "category": "phrases",
+ "slot": 22,
+ "label": {
+  "en": "I am happy",
+  "hi": "मैं खुश हूँ",
+  "ta": "நான் சந்தோஷமா இருக்கேன்",
+  "kn": "ನನಗೆ ಖುಷಿ ಆಗಿದೆ"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "😀",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-22.json"
+}

@@ -1,0 +1,23 @@
+{
+ "id": "food-1",
+ "category": "food",
+ "slot": 1,
+ "label": {
+  "en": "roti",
+  "hi": "रोटी",
+  "ta": "சப்பாத்தி",
+  "kn": "ಚಪಾತಿ"
+ },
+ "alternatives": [],
+ "wordType": "noun",
+ "color": "#ffb366",
+ "emoji": "🫓",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-1.json"
+}

@@ -1,0 +1,27 @@
+{
+ "id": "school-1",
+ "category": "school",
+ "slot": 1,
+ "label": {
+  "en": "pencil",
+  "hi": "पेंसिल",
+  "ta": "பென்சில்",
+  "kn": "ಪೆನ್ಸಿಲ್"
+ },
+ "alternatives": [],
+ "wordType": "noun",
+ "color": "#ffb366",
+ "emoji": "✏️",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/school-1.webp",
+  "arasaacId": 2440,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/school-1.json"
+}

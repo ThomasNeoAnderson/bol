@@ -1,0 +1,23 @@
+{
+ "id": "phrases-26",
+ "category": "phrases",
+ "slot": 26,
+ "label": {
+  "en": "Stop, please",
+  "hi": "प्लीज़ रुको",
+  "ta": "நிறுத்துங்க",
+  "kn": "ನಿಲ್ಲಿಸಿ"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "✋",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-26.json"
+}

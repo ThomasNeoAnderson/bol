@@ -1,0 +1,286 @@
+{
+ "id": "people",
+ "kind": "topic",
+ "label": {
+  "en": "People",
+  "hi": "लोग",
+  "ta": "ஆட்கள்",
+  "kn": "ಜನರು"
+ },
+ "emoji": "👪",
+ "color": "#8ecae6",
+ "tileCount": 10,
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/people.json",
+ "tiles": [
+  {
+   "id": "people-0",
+   "category": "people",
+   "slot": 0,
+   "label": {
+    "en": "I",
+    "hi": "मैं",
+    "ta": "நான்",
+    "kn": "ನಾನು"
+   },
+   "alternatives": [],
+   "wordType": "person",
+   "color": "#ffe066",
+   "emoji": "🙋",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/people-0.webp",
+    "arasaacId": 2617,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/people-0.json"
+  },
+  {
+   "id": "people-1",
+   "category": "people",
+   "slot": 1,
+   "label": {
+    "en": "you",
+    "hi": "आप",
+    "ta": "நீங்க",
+    "kn": "ನೀವು"
+   },
+   "alternatives": [],
+   "wordType": "person",
+   "color": "#ffe066",
+   "emoji": "👉",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/people-1.webp",
+    "arasaacId": 2608,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/people-1.json"
+  },
+  {
+   "id": "people-2",
+   "category": "people",
+   "slot": 2,
+   "label": {
+    "en": "mummy",
+    "hi": "मम्मी",
+    "ta": "அம்மா",
+    "kn": "ಅಮ್ಮ"
+   },
+   "alternatives": [],
+   "wordType": "person",
+   "color": "#ffe066",
+   "emoji": "👩",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/people-2.webp",
+    "arasaacId": 2458,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/people-2.json"
+  },
+  {
+   "id": "people-3",
+   "category": "people",
+   "slot": 3,
+   "label": {
+    "en": "papa",
+    "hi": "पापा",
+    "ta": "அப்பா",
+    "kn": "ಅಪ್ಪ"
+   },
+   "alternatives": [],
+   "wordType": "person",
+   "color": "#ffe066",
+   "emoji": "👨",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/people-3.webp",
+    "arasaacId": 2497,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/people-3.json"
+  },
+  {
+   "id": "people-4",
+   "category": "people",
+   "slot": 4,
+   "label": {
+    "en": "didi",
+    "hi": "दीदी",
+    "ta": "அக்கா",
+    "kn": "ಅಕ್ಕ"
+   },
+   "alternatives": [],
+   "wordType": "person",
+   "color": "#ffe066",
+   "emoji": "👧",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/people-4.webp",
+    "arasaacId": 2422,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/people-4.json"
+  },
+  {
+   "id": "people-5",
+   "category": "people",
+   "slot": 5,
+   "label": {
+    "en": "bhaiya",
+    "hi": "भैया",
+    "ta": "அண்ணா",
+    "kn": "ಅಣ್ಣ"
+   },
+   "alternatives": [],
+   "wordType": "person",
+   "color": "#ffe066",
+   "emoji": "👦",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/people-5.webp",
+    "arasaacId": 2423,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/people-5.json"
+  },
+  {
+   "id": "people-6",
+   "category": "people",
+   "slot": 6,
+   "label": {
+    "en": "dadi",
+    "hi": "दादी",
+    "ta": "பாட்டி",
+    "kn": "ಅಜ್ಜಿ"
+   },
+   "alternatives": [],
+   "wordType": "person",
+   "color": "#ffe066",
+   "emoji": "👵",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/people-6.webp",
+    "arasaacId": 2243,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/people-6.json"
+  },
+  {
+   "id": "people-7",
+   "category": "people",
+   "slot": 7,
+   "label": {
+    "en": "dada",
+    "hi": "दादा",
+    "ta": "தாத்தா",
+    "kn": "ಅಜ್ಜ"
+   },
+   "alternatives": [],
+   "wordType": "person",
+   "color": "#ffe066",
+   "emoji": "👴",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/people-7.webp",
+    "arasaacId": 2244,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/people-7.json"
+  },
+  {
+   "id": "people-8",
+   "category": "people",
+   "slot": 8,
+   "label": {
+    "en": "teacher",
+    "hi": "टीचर",
+    "ta": "டீச்சர்",
+    "kn": "ಟೀಚರ್"
+   },
+   "alternatives": [],
+   "wordType": "person",
+   "color": "#ffe066",
+   "emoji": "🧑‍🏫",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/people-8.webp",
+    "arasaacId": 2457,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/people-8.json"
+  },
+  {
+   "id": "people-9",
+   "category": "people",
+   "slot": 9,
+   "label": {
+    "en": "friend",
+    "hi": "दोस्त",
+    "ta": "ஃப்ரெண்ட்",
+    "kn": "ಫ್ರೆಂಡ್"
+   },
+   "alternatives": [],
+   "wordType": "person",
+   "color": "#ffe066",
+   "emoji": "🧒",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/people-9.webp",
+    "arasaacId": 8486,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/people-9.json"
+  }
+ ]
+}

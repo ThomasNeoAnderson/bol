@@ -1,0 +1,212 @@
+{
+ "id": "bedtime",
+ "kind": "routine",
+ "label": {
+  "en": "Bedtime",
+  "hi": "सोने का समय",
+  "ta": "தூங்கும் நேரம்",
+  "kn": "ಮಲಗುವ ಸಮಯ"
+ },
+ "emoji": "🌙",
+ "color": "#9aa5d1",
+ "tileCount": 7,
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/bedtime.json",
+ "tiles": [
+  {
+   "id": "bedtime-0",
+   "category": "bedtime",
+   "slot": 0,
+   "label": {
+    "en": "pyjamas",
+    "hi": "नाइट सूट",
+    "ta": "நைட் டிரஸ்",
+    "kn": "ನೈಟ್ ಡ್ರೆಸ್"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "🩳",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/bedtime-0.webp",
+    "arasaacId": 2522,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/bedtime-0.json"
+  },
+  {
+   "id": "bedtime-1",
+   "category": "bedtime",
+   "slot": 1,
+   "label": {
+    "en": "brush teeth",
+    "hi": "ब्रश करना",
+    "ta": "பல் தேய்க்கணும்",
+    "kn": "ಹಲ್ಲು ಉಜ್ಜು"
+   },
+   "alternatives": [],
+   "wordType": "verb",
+   "color": "#8fd18f",
+   "emoji": "🪥",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/bedtime-1.webp",
+    "arasaacId": 39965,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/bedtime-1.json"
+  },
+  {
+   "id": "bedtime-2",
+   "category": "bedtime",
+   "slot": 2,
+   "label": {
+    "en": "story",
+    "hi": "कहानी",
+    "ta": "கதை",
+    "kn": "ಕಥೆ"
+   },
+   "alternatives": [
+    {
+     "en": "tell me a story",
+     "hi": "कहानी सुनाओ",
+     "ta": "கதை சொல்லு",
+     "kn": "ಕಥೆ ಹೇಳು"
+    }
+   ],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "📖",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/bedtime-2.webp",
+    "arasaacId": 8346,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/bedtime-2.json"
+  },
+  {
+   "id": "bedtime-3",
+   "category": "bedtime",
+   "slot": 3,
+   "label": {
+    "en": "hug",
+    "hi": "गले लगाओ",
+    "ta": "கட்டிப்பிடி",
+    "kn": "ತಬ್ಬಿಕೋ"
+   },
+   "alternatives": [],
+   "wordType": "verb",
+   "color": "#8fd18f",
+   "emoji": "🤗",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/bedtime-3.webp",
+    "arasaacId": 4550,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/bedtime-3.json"
+  },
+  {
+   "id": "bedtime-4",
+   "category": "bedtime",
+   "slot": 4,
+   "label": {
+    "en": "light off",
+    "hi": "लाइट बंद करो",
+    "ta": "லைட் ஆஃப் பண்ணு",
+    "kn": "ಲೈಟ್ ಆಫ್ ಮಾಡು"
+   },
+   "alternatives": [],
+   "wordType": "verb",
+   "color": "#8fd18f",
+   "emoji": "💡",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/bedtime-4.webp",
+    "arasaacId": 8027,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/bedtime-4.json"
+  },
+  {
+   "id": "bedtime-5",
+   "category": "bedtime",
+   "slot": 5,
+   "label": {
+    "en": "water",
+    "hi": "पानी",
+    "ta": "தண்ணி",
+    "kn": "ನೀರು"
+   },
+   "alternatives": [],
+   "wordType": "noun",
+   "color": "#ffb366",
+   "emoji": "💧",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/bedtime-5.webp",
+    "arasaacId": 2248,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/bedtime-5.json"
+  },
+  {
+   "id": "bedtime-6",
+   "category": "bedtime",
+   "slot": 6,
+   "label": {
+    "en": "sleep",
+    "hi": "सोना",
+    "ta": "தூக்கம்",
+    "kn": "ನಿದ್ದೆ"
+   },
+   "alternatives": [],
+   "wordType": "verb",
+   "color": "#8fd18f",
+   "emoji": "💤",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/bedtime-6.webp",
+    "arasaacId": 2369,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/bedtime-6.json"
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+[
+ {
+  "id": "verb",
+  "label": {
+   "en": "Action words",
+   "hi": "काम के शब्द",
+   "ta": "செயல் சொற்கள்",
+   "kn": "ಕ್ರಿಯಾ ಪದಗಳು"
+  },
+  "color": "#8fd18f"
+ },
+ {
+  "id": "person",
+  "label": {
+   "en": "People & pronouns",
+   "hi": "लोग",
+   "ta": "ஆட்கள்",
+   "kn": "ಜನರು"
+  },
+  "color": "#ffe066"
+ },
+ {
+  "id": "describe",
+  "label": {
+   "en": "Describing words",
+   "hi": "बताने वाले शब्द",
+   "ta": "விவரிக்கும் சொற்கள்",
+   "kn": "ವಿವರಿಸುವ ಪದಗಳು"
+  },
+  "color": "#8cc4ff"
+ },
+ {
+  "id": "noun",
+  "label": {
+   "en": "Things & places",
+   "hi": "चीज़ें और जगहें",
+   "ta": "பொருட்கள், இடங்கள்",
+   "kn": "ವಸ್ತುಗಳು, ಜಾಗಗಳು"
+  },
+  "color": "#ffb366"
+ },
+ {
+  "id": "social",
+  "label": {
+   "en": "Social words",
+   "hi": "बातचीत के शब्द",
+   "ta": "பழகும் சொற்கள்",
+   "kn": "ಮಾತುಕತೆ ಪದಗಳು"
+  },
+  "color": "#ff9ec7"
+ },
+ {
+  "id": "question",
+  "label": {
+   "en": "Questions",
+   "hi": "सवाल",
+   "ta": "கேள்விகள்",
+   "kn": "ಪ್ರಶ್ನೆಗಳು"
+  },
+  "color": "#c6a6ff"
+ },
+ {
+  "id": "little",
+  "label": {
+   "en": "Little words",
+   "hi": "छोटे शब्द",
+   "ta": "சின்ன சொற்கள்",
+   "kn": "ಸಣ್ಣ ಪದಗಳು"
+  },
+  "color": "#dee2e6"
+ }
+]

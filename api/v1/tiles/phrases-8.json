@@ -1,0 +1,23 @@
+{
+ "id": "phrases-8",
+ "category": "phrases",
+ "slot": 8,
+ "label": {
+  "en": "I am tired",
+  "hi": "मुझे थकान हो रही है",
+  "ta": "எனக்கு டயர்டா இருக்கு",
+  "kn": "ನನಗೆ ಸುಸ್ತಾಗಿದೆ"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "🥱",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-8.json"
+}

@@ -1,0 +1,27 @@
+{
+ "id": "people-0",
+ "category": "people",
+ "slot": 0,
+ "label": {
+  "en": "I",
+  "hi": "मैं",
+  "ta": "நான்",
+  "kn": "ನಾನು"
+ },
+ "alternatives": [],
+ "wordType": "person",
+ "color": "#ffe066",
+ "emoji": "🙋",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/people-0.webp",
+  "arasaacId": 2617,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/people-0.json"
+}

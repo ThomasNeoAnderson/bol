@@ -1,0 +1,27 @@
+{
+ "id": "bedtime-6",
+ "category": "bedtime",
+ "slot": 6,
+ "label": {
+  "en": "sleep",
+  "hi": "सोना",
+  "ta": "தூக்கம்",
+  "kn": "ನಿದ್ದೆ"
+ },
+ "alternatives": [],
+ "wordType": "verb",
+ "color": "#8fd18f",
+ "emoji": "💤",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/bedtime-6.webp",
+  "arasaacId": 2369,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/bedtime-6.json"
+}

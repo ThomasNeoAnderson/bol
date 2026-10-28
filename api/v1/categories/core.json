@@ -1,0 +1,988 @@
+{
+ "id": "core",
+ "kind": "core",
+ "label": {
+  "en": "Core",
+  "hi": "मुख्य",
+  "ta": "முக்கியம்",
+  "kn": "ಮುಖ್ಯ"
+ },
+ "emoji": "⭐",
+ "color": "#2a6f97",
+ "tileCount": 36,
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/categories/core.json",
+ "tiles": [
+  {
+   "id": "core-0",
+   "category": "core",
+   "slot": 0,
+   "label": {
+    "en": "I",
+    "hi": "मैं",
+    "ta": "நான்",
+    "kn": "ನಾನು"
+   },
+   "alternatives": [],
+   "wordType": "person",
+   "color": "#ffe066",
+   "emoji": "🙋",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-0.webp",
+    "arasaacId": 2617,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-0.json"
+  },
+  {
+   "id": "core-1",
+   "category": "core",
+   "slot": 1,
+   "label": {
+    "en": "you",
+    "hi": "आप",
+    "ta": "நீங்க",
+    "kn": "ನೀವು"
+   },
+   "alternatives": [],
+   "wordType": "person",
+   "color": "#ffe066",
+   "emoji": "👉",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-1.webp",
+    "arasaacId": 2608,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-1.json"
+  },
+  {
+   "id": "core-2",
+   "category": "core",
+   "slot": 2,
+   "label": {
+    "en": "want",
+    "hi": "चाहिए",
+    "ta": "வேணும்",
+    "kn": "ಬೇಕು"
+   },
+   "alternatives": [],
+   "wordType": "verb",
+   "color": "#8fd18f",
+   "emoji": "🤲",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-2.webp",
+    "arasaacId": 5441,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-2.json"
+  },
+  {
+   "id": "core-3",
+   "category": "core",
+   "slot": 3,
+   "label": {
+    "en": "don't want",
+    "hi": "नहीं चाहिए",
+    "ta": "வேண்டாம்",
+    "kn": "ಬೇಡ"
+   },
+   "alternatives": [],
+   "wordType": "verb",
+   "color": "#8fd18f",
+   "emoji": "🙅",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-3.webp",
+    "arasaacId": 6156,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-3.json"
+  },
+  {
+   "id": "core-4",
+   "category": "core",
+   "slot": 4,
+   "label": {
+    "en": "yes",
+    "hi": "हाँ",
+    "ta": "ஆமா",
+    "kn": "ಹೌದು"
+   },
+   "alternatives": [],
+   "wordType": "social",
+   "color": "#ff9ec7",
+   "emoji": "✅",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-4.webp",
+    "arasaacId": 5583,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-4.json"
+  },
+  {
+   "id": "core-5",
+   "category": "core",
+   "slot": 5,
+   "label": {
+    "en": "no",
+    "hi": "नहीं",
+    "ta": "இல்ல",
+    "kn": "ಇಲ್ಲ"
+   },
+   "alternatives": [],
+   "wordType": "social",
+   "color": "#ff9ec7",
+   "emoji": "❌",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-5.webp",
+    "arasaacId": 5525,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-5.json"
+  },
+  {
+   "id": "core-6",
+   "category": "core",
+   "slot": 6,
+   "label": {
+    "en": "mine",
+    "hi": "मेरा",
+    "ta": "என்னோடது",
+    "kn": "ನಂದು"
+   },
+   "alternatives": [],
+   "wordType": "person",
+   "color": "#ffe066",
+   "emoji": "🫵",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-6.webp",
+    "arasaacId": 12264,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-6.json"
+  },
+  {
+   "id": "core-7",
+   "category": "core",
+   "slot": 7,
+   "label": {
+    "en": "help",
+    "hi": "मदद",
+    "ta": "உதவி",
+    "kn": "ಸಹಾಯ"
+   },
+   "alternatives": [],
+   "wordType": "verb",
+   "color": "#8fd18f",
+   "emoji": "🆘",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-7.webp",
+    "arasaacId": 4570,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-7.json"
+  },
+  {
+   "id": "core-8",
+   "category": "core",
+   "slot": 8,
+   "label": {
+    "en": "go",
+    "hi": "जाना",
+    "ta": "போ",
+    "kn": "ಹೋಗು"
+   },
+   "alternatives": [],
+   "wordType": "verb",
+   "color": "#8fd18f",
+   "emoji": "🚶",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-8.webp",
+    "arasaacId": 2432,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-8.json"
+  },
+  {
+   "id": "core-9",
+   "category": "core",
+   "slot": 9,
+   "label": {
+    "en": "come",
+    "hi": "आओ",
+    "ta": "வா",
+    "kn": "ಬಾ"
+   },
+   "alternatives": [],
+   "wordType": "verb",
+   "color": "#8fd18f",
+   "emoji": "👋",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-9.webp",
+    "arasaacId": 11708,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-9.json"
+  },
+  {
+   "id": "core-10",
+   "category": "core",
+   "slot": 10,
+   "label": {
+    "en": "stop",
+    "hi": "रुको",
+    "ta": "நிறுத்து",
+    "kn": "ನಿಲ್ಲಿಸು"
+   },
+   "alternatives": [],
+   "wordType": "verb",
+   "color": "#8fd18f",
+   "emoji": "✋",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-10.webp",
+    "arasaacId": 7195,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-10.json"
+  },
+  {
+   "id": "core-11",
+   "category": "core",
+   "slot": 11,
+   "label": {
+    "en": "more",
+    "hi": "और",
+    "ta": "இன்னும்",
+    "kn": "ಇನ್ನೂ"
+   },
+   "alternatives": [],
+   "wordType": "describe",
+   "color": "#8cc4ff",
+   "emoji": "➕",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-11.webp",
+    "arasaacId": 5508,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-11.json"
+  },
+  {
+   "id": "core-12",
+   "category": "core",
+   "slot": 12,
+   "label": {
+    "en": "this",
+    "hi": "यह",
+    "ta": "இது",
+    "kn": "ಇದು"
+   },
+   "alternatives": [],
+   "wordType": "little",
+   "color": "#dee2e6",
+   "emoji": "👇",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-12.webp",
+    "arasaacId": 7095,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-12.json"
+  },
+  {
+   "id": "core-13",
+   "category": "core",
+   "slot": 13,
+   "label": {
+    "en": "that",
+    "hi": "वह",
+    "ta": "அது",
+    "kn": "ಅದು"
+   },
+   "alternatives": [],
+   "wordType": "little",
+   "color": "#dee2e6",
+   "emoji": "👆",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-13.webp",
+    "arasaacId": 6906,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-13.json"
+  },
+  {
+   "id": "core-14",
+   "category": "core",
+   "slot": 14,
+   "label": {
+    "en": "like",
+    "hi": "पसंद है",
+    "ta": "பிடிக்கும்",
+    "kn": "ಇಷ್ಟ"
+   },
+   "alternatives": [],
+   "wordType": "verb",
+   "color": "#8fd18f",
+   "emoji": "👍",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-14.webp",
+    "arasaacId": 2418,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-14.json"
+  },
+  {
+   "id": "core-15",
+   "category": "core",
+   "slot": 15,
+   "label": {
+    "en": "look",
+    "hi": "देखो",
+    "ta": "பாரு",
+    "kn": "ನೋಡು"
+   },
+   "alternatives": [],
+   "wordType": "verb",
+   "color": "#8fd18f",
+   "emoji": "👀",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-15.webp",
+    "arasaacId": 2474,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-15.json"
+  },
+  {
+   "id": "core-16",
+   "category": "core",
+   "slot": 16,
+   "label": {
+    "en": "again",
+    "hi": "फिर से",
+    "ta": "மறுபடியும்",
+    "kn": "ಮತ್ತೆ"
+   },
+   "alternatives": [],
+   "wordType": "describe",
+   "color": "#8cc4ff",
+   "emoji": "🔁",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-16.webp",
+    "arasaacId": 37163,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-16.json"
+  },
+  {
+   "id": "core-17",
+   "category": "core",
+   "slot": 17,
+   "label": {
+    "en": "finished",
+    "hi": "खत्म",
+    "ta": "முடிஞ்சது",
+    "kn": "ಮುಗೀತು"
+   },
+   "alternatives": [],
+   "wordType": "describe",
+   "color": "#8cc4ff",
+   "emoji": "🏁",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-17.webp",
+    "arasaacId": 28429,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-17.json"
+  },
+  {
+   "id": "core-18",
+   "category": "core",
+   "slot": 18,
+   "label": {
+    "en": "here",
+    "hi": "यहाँ",
+    "ta": "இங்க",
+    "kn": "ಇಲ್ಲಿ"
+   },
+   "alternatives": [],
+   "wordType": "little",
+   "color": "#dee2e6",
+   "emoji": "📍",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-18.webp",
+    "arasaacId": 5382,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-18.json"
+  },
+  {
+   "id": "core-19",
+   "category": "core",
+   "slot": 19,
+   "label": {
+    "en": "there",
+    "hi": "वहाँ",
+    "ta": "அங்க",
+    "kn": "ಅಲ್ಲಿ"
+   },
+   "alternatives": [],
+   "wordType": "little",
+   "color": "#dee2e6",
+   "emoji": "🗺️",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-19.webp",
+    "arasaacId": 5375,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-19.json"
+  },
+  {
+   "id": "core-20",
+   "category": "core",
+   "slot": 20,
+   "label": {
+    "en": "eat",
+    "hi": "खाना",
+    "ta": "சாப்பிடு",
+    "kn": "ತಿನ್ನು"
+   },
+   "alternatives": [],
+   "wordType": "verb",
+   "color": "#8fd18f",
+   "emoji": "🍽️",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-20.webp",
+    "arasaacId": 2349,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-20.json"
+  },
+  {
+   "id": "core-21",
+   "category": "core",
+   "slot": 21,
+   "label": {
+    "en": "drink",
+    "hi": "पीना",
+    "ta": "குடி",
+    "kn": "ಕುಡಿ"
+   },
+   "alternatives": [],
+   "wordType": "verb",
+   "color": "#8fd18f",
+   "emoji": "🥤",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-21.webp",
+    "arasaacId": 2276,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-21.json"
+  },
+  {
+   "id": "core-22",
+   "category": "core",
+   "slot": 22,
+   "label": {
+    "en": "good",
+    "hi": "अच्छा",
+    "ta": "நல்லது",
+    "kn": "ಚೆನ್ನಾಗಿದೆ"
+   },
+   "alternatives": [],
+   "wordType": "describe",
+   "color": "#8cc4ff",
+   "emoji": "😊",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-22.webp",
+    "arasaacId": 4581,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-22.json"
+  },
+  {
+   "id": "core-23",
+   "category": "core",
+   "slot": 23,
+   "label": {
+    "en": "bad",
+    "hi": "बुरा",
+    "ta": "மோசம்",
+    "kn": "ಚೆನ್ನಾಗಿಲ್ಲ"
+   },
+   "alternatives": [],
+   "wordType": "describe",
+   "color": "#8cc4ff",
+   "emoji": "😖",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-23.webp",
+    "arasaacId": 4690,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-23.json"
+  },
+  {
+   "id": "core-24",
+   "category": "core",
+   "slot": 24,
+   "label": {
+    "en": "in",
+    "hi": "में",
+    "ta": "உள்ள",
+    "kn": "ಒಳಗೆ"
+   },
+   "alternatives": [],
+   "wordType": "little",
+   "color": "#dee2e6",
+   "emoji": "📥",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-24.webp",
+    "arasaacId": 7034,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-24.json"
+  },
+  {
+   "id": "core-25",
+   "category": "core",
+   "slot": 25,
+   "label": {
+    "en": "on",
+    "hi": "पर",
+    "ta": "மேல",
+    "kn": "ಮೇಲೆ"
+   },
+   "alternatives": [],
+   "wordType": "little",
+   "color": "#dee2e6",
+   "emoji": "🔛",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-25.webp",
+    "arasaacId": 7814,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-25.json"
+  },
+  {
+   "id": "core-26",
+   "category": "core",
+   "slot": 26,
+   "label": {
+    "en": "play",
+    "hi": "खेलना",
+    "ta": "விளையாடு",
+    "kn": "ಆಡು"
+   },
+   "alternatives": [],
+   "wordType": "verb",
+   "color": "#8fd18f",
+   "emoji": "🧸",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-26.webp",
+    "arasaacId": 2439,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-26.json"
+  },
+  {
+   "id": "core-27",
+   "category": "core",
+   "slot": 27,
+   "label": {
+    "en": "give",
+    "hi": "दो",
+    "ta": "குடு",
+    "kn": "ಕೊಡು"
+   },
+   "alternatives": [],
+   "wordType": "verb",
+   "color": "#8fd18f",
+   "emoji": "🎁",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-27.webp",
+    "arasaacId": 17038,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-27.json"
+  },
+  {
+   "id": "core-28",
+   "category": "core",
+   "slot": 28,
+   "label": {
+    "en": "up",
+    "hi": "ऊपर",
+    "ta": "மேலே",
+    "kn": "ಮೇಲಕ್ಕೆ"
+   },
+   "alternatives": [],
+   "wordType": "little",
+   "color": "#dee2e6",
+   "emoji": "⬆️",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-28.webp",
+    "arasaacId": 5388,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-28.json"
+  },
+  {
+   "id": "core-29",
+   "category": "core",
+   "slot": 29,
+   "label": {
+    "en": "down",
+    "hi": "नीचे",
+    "ta": "கீழே",
+    "kn": "ಕೆಳಗೆ"
+   },
+   "alternatives": [],
+   "wordType": "little",
+   "color": "#dee2e6",
+   "emoji": "⬇️",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-29.webp",
+    "arasaacId": 37428,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-29.json"
+  },
+  {
+   "id": "core-30",
+   "category": "core",
+   "slot": 30,
+   "label": {
+    "en": "what",
+    "hi": "क्या",
+    "ta": "என்ன",
+    "kn": "ಏನು"
+   },
+   "alternatives": [],
+   "wordType": "question",
+   "color": "#c6a6ff",
+   "emoji": "❓",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-30.webp",
+    "arasaacId": 22620,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-30.json"
+  },
+  {
+   "id": "core-31",
+   "category": "core",
+   "slot": 31,
+   "label": {
+    "en": "where",
+    "hi": "कहाँ",
+    "ta": "எங்க",
+    "kn": "ಎಲ್ಲಿ"
+   },
+   "alternatives": [],
+   "wordType": "question",
+   "color": "#c6a6ff",
+   "emoji": "🧭",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-31.webp",
+    "arasaacId": 7764,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-31.json"
+  },
+  {
+   "id": "core-32",
+   "category": "core",
+   "slot": 32,
+   "label": {
+    "en": "open",
+    "hi": "खोलो",
+    "ta": "திற",
+    "kn": "ತೆಗಿ"
+   },
+   "alternatives": [],
+   "wordType": "verb",
+   "color": "#8fd18f",
+   "emoji": "📂",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-32.webp",
+    "arasaacId": 4549,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-32.json"
+  },
+  {
+   "id": "core-33",
+   "category": "core",
+   "slot": 33,
+   "label": {
+    "en": "my turn",
+    "hi": "मेरी बारी",
+    "ta": "என் முறை",
+    "kn": "ನನ್ನ ಸರದಿ"
+   },
+   "alternatives": [],
+   "wordType": "social",
+   "color": "#ff9ec7",
+   "emoji": "🔄",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-33.webp",
+    "arasaacId": 6006,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-33.json"
+  },
+  {
+   "id": "core-34",
+   "category": "core",
+   "slot": 34,
+   "label": {
+    "en": "please",
+    "hi": "प्लीज़",
+    "ta": "ப்ளீஸ்",
+    "kn": "ಪ್ಲೀಸ್"
+   },
+   "alternatives": [],
+   "wordType": "social",
+   "color": "#ff9ec7",
+   "emoji": "🙏",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-34.webp",
+    "arasaacId": 8194,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-34.json"
+  },
+  {
+   "id": "core-35",
+   "category": "core",
+   "slot": 35,
+   "label": {
+    "en": "thank you",
+    "hi": "धन्यवाद",
+    "ta": "நன்றி",
+    "kn": "ಧನ್ಯವಾದ"
+   },
+   "alternatives": [],
+   "wordType": "social",
+   "color": "#ff9ec7",
+   "emoji": "💐",
+   "symbol": {
+    "url": "https://thomasneoanderson.github.io/bol/symbols/core-35.webp",
+    "arasaacId": 8129,
+    "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+   },
+   "reviewed": {
+    "en": true,
+    "hi": false,
+    "ta": false,
+    "kn": false
+   },
+   "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/core-35.json"
+  }
+ ]
+}

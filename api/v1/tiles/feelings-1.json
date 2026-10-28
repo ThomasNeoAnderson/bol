@@ -1,0 +1,34 @@
+{
+ "id": "feelings-1",
+ "category": "feelings",
+ "slot": 1,
+ "label": {
+  "en": "sad",
+  "hi": "उदास",
+  "ta": "சோகம்",
+  "kn": "ಬೇಜಾರು"
+ },
+ "alternatives": [
+  {
+   "en": "I feel sad",
+   "hi": "मैं उदास हूँ",
+   "ta": "நான் சோகமா இருக்கேன்",
+   "kn": "ನನಗೆ ಬೇಜಾರಾಗಿದೆ"
+  }
+ ],
+ "wordType": "describe",
+ "color": "#8cc4ff",
+ "emoji": "😢",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/feelings-1.webp",
+  "arasaacId": 2606,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-1.json"
+}

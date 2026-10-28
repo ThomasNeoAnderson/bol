@@ -1,0 +1,23 @@
+{
+ "id": "places-5",
+ "category": "places",
+ "slot": 5,
+ "label": {
+  "en": "temple",
+  "hi": "मंदिर",
+  "ta": "கோயில்",
+  "kn": "ದೇವಸ್ಥಾನ"
+ },
+ "alternatives": [],
+ "wordType": "noun",
+ "color": "#ffb366",
+ "emoji": "🛕",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-5.json"
+}

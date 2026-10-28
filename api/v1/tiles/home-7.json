@@ -1,0 +1,27 @@
+{
+ "id": "home-7",
+ "category": "home",
+ "slot": 7,
+ "label": {
+  "en": "light",
+  "hi": "लाइट",
+  "ta": "லைட்",
+  "kn": "ಲೈಟ್"
+ },
+ "alternatives": [],
+ "wordType": "noun",
+ "color": "#ffb366",
+ "emoji": "💡",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/home-7.webp",
+  "arasaacId": 4936,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/home-7.json"
+}

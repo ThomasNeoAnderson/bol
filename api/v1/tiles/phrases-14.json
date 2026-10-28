@@ -1,0 +1,23 @@
+{
+ "id": "phrases-14",
+ "category": "phrases",
+ "slot": 14,
+ "label": {
+  "en": "I am finished",
+  "hi": "मेरा हो गया",
+  "ta": "எனக்கு முடிஞ்சது",
+  "kn": "ನನ್ನದು ಮುಗೀತು"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "🏁",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-14.json"
+}

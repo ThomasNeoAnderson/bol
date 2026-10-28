@@ -38,4 +38,4 @@ save(vocab, ui)
 print(f'Applied {changed} changed cells; {len(reviewed)} rows marked reviewed.')
 if unknown:
     print('Ignored unknown ids:', ', '.join(unknown[:20]), '…' if len(unknown) > 20 else '')
-print('Now run: python3 tools/build_sw.py')
+print('Now run: python3 tools/build_api.py && python3 tools/build_sw.py')

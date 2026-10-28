@@ -1,0 +1,23 @@
+{
+ "id": "phrases-9",
+ "category": "phrases",
+ "slot": 9,
+ "label": {
+  "en": "I want to sleep",
+  "hi": "मुझे सोना है",
+  "ta": "எனக்கு தூங்கணும்",
+  "kn": "ನಾನು ಮಲಗಬೇಕು"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "💤",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-9.json"
+}

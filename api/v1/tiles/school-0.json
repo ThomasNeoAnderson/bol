@@ -1,0 +1,27 @@
+{
+ "id": "school-0",
+ "category": "school",
+ "slot": 0,
+ "label": {
+  "en": "bag",
+  "hi": "बस्ता",
+  "ta": "பேக்",
+  "kn": "ಬ್ಯಾಗ್"
+ },
+ "alternatives": [],
+ "wordType": "noun",
+ "color": "#ffb366",
+ "emoji": "🎒",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/school-0.webp",
+  "arasaacId": 2475,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/school-0.json"
+}

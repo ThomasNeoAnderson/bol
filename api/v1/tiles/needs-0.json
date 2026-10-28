@@ -1,0 +1,27 @@
+{
+ "id": "needs-0",
+ "category": "needs",
+ "slot": 0,
+ "label": {
+  "en": "yes",
+  "hi": "हाँ",
+  "ta": "ஆமா",
+  "kn": "ಹೌದು"
+ },
+ "alternatives": [],
+ "wordType": "social",
+ "color": "#ff9ec7",
+ "emoji": "✅",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/needs-0.webp",
+  "arasaacId": 5583,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/needs-0.json"
+}

@@ -1,0 +1,23 @@
+{
+ "id": "phrases-21",
+ "category": "phrases",
+ "slot": 21,
+ "label": {
+  "en": "I am scared",
+  "hi": "मुझे डर लग रहा है",
+  "ta": "எனக்கு பயமா இருக்கு",
+  "kn": "ನನಗೆ ಭಯ ಆಗ್ತಿದೆ"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "😨",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-21.json"
+}

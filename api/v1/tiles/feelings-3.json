@@ -1,0 +1,34 @@
+{
+ "id": "feelings-3",
+ "category": "feelings",
+ "slot": 3,
+ "label": {
+  "en": "scared",
+  "hi": "डर",
+  "ta": "பயம்",
+  "kn": "ಭಯ"
+ },
+ "alternatives": [
+  {
+   "en": "I am scared",
+   "hi": "मुझे डर लग रहा है",
+   "ta": "எனக்கு பயமா இருக்கு",
+   "kn": "ನನಗೆ ಭಯ ಆಗ್ತಿದೆ"
+  }
+ ],
+ "wordType": "describe",
+ "color": "#8cc4ff",
+ "emoji": "😨",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/feelings-3.webp",
+  "arasaacId": 2261,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-3.json"
+}

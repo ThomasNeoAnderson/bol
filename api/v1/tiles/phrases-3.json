@@ -1,0 +1,23 @@
+{
+ "id": "phrases-3",
+ "category": "phrases",
+ "slot": 3,
+ "label": {
+  "en": "I am hungry",
+  "hi": "मुझे भूख लगी है",
+  "ta": "எனக்கு பசிக்குது",
+  "kn": "ನನಗೆ ಹಸಿವಾಗಿದೆ"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "😋",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-3.json"
+}

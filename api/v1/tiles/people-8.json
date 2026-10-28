@@ -1,0 +1,27 @@
+{
+ "id": "people-8",
+ "category": "people",
+ "slot": 8,
+ "label": {
+  "en": "teacher",
+  "hi": "टीचर",
+  "ta": "டீச்சர்",
+  "kn": "ಟೀಚರ್"
+ },
+ "alternatives": [],
+ "wordType": "person",
+ "color": "#ffe066",
+ "emoji": "🧑‍🏫",
+ "symbol": {
+  "url": "https://thomasneoanderson.github.io/bol/symbols/people-8.webp",
+  "arasaacId": 2457,
+  "attribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
+ },
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/people-8.json"
+}

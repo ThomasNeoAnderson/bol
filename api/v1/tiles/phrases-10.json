@@ -1,0 +1,23 @@
+{
+ "id": "phrases-10",
+ "category": "phrases",
+ "slot": 10,
+ "label": {
+  "en": "Help me, please",
+  "hi": "प्लीज़ मेरी मदद करो",
+  "ta": "எனக்கு உதவி பண்ணுங்க",
+  "kn": "ನನಗೆ ಸಹಾಯ ಮಾಡಿ"
+ },
+ "alternatives": [],
+ "wordType": null,
+ "color": null,
+ "emoji": "🆘",
+ "symbol": null,
+ "reviewed": {
+  "en": true,
+  "hi": false,
+  "ta": false,
+  "kn": false
+ },
+ "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-10.json"
+}
