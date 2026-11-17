@@ -30,5 +30,19 @@
   "ta": false,
   "kn": false
  },
+ "audio": {
+  "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/places-0.mp3",
+  "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/places-0.mp3",
+  "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/places-0.mp3",
+  "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/places-0.mp3"
+ },
+ "alternativeAudio": [
+  {
+   "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/places-0.alt0.mp3",
+   "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/places-0.alt0.mp3",
+   "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/places-0.alt0.mp3",
+   "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/places-0.alt0.mp3"
+  }
+ ],
  "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-0.json"
 }

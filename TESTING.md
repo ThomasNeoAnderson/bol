@@ -14,16 +14,22 @@ All data stays on the phone with automatic snapshots and one-file backups; typin
 
 2. AUTOMATED TESTS
 
-Run:   cd tests && npm install && node e2e.mjs
+Run:   cd tests && npm install && npm test
 (Set CHROME_PATH to a Chromium executable if Playwright's own browser is not installed.)
 
-24 tests run in headless Chromium. That browser has no speech voices, which proves the
+28 browser tests (node e2e.mjs) run in headless Chromium. That browser has no speech voices, which proves the
 "no voice" fallbacks work. They cover: first-run language screen, core board order,
 word-type colours, phrases, never-silent speech, draft restore, long-press variants,
 saving phrases, adding a button with a photo, a broken image file, export/import between
 two browser profiles, offline reload, restore, upgrade from Bol v1, the update banner,
 Hindi/Tamil/Kannada boards and fonts, voice test report, second-language label,
-symbols offline, typing suggestions and clearing typing history.
+symbols offline, typing suggestions and clearing typing history, the tile API and
+its audio files, and that the API (bol.js) builds the same sentence and suggestions
+as the app.
+
+12 MCP tests (node mcp.mjs) start the MCP server and use it through the official MCP
+SDK client: every tool, error handling, the older 2024-11-05 protocol, behaviour
+without eSpeak NG, and that every returned audio file decodes (ffprobe).
 
 What the automated tests cannot check: real voices, the microphone, the camera, the
 phone's share sheet, real keyboards, and how real children and caregivers use it.
@@ -99,6 +105,13 @@ J. Updates
       "Update available - tap to reload" appears. Nothing changes until it is tapped.
 
 
+K. API and MCP server (on a computer)
+  [ ] Open https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-0.mp3 and
+      listen. Do the same for ta and kn. Note any word that sounds wrong.
+  [ ] Add the MCP server to Claude Desktop (mcp/README.md). Ask: "Using Bol, build the
+      Tamil sentence for I + want + water and save the audio to my Desktop". Play it.
+
+
 4. KNOWN LIMITATIONS
 
 - Tamil and Kannada words and interface text are first drafts written with AI help and
@@ -124,3 +137,8 @@ J. Updates
 - The PIN is a child lock, not security. Backups are not encrypted and include the
   typing history, saved phrases and the PIN.
 - The update banner needs a tap; until then the old version keeps running.
+- API audio is eSpeak NG: robotic, and nobody has listened to all 792 files yet. The
+  automated checks only prove each file exists, decodes and has a sensible length,
+  and that eSpeak read every word with that language's rules.
+- The API cannot build sentences or autocomplete at a URL on its own (GitHub Pages
+  only serves files); this runs in bol.js or the MCP server on the caller's side.

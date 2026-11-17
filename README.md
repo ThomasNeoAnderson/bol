@@ -35,19 +35,30 @@ GitHub Pages provides https. Pages is set to deploy from `main` / root.
 updates the offline file list and the cache version, and installed apps then show
 "Update available – tap to reload".
 After changing `data/vocab.json` or `data/languages.json`, also run
-`python3 tools/build_api.py`.
+`python3 tools/build_audio.py` (needs eSpeak NG and ffmpeg) and then
+`python3 tools/build_api.py`, before `build_sw.py`.
 
-## Tile API
+## API and MCP server
 
-The starter tiles are also published as a read-only JSON API on GitHub Pages:
-`https://thomasneoanderson.github.io/bol/api/v1/` (for example `tiles.json` or
-`categories/core.json`). See [API.md](API.md).
+Bol's starter tiles and what the app does with them are also available to other
+programs. See [API.md](API.md).
+
+- **Tile data and audio** at `https://thomasneoanderson.github.io/bol/api/v1/`: JSON
+  for every tile, board and language, plus MP3 audio of every tile in all 4 languages.
+- **`bol.js`**, a JavaScript client for websites: build a sentence from tiles,
+  autocomplete, search, speak.
+- **MCP server** (`mcp/server.mjs`) for AI assistants such as Claude: the same
+  operations, plus `speak`, which returns audio. See [mcp/README.md](mcp/README.md).
+
+All three use the app's own rules (`js/core.js`), and the tests check that they give
+the same sentences and suggestions as the app.
 
 ## Project layout
 
 | Path | What it is |
 |---|---|
 | `index.html`, `css/style.css` | Page skeleton and styles (no animations, ≥48 px targets) |
+| `js/core.js` | Rules for labels, sentences, suggestions and the speech plan; shared by the app, API and MCP server |
 | `js/app.js` | Startup, board drawing, tapping, speaking, Now screen, language picker |
 | `js/state.js` | Shared state; `commit()` = autosave + redraw |
 | `js/store.js` | IndexedDB, snapshots, draft, persistent storage, media |
@@ -63,19 +74,21 @@ The starter tiles are also published as a read-only JSON API on GitHub Pages:
 | `symbols/` | ARASAAC pictograms (bundled, offline) |
 | `fonts/` | Subsetted Noto Sans Devanagari/Tamil/Kannada |
 | `sw.js` | Service worker (offline cache, update flow) |
-| `api/v1/` | Generated tile API ([API.md](API.md)); not used by the app itself |
-| `tools/` | Build, translation review and symbol scripts |
-| `tests/` | Headless browser tests (`cd tests && npm install && node e2e.mjs`) |
+| `api/v1/` | Tile API ([API.md](API.md)): generated JSON and audio, plus `ops.js` and `bol.js` (client); not used by the app itself |
+| `mcp/` | MCP server for AI assistants ([mcp/README.md](mcp/README.md)) |
+| `tools/` | Build (service worker, API, audio), translation review and symbol scripts |
+| `tests/` | Headless browser tests and MCP tests (`cd tests && npm install && npm test`) |
 
 ## Adding or correcting a language
 
 - **Correct translations:** run `python3 tools/export_review.py` and give
   `vocab_review.csv` to a native speaker. They fix cells and set `reviewed` to `yes`.
-  Then run `python3 tools/import_review.py vocab_review.csv`, `python3 tools/build_api.py` and `python3 tools/build_sw.py`.
+  Then run `python3 tools/import_review.py vocab_review.csv`, `python3 tools/build_audio.py`, `python3 tools/build_api.py` and `python3 tools/build_sw.py`.
   Existing users receive the corrections on their next start; buttons a caregiver
   edited are never overwritten.
 - **Add a language:** add an entry to `data/languages.json` (code, name in its own
-  script, speech codes such as `ml-IN`, fallback language, a voice-test sentence). Then
+  script, speech codes such as `ml-IN`, fallback language, a voice-test sentence, and
+  `espeakVoice`, the eSpeak NG voice used for the API audio, such as `ml`). Then
   add that language's text to `vocab.json` and `ui.json`, for example by adding a column
   to the CSV tools. No app code changes are needed. For a new script, also add a Noto
   font to `fonts/` and an `@font-face` rule.
@@ -91,6 +104,8 @@ buttons that lack one. To correct a bad match, pin a pictogram id in
 - **Pictograms:** Sergio Palao. Property of the Government of Aragón (Spain).
   Source: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Images were resized.
   Because of this licence, Bol must not be sold or used commercially.
+- **API audio:** generated with eSpeak NG (https://github.com/espeak-ng/espeak-ng,
+  GPL-3.0; the generated audio is not covered by the GPL).
 - **Fonts:** Noto Sans Devanagari, Noto Sans Tamil and Noto Sans Kannada © The Noto
   Project Authors, SIL Open Font License 1.1 (`fonts/OFL.txt`).
 - **Translations:** Tamil and Kannada are unreviewed first drafts (see `vocab_review.csv`).

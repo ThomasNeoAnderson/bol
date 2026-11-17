@@ -10,7 +10,8 @@
    "en"
   ],
   "fallback": "hi",
-  "sample": "Hello, this is a voice test"
+  "sample": "Hello, this is a voice test",
+  "espeakVoice": "en-gb"
  },
  {
   "code": "hi",
@@ -21,7 +22,8 @@
    "hi"
   ],
   "fallback": "en",
-  "sample": "नमस्ते, यह आवाज़ की जाँच है"
+  "sample": "नमस्ते, यह आवाज़ की जाँच है",
+  "espeakVoice": "hi"
  },
  {
   "code": "ta",
@@ -32,7 +34,8 @@
    "ta"
   ],
   "fallback": "en",
-  "sample": "வணக்கம், இது குரல் டெஸ்ட்"
+  "sample": "வணக்கம், இது குரல் டெஸ்ட்",
+  "espeakVoice": "ta"
  },
  {
   "code": "kn",
@@ -43,6 +46,7 @@
    "kn"
   ],
   "fallback": "en",
-  "sample": "ನಮಸ್ಕಾರ, ಇದು ಧ್ವನಿ ಪರೀಕ್ಷೆ"
+  "sample": "ನಮಸ್ಕಾರ, ಇದು ಧ್ವನಿ ಪರೀಕ್ಷೆ",
+  "espeakVoice": "kn"
  }
 ]

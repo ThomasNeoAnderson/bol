@@ -5,6 +5,8 @@
 // Adding a language is a data-only change: add it to languages.json and add a
 // column for it in ui.json and vocab.json (see tools/ and vocab_review.csv).
 
+import { pick as corePick } from './core.js';
+
 let LANGS = [];
 let STR = {};
 let current = 'en';
@@ -25,12 +27,8 @@ export const getLang = () => current;
 export function setLang(code) { current = langInfo(code).code; }
 
 /** Pick a string from a {en, hi, ...} object, falling back to English and
- *  then to any language that has text. */
-export function pick(textObj, lang = current) {
-  if (!textObj) return '';
-  if (typeof textObj === 'string') return textObj;
-  return textObj[lang] || textObj.en || Object.values(textObj).find(Boolean) || '';
-}
+ *  then to any language that has text (rule shared with the API: core.js). */
+export function pick(textObj, lang = current) { return corePick(textObj, lang); }
 
 /** Interface text: t('key', {n: 3}) replaces {n} in the string. */
 export function t(key, vars) {

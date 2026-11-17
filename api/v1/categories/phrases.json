@@ -33,6 +33,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-0.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-0.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-0.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-0.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-0.json"
   },
   {
@@ -56,6 +63,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-1.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-1.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-1.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-1.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-1.json"
   },
   {
@@ -79,6 +93,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-2.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-2.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-2.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-2.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-2.json"
   },
   {
@@ -102,6 +123,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-3.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-3.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-3.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-3.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-3.json"
   },
   {
@@ -125,6 +153,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-4.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-4.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-4.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-4.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-4.json"
   },
   {
@@ -148,6 +183,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-5.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-5.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-5.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-5.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-5.json"
   },
   {
@@ -171,6 +213,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-6.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-6.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-6.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-6.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-6.json"
   },
   {
@@ -194,6 +243,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-7.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-7.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-7.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-7.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-7.json"
   },
   {
@@ -217,6 +273,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-8.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-8.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-8.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-8.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-8.json"
   },
   {
@@ -240,6 +303,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-9.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-9.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-9.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-9.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-9.json"
   },
   {
@@ -263,6 +333,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-10.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-10.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-10.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-10.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-10.json"
   },
   {
@@ -286,6 +363,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-11.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-11.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-11.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-11.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-11.json"
   },
   {
@@ -309,6 +393,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-12.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-12.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-12.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-12.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-12.json"
   },
   {
@@ -332,6 +423,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-13.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-13.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-13.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-13.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-13.json"
   },
   {
@@ -355,6 +453,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-14.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-14.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-14.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-14.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-14.json"
   },
   {
@@ -378,6 +483,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-15.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-15.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-15.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-15.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-15.json"
   },
   {
@@ -401,6 +513,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-16.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-16.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-16.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-16.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-16.json"
   },
   {
@@ -424,6 +543,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-17.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-17.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-17.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-17.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-17.json"
   },
   {
@@ -447,6 +573,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-18.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-18.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-18.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-18.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-18.json"
   },
   {
@@ -470,6 +603,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-19.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-19.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-19.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-19.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-19.json"
   },
   {
@@ -493,6 +633,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-20.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-20.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-20.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-20.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-20.json"
   },
   {
@@ -516,6 +663,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-21.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-21.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-21.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-21.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-21.json"
   },
   {
@@ -539,6 +693,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-22.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-22.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-22.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-22.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-22.json"
   },
   {
@@ -562,6 +723,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-23.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-23.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-23.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-23.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-23.json"
   },
   {
@@ -585,6 +753,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-24.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-24.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-24.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-24.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-24.json"
   },
   {
@@ -608,6 +783,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-25.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-25.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-25.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-25.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-25.json"
   },
   {
@@ -631,6 +813,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-26.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-26.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-26.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-26.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-26.json"
   },
   {
@@ -654,6 +843,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-27.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-27.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-27.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-27.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-27.json"
   },
   {
@@ -677,6 +873,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-28.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-28.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-28.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-28.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-28.json"
   },
   {
@@ -700,6 +903,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-29.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-29.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-29.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-29.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-29.json"
   },
   {
@@ -723,6 +933,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-30.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-30.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-30.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-30.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-30.json"
   },
   {
@@ -746,6 +963,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-31.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-31.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-31.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-31.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-31.json"
   }
  ]

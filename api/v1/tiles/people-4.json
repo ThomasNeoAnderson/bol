@@ -23,5 +23,12 @@
   "ta": false,
   "kn": false
  },
+ "audio": {
+  "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/people-4.mp3",
+  "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/people-4.mp3",
+  "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/people-4.mp3",
+  "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/people-4.mp3"
+ },
+ "alternativeAudio": [],
  "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/people-4.json"
 }

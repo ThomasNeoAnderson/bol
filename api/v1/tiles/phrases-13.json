@@ -19,5 +19,12 @@
   "ta": false,
   "kn": false
  },
+ "audio": {
+  "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/phrases-13.mp3",
+  "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/phrases-13.mp3",
+  "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/phrases-13.mp3",
+  "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/phrases-13.mp3"
+ },
+ "alternativeAudio": [],
  "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/phrases-13.json"
 }

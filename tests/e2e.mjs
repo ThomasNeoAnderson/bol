@@ -449,6 +449,77 @@ await test('Tile API matches the vocabulary and every symbol URL exists', async 
   }
 });
 
+await test('Tile audio: one clip per tile, alternative and language, all present and up to date', async ({ page }) => {
+  execFileSync('python3', [path.join(ROOT, 'tools', 'build_audio.py'), '--check'], { stdio: 'pipe' });
+  const SITE = 'https://thomasneoanderson.github.io/bol/';
+  const tiles = JSON.parse(fs.readFileSync(path.join(ROOT, 'api', 'v1', 'tiles.json'), 'utf8'));
+  let n = 0;
+  for (const t of tiles) for (const a of [t.audio, ...t.alternativeAudio]) for (const url of Object.values(a)) {
+    const f = path.join(ROOT, url.replace(SITE, ''));
+    assert(fs.existsSync(f) && fs.statSync(f).size > 2000, 'missing or empty audio ' + url);
+    n++;
+  }
+  eq(n, 4 * (tiles.length + tiles.reduce((s, t) => s + t.alternatives.length, 0)), 'clip count');
+  const r = await page.request.get(BASE + '/api/v1/audio/ta/core-0.mp3');
+  assert(r.ok() && (await r.body()).length > 2000, 'clip served');
+});
+
+await test('API (bol.js) builds the same sentence and suggestions as the app (Hindi)', async ({ page }) => {
+  await open(page, 'hi');
+  for (const w of ['मैं', 'चाहिए', 'और']) await page.click(`#grid .sym[aria-label="${w}"]`);
+  const appText = (await page.$$eval('#sentence .chip span[lang]', els => els.map(e => e.textContent.trim()))).join(' ');
+  const ids = await page.evaluate(() => JSON.parse(localStorage.getItem('bol-draft')).map(it => it.bid));
+  await page.click('.tab:has-text("लिखें")');
+  await typeAndSpeak(page, 'मुझे पानी चाहिए');
+  await typeAndSpeak(page, 'मुझे पानी चाहिए');
+  await typeAndSpeak(page, 'मुझे खाना चाहिए');
+  await typeAndSpeak(page, 'पानी दो');
+  for (const q of ['मुझे', 'पा', 'ना']) {
+    await page.fill('#type-box', q);
+    const appSugg = await suggestions(page);
+    const profile = await page.evaluate(() => new Promise(res => {
+      const r = indexedDB.open('bol'); r.onsuccess = () => { const g = r.result.transaction('kv').objectStore('kv').get('profile'); g.onsuccess = () => res(g.result); };
+    }));
+    const apiSugg = await page.evaluate(async ({ q, history, phrases }) => {
+      const bol = await import('/api/v1/bol.js');
+      const saved = phrases.map(p => p.items.map(it => ({ text: it.text })));
+      return (await bol.autocomplete(q, 'hi', { history, saved, starterPhrases: false })).sentences.map(s => (s.source === 'history' ? '' : '★ ') + s.text);
+    }, { q, history: profile.history, phrases: profile.phrases });
+    assert(appSugg.length >= 1, `app shows suggestions for "${q}"`);
+    eq(apiSugg, appSugg, `suggestions for "${q}"`);
+  }
+  const api = await page.evaluate(async ids => (await import('/api/v1/bol.js')).buildSentence(ids, 'hi'), ids);
+  eq(api.text, appText, 'sentence text');
+  eq(api.words.map(w => w.id), ids, 'tile ids');
+});
+
+await test('bol.js: phrase match, typed words, errors and speech plan', async ({ page }) => {
+  await page.goto(BASE + '/__blank');
+  const r = await page.evaluate(async () => {
+    const bol = await import('/api/v1/bol.js');
+    const out = {};
+    const s = await bol.buildSentence(['core-0', 'core-2', 'needs-7'], 'hi');
+    out.text = s.text; out.phrase = s.phrase && s.phrase.text; out.plan = s.speech;
+    out.typed = (await bol.buildSentence([{ text: 'ரவி' }, 'core-2'], 'ta')).speech;
+    out.alt = (await bol.buildSentence(['needs-2.alt0'], 'en')).text;
+    for (const bad of [['nope'], ['needs-2.alt9']]) { try { await bol.buildSentence(bad, 'en'); } catch (e) { (out.errors ||= []).push(e.message); } }
+    try { await bol.buildSentence(['core-0'], 'fr'); } catch (e) { out.lang = e.message; }
+    out.search = (await bol.searchTiles({ query: 'पानी', limit: 3 })).map(t => t.id);
+    out.complete = (await bol.autocomplete('I want wat', 'en')).tiles.map(t => t.label).slice(0, 2);
+    return out;
+  });
+  eq(r.text, 'मैं चाहिए पानी', 'word-by-word like the app');
+  eq(r.phrase, 'मुझे पानी चाहिए', 'ready-made sentence with natural order');
+  eq(r.plan[0].voices, ['hi-IN', 'hi'], 'Hindi voices');
+  eq(r.plan[0].fallback && r.plan[0].fallback.text, 'I want water', 'English fallback');
+  eq(r.typed[0].fallback, null, 'typed Tamil never gets another language voice');
+  eq(r.alt, 'help me please', 'alternative wording');
+  assert(r.errors.length === 2 && r.errors.every(e => /Unknown tile/.test(e)), 'unknown tiles rejected: ' + r.errors);
+  assert(/Unknown language/.test(r.lang), 'unknown language rejected');
+  assert(r.search.includes('needs-7'), 'search in Hindi finds water');
+  assert(r.complete[0] === 'water', 'first completion of "wat" is water: ' + r.complete);
+});
+
 // ---------------------------------------------------------------- summary ---
 await browser.close();
 server.close();

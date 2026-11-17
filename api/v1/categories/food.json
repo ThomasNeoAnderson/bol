@@ -44,6 +44,20 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/food-0.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/food-0.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/food-0.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/food-0.mp3"
+   },
+   "alternativeAudio": [
+    {
+     "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/food-0.alt0.mp3",
+     "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/food-0.alt0.mp3",
+     "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/food-0.alt0.mp3",
+     "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/food-0.alt0.mp3"
+    }
+   ],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-0.json"
   },
   {
@@ -67,6 +81,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/food-1.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/food-1.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/food-1.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/food-1.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-1.json"
   },
   {
@@ -94,6 +115,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/food-2.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/food-2.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/food-2.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/food-2.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-2.json"
   },
   {
@@ -121,6 +149,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/food-3.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/food-3.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/food-3.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/food-3.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-3.json"
   },
   {
@@ -148,6 +183,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/food-4.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/food-4.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/food-4.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/food-4.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-4.json"
   },
   {
@@ -175,6 +217,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/food-5.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/food-5.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/food-5.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/food-5.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-5.json"
   },
   {
@@ -202,6 +251,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/food-6.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/food-6.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/food-6.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/food-6.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-6.json"
   },
   {
@@ -229,6 +285,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/food-7.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/food-7.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/food-7.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/food-7.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-7.json"
   },
   {
@@ -256,6 +319,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/food-8.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/food-8.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/food-8.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/food-8.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-8.json"
   },
   {
@@ -290,6 +360,20 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/food-9.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/food-9.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/food-9.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/food-9.mp3"
+   },
+   "alternativeAudio": [
+    {
+     "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/food-9.alt0.mp3",
+     "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/food-9.alt0.mp3",
+     "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/food-9.alt0.mp3",
+     "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/food-9.alt0.mp3"
+    }
+   ],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-9.json"
   },
   {
@@ -313,6 +397,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/food-10.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/food-10.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/food-10.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/food-10.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-10.json"
   },
   {
@@ -340,6 +431,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/food-11.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/food-11.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/food-11.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/food-11.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/food-11.json"
   }
  ]

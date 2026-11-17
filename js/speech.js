@@ -11,7 +11,8 @@
 // returns a problem description.
 
 import { getMediaBlob } from './store.js';
-import { langInfo, languages, pick, t } from './i18n.js';
+import { langInfo, languages, t } from './i18n.js';
+import { hasText, labelOf, segments as splitSegments } from './core.js';
 
 let voicesCache = null;
 // After synthesis fails to start, skip it for 30 s so each tap does not wait
@@ -139,11 +140,10 @@ export function stopAll() {
   if (currentAudio) { currentAudio.pause(); currentAudio = null; }
 }
 
-const textObj = item => item.text || { en: item.en, hi: item.hi };
-const textOf = (item, lang) => pick(textObj(item), lang).trim();
+const textOf = (item, lang) => labelOf(item, lang).trim();
 // Only fall back to another language's voice when every word really has text
-// in that language (typed Tamil must never be read by an English voice).
-const hasText = (item, lang) => !!(textObj(item)[lang] || '').trim();
+// in that language (typed Tamil must never be read by an English voice):
+// hasText() in core.js.
 
 /**
  * Speak a list of sentence items: [{text: {en, hi, …}, audio}].
@@ -157,16 +157,8 @@ export async function speakItems(items, lang, rate) {
   const myGen = generation;
   const cancelled = () => generation !== myGen;
 
-  // Split into segments: recording | run of text
-  const segments = [];
-  for (const it of items) {
-    if (it.audio) segments.push({ type: 'rec', item: it });
-    else {
-      const last = segments[segments.length - 1];
-      if (last && last.type === 'tts') last.items.push(it);
-      else segments.push({ type: 'tts', items: [it] });
-    }
-  }
+  // Split into segments: recording | run of text (core.js)
+  const segments = splitSegments(items);
 
   for (const seg of segments) {
     if (cancelled()) break;

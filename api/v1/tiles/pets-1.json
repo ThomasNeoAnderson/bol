@@ -23,5 +23,12 @@
   "ta": false,
   "kn": false
  },
+ "audio": {
+  "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/pets-1.mp3",
+  "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/pets-1.mp3",
+  "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/pets-1.mp3",
+  "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/pets-1.mp3"
+ },
+ "alternativeAudio": [],
  "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/pets-1.json"
 }

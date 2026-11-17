@@ -13,7 +13,7 @@
 // version changes automatically whenever any file changes.
 
 // BEGIN GENERATED
-const CACHE_VERSION = 'bol-19ae86f8a6';
+const CACHE_VERSION = 'bol-209614a3df';
 const APP_FILES = [
   './',
   './index.html',
@@ -22,6 +22,7 @@ const APP_FILES = [
   './js/app.js',
   './js/backup.js',
   './js/caregiver.js',
+  './js/core.js',
   './js/i18n.js',
   './js/media.js',
   './js/routines.js',

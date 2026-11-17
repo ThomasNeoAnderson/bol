@@ -7,9 +7,10 @@ Check without writing (for tests):  python3 tools/build_api.py --check
 GitHub Pages has no server code, so the "API" is a set of static JSON files
 served at fixed URLs (see API.md). data/vocab.json stays the source of truth;
 never edit api/ by hand. The app itself does not use these files, so they are
-not in the service worker's offline cache.
+not in the service worker's offline cache. Audio files come from
+tools/build_audio.py (run it first when words change).
 """
-import json, pathlib, shutil, sys
+import json, pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / 'api' / 'v1'
@@ -44,6 +45,10 @@ def tile(b, vocab, langs):
         # English is the source; every other language is a draft until a
         # native speaker marks the row reviewed in vocab_review.csv.
         'reviewed': {l: (l == 'en' or b['id'] in set(vocab.get('reviewed', []))) for l in langs},
+        # Spoken label (robotic open-source voice, made by tools/build_audio.py).
+        'audio': {l: API + f"audio/{l}/{b['id']}.mp3" for l in langs},
+        'alternativeAudio': [{l: API + f"audio/{l}/{b['id']}.alt{i}.mp3" for l in langs}
+                             for i in range(len(b.get('alts', [])))],
         'url': API + f"tiles/{b['id']}.json",
     }
 
@@ -85,7 +90,19 @@ def build():
                 'category': API + 'categories/{id}.json',
                 'tiles': API + 'tiles.json',
                 'tile': API + 'tiles/{id}.json',
+                'audio': API + 'audio/{lang}/{id}.mp3',
+                'audioManifest': API + 'audio/manifest.json',
+                'client': API + 'bol.js',
             },
+            'operations': {
+                'note': ('GitHub Pages only serves files, so building sentences, autocomplete and '
+                         'speech plans run in bol.js (browser or Node) or in the MCP server '
+                         '(mcp/server.mjs), using the same rules as the app (js/core.js).'),
+                'buildSentence': 'bol.js buildSentence(tileIds, lang) / MCP tool build_sentence',
+                'autocomplete': 'bol.js autocomplete(text, lang, {history}) / MCP tool autocomplete',
+                'speak': 'bol.js speak(tileIds, lang) / MCP tool speak',
+            },
+            'audioVoice': 'eSpeak NG (open source, robotic). The app itself speaks with the phone\'s voice.',
             'symbolAttribution': ATTRIBUTION,
         },
         'languages.json': [{k: l[k] for k in ('code', 'name', 'englishName', 'speech', 'fallback')} for l in languages],
@@ -103,14 +120,18 @@ def build():
 def main():
     files = build()
     if '--check' in sys.argv:
-        on_disk = {p.relative_to(OUT).as_posix() for p in OUT.rglob('*.json')} if OUT.exists() else set()
+        on_disk = {p.relative_to(OUT).as_posix() for p in OUT.rglob('*.json') if not p.relative_to(OUT).as_posix().startswith('audio/')} if OUT.exists() else set()
         stale = [p for p, s in files.items() if not (OUT / p).exists() or (OUT / p).read_text(encoding='utf-8') != s]
         extra = sorted(on_disk - set(files))
         if stale or extra:
             print('api/ is out of date: run python3 tools/build_api.py', (stale + extra)[:5]); sys.exit(1)
         print(f'api/ up to date: {len(files)} files'); return
-    if OUT.exists():
-        shutil.rmtree(OUT)            # removes tiles that no longer exist
+    # Remove JSON files of tiles that no longer exist. audio/ (build_audio.py)
+    # and the hand-written client bol.js are left alone.
+    for old in (OUT.rglob('*.json') if OUT.exists() else []):
+        rel = old.relative_to(OUT).as_posix()
+        if rel not in files and not rel.startswith('audio/'):
+            old.unlink()
     for p, s in files.items():
         f = OUT / p
         f.parent.mkdir(parents=True, exist_ok=True)

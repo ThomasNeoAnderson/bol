@@ -44,6 +44,20 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/places-0.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/places-0.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/places-0.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/places-0.mp3"
+   },
+   "alternativeAudio": [
+    {
+     "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/places-0.alt0.mp3",
+     "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/places-0.alt0.mp3",
+     "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/places-0.alt0.mp3",
+     "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/places-0.alt0.mp3"
+    }
+   ],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-0.json"
   },
   {
@@ -71,6 +85,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/places-1.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/places-1.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/places-1.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/places-1.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-1.json"
   },
   {
@@ -98,6 +119,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/places-2.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/places-2.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/places-2.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/places-2.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-2.json"
   },
   {
@@ -125,6 +153,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/places-3.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/places-3.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/places-3.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/places-3.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-3.json"
   },
   {
@@ -152,6 +187,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/places-4.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/places-4.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/places-4.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/places-4.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-4.json"
   },
   {
@@ -175,6 +217,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/places-5.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/places-5.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/places-5.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/places-5.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-5.json"
   },
   {
@@ -209,6 +258,20 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/places-6.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/places-6.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/places-6.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/places-6.mp3"
+   },
+   "alternativeAudio": [
+    {
+     "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/places-6.alt0.mp3",
+     "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/places-6.alt0.mp3",
+     "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/places-6.alt0.mp3",
+     "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/places-6.alt0.mp3"
+    }
+   ],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-6.json"
   },
   {
@@ -236,6 +299,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/places-7.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/places-7.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/places-7.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/places-7.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-7.json"
   },
   {
@@ -263,6 +333,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/places-8.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/places-8.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/places-8.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/places-8.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-8.json"
   },
   {
@@ -290,6 +367,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/places-9.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/places-9.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/places-9.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/places-9.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/places-9.json"
   }
  ]

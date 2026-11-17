@@ -44,6 +44,20 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/feelings-0.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/feelings-0.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/feelings-0.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/feelings-0.mp3"
+   },
+   "alternativeAudio": [
+    {
+     "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/feelings-0.alt0.mp3",
+     "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/feelings-0.alt0.mp3",
+     "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/feelings-0.alt0.mp3",
+     "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/feelings-0.alt0.mp3"
+    }
+   ],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-0.json"
   },
   {
@@ -78,6 +92,20 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/feelings-1.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/feelings-1.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/feelings-1.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/feelings-1.mp3"
+   },
+   "alternativeAudio": [
+    {
+     "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/feelings-1.alt0.mp3",
+     "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/feelings-1.alt0.mp3",
+     "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/feelings-1.alt0.mp3",
+     "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/feelings-1.alt0.mp3"
+    }
+   ],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-1.json"
   },
   {
@@ -112,6 +140,20 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/feelings-2.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/feelings-2.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/feelings-2.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/feelings-2.mp3"
+   },
+   "alternativeAudio": [
+    {
+     "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/feelings-2.alt0.mp3",
+     "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/feelings-2.alt0.mp3",
+     "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/feelings-2.alt0.mp3",
+     "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/feelings-2.alt0.mp3"
+    }
+   ],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-2.json"
   },
   {
@@ -146,6 +188,20 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/feelings-3.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/feelings-3.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/feelings-3.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/feelings-3.mp3"
+   },
+   "alternativeAudio": [
+    {
+     "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/feelings-3.alt0.mp3",
+     "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/feelings-3.alt0.mp3",
+     "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/feelings-3.alt0.mp3",
+     "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/feelings-3.alt0.mp3"
+    }
+   ],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-3.json"
   },
   {
@@ -180,6 +236,20 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/feelings-4.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/feelings-4.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/feelings-4.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/feelings-4.mp3"
+   },
+   "alternativeAudio": [
+    {
+     "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/feelings-4.alt0.mp3",
+     "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/feelings-4.alt0.mp3",
+     "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/feelings-4.alt0.mp3",
+     "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/feelings-4.alt0.mp3"
+    }
+   ],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-4.json"
   },
   {
@@ -214,6 +284,20 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/feelings-5.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/feelings-5.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/feelings-5.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/feelings-5.mp3"
+   },
+   "alternativeAudio": [
+    {
+     "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/feelings-5.alt0.mp3",
+     "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/feelings-5.alt0.mp3",
+     "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/feelings-5.alt0.mp3",
+     "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/feelings-5.alt0.mp3"
+    }
+   ],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-5.json"
   },
   {
@@ -241,6 +325,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/feelings-6.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/feelings-6.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/feelings-6.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/feelings-6.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-6.json"
   },
   {
@@ -268,6 +359,13 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/feelings-7.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/feelings-7.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/feelings-7.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/feelings-7.mp3"
+   },
+   "alternativeAudio": [],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-7.json"
   },
   {
@@ -302,6 +400,20 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/feelings-8.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/feelings-8.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/feelings-8.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/feelings-8.mp3"
+   },
+   "alternativeAudio": [
+    {
+     "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/feelings-8.alt0.mp3",
+     "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/feelings-8.alt0.mp3",
+     "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/feelings-8.alt0.mp3",
+     "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/feelings-8.alt0.mp3"
+    }
+   ],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-8.json"
   },
   {
@@ -336,6 +448,20 @@
     "ta": false,
     "kn": false
    },
+   "audio": {
+    "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/feelings-9.mp3",
+    "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/feelings-9.mp3",
+    "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/feelings-9.mp3",
+    "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/feelings-9.mp3"
+   },
+   "alternativeAudio": [
+    {
+     "en": "https://thomasneoanderson.github.io/bol/api/v1/audio/en/feelings-9.alt0.mp3",
+     "hi": "https://thomasneoanderson.github.io/bol/api/v1/audio/hi/feelings-9.alt0.mp3",
+     "ta": "https://thomasneoanderson.github.io/bol/api/v1/audio/ta/feelings-9.alt0.mp3",
+     "kn": "https://thomasneoanderson.github.io/bol/api/v1/audio/kn/feelings-9.alt0.mp3"
+    }
+   ],
    "url": "https://thomasneoanderson.github.io/bol/api/v1/tiles/feelings-9.json"
   }
  ]

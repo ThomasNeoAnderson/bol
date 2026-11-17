@@ -20,7 +20,17 @@
   "categories": "https://thomasneoanderson.github.io/bol/api/v1/categories.json",
   "category": "https://thomasneoanderson.github.io/bol/api/v1/categories/{id}.json",
   "tiles": "https://thomasneoanderson.github.io/bol/api/v1/tiles.json",
-  "tile": "https://thomasneoanderson.github.io/bol/api/v1/tiles/{id}.json"
+  "tile": "https://thomasneoanderson.github.io/bol/api/v1/tiles/{id}.json",
+  "audio": "https://thomasneoanderson.github.io/bol/api/v1/audio/{lang}/{id}.mp3",
+  "audioManifest": "https://thomasneoanderson.github.io/bol/api/v1/audio/manifest.json",
+  "client": "https://thomasneoanderson.github.io/bol/api/v1/bol.js"
  },
+ "operations": {
+  "note": "GitHub Pages only serves files, so building sentences, autocomplete and speech plans run in bol.js (browser or Node) or in the MCP server (mcp/server.mjs), using the same rules as the app (js/core.js).",
+  "buildSentence": "bol.js buildSentence(tileIds, lang) / MCP tool build_sentence",
+  "autocomplete": "bol.js autocomplete(text, lang, {history}) / MCP tool autocomplete",
+  "speak": "bol.js speak(tileIds, lang) / MCP tool speak"
+ },
+ "audioVoice": "eSpeak NG (open source, robotic). The app itself speaks with the phone's voice.",
  "symbolAttribution": "Pictograms: Sergio Palao. Origin: ARASAAC (https://arasaac.org). Licence: CC BY-NC-SA 4.0. Owner: Government of Aragón (Spain)."
 }

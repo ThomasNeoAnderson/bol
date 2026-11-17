@@ -1,5 +1,23 @@
 # Changelog
 
+## 2.2 — 17 November 2026
+Feedback: the API should cover the app's functionality (speech synthesis, sentence
+construction from tiles, autocomplete), and Bol should have an MCP server.
+- New: **audio API**. Every tile, alternative and ready-made sentence spoken in all 4
+  languages (792 MP3 files at `api/v1/audio/{lang}/{id}.mp3`), made with the
+  open-source eSpeak NG engine by `tools/build_audio.py`, which only re-speaks changed
+  words. Tiles have new `audio` and `alternativeAudio` fields; existing fields are unchanged.
+- New: **`api/v1/bol.js`**, a JavaScript client: `buildSentence`, `autocomplete`,
+  `searchTiles`, `speak`. GitHub Pages cannot run code, so these run on the caller's side.
+- New: **MCP server** (`mcp/server.mjs`, no dependencies) with 8 tools:
+  `list_languages`, `list_categories`, `get_category`, `get_tile`, `search_tiles`,
+  `build_sentence`, `autocomplete`, `speak` (returns audio). See mcp/README.md.
+- The rules for sentences, suggestions and the speech plan moved into `js/core.js`,
+  which the app, `bol.js` and the MCP server all use. The app behaves as before (all
+  earlier tests pass).
+- Tests: 3 new browser tests (28 in total), including one that checks the API gives
+  the same sentence and suggestions as the app, and 12 MCP tests (`tests/mcp.mjs`).
+
 ## 2.1 — 28 October 2026
 - New: a read-only tile API on GitHub Pages at
   https://thomasneoanderson.github.io/bol/api/v1/ (see API.md). It covers all 169
